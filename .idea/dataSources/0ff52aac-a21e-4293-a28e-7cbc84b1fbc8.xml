@@ -1,0 +1,146 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<dataSource name="our_menu@localhost">
+  <database-model serializer="dbm" rdbms="MYSQL" format-version="4.0">
+    <root id="1"/>
+    <schema id="2" parent="1" name="our_menu">
+      <Current>1</Current>
+      <Visible>1</Visible>
+    </schema>
+    <schema id="3" parent="1" name="information_schema"/>
+    <schema id="4" parent="1" name="mysql"/>
+    <schema id="5" parent="1" name="performance_schema"/>
+    <schema id="6" parent="1" name="SAMPLE"/>
+    <schema id="7" parent="1" name="sys"/>
+    <table id="8" parent="2" name="menuItems"/>
+    <table id="9" parent="2" name="restaurants"/>
+    <table id="10" parent="2" name="userMenuItem"/>
+    <table id="11" parent="2" name="users"/>
+    <table id="12" parent="2" name="usersRestaurants"/>
+    <column id="13" parent="8" name="menuItemID">
+      <Position>1</Position>
+      <DataType>int(11)|0</DataType>
+      <NotNull>1</NotNull>
+      <SequenceIdentity>1</SequenceIdentity>
+    </column>
+    <column id="14" parent="8" name="restaurantName">
+      <Position>2</Position>
+      <DataType>varchar(40)|0</DataType>
+    </column>
+    <column id="15" parent="8" name="itemDescription">
+      <Position>3</Position>
+      <DataType>varchar(30)|0</DataType>
+    </column>
+    <column id="16" parent="8" name="itemType">
+      <Position>4</Position>
+      <DataType>varchar(30)|0</DataType>
+    </column>
+    <index id="17" parent="8" name="restaurantName">
+      <ColNames>restaurantName</ColNames>
+    </index>
+    <key id="18" parent="8" name="PRIMARY">
+      <ColNames>menuItemID</ColNames>
+      <Primary>1</Primary>
+    </key>
+    <foreign-key id="19" parent="8" name="menuItems_ibfk_1">
+      <ColNames>restaurantName</ColNames>
+      <RefSchemaName>our_menu</RefSchemaName>
+      <RefTableName>restaurants</RefTableName>
+      <RefColNames>restaurantName</RefColNames>
+    </foreign-key>
+    <column id="20" parent="9" name="restaurantName">
+      <Position>1</Position>
+      <DataType>varchar(40)|0</DataType>
+      <NotNull>1</NotNull>
+    </column>
+    <key id="21" parent="9" name="PRIMARY">
+      <ColNames>restaurantName</ColNames>
+      <Primary>1</Primary>
+    </key>
+    <column id="22" parent="10" name="userID">
+      <Position>1</Position>
+      <DataType>int(11)|0</DataType>
+      <NotNull>1</NotNull>
+    </column>
+    <column id="23" parent="10" name="menuItemID">
+      <Position>2</Position>
+      <DataType>int(11)|0</DataType>
+      <NotNull>1</NotNull>
+    </column>
+    <index id="24" parent="10" name="menuItemID">
+      <ColNames>menuItemID</ColNames>
+    </index>
+    <key id="25" parent="10" name="PRIMARY">
+      <ColNames>userID
+menuItemID</ColNames>
+      <Primary>1</Primary>
+    </key>
+    <foreign-key id="26" parent="10" name="userMenuItem_ibfk_1">
+      <ColNames>userID</ColNames>
+      <RefSchemaName>our_menu</RefSchemaName>
+      <RefTableName>users</RefTableName>
+      <RefColNames>userID</RefColNames>
+    </foreign-key>
+    <foreign-key id="27" parent="10" name="userMenuItem_ibfk_2">
+      <ColNames>menuItemID</ColNames>
+      <RefSchemaName>our_menu</RefSchemaName>
+      <RefTableName>menuItems</RefTableName>
+      <RefColNames>menuItemID</RefColNames>
+    </foreign-key>
+    <column id="28" parent="11" name="userID">
+      <Position>1</Position>
+      <DataType>int(11)|0</DataType>
+      <NotNull>1</NotNull>
+      <SequenceIdentity>1</SequenceIdentity>
+    </column>
+    <column id="29" parent="11" name="userFirstName">
+      <Position>2</Position>
+      <DataType>varchar(25)|0</DataType>
+    </column>
+    <column id="30" parent="11" name="userLastName">
+      <Position>3</Position>
+      <DataType>varchar(25)|0</DataType>
+    </column>
+    <column id="31" parent="11" name="userRole">
+      <Position>4</Position>
+      <DataType>varchar(25)|0</DataType>
+    </column>
+    <column id="32" parent="11" name="userPassword">
+      <Position>5</Position>
+      <DataType>varchar(25)|0</DataType>
+    </column>
+    <key id="33" parent="11" name="PRIMARY">
+      <ColNames>userID</ColNames>
+      <Primary>1</Primary>
+    </key>
+    <column id="34" parent="12" name="userID">
+      <Position>1</Position>
+      <DataType>int(11)|0</DataType>
+      <NotNull>1</NotNull>
+    </column>
+    <column id="35" parent="12" name="restaurantName">
+      <Position>2</Position>
+      <DataType>varchar(40)|0</DataType>
+      <NotNull>1</NotNull>
+    </column>
+    <index id="36" parent="12" name="restaurantName">
+      <ColNames>restaurantName</ColNames>
+    </index>
+    <key id="37" parent="12" name="PRIMARY">
+      <ColNames>userID
+restaurantName</ColNames>
+      <Primary>1</Primary>
+    </key>
+    <foreign-key id="38" parent="12" name="usersRestaurants_ibfk_1">
+      <ColNames>userID</ColNames>
+      <RefSchemaName>our_menu</RefSchemaName>
+      <RefTableName>users</RefTableName>
+      <RefColNames>userID</RefColNames>
+    </foreign-key>
+    <foreign-key id="39" parent="12" name="usersRestaurants_ibfk_2">
+      <ColNames>restaurantName</ColNames>
+      <RefSchemaName>our_menu</RefSchemaName>
+      <RefTableName>restaurants</RefTableName>
+      <RefColNames>restaurantName</RefColNames>
+    </foreign-key>
+  </database-model>
+</dataSource>
