@@ -1,6 +1,6 @@
 package edu.matc.persistence;
 
-import edu.matc.entity.users;
+import edu.matc.entity.Users;
 import org.apache.log4j.Logger;
 import org.junit.Before;
 import org.junit.Test;
@@ -18,29 +18,30 @@ public class UserDaoTest {
 
     private final Logger log = Logger.getLogger(this.getClass());
 
-    usersDao dao;
+    UsersDao dao;
 
     @Before
     public void setup() {
-        dao = new usersDao();
+        dao = new UsersDao();
     }
 
     @Test
     public void getAllUsers() throws Exception {
-        List<users> users = dao.getAllUsers();
+        List<Users> users = dao.getAllUsers();
         assertTrue(users.size() > 0);
         log.info("all users: " + users);
     }
 
-    /*
+
     @Test
     public void getUser() throws Exception {
-        User testUser = dao.getUser(1);
-        assertTrue("Did not find correct last name", testUser.getLastName().equals("Coyne"));
+        Users testUser = dao.getUser(1);
+        assertTrue("Did not find correct last name", testUser.getLastName().equals("TestLast"));
         log.info("user by ID: " + testUser.getLastName());
 
     }
 
+/*
     @Test
     public void addUser() throws Exception {
         User testUser = new User();

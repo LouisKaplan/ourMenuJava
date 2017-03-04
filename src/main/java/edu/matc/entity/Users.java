@@ -5,8 +5,8 @@ import org.hibernate.annotations.GenericGenerator;
 import javax.persistence.*;
 
 @Entity
-@Table(name = "users")
-public class users {
+@Table(name="users")
+public class Users {
 
     @Id
     @GeneratedValue(generator = "increment")
@@ -26,19 +26,25 @@ public class users {
     @Column(name = "userPassword")
     private String userPassword;
 
-    public users() {
+    public Users() {
     }
 
-    public users(String firstName,
+    public Users(String firstName,
                  String lastName,
-                 int userid,
                  String userRole,
                  String userPassword) {
         this.firstName = firstName;
         this.lastName = lastName;
-        this.userid = userid;
         this.userRole = userRole;
         this.userPassword = userPassword;
+    }
+
+    public int getUserid() {
+        return userid;
+    }
+
+    public void setUserid(int userid) {
+        this.userid = userid;
     }
 
     public String getFirstName() {
@@ -55,14 +61,6 @@ public class users {
 
     public void setLastName(String lastName) {
         this.lastName = lastName;
-    }
-
-    public int getUserid() {
-        return userid;
-    }
-
-    public void setUserid(int userid) {
-        this.userid = userid;
     }
 
     public String getUserRole(){
@@ -84,9 +82,9 @@ public class users {
     @Override
     public String toString() {
         return "User{" +
-                "firstName='" + firstName + '\'' +
+                "userid=" + userid + '\'' +
+                ", firstName='" + firstName + '\'' +
                 ", lastName='" + lastName + '\'' +
-                ", userid=" + userid + '\'' +
                 ", userRole=" + userRole + '\'' +
                 ", userPassword=" + userPassword + '\'' +
                 '}';

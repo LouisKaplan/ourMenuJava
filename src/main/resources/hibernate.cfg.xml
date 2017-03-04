@@ -21,7 +21,8 @@
         <property name="show_sql">true</property>
 
         <!-- List the annotated entity class/es -->
-        <mapping class="edu.matc.entity.users"/>
+        <mapping class="edu.matc.entity.Users" />
+        <mapping class="edu.matc.entity.Restaurants" />
 
     </session-factory>
 

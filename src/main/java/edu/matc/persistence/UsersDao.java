@@ -1,55 +1,59 @@
 package edu.matc.persistence;
 
-import edu.matc.entity.restaurants;
+import edu.matc.entity.Users;
 import org.apache.log4j.Logger;
 import org.hibernate.HibernateException;
 import org.hibernate.Session;
 import org.hibernate.Transaction;
 
+import javax.persistence.criteria.CriteriaBuilder;
+import javax.persistence.criteria.CriteriaQuery;
 import java.util.ArrayList;
 import java.util.List;
 
 
-public class restaurantsDao {
+public class UsersDao {
 
     private final Logger log = Logger.getLogger(this.getClass());
 
-    /** Return a list of all restaurants
+    /** Return a list of all Users
      *
-     * @return All restaurants
+     * @return All Users
      */
-    public List<restaurants> getAllRestaurants() {
-        List<restaurants> restaurants = new ArrayList<restaurants>();
+    public List<Users> getAllUsers() {
+        List<Users> Users = new ArrayList<Users>();
         Session session = SessionFactoryProvider.getSessionFactory().openSession();
-        restaurants = session.createCriteria(restaurants.class).list();
-        return restaurants;
+        Users = session.createCriteria(Users.class).list();
+        return Users;
     }
 
     /**
-     * retrieve a restaurant given its name
+     * retrieve a user given their id
      *
-     * @param restaurantName the restaurant's name
-     * @return restaurant
+     * @param id the user's id
+     * @return user
      */
-    public restaurants getRestaurant(String restaurantName) {
+    public Users getUser(int id) {
         Session session = SessionFactoryProvider.getSessionFactory().openSession();
-        restaurants restaurant = (restaurants) session.get(restaurants.class, restaurantName);
-        return restaurant;
+        Users user = (Users) session.get(Users.class, id);
+        return user;
     }
 
     /**
-     * add a restaurant
+     * add a user
      *
-     * @param restaurant
-     * @return the name of the inserted restaurant
+     * @param firstName, lastName, userRole, userPassword
+     * @return the id of the inserted record
      */
-    public int addRestaurant(restaurants restaurant) {
+
+    public int addUser(String firstName, String lastName, String userRole, String userPassword) {
         Session session = SessionFactoryProvider.getSessionFactory().openSession();
         Transaction tx = null;
-        int id = 0;
+        Integer id = 0;
         try{
             tx = session.beginTransaction();
-            id = (Integer) session.save(restaurant);
+            Users user = new Users(firstName, lastName, userRole, userPassword);
+            id = (Integer) session.save(user);
             tx.commit();
         }catch (HibernateException e) {
             if (tx!=null) tx.rollback();
@@ -61,17 +65,17 @@ public class restaurantsDao {
     }
 
     /**
-     * delete a restaurant by name
-     * @param restaurantName the restaurant's name
+     * delete a user by id
+     * @param id the user's id
      */
-    public void deleteRestaurant(String restaurantName) {
+    public void deleteUser(int id) {
         Session session = SessionFactoryProvider.getSessionFactory().openSession();
         Transaction tx = null;
         try{
             tx = session.beginTransaction();
-            restaurants restaurant =
-                    (restaurants) session.get(restaurants.class, restaurantName);
-            session.delete(restaurant);
+            Users user =
+                    (Users)session.get(Users.class, id);
+            session.delete(user);
             tx.commit();
         }catch (HibernateException e) {
             if (tx!=null) tx.rollback();
@@ -79,23 +83,26 @@ public class restaurantsDao {
         }finally {
             session.close();
         }
-
     }
 
     /**
-     * Update the restaurant
-     * @param restaurant
+     * Update the user
+     * @param user
      */
 
-    public void updateRestaurant(restaurants restaurant) {
+    public void updateUser(Users user) {
         Session session = SessionFactoryProvider.getSessionFactory().openSession();
         Transaction tx = null;
         try{
             tx = session.beginTransaction();
-            restaurants changeRestaurant =
-                    (restaurants)session.get(restaurants.class, restaurant.getRestaurantName());
-            changeRestaurant.setRestaurantName(restaurant.getRestaurantName());
-            session.update(changeRestaurant);
+            Users changeUser =
+                    (Users)session.get(Users.class, user.getUserid());
+            changeUser.setFirstName(user.getFirstName());
+            changeUser.setLastName(user.getLastName());
+            changeUser.setUserid(user.getUserid());
+            changeUser.setUserRole(user.getUserRole());
+            changeUser.setUserPassword(user.getUserPassword());
+            session.update(changeUser);
             tx.commit();
         }catch (HibernateException e) {
             if (tx!=null) tx.rollback();
