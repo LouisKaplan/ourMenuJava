@@ -96,3 +96,60 @@
 2017-03-05 14:14:13,031 2473 [main] ERROR org.hibernate.engine.jdbc.spi.SqlExceptionHelper  - Table 'our_menu.users_usersMenuItem' doesn't exist
 2017-03-05 14:14:13,038 2480 [main] WARN  org.hibernate.engine.jdbc.spi.SqlExceptionHelper  - SQL Warning Code: 1146, SQLState: 42S02
 2017-03-05 14:14:13,038 2480 [main] WARN  org.hibernate.engine.jdbc.spi.SqlExceptionHelper  - Table 'our_menu.users_usersMenuItem' doesn't exist
+2017-03-05 14:37:01,825 0    [main] WARN  org.hibernate.engine.jdbc.connections.internal.DriverManagerConnectionProviderImpl  - HHH000402: Using Hibernate built-in connection pool (not for production use!)
+2017-03-05 14:46:34,018 0    [main] WARN  org.hibernate.engine.jdbc.connections.internal.DriverManagerConnectionProviderImpl  - HHH000402: Using Hibernate built-in connection pool (not for production use!)
+2017-03-05 14:47:54,729 0    [main] WARN  org.hibernate.engine.jdbc.connections.internal.DriverManagerConnectionProviderImpl  - HHH000402: Using Hibernate built-in connection pool (not for production use!)
+2017-03-05 14:48:18,436 0    [main] WARN  org.hibernate.engine.jdbc.connections.internal.DriverManagerConnectionProviderImpl  - HHH000402: Using Hibernate built-in connection pool (not for production use!)
+2017-03-05 14:48:21,514 3078 [main] WARN  org.hibernate.engine.jdbc.spi.SqlExceptionHelper  - SQL Error: 1146, SQLState: 42S02
+2017-03-05 14:48:21,515 3079 [main] ERROR org.hibernate.engine.jdbc.spi.SqlExceptionHelper  - Table 'our_menu.users_usersMenuItem' doesn't exist
+2017-03-05 14:48:21,517 3081 [main] WARN  org.hibernate.engine.jdbc.spi.SqlExceptionHelper  - SQL Warning Code: 1146, SQLState: 42S02
+2017-03-05 14:48:21,517 3081 [main] WARN  org.hibernate.engine.jdbc.spi.SqlExceptionHelper  - Table 'our_menu.users_usersMenuItem' doesn't exist
+2017-03-05 14:50:38,098 0    [main] WARN  org.hibernate.engine.jdbc.connections.internal.DriverManagerConnectionProviderImpl  - HHH000402: Using Hibernate built-in connection pool (not for production use!)
+2017-03-05 15:29:14,210 0    [main] WARN  org.hibernate.engine.jdbc.connections.internal.DriverManagerConnectionProviderImpl  - HHH000402: Using Hibernate built-in connection pool (not for production use!)
+2017-03-05 15:29:16,853 2643 [main] WARN  org.hibernate.engine.jdbc.spi.SqlExceptionHelper  - SQL Error: 1146, SQLState: 42S02
+2017-03-05 15:29:16,854 2644 [main] ERROR org.hibernate.engine.jdbc.spi.SqlExceptionHelper  - Table 'our_menu.users_usersMenuItem' doesn't exist
+2017-03-05 15:29:16,861 2651 [main] WARN  org.hibernate.engine.jdbc.spi.SqlExceptionHelper  - SQL Warning Code: 1146, SQLState: 42S02
+2017-03-05 15:29:16,862 2652 [main] WARN  org.hibernate.engine.jdbc.spi.SqlExceptionHelper  - Table 'our_menu.users_usersMenuItem' doesn't exist
+2017-03-05 15:29:17,014 2804 [main] WARN  org.hibernate.engine.jdbc.spi.SqlExceptionHelper  - SQL Error: 1146, SQLState: 42S02
+2017-03-05 15:29:17,017 2807 [main] ERROR org.hibernate.engine.jdbc.spi.SqlExceptionHelper  - Table 'our_menu.users_usersMenuItem' doesn't exist
+2017-03-05 15:29:17,020 2810 [main] WARN  org.hibernate.engine.jdbc.spi.SqlExceptionHelper  - SQL Warning Code: 1146, SQLState: 42S02
+2017-03-05 15:29:17,020 2810 [main] WARN  org.hibernate.engine.jdbc.spi.SqlExceptionHelper  - Table 'our_menu.users_usersMenuItem' doesn't exist
+2017-03-05 15:29:17,087 2877 [main] WARN  org.hibernate.engine.jdbc.spi.SqlExceptionHelper  - SQL Error: 1146, SQLState: 42S02
+2017-03-05 15:29:17,087 2877 [main] ERROR org.hibernate.engine.jdbc.spi.SqlExceptionHelper  - Table 'our_menu.users_usersMenuItem' doesn't exist
+2017-03-05 15:29:17,088 2878 [main] WARN  org.hibernate.engine.jdbc.spi.SqlExceptionHelper  - SQL Warning Code: 1146, SQLState: 42S02
+2017-03-05 15:29:17,088 2878 [main] WARN  org.hibernate.engine.jdbc.spi.SqlExceptionHelper  - Table 'our_menu.users_usersMenuItem' doesn't exist
+2017-03-05 15:29:35,196 0    [main] WARN  org.hibernate.engine.jdbc.connections.internal.DriverManagerConnectionProviderImpl  - HHH000402: Using Hibernate built-in connection pool (not for production use!)
+2017-03-05 15:38:44,615 0    [main] WARN  org.hibernate.engine.jdbc.connections.internal.DriverManagerConnectionProviderImpl  - HHH000402: Using Hibernate built-in connection pool (not for production use!)
+2017-03-05 15:38:57,805 0    [main] WARN  org.hibernate.engine.jdbc.connections.internal.DriverManagerConnectionProviderImpl  - HHH000402: Using Hibernate built-in connection pool (not for production use!)
+2017-03-05 15:39:23,320 0    [main] WARN  org.hibernate.engine.jdbc.connections.internal.DriverManagerConnectionProviderImpl  - HHH000402: Using Hibernate built-in connection pool (not for production use!)
+2017-03-05 15:40:33,762 0    [main] WARN  org.hibernate.engine.jdbc.connections.internal.DriverManagerConnectionProviderImpl  - HHH000402: Using Hibernate built-in connection pool (not for production use!)
+2017-03-05 15:40:36,202 2440 [main] WARN  org.hibernate.engine.jdbc.spi.SqlExceptionHelper  - SQL Error: 1146, SQLState: 42S02
+2017-03-05 15:40:36,203 2441 [main] ERROR org.hibernate.engine.jdbc.spi.SqlExceptionHelper  - Table 'our_menu.menuItems_usersMenuItem' doesn't exist
+2017-03-05 15:40:36,205 2443 [main] WARN  org.hibernate.engine.jdbc.spi.SqlExceptionHelper  - SQL Warning Code: 1146, SQLState: 42S02
+2017-03-05 15:40:36,206 2444 [main] WARN  org.hibernate.engine.jdbc.spi.SqlExceptionHelper  - Table 'our_menu.menuItems_usersMenuItem' doesn't exist
+2017-03-05 15:40:36,272 2510 [main] WARN  org.hibernate.engine.jdbc.spi.SqlExceptionHelper  - SQL Error: 1146, SQLState: 42S02
+2017-03-05 15:40:36,272 2510 [main] ERROR org.hibernate.engine.jdbc.spi.SqlExceptionHelper  - Table 'our_menu.menuItems_usersMenuItem' doesn't exist
+2017-03-05 15:40:36,274 2512 [main] WARN  org.hibernate.engine.jdbc.spi.SqlExceptionHelper  - SQL Warning Code: 1146, SQLState: 42S02
+2017-03-05 15:40:36,274 2512 [main] WARN  org.hibernate.engine.jdbc.spi.SqlExceptionHelper  - Table 'our_menu.menuItems_usersMenuItem' doesn't exist
+2017-03-05 15:40:36,416 2654 [main] WARN  org.hibernate.engine.jdbc.spi.SqlExceptionHelper  - SQL Error: 1146, SQLState: 42S02
+2017-03-05 15:40:36,417 2655 [main] ERROR org.hibernate.engine.jdbc.spi.SqlExceptionHelper  - Table 'our_menu.menuItems_usersMenuItem' doesn't exist
+2017-03-05 15:40:36,417 2655 [main] WARN  org.hibernate.engine.jdbc.spi.SqlExceptionHelper  - SQL Warning Code: 1146, SQLState: 42S02
+2017-03-05 15:40:36,418 2656 [main] WARN  org.hibernate.engine.jdbc.spi.SqlExceptionHelper  - Table 'our_menu.menuItems_usersMenuItem' doesn't exist
+2017-03-05 15:41:04,170 0    [main] WARN  org.hibernate.engine.jdbc.connections.internal.DriverManagerConnectionProviderImpl  - HHH000402: Using Hibernate built-in connection pool (not for production use!)
+2017-03-05 15:41:05,821 1651 [main] WARN  org.hibernate.engine.jdbc.connections.internal.DriverManagerConnectionProviderImpl  - HHH000402: Using Hibernate built-in connection pool (not for production use!)
+2017-03-05 15:41:05,965 1795 [main] WARN  org.hibernate.engine.jdbc.connections.internal.DriverManagerConnectionProviderImpl  - HHH000402: Using Hibernate built-in connection pool (not for production use!)
+2017-03-05 15:41:06,142 1972 [main] WARN  org.hibernate.engine.jdbc.connections.internal.DriverManagerConnectionProviderImpl  - HHH000402: Using Hibernate built-in connection pool (not for production use!)
+2017-03-05 15:41:06,216 2046 [main] WARN  org.hibernate.engine.jdbc.connections.internal.DriverManagerConnectionProviderImpl  - HHH000402: Using Hibernate built-in connection pool (not for production use!)
+2017-03-05 15:42:44,513 1    [main] WARN  org.hibernate.engine.jdbc.connections.internal.DriverManagerConnectionProviderImpl  - HHH000402: Using Hibernate built-in connection pool (not for production use!)
+2017-03-05 15:43:01,853 0    [main] WARN  org.hibernate.engine.jdbc.connections.internal.DriverManagerConnectionProviderImpl  - HHH000402: Using Hibernate built-in connection pool (not for production use!)
+2017-03-05 15:44:14,635 0    [main] WARN  org.hibernate.engine.jdbc.connections.internal.DriverManagerConnectionProviderImpl  - HHH000402: Using Hibernate built-in connection pool (not for production use!)
+2017-03-05 15:47:14,952 0    [main] WARN  org.hibernate.engine.jdbc.connections.internal.DriverManagerConnectionProviderImpl  - HHH000402: Using Hibernate built-in connection pool (not for production use!)
+2017-03-05 15:47:27,525 0    [main] WARN  org.hibernate.engine.jdbc.connections.internal.DriverManagerConnectionProviderImpl  - HHH000402: Using Hibernate built-in connection pool (not for production use!)
+2017-03-05 15:52:06,918 0    [main] WARN  org.hibernate.engine.jdbc.connections.internal.DriverManagerConnectionProviderImpl  - HHH000402: Using Hibernate built-in connection pool (not for production use!)
+2017-03-05 15:52:35,040 0    [main] WARN  org.hibernate.engine.jdbc.connections.internal.DriverManagerConnectionProviderImpl  - HHH000402: Using Hibernate built-in connection pool (not for production use!)
+2017-03-05 16:06:09,862 0    [main] WARN  org.hibernate.engine.jdbc.connections.internal.DriverManagerConnectionProviderImpl  - HHH000402: Using Hibernate built-in connection pool (not for production use!)
+2017-03-05 16:09:40,197 0    [main] WARN  org.hibernate.engine.jdbc.connections.internal.DriverManagerConnectionProviderImpl  - HHH000402: Using Hibernate built-in connection pool (not for production use!)
+2017-03-05 16:10:49,702 0    [main] WARN  org.hibernate.engine.jdbc.connections.internal.DriverManagerConnectionProviderImpl  - HHH000402: Using Hibernate built-in connection pool (not for production use!)
+2017-03-05 16:12:22,366 0    [main] WARN  org.hibernate.engine.jdbc.connections.internal.DriverManagerConnectionProviderImpl  - HHH000402: Using Hibernate built-in connection pool (not for production use!)
+2017-03-05 16:14:28,218 0    [main] WARN  org.hibernate.engine.jdbc.connections.internal.DriverManagerConnectionProviderImpl  - HHH000402: Using Hibernate built-in connection pool (not for production use!)
+2017-03-05 16:14:38,084 0    [main] WARN  org.hibernate.engine.jdbc.connections.internal.DriverManagerConnectionProviderImpl  - HHH000402: Using Hibernate built-in connection pool (not for production use!)

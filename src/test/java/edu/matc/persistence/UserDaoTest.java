@@ -53,7 +53,6 @@ public class UserDaoTest {
     @Test
     public void addUser() throws Exception {
         newUserTestCase = dao.addUser(testUser);
-        assertNotEquals("user not added", 1, newUserTestCase);
         assertEquals("actor first name not added", testUser.getFirstName(), dao.getUser(newUserTestCase).getFirstName());
         assertEquals("actor last name not added", testUser.getLastName(), dao.getUser(newUserTestCase).getLastName());
     }

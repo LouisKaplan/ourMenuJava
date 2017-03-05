@@ -11,26 +11,60 @@ import java.util.Set;
 @Table(name="users")
 public class Users implements Serializable{
 
-    @ElementCollection
+    private int userid;
+    private String firstName;
+    private String lastName;
+    private String userRole;
+    private String userPassword;
     private Set<UsersMenuItem> usersMenuItem = new HashSet<UsersMenuItem>(0);
 
     @Id
     @GeneratedValue(generator = "increment")
     @GenericGenerator(name = "increment", strategy = "increment")
     @Column(name = "userID")
-    private int userid;
+    public int getUserid() {
+        return userid;
+    }
+
+    public void setUserid(int userid) {
+        this.userid = userid;
+    }
 
     @Column(name = "userFirstName")
-    private String firstName;
+    public String getFirstName() {
+        return firstName;
+    }
+
+    public void setFirstName(String firstName) {
+        this.firstName = firstName;
+    }
 
     @Column(name = "userLastName")
-    private String lastName;
+    public String getLastName() {
+        return lastName;
+    }
+
+    public void setLastName(String lastName) {
+        this.lastName = lastName;
+    }
 
     @Column(name = "userRole")
-    private String userRole;
+    public String getUserRole(){
+        return userRole;
+    }
+
+    public void setUserRole(String userRole) {
+        this.userRole = userRole;
+    }
 
     @Column(name = "userPassword")
-    private String userPassword;
+    public String getUserPassword(){
+        return userPassword;
+    }
+
+    public void setUserPassword(String userPassword) {
+        this.userPassword = userPassword;
+    }
 
     public Users() {
     }
@@ -45,59 +79,7 @@ public class Users implements Serializable{
         this.userPassword = userPassword;
     }
 
-    public Users(String firstName,
-                 String lastName,
-                 String userRole,
-                 String userPassword,
-                 Set<UsersMenuItem> usersMenuItem) {
-        this.firstName = firstName;
-        this.lastName = lastName;
-        this.userRole = userRole;
-        this.userPassword = userPassword;
-        this.usersMenuItem = usersMenuItem;
-    }
-
-    public int getUserid() {
-        return userid;
-    }
-
-    public void setUserid(int userid) {
-        this.userid = userid;
-    }
-
-    public String getFirstName() {
-        return firstName;
-    }
-
-    public void setFirstName(String firstName) {
-        this.firstName = firstName;
-    }
-
-    public String getLastName() {
-        return lastName;
-    }
-
-    public void setLastName(String lastName) {
-        this.lastName = lastName;
-    }
-
-    public String getUserRole(){
-        return userRole;
-    }
-
-    public void setUserRole(String userRole) {
-        this.userRole = userRole;
-    }
-
-    public String getUserPassword(){
-        return userPassword;
-    }
-
-    public void setUserPassword(String userPassword) {
-        this.userPassword = userPassword;
-    }
-
-    @OneToMany(fetch = FetchType.LAZY, mappedBy = "pk.users", cascade=CascadeType.ALL)
+    @OneToMany(fetch = FetchType.LAZY, mappedBy = "pk.users")
     public Set<UsersMenuItem> getUsersMenuItem(){
         return this.usersMenuItem;
     }

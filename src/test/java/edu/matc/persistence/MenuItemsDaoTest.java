@@ -52,7 +52,6 @@ public class MenuItemsDaoTest {
     @Test
     public void addMenuItem() throws Exception {
         menuItemTestID = dao.addMenuItem(testMenuItem);
-        assertNotEquals("user not added", 1, menuItemTestID);
         assertEquals("Item description not added", testMenuItem.getItemDescription(), dao.getMenuItem(menuItemTestID).getItemDescription());
         assertEquals("Item type not added", testMenuItem.getItemType(), dao.getMenuItem(menuItemTestID).getItemType());
     }

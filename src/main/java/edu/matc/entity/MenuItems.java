@@ -11,23 +11,52 @@ import java.util.Set;
 @Table(name="menuItems")
 public class MenuItems implements Serializable{
 
-    @ElementCollection
+    private int menuItemID;
+    private String restaurantName;
+    private String itemDescription;
+    private String itemType;
     private Set<UsersMenuItem> usersMenuItem = new HashSet<UsersMenuItem>(0);
 
     @Id
     @GeneratedValue(generator = "increment")
     @GenericGenerator(name = "increment", strategy = "increment")
     @Column(name = "menuItemID")
-    private int menuItemID;
+    public int getMenuItemID() {
+        return menuItemID;
+    }
+
+    public void setMenuItemID(int menuItemID) {
+        this.menuItemID = menuItemID;
+    }
+
 
     @Column(name = "restaurantName")
-    private String restaurantName;
+    public String getRestaurantName() {
+        return restaurantName;
+    }
+
+    public void setRestaurantName(String restaurantName) {
+        this.restaurantName = restaurantName;
+    }
+
 
     @Column(name = "itemDescription")
-    private String itemDescription;
+    public String getItemDescription() {
+        return itemDescription;
+    }
+
+    public void setItemDescription(String itemDescription) {
+        this.itemDescription = itemDescription;
+    }
 
     @Column(name = "itemType")
-    private String itemType;
+    public String getItemType() {
+        return itemType;
+    }
+
+    public void setItemType(String itemType) {
+        this.itemType = itemType;
+    }
 
     public MenuItems() {
     }
@@ -40,49 +69,7 @@ public class MenuItems implements Serializable{
         this.itemType = itemType;
     }
 
-    public MenuItems(String restaurantName,
-                     String itemDescription,
-                     String itemType,
-                     Set<UsersMenuItem> usersMenuItem) {
-        this.restaurantName = restaurantName;
-        this.itemDescription = itemDescription;
-        this.itemType = itemType;
-        this.usersMenuItem = usersMenuItem;
-    }
-
-    public int getMenuItemID() {
-        return menuItemID;
-    }
-
-    public void setMenuItemID(int userid) {
-        this.menuItemID = menuItemID;
-    }
-
-    public String getRestaurantName() {
-        return restaurantName;
-    }
-
-    public void setRestaurantName(String restaurantName) {
-        this.restaurantName = restaurantName;
-    }
-
-    public String getItemDescription() {
-        return itemDescription;
-    }
-
-    public void setItemDescription(String itemDescription) {
-        this.itemDescription = itemDescription;
-    }
-
-    public String getItemType() {
-        return itemType;
-    }
-
-    public void setItemType(String itemType) {
-        this.itemType = itemType;
-    }
-
-    @OneToMany(fetch = FetchType.LAZY, mappedBy = "pk.menuItems", cascade=CascadeType.ALL)
+    @OneToMany(fetch = FetchType.LAZY, mappedBy = "pk.menuItems")
     public Set<UsersMenuItem> getUsersMenuItem(){
         return this.usersMenuItem;
     }
