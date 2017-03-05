@@ -10,11 +10,6 @@ import java.util.List;
 
 import static org.junit.Assert.*;
 
-/**
- * Created on 9/13/16.
- *
- * @author pwaite
- */
 public class UserDaoTest {
 
     private final Logger log = Logger.getLogger(this.getClass());

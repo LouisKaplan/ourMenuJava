@@ -23,6 +23,7 @@
         <!-- List the annotated entity class/es -->
         <mapping class="edu.matc.entity.Users" />
         <mapping class="edu.matc.entity.Restaurants" />
+        <mapping class="edu.matc.entity.MenuItems" />
 
     </session-factory>
 

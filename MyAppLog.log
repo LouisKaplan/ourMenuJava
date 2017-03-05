@@ -35,3 +35,19 @@
 2017-03-04 18:59:32,433 0    [main] WARN  org.hibernate.engine.jdbc.connections.internal.DriverManagerConnectionProviderImpl  - HHH000402: Using Hibernate built-in connection pool (not for production use!)
 2017-03-04 19:01:03,435 0    [main] WARN  org.hibernate.engine.jdbc.connections.internal.DriverManagerConnectionProviderImpl  - HHH000402: Using Hibernate built-in connection pool (not for production use!)
 2017-03-04 19:01:16,436 4    [main] WARN  org.hibernate.engine.jdbc.connections.internal.DriverManagerConnectionProviderImpl  - HHH000402: Using Hibernate built-in connection pool (not for production use!)
+2017-03-04 23:05:35,165 0    [main] WARN  org.hibernate.engine.jdbc.connections.internal.DriverManagerConnectionProviderImpl  - HHH000402: Using Hibernate built-in connection pool (not for production use!)
+2017-03-04 23:09:04,413 0    [main] WARN  org.hibernate.engine.jdbc.connections.internal.DriverManagerConnectionProviderImpl  - HHH000402: Using Hibernate built-in connection pool (not for production use!)
+2017-03-04 23:18:01,225 0    [main] WARN  org.hibernate.engine.jdbc.connections.internal.DriverManagerConnectionProviderImpl  - HHH000402: Using Hibernate built-in connection pool (not for production use!)
+2017-03-04 23:18:03,542 2317 [main] WARN  org.hibernate.engine.jdbc.spi.SqlExceptionHelper  - SQL Error: 1452, SQLState: 23000
+2017-03-04 23:18:03,544 2319 [main] ERROR org.hibernate.engine.jdbc.spi.SqlExceptionHelper  - Cannot add or update a child row: a foreign key constraint fails (`our_menu`.`menuItems`, CONSTRAINT `menuItems_ibfk_1` FOREIGN KEY (`restaurantName`) REFERENCES `restaurants` (`restaurantName`))
+2017-03-04 23:18:03,550 2325 [main] WARN  org.hibernate.engine.jdbc.spi.SqlExceptionHelper  - SQL Warning Code: 1452, SQLState: 23000
+2017-03-04 23:18:03,550 2325 [main] WARN  org.hibernate.engine.jdbc.spi.SqlExceptionHelper  - Cannot add or update a child row: a foreign key constraint fails (`our_menu`.`menuItems`, CONSTRAINT `menuItems_ibfk_1` FOREIGN KEY (`restaurantName`) REFERENCES `restaurants` (`restaurantName`))
+2017-03-04 23:21:50,305 0    [main] WARN  org.hibernate.engine.jdbc.connections.internal.DriverManagerConnectionProviderImpl  - HHH000402: Using Hibernate built-in connection pool (not for production use!)
+2017-03-04 23:21:52,842 2537 [main] WARN  org.hibernate.engine.jdbc.spi.SqlExceptionHelper  - SQL Error: 1452, SQLState: 23000
+2017-03-04 23:21:52,843 2538 [main] ERROR org.hibernate.engine.jdbc.spi.SqlExceptionHelper  - Cannot add or update a child row: a foreign key constraint fails (`our_menu`.`menuItems`, CONSTRAINT `menuItems_ibfk_1` FOREIGN KEY (`restaurantName`) REFERENCES `restaurants` (`restaurantName`))
+2017-03-04 23:21:52,845 2540 [main] WARN  org.hibernate.engine.jdbc.spi.SqlExceptionHelper  - SQL Warning Code: 1452, SQLState: 23000
+2017-03-04 23:21:52,846 2541 [main] WARN  org.hibernate.engine.jdbc.spi.SqlExceptionHelper  - Cannot add or update a child row: a foreign key constraint fails (`our_menu`.`menuItems`, CONSTRAINT `menuItems_ibfk_1` FOREIGN KEY (`restaurantName`) REFERENCES `restaurants` (`restaurantName`))
+2017-03-04 23:25:08,389 0    [main] WARN  org.hibernate.engine.jdbc.connections.internal.DriverManagerConnectionProviderImpl  - HHH000402: Using Hibernate built-in connection pool (not for production use!)
+2017-03-04 23:49:43,789 0    [main] WARN  org.hibernate.engine.jdbc.connections.internal.DriverManagerConnectionProviderImpl  - HHH000402: Using Hibernate built-in connection pool (not for production use!)
+2017-03-04 23:58:20,830 0    [main] WARN  org.hibernate.engine.jdbc.connections.internal.DriverManagerConnectionProviderImpl  - HHH000402: Using Hibernate built-in connection pool (not for production use!)
+2017-03-04 23:58:31,252 1    [main] WARN  org.hibernate.engine.jdbc.connections.internal.DriverManagerConnectionProviderImpl  - HHH000402: Using Hibernate built-in connection pool (not for production use!)

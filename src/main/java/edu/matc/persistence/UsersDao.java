@@ -19,10 +19,10 @@ public class UsersDao {
      * @return All Users
      */
     public List<Users> getAllUsers() {
-        List<Users> Users = new ArrayList<Users>();
+        List<Users> users = new ArrayList<Users>();
         Session session = SessionFactoryProvider.getSessionFactory().openSession();
-        Users = session.createCriteria(Users.class).list();
-        return Users;
+        users = session.createCriteria(Users.class).list();
+        return users;
     }
 
     /**
