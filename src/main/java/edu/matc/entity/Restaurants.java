@@ -1,21 +1,25 @@
 package edu.matc.entity;
 
-import org.hibernate.annotations.GenericGenerator;
-
 import javax.persistence.*;
 
 @Entity
 @Table(name="restaurants")
 public class Restaurants {
 
+    @Id
     @Column(name = "restaurantName")
     private String restaurantName;
+
+    @Column(name = "restaurantType")
+    private String restaurantType;
 
     public Restaurants() {
     }
 
-    public Restaurants(String restaurantName) {
+    public Restaurants(String restaurantName,
+                       String restaurantType) {
         this.restaurantName = restaurantName;
+        this.restaurantType = restaurantType;
     }
 
     public String getRestaurantName() {
@@ -26,9 +30,14 @@ public class Restaurants {
         this.restaurantName = restaurantName;
     }
 
+    public String getRestaurantType() { return restaurantType; }
+
+    public void setRestaurantType(String restaurantType) { this.restaurantType = restaurantType; }
+
     @Override
     public String toString() {
         return "Restaurant{" +
-                "restaurantName='" + restaurantName + '}';
+                "restaurantName='" + restaurantName +
+                "restaurantType='" + restaurantType + '}';
     }
 }

@@ -2,6 +2,7 @@ package edu.matc.persistence;
 
 import edu.matc.entity.Users;
 import org.apache.log4j.Logger;
+import org.junit.After;
 import org.junit.Before;
 import org.junit.Test;
 
@@ -19,10 +20,25 @@ public class UserDaoTest {
     private final Logger log = Logger.getLogger(this.getClass());
 
     UsersDao dao;
+    Users testUser;
+    int newUserTestCase = 0;
 
     @Before
     public void setup() {
         dao = new UsersDao();
+        testUser = new Users();
+
+        testUser.setFirstName("TestCaseFirst");
+        testUser.setLastName("TestCaseLast");
+        testUser.setUserRole("Ghost");
+        testUser.setUserPassword("TestPassword");
+    }
+
+    @After
+    public void cleanup(){
+        if (newUserTestCase != 0) {
+            dao.deleteUser(newUserTestCase);
+        }
     }
 
     @Test
@@ -32,44 +48,38 @@ public class UserDaoTest {
         log.info("all users: " + users);
     }
 
-
     @Test
     public void getUser() throws Exception {
-        Users testUser = dao.getUser(1);
-        assertTrue("Did not find correct last name", testUser.getLastName().equals("TestLast"));
-        log.info("user by ID: " + testUser.getLastName());
-
+        Users findUser = dao.getUser(1);
+        assertTrue("Did not find correct last name", findUser.getLastName().equals("TestLast"));
+        log.info("user by ID: " + findUser.getLastName());
     }
 
-/*
     @Test
     public void addUser() throws Exception {
-        User testUser = new User();
-        testUser.setFirstName("DaoFirst");
-        testUser.setLastName("DaoLast");
-        LocalDate daoDate = LocalDate.parse("1986-08-15");
-        testUser.setDateOfBirth(daoDate);
-        int userId = dao.addUser(testUser);
-        assertTrue("name match not found", dao.getUser(userId).getLastName().equals("DaoLast"));
+        newUserTestCase = dao.addUser(testUser);
+        assertNotEquals("user not added", 1, newUserTestCase);
+        assertEquals("actor first name not added", testUser.getFirstName(), dao.getUser(newUserTestCase).getFirstName());
+        assertEquals("actor last name not added", testUser.getLastName(), dao.getUser(newUserTestCase).getLastName());
     }
 
     @Test
     public void updateUser() throws Exception {
+        newUserTestCase = dao.addUser(testUser);
 
-        User testUser = dao.getUser(7);
-        testUser.setFirstName("updated");
+        testUser.setFirstName("FirstInProgress");
+        testUser.setLastName("LastInProgress");
+
         dao.updateUser(testUser);
-
-        User updatedUser = dao.getUser(7);
-        assertTrue("Did not find correct last name", updatedUser.getFirstName().equals("updated"));
+        assertEquals("actor first name not updated", testUser.getFirstName(), dao.getUser(newUserTestCase).getFirstName());
+        assertEquals("actor last name not updated", testUser.getLastName(), dao.getUser(newUserTestCase).getLastName());
     }
 
     @Test
     public void deleteUser() throws Exception {
-        int testId = 7;
-        dao.deleteUser(testId);
-        assertNull("user was still found", dao.getUser(testId));
+        dao.addUser(testUser);
+        dao.deleteUser(testUser.getUserid());
+        assertNull("user was still found", dao.getUser(testUser.getUserid()));
     }
-    */
 
 }

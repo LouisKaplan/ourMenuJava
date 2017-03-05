@@ -6,8 +6,6 @@ import org.hibernate.HibernateException;
 import org.hibernate.Session;
 import org.hibernate.Transaction;
 
-import javax.persistence.criteria.CriteriaBuilder;
-import javax.persistence.criteria.CriteriaQuery;
 import java.util.ArrayList;
 import java.util.List;
 
@@ -42,26 +40,25 @@ public class UsersDao {
     /**
      * add a user
      *
-     * @param firstName, lastName, userRole, userPassword
+     * @param user
      * @return the id of the inserted record
      */
 
-    public int addUser(String firstName, String lastName, String userRole, String userPassword) {
+    public int addUser(Users user) {
         Session session = SessionFactoryProvider.getSessionFactory().openSession();
         Transaction tx = null;
-        Integer id = 0;
+        int id = 0;
         try{
             tx = session.beginTransaction();
-            Users user = new Users(firstName, lastName, userRole, userPassword);
-            id = (Integer) session.save(user);
+            id = (Integer)session.save(user);
             tx.commit();
         }catch (HibernateException e) {
             if (tx!=null) tx.rollback();
             e.printStackTrace();
         }finally {
             session.close();
-            return id;
         }
+        return id;
     }
 
     /**
@@ -73,8 +70,7 @@ public class UsersDao {
         Transaction tx = null;
         try{
             tx = session.beginTransaction();
-            Users user =
-                    (Users)session.get(Users.class, id);
+            Users user = (Users)session.get(Users.class, id);
             session.delete(user);
             tx.commit();
         }catch (HibernateException e) {
@@ -95,14 +91,7 @@ public class UsersDao {
         Transaction tx = null;
         try{
             tx = session.beginTransaction();
-            Users changeUser =
-                    (Users)session.get(Users.class, user.getUserid());
-            changeUser.setFirstName(user.getFirstName());
-            changeUser.setLastName(user.getLastName());
-            changeUser.setUserid(user.getUserid());
-            changeUser.setUserRole(user.getUserRole());
-            changeUser.setUserPassword(user.getUserPassword());
-            session.update(changeUser);
+            session.update(user);
             tx.commit();
         }catch (HibernateException e) {
             if (tx!=null) tx.rollback();

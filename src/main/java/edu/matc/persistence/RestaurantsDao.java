@@ -43,21 +43,21 @@ public class RestaurantsDao {
      * @param restaurant
      * @return the name of the inserted restaurant
      */
-    public int addRestaurant(Restaurants restaurant) {
+    public String addRestaurant(Restaurants restaurant) {
         Session session = SessionFactoryProvider.getSessionFactory().openSession();
         Transaction tx = null;
-        int id = 0;
+        String id = null;
         try{
             tx = session.beginTransaction();
-            id = (Integer) session.save(restaurant);
+            id = (String) session.save(restaurant);
             tx.commit();
         }catch (HibernateException e) {
             if (tx!=null) tx.rollback();
             e.printStackTrace();
         }finally {
             session.close();
-            return id;
         }
+        return id;
     }
 
     /**
@@ -69,8 +69,7 @@ public class RestaurantsDao {
         Transaction tx = null;
         try{
             tx = session.beginTransaction();
-            Restaurants restaurant =
-                    (Restaurants) session.get(Restaurants.class, restaurantName);
+            Restaurants restaurant = (Restaurants) session.get(Restaurants.class, restaurantName);
             session.delete(restaurant);
             tx.commit();
         }catch (HibernateException e) {
@@ -79,7 +78,6 @@ public class RestaurantsDao {
         }finally {
             session.close();
         }
-
     }
 
     /**
@@ -92,10 +90,7 @@ public class RestaurantsDao {
         Transaction tx = null;
         try{
             tx = session.beginTransaction();
-            Restaurants changeRestaurant =
-                    (Restaurants)session.get(Restaurants.class, restaurant.getRestaurantName());
-            changeRestaurant.setRestaurantName(restaurant.getRestaurantName());
-            session.update(changeRestaurant);
+            session.update(restaurant);
             tx.commit();
         }catch (HibernateException e) {
             if (tx!=null) tx.rollback();
