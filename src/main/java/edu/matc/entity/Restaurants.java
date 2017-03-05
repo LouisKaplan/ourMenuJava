@@ -1,10 +1,11 @@
 package edu.matc.entity;
 
 import javax.persistence.*;
+import java.io.Serializable;
 
 @Entity
 @Table(name="restaurants")
-public class Restaurants {
+public class Restaurants implements Serializable{
 
     @Id
     @Column(name = "restaurantName")

@@ -3,10 +3,16 @@ package edu.matc.entity;
 import org.hibernate.annotations.GenericGenerator;
 
 import javax.persistence.*;
+import java.io.Serializable;
+import java.util.HashSet;
+import java.util.Set;
 
 @Entity
 @Table(name="users")
-public class Users {
+public class Users implements Serializable{
+
+    @ElementCollection
+    private Set<UsersMenuItem> usersMenuItem = new HashSet<UsersMenuItem>(0);
 
     @Id
     @GeneratedValue(generator = "increment")
@@ -37,6 +43,18 @@ public class Users {
         this.lastName = lastName;
         this.userRole = userRole;
         this.userPassword = userPassword;
+    }
+
+    public Users(String firstName,
+                 String lastName,
+                 String userRole,
+                 String userPassword,
+                 Set<UsersMenuItem> usersMenuItem) {
+        this.firstName = firstName;
+        this.lastName = lastName;
+        this.userRole = userRole;
+        this.userPassword = userPassword;
+        this.usersMenuItem = usersMenuItem;
     }
 
     public int getUserid() {
@@ -77,6 +95,15 @@ public class Users {
 
     public void setUserPassword(String userPassword) {
         this.userPassword = userPassword;
+    }
+
+    @OneToMany(fetch = FetchType.LAZY, mappedBy = "pk.users", cascade=CascadeType.ALL)
+    public Set<UsersMenuItem> getUsersMenuItem(){
+        return this.usersMenuItem;
+    }
+
+    public void setUsersMenuItem(Set<UsersMenuItem> usersMenuItem) {
+        this.usersMenuItem = usersMenuItem;
     }
 
     @Override

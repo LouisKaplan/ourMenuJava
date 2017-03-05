@@ -21,7 +21,13 @@ public class UsersDao {
     public List<Users> getAllUsers() {
         List<Users> users = new ArrayList<Users>();
         Session session = SessionFactoryProvider.getSessionFactory().openSession();
-        users = session.createCriteria(Users.class).list();
+        try {
+            users = session.createCriteria(Users.class).list();
+        } catch (HibernateException e) {
+            log.error("Hibernate Exception", e);
+        }finally {
+            session.close();
+        }
         return users;
     }
 
@@ -33,7 +39,15 @@ public class UsersDao {
      */
     public Users getUser(int id) {
         Session session = SessionFactoryProvider.getSessionFactory().openSession();
-        Users user = (Users) session.get(Users.class, id);
+        Users user = null;
+        try {
+            user = (Users) session.get(Users.class, id);
+            return user;
+        } catch (HibernateException e) {
+            log.error("Hibernate Exception", e);
+        } finally {
+            session.close();
+        }
         return user;
     }
 
