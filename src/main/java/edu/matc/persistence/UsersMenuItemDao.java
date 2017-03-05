@@ -1,7 +1,104 @@
 package edu.matc.persistence;
 
-/**
- * Created by student on 3/5/17.
- */
+import edu.matc.entity.UsersMenuItem;
+import edu.matc.entity.UsersMenuItemID;
+import org.apache.log4j.Logger;
+import org.hibernate.HibernateException;
+import org.hibernate.Session;
+import org.hibernate.Transaction;
+
+import java.util.ArrayList;
+import java.util.List;
+
+
 public class UsersMenuItemDao {
+
+    private final Logger log = Logger.getLogger(this.getClass());
+
+    /** Return a list of all MenuItems
+     *
+     * @return All MenuItems
+     */
+    public List<MenuItems> getAllMenuItems() {
+        List<MenuItems> menuItems = new ArrayList<MenuItems>();
+        Session session = SessionFactoryProvider.getSessionFactory().openSession();
+        menuItems = session.createCriteria(MenuItems.class).list();
+        return menuItems;
+    }
+
+    /**
+     * retrieve a menuItem given its ID
+     *
+     * @param id the menuItem's id
+     * @return menuItem
+     */
+    public MenuItems getMenuItem(int id) {
+        Session session = SessionFactoryProvider.getSessionFactory().openSession();
+        MenuItems menuItem = (MenuItems) session.get(MenuItems.class, id);
+        return menuItem;
+    }
+
+    /**
+     * add a user
+     *
+     * @param menuItem
+     * @return the id of the menuItem
+     */
+
+    public int addMenuItem(MenuItems menuItem) {
+        Session session = SessionFactoryProvider.getSessionFactory().openSession();
+        Transaction tx = null;
+        int id = 0;
+        try{
+            tx = session.beginTransaction();
+            id = (Integer)session.save(menuItem);
+            tx.commit();
+        }catch (HibernateException e) {
+            if (tx!=null) tx.rollback();
+            e.printStackTrace();
+        }finally {
+            session.close();
+        }
+        return id;
+    }
+
+    /**
+     * delete a menuItem by id
+     * @param id the menuItem's id
+     */
+    public void deleteMenuItem(int id) {
+        Session session = SessionFactoryProvider.getSessionFactory().openSession();
+        Transaction tx = null;
+        try{
+            tx = session.beginTransaction();
+            MenuItems menuItem = (MenuItems)session.get(MenuItems.class, id);
+            session.delete(menuItem);
+            tx.commit();
+        }catch (HibernateException e) {
+            if (tx!=null) tx.rollback();
+            e.printStackTrace();
+        }finally {
+            session.close();
+        }
+    }
+
+    /**
+     * Update the menuItem
+     * @param menuItem
+     */
+
+    public void updateMenuItem(MenuItems menuItem) {
+        Session session = SessionFactoryProvider.getSessionFactory().openSession();
+        Transaction tx = null;
+        try{
+            tx = session.beginTransaction();
+            session.update(menuItem);
+            tx.commit();
+        }catch (HibernateException e) {
+            if (tx!=null) tx.rollback();
+            e.printStackTrace();
+        }finally {
+            session.close();
+        }
+    }
 }
