@@ -15,43 +15,57 @@ public class UsersMenuItemDao {
 
     private final Logger log = Logger.getLogger(this.getClass());
 
-    /** Return a list of all MenuItems
+    /** Return a list of all UsersMenuItem
      *
-     * @return All MenuItems
+     * @return All UsersMenuItem
      */
-    public List<MenuItems> getAllMenuItems() {
-        List<MenuItems> menuItems = new ArrayList<MenuItems>();
+    public List<UsersMenuItem> getAllUserMenuItems() {
+        List<UsersMenuItem> usersMenuItems = new ArrayList<UsersMenuItem>();
         Session session = SessionFactoryProvider.getSessionFactory().openSession();
-        menuItems = session.createCriteria(MenuItems.class).list();
-        return menuItems;
+        try {
+            usersMenuItems = session.createCriteria(UsersMenuItem.class).list();
+        } catch (HibernateException e) {
+            log.error("Hibernate Exception", e);
+        }finally {
+            session.close();
+        }
+        return usersMenuItems;
     }
 
     /**
-     * retrieve a menuItem given its ID
+     * retrieve a usersMenuItem given its ID
      *
-     * @param id the menuItem's id
-     * @return menuItem
+     * @param id the usersMenuItem's id
+     * @return usersMenuItem
      */
-    public MenuItems getMenuItem(int id) {
+    public UsersMenuItem getUserMenuItem(int id) {
         Session session = SessionFactoryProvider.getSessionFactory().openSession();
-        MenuItems menuItem = (MenuItems) session.get(MenuItems.class, id);
-        return menuItem;
+        UsersMenuItem usersMenuItem = null;
+        try {
+            usersMenuItem = (UsersMenuItem) session.get(UsersMenuItem.class, id);
+            return usersMenuItem;
+        } catch (HibernateException e) {
+            log.error("Hibernate Exception", e);
+        } finally {
+            session.close();
+        }
+        return usersMenuItem;
     }
 
     /**
      * add a user
      *
-     * @param menuItem
-     * @return the id of the menuItem
+     * @param usersMenuItem
+     * @return the id of the usersMenuItem
      */
 
-    public int addMenuItem(MenuItems menuItem) {
+    public int addMenuItem(UsersMenuItem usersMenuItem) {
         Session session = SessionFactoryProvider.getSessionFactory().openSession();
         Transaction tx = null;
         int id = 0;
         try{
             tx = session.beginTransaction();
-            id = (Integer)session.save(menuItem);
+            id = (Integer)session.save(usersMenuItem);
             tx.commit();
         }catch (HibernateException e) {
             if (tx!=null) tx.rollback();
@@ -63,16 +77,16 @@ public class UsersMenuItemDao {
     }
 
     /**
-     * delete a menuItem by id
-     * @param id the menuItem's id
+     * delete a usersMenuItem by id
+     * @param id the usersMenuItem's id
      */
     public void deleteMenuItem(int id) {
         Session session = SessionFactoryProvider.getSessionFactory().openSession();
         Transaction tx = null;
         try{
             tx = session.beginTransaction();
-            MenuItems menuItem = (MenuItems)session.get(MenuItems.class, id);
-            session.delete(menuItem);
+            UsersMenuItem usersMenuItem = (UsersMenuItem)session.get(UsersMenuItem.class, id);
+            session.delete(usersMenuItem);
             tx.commit();
         }catch (HibernateException e) {
             if (tx!=null) tx.rollback();
@@ -83,16 +97,16 @@ public class UsersMenuItemDao {
     }
 
     /**
-     * Update the menuItem
-     * @param menuItem
+     * Update the usersMenuItem
+     * @param usersMenuItem
      */
 
-    public void updateMenuItem(MenuItems menuItem) {
+    public void updateMenuItem(UsersMenuItem usersMenuItem) {
         Session session = SessionFactoryProvider.getSessionFactory().openSession();
         Transaction tx = null;
         try{
             tx = session.beginTransaction();
-            session.update(menuItem);
+            session.update(usersMenuItem);
             tx.commit();
         }catch (HibernateException e) {
             if (tx!=null) tx.rollback();
@@ -101,4 +115,5 @@ public class UsersMenuItemDao {
             session.close();
         }
     }
+
 }

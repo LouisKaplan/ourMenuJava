@@ -1,75 +1,50 @@
 package edu.matc.entity;
 
+import org.hibernate.annotations.GenericGenerator;
+
 import javax.persistence.*;
 import java.io.Serializable;
 
 @Entity
 @Table(name="usersMenuItem")
-@AssociationOverrides({
-    @AssociationOverride(name = "pk.users", joinColumns = @JoinColumn(name = "userID")),
-    @AssociationOverride(name = "pk.menuItems", joinColumns = @JoinColumn(name = "menuItemID"))
-    })
+public class UsersMenuItem implements Serializable {
 
-public class UsersMenuItem implements Serializable{
+    private int joinID;
+    private Users userID;
+    private MenuItems menuItemID;
 
-    private UsersMenuItemID pk = new UsersMenuItemID();
-    private boolean wantsItem;
-
-    public UsersMenuItem() {
+    @Id
+    @GeneratedValue(generator="increment")
+    @GenericGenerator(name="increment", strategy = "increment")
+    @Column(name = "joinID")
+    public int getJoinID() {
+        return joinID;
     }
 
-    @EmbeddedId
-    public UsersMenuItemID getPk() {
-        return pk;
+    public void setJoinID(int joinID) {
+        this.joinID = joinID;
     }
 
-    public void setPk(UsersMenuItemID pk) {
-        this.pk = pk;
+    //@Column(name="userID")
+    @ManyToOne(fetch = FetchType.LAZY)
+    @JoinColumn(name = "userID")
+    public Users getUserID() {
+        return userID;
     }
 
-    @Transient
-    public Users getUsers() {
-        return getPk().getUsers();
+    public void setUserID(Users userID) {
+        this.userID = userID;
     }
 
-    public void setUsers(Users users) {
-        getPk().setUsers(users);
+    // @Column(name="movieID")
+    @ManyToOne(fetch = FetchType.LAZY)
+    @JoinColumn(name = "menuItemID")
+    public MenuItems getMenuItemID() {
+        return menuItemID;
     }
 
-    @Transient
-    public MenuItems getMenuItems() {
-        return getPk().getMenuItems();
+    public void setMenuItemID(MenuItems menuItemID) {
+        this.menuItemID = menuItemID;
     }
 
-    public void setMenuItems(MenuItems menuItems) {
-        getPk().setMenuItems(menuItems);
-    }
-
-    @Column(name = "wantsItem")
-    public boolean getWantsItem() {
-        return this.wantsItem;
-    }
-
-    public void setWantsItem(boolean wantsItem) {
-        this.wantsItem = wantsItem;
-    }
-
-    public boolean equals(Object o) {
-        if (this == o)
-            return true;
-        if (o == null || getClass() != o.getClass())
-            return false;
-
-        UsersMenuItem that = (UsersMenuItem) o;
-
-        if (getPk() != null ? !getPk().equals(that.getPk())
-                : that.getPk() != null)
-            return false;
-
-        return true;
-    }
-
-    public int hashCode() {
-        return (getPk() != null ? getPk().hashCode() : 0);
-    }
 }

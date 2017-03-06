@@ -79,7 +79,7 @@ public class Users implements Serializable{
         this.userPassword = userPassword;
     }
 
-    @OneToMany(fetch = FetchType.LAZY, mappedBy = "pk.users")
+    @OneToMany(fetch = FetchType.LAZY, mappedBy = "userID")
     public Set<UsersMenuItem> getUsersMenuItem(){
         return this.usersMenuItem;
     }

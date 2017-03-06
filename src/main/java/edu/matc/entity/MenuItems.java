@@ -69,7 +69,7 @@ public class MenuItems implements Serializable{
         this.itemType = itemType;
     }
 
-    @OneToMany(fetch = FetchType.LAZY, mappedBy = "pk.menuItems")
+    @OneToMany(fetch = FetchType.LAZY, mappedBy = "menuItemID")
     public Set<UsersMenuItem> getUsersMenuItem(){
         return this.usersMenuItem;
     }
