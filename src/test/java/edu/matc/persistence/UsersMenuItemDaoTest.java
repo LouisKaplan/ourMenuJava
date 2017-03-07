@@ -18,10 +18,12 @@ public class UsersMenuItemDaoTest {
 
     UsersDao userDao;
     Users testUser;
+    Users testUser2;
     int testUserID = 0;
 
     MenuItemsDao itemDao;
     MenuItems testItem;
+    MenuItems testItem2;
     int testItemID =0;
 
     UsersMenuItemDao userItemDao;
@@ -38,11 +40,22 @@ public class UsersMenuItemDaoTest {
         testUser.setUserRole("Ghost");
         testUser.setUserPassword("TestPassword");
 
+        testUser2 = new Users();
+        testUser2.setFirstName("UpdateFirst");
+        testUser2.setLastName("UpdateLast");
+        testUser2.setUserRole("Ghost");
+        testUser2.setUserPassword("UpdatePassword");
+
         itemDao = new MenuItemsDao();
         testItem = new MenuItems();
         testItem.setRestaurantName("TestRestaurant");
         testItem.setItemDescription("Tendies");
         testItem.setItemType("TestType");
+
+        testItem2 = new MenuItems();
+        testItem2.setRestaurantName("UpdateRestaurant");
+        testItem2.setItemDescription("UpdateTendies");
+        testItem2.setItemType("UpdateType");
 
         userItemDao = new UsersMenuItemDao();
         testUserItem = new UsersMenuItem();
@@ -75,34 +88,36 @@ public class UsersMenuItemDaoTest {
     @Test
     public void getUsersMenuItems() throws Exception {
         testUserItemID = userItemDao.addUserMenuItem(testUserItem);
-        assertEquals("userID does not match", testUserItem.getJoinID(), userItemDao.getUserMenuItem(testUserItemID).getJoinID());
-        //assertTrue("Did not find correct userID", UMI.getUserID().getUserid().equals(1));
-    }
-/*
-    @Test
-    public void addUser() throws Exception {
-        newUserTestCase = dao.addUser(testUser);
-        assertEquals("actor first name not added", testUser.getFirstName(), dao.getUser(newUserTestCase).getFirstName());
-        assertEquals("actor last name not added", testUser.getLastName(), dao.getUser(newUserTestCase).getLastName());
+        assertEquals("joinID does not match", testUserItem.getJoinID(), userItemDao.getUserMenuItem(testUserItemID).getJoinID());
+        assertEquals("userID does not match", testUserItem.getUserID().getUserid(), userItemDao.getUserMenuItem(testUserItemID).getUserID().getUserid());
+        assertEquals("itemID does not match", testUserItem.getMenuItemID().getMenuItemID(), userItemDao.getUserMenuItem(testUserItemID).getMenuItemID().getMenuItemID());
     }
 
     @Test
-    public void updateUser() throws Exception {
-        newUserTestCase = dao.addUser(testUser);
-
-        testUser.setFirstName("FirstInProgress");
-        testUser.setLastName("LastInProgress");
-
-        dao.updateUser(testUser);
-        assertEquals("actor first name not updated", testUser.getFirstName(), dao.getUser(newUserTestCase).getFirstName());
-        assertEquals("actor last name not updated", testUser.getLastName(), dao.getUser(newUserTestCase).getLastName());
+    public void addUserMenuItem() throws Exception {
+        testUserItemID = userItemDao.addUserMenuItem(testUserItem);
+        assertEquals("Join not inserted", testUserItem.getJoinID(), userItemDao.getUserMenuItem(testUserItemID).getJoinID());
     }
 
     @Test
-    public void deleteUser() throws Exception {
-        dao.addUser(testUser);
-        dao.deleteUser(testUser.getUserid());
-        assertNull("user was still found", dao.getUser(testUser.getUserid()));
+    public void updateUserMenuItem() throws Exception {
+        testUserItemID = userItemDao.addUserMenuItem(testUserItem);
+
+        assertEquals("Join not inserted", testUserItem.getJoinID(), userItemDao.getUserMenuItem(testUserItemID).getJoinID());
+
+        testUserItem.setUserID(testUser2);
+        testUserItem.setMenuItemID(testItem2);
+
+        userItemDao.updateUserMenuItem(testUserItem);
+
+        assertEquals("userID not updated", testUserItem.getUserID().getUserid(), userItemDao.getUserMenuItem(testUserItemID).getUserID().getUserid());
+        assertEquals("itemID not updated", testUserItem.getMenuItemID().getMenuItemID(), userItemDao.getUserMenuItem(testUserItemID).getMenuItemID().getMenuItemID());
     }
-*/
+
+    @Test
+    public void deleteUserMenuItem() throws Exception {
+        userItemDao.addUserMenuItem(testUserItem);
+        userItemDao.deleteUserMenuItem(testUserItem.getJoinID());
+        assertNull("userMenuItem was still found", userItemDao.getUserMenuItem(testUserItem.getJoinID()));
+    }
 }

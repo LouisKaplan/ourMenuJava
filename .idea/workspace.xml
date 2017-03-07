@@ -2,12 +2,7 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="d6d75d4b-8542-4e7d-82b1-5d1ad74636e1" name="Default" comment="">
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/MyAppLog.log" afterPath="$PROJECT_DIR$/MyAppLog.log" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/main/java/edu/matc/entity/MenuItems.java" afterPath="$PROJECT_DIR$/src/main/java/edu/matc/entity/MenuItems.java" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/main/java/edu/matc/entity/Users.java" afterPath="$PROJECT_DIR$/src/main/java/edu/matc/entity/Users.java" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/main/java/edu/matc/entity/UsersMenuItem.java" afterPath="$PROJECT_DIR$/src/main/java/edu/matc/entity/UsersMenuItem.java" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/main/java/edu/matc/persistence/UsersMenuItemDao.java" afterPath="$PROJECT_DIR$/src/main/java/edu/matc/persistence/UsersMenuItemDao.java" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/test/java/edu/matc/persistence/UsersMenuItemDaoTest.java" afterPath="$PROJECT_DIR$/src/test/java/edu/matc/persistence/UsersMenuItemDaoTest.java" />
     </list>
     <ignored path="$PROJECT_DIR$/out/" />
@@ -108,7 +103,7 @@
       <file leaf-file-name="UsersMenuItem.java" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/main/java/edu/matc/entity/UsersMenuItem.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="72">
+            <state relative-caret-position="-144">
               <caret line="4" column="27" lean-forward="true" selection-start-line="4" selection-start-column="27" selection-end-line="4" selection-end-column="27" />
               <folding />
             </state>
@@ -130,8 +125,8 @@
       <file leaf-file-name="UsersMenuItemDao.java" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/main/java/edu/matc/persistence/UsersMenuItemDao.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="1673">
-              <caret line="103" column="26" lean-forward="false" selection-start-line="103" selection-start-column="26" selection-end-line="103" selection-end-column="26" />
+            <state relative-caret-position="-1279">
+              <caret line="23" column="24" lean-forward="true" selection-start-line="23" selection-start-column="24" selection-end-line="23" selection-end-column="24" />
               <folding>
                 <element signature="imports" expanded="true" />
               </folding>
@@ -142,8 +137,8 @@
       <file leaf-file-name="UsersMenuItemDaoTest.java" pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/src/test/java/edu/matc/persistence/UsersMenuItemDaoTest.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="215">
-              <caret line="77" column="127" lean-forward="false" selection-start-line="77" selection-start-column="127" selection-end-line="77" selection-end-column="127" />
+            <state relative-caret-position="2178">
+              <caret line="121" column="5" lean-forward="false" selection-start-line="121" selection-start-column="5" selection-end-line="121" selection-end-column="5" />
               <folding>
                 <element signature="imports" expanded="true" />
               </folding>
@@ -210,10 +205,10 @@
         <option value="$PROJECT_DIR$/src/test/java/edu/matc/persistence/MenuItemsDaoTest.java" />
         <option value="$PROJECT_DIR$/src/test/java/edu/matc/persistence/UserDaoTest.java" />
         <option value="$PROJECT_DIR$/src/main/java/edu/matc/persistence/UsersMenuItemDao.java" />
-        <option value="$PROJECT_DIR$/src/test/java/edu/matc/persistence/UsersMenuItemDaoTest.java" />
         <option value="$PROJECT_DIR$/src/main/java/edu/matc/entity/Users.java" />
         <option value="$PROJECT_DIR$/src/main/java/edu/matc/entity/MenuItems.java" />
         <option value="$PROJECT_DIR$/src/main/java/edu/matc/entity/UsersMenuItem.java" />
+        <option value="$PROJECT_DIR$/src/test/java/edu/matc/persistence/UsersMenuItemDaoTest.java" />
       </list>
     </option>
   </component>
@@ -460,85 +455,7 @@
       <recent name="$PROJECT_DIR$/src/main/resources" />
     </key>
   </component>
-  <component name="RunManager" selected="JUnit.UsersMenuItemDaoTest.getUsersMenuItems">
-    <configuration default="false" name="MenuItemsDaoTest" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
-      <extension name="coverage" enabled="false" merge="false" sample_coverage="true" runner="idea">
-        <pattern>
-          <option name="PATTERN" value="edu.matc.persistence.*" />
-          <option name="ENABLED" value="true" />
-        </pattern>
-      </extension>
-      <module name="ourMenuJava" />
-      <option name="ALTERNATIVE_JRE_PATH_ENABLED" value="false" />
-      <option name="ALTERNATIVE_JRE_PATH" />
-      <option name="PACKAGE_NAME" value="edu.matc.persistence" />
-      <option name="MAIN_CLASS_NAME" value="edu.matc.persistence.MenuItemsDaoTest" />
-      <option name="METHOD_NAME" />
-      <option name="TEST_OBJECT" value="class" />
-      <option name="VM_PARAMETERS" value="-ea" />
-      <option name="PARAMETERS" />
-      <option name="WORKING_DIRECTORY" value="$MODULE_DIR$" />
-      <option name="ENV_VARIABLES" />
-      <option name="PASS_PARENT_ENVS" value="true" />
-      <option name="TEST_SEARCH_SCOPE">
-        <value defaultName="singleModule" />
-      </option>
-      <envs />
-      <patterns />
-      <method />
-    </configuration>
-    <configuration default="false" name="UsersMenuItemDaoTest.getAllUsersMenuItems" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
-      <extension name="coverage" enabled="false" merge="false" sample_coverage="true" runner="idea">
-        <pattern>
-          <option name="PATTERN" value="edu.matc.persistence.*" />
-          <option name="ENABLED" value="true" />
-        </pattern>
-      </extension>
-      <module name="ourMenuJava" />
-      <option name="ALTERNATIVE_JRE_PATH_ENABLED" value="false" />
-      <option name="ALTERNATIVE_JRE_PATH" />
-      <option name="PACKAGE_NAME" value="edu.matc.persistence" />
-      <option name="MAIN_CLASS_NAME" value="edu.matc.persistence.UsersMenuItemDaoTest" />
-      <option name="METHOD_NAME" value="getAllUsersMenuItems" />
-      <option name="TEST_OBJECT" value="method" />
-      <option name="VM_PARAMETERS" value="-ea" />
-      <option name="PARAMETERS" />
-      <option name="WORKING_DIRECTORY" value="$MODULE_DIR$" />
-      <option name="ENV_VARIABLES" />
-      <option name="PASS_PARENT_ENVS" value="true" />
-      <option name="TEST_SEARCH_SCOPE">
-        <value defaultName="singleModule" />
-      </option>
-      <envs />
-      <patterns />
-      <method />
-    </configuration>
-    <configuration default="false" name="UsersMenuItemDaoTest" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
-      <extension name="coverage" enabled="false" merge="false" sample_coverage="true" runner="idea">
-        <pattern>
-          <option name="PATTERN" value="edu.matc.persistence.*" />
-          <option name="ENABLED" value="true" />
-        </pattern>
-      </extension>
-      <module name="ourMenuJava" />
-      <option name="ALTERNATIVE_JRE_PATH_ENABLED" value="false" />
-      <option name="ALTERNATIVE_JRE_PATH" />
-      <option name="PACKAGE_NAME" value="edu.matc.persistence" />
-      <option name="MAIN_CLASS_NAME" value="edu.matc.persistence.UsersMenuItemDaoTest" />
-      <option name="METHOD_NAME" />
-      <option name="TEST_OBJECT" value="class" />
-      <option name="VM_PARAMETERS" value="-ea" />
-      <option name="PARAMETERS" />
-      <option name="WORKING_DIRECTORY" value="$MODULE_DIR$" />
-      <option name="ENV_VARIABLES" />
-      <option name="PASS_PARENT_ENVS" value="true" />
-      <option name="TEST_SEARCH_SCOPE">
-        <value defaultName="singleModule" />
-      </option>
-      <envs />
-      <patterns />
-      <method />
-    </configuration>
+  <component name="RunManager" selected="JUnit.UsersMenuItemDaoTest">
     <configuration default="false" name="UsersMenuItemDaoTest.getUsersMenuItems" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
       <extension name="coverage" enabled="false" merge="false" sample_coverage="true" runner="idea">
         <pattern>
@@ -565,7 +482,7 @@
       <patterns />
       <method />
     </configuration>
-    <configuration default="false" name="UserDaoTest" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+    <configuration default="false" name="UsersMenuItemDaoTest.addUserMenuItem" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
       <extension name="coverage" enabled="false" merge="false" sample_coverage="true" runner="idea">
         <pattern>
           <option name="PATTERN" value="edu.matc.persistence.*" />
@@ -576,7 +493,85 @@
       <option name="ALTERNATIVE_JRE_PATH_ENABLED" value="false" />
       <option name="ALTERNATIVE_JRE_PATH" />
       <option name="PACKAGE_NAME" value="edu.matc.persistence" />
-      <option name="MAIN_CLASS_NAME" value="edu.matc.persistence.UserDaoTest" />
+      <option name="MAIN_CLASS_NAME" value="edu.matc.persistence.UsersMenuItemDaoTest" />
+      <option name="METHOD_NAME" value="addUserMenuItem" />
+      <option name="TEST_OBJECT" value="method" />
+      <option name="VM_PARAMETERS" value="-ea" />
+      <option name="PARAMETERS" />
+      <option name="WORKING_DIRECTORY" value="$MODULE_DIR$" />
+      <option name="ENV_VARIABLES" />
+      <option name="PASS_PARENT_ENVS" value="true" />
+      <option name="TEST_SEARCH_SCOPE">
+        <value defaultName="singleModule" />
+      </option>
+      <envs />
+      <patterns />
+      <method />
+    </configuration>
+    <configuration default="false" name="UsersMenuItemDaoTest.updateUserMenuItem" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+      <extension name="coverage" enabled="false" merge="false" sample_coverage="true" runner="idea">
+        <pattern>
+          <option name="PATTERN" value="edu.matc.persistence.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <module name="ourMenuJava" />
+      <option name="ALTERNATIVE_JRE_PATH_ENABLED" value="false" />
+      <option name="ALTERNATIVE_JRE_PATH" />
+      <option name="PACKAGE_NAME" value="edu.matc.persistence" />
+      <option name="MAIN_CLASS_NAME" value="edu.matc.persistence.UsersMenuItemDaoTest" />
+      <option name="METHOD_NAME" value="updateUserMenuItem" />
+      <option name="TEST_OBJECT" value="method" />
+      <option name="VM_PARAMETERS" value="-ea" />
+      <option name="PARAMETERS" />
+      <option name="WORKING_DIRECTORY" value="$MODULE_DIR$" />
+      <option name="ENV_VARIABLES" />
+      <option name="PASS_PARENT_ENVS" value="true" />
+      <option name="TEST_SEARCH_SCOPE">
+        <value defaultName="singleModule" />
+      </option>
+      <envs />
+      <patterns />
+      <method />
+    </configuration>
+    <configuration default="false" name="UsersMenuItemDaoTest.deleteUserMenuItem" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+      <extension name="coverage" enabled="false" merge="false" sample_coverage="true" runner="idea">
+        <pattern>
+          <option name="PATTERN" value="edu.matc.persistence.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <module name="ourMenuJava" />
+      <option name="ALTERNATIVE_JRE_PATH_ENABLED" value="false" />
+      <option name="ALTERNATIVE_JRE_PATH" />
+      <option name="PACKAGE_NAME" value="edu.matc.persistence" />
+      <option name="MAIN_CLASS_NAME" value="edu.matc.persistence.UsersMenuItemDaoTest" />
+      <option name="METHOD_NAME" value="deleteUserMenuItem" />
+      <option name="TEST_OBJECT" value="method" />
+      <option name="VM_PARAMETERS" value="-ea" />
+      <option name="PARAMETERS" />
+      <option name="WORKING_DIRECTORY" value="$MODULE_DIR$" />
+      <option name="ENV_VARIABLES" />
+      <option name="PASS_PARENT_ENVS" value="true" />
+      <option name="TEST_SEARCH_SCOPE">
+        <value defaultName="singleModule" />
+      </option>
+      <envs />
+      <patterns />
+      <method />
+    </configuration>
+    <configuration default="false" name="UsersMenuItemDaoTest" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+      <extension name="coverage" enabled="false" merge="false" sample_coverage="true" runner="idea">
+        <pattern>
+          <option name="PATTERN" value="edu.matc.persistence.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <module name="ourMenuJava" />
+      <option name="ALTERNATIVE_JRE_PATH_ENABLED" value="false" />
+      <option name="ALTERNATIVE_JRE_PATH" />
+      <option name="PACKAGE_NAME" value="edu.matc.persistence" />
+      <option name="MAIN_CLASS_NAME" value="edu.matc.persistence.UsersMenuItemDaoTest" />
       <option name="METHOD_NAME" />
       <option name="TEST_OBJECT" value="class" />
       <option name="VM_PARAMETERS" value="-ea" />
@@ -854,19 +849,19 @@
       <method />
     </configuration>
     <list size="5">
-      <item index="0" class="java.lang.String" itemvalue="JUnit.MenuItemsDaoTest" />
-      <item index="1" class="java.lang.String" itemvalue="JUnit.UsersMenuItemDaoTest.getAllUsersMenuItems" />
-      <item index="2" class="java.lang.String" itemvalue="JUnit.UsersMenuItemDaoTest" />
-      <item index="3" class="java.lang.String" itemvalue="JUnit.UsersMenuItemDaoTest.getUsersMenuItems" />
-      <item index="4" class="java.lang.String" itemvalue="JUnit.UserDaoTest" />
+      <item index="0" class="java.lang.String" itemvalue="JUnit.UsersMenuItemDaoTest.getUsersMenuItems" />
+      <item index="1" class="java.lang.String" itemvalue="JUnit.UsersMenuItemDaoTest.addUserMenuItem" />
+      <item index="2" class="java.lang.String" itemvalue="JUnit.UsersMenuItemDaoTest.updateUserMenuItem" />
+      <item index="3" class="java.lang.String" itemvalue="JUnit.UsersMenuItemDaoTest.deleteUserMenuItem" />
+      <item index="4" class="java.lang.String" itemvalue="JUnit.UsersMenuItemDaoTest" />
     </list>
     <recent_temporary>
       <list size="5">
-        <item index="0" class="java.lang.String" itemvalue="JUnit.UsersMenuItemDaoTest.getUsersMenuItems" />
-        <item index="1" class="java.lang.String" itemvalue="JUnit.UserDaoTest" />
-        <item index="2" class="java.lang.String" itemvalue="JUnit.UsersMenuItemDaoTest.getAllUsersMenuItems" />
-        <item index="3" class="java.lang.String" itemvalue="JUnit.UsersMenuItemDaoTest" />
-        <item index="4" class="java.lang.String" itemvalue="JUnit.MenuItemsDaoTest" />
+        <item index="0" class="java.lang.String" itemvalue="JUnit.UsersMenuItemDaoTest" />
+        <item index="1" class="java.lang.String" itemvalue="JUnit.UsersMenuItemDaoTest.deleteUserMenuItem" />
+        <item index="2" class="java.lang.String" itemvalue="JUnit.UsersMenuItemDaoTest.updateUserMenuItem" />
+        <item index="3" class="java.lang.String" itemvalue="JUnit.UsersMenuItemDaoTest.addUserMenuItem" />
+        <item index="4" class="java.lang.String" itemvalue="JUnit.UsersMenuItemDaoTest.getUsersMenuItems" />
       </list>
     </recent_temporary>
     <configuration name="&lt;template&gt;" type="TestNG" default="true" selected="false">
@@ -901,44 +896,44 @@
       <workItem from="1488654086689" duration="897000" />
       <workItem from="1488654989024" duration="21034000" />
       <workItem from="1488730922532" duration="31706000" />
-      <workItem from="1488855857322" duration="5568000" />
+      <workItem from="1488855857322" duration="8920000" />
     </task>
     <servers />
   </component>
   <component name="TestHistory">
-    <history-entry file="UserDaoTest - 2017.03.06 at 22h 59m 46s.xml">
-      <configuration name="UserDaoTest" configurationId="JUnit" />
+    <history-entry file="UsersMenuItemDaoTest_addUserMenuItem - 2017.03.06 at 23h 22m 38s.xml">
+      <configuration name="UsersMenuItemDaoTest.addUserMenuItem" configurationId="JUnit" />
     </history-entry>
-    <history-entry file="UserDaoTest - 2017.03.06 at 23h 01m 56s.xml">
-      <configuration name="UserDaoTest" configurationId="JUnit" />
+    <history-entry file="UsersMenuItemDaoTest_deleteUserMenuItem - 2017.03.06 at 23h 57m 50s.xml">
+      <configuration name="UsersMenuItemDaoTest.deleteUserMenuItem" configurationId="JUnit" />
     </history-entry>
-    <history-entry file="UsersMenuItemDaoTest_getAllUsersMenuItems - 2017.03.05 at 23h 32m 05s.xml">
-      <configuration name="UsersMenuItemDaoTest.getAllUsersMenuItems" configurationId="JUnit" />
-    </history-entry>
-    <history-entry file="UsersMenuItemDaoTest_getAllUsersMenuItems - 2017.03.05 at 23h 52m 06s.xml">
-      <configuration name="UsersMenuItemDaoTest.getAllUsersMenuItems" configurationId="JUnit" />
-    </history-entry>
-    <history-entry file="UsersMenuItemDaoTest_getAllUsersMenuItems - 2017.03.05 at 23h 58m 37s.xml">
-      <configuration name="UsersMenuItemDaoTest.getAllUsersMenuItems" configurationId="JUnit" />
-    </history-entry>
-    <history-entry file="UsersMenuItemDaoTest_getAllUsersMenuItems - 2017.03.06 at 00h 14m 06s.xml">
-      <configuration name="UsersMenuItemDaoTest.getAllUsersMenuItems" configurationId="JUnit" />
-    </history-entry>
-    <history-entry file="UsersMenuItemDaoTest_getUsersMenuItems - 2017.03.06 at 22h 03m 52s.xml">
+    <history-entry file="UsersMenuItemDaoTest_getUsersMenuItems - 2017.03.06 at 23h 02m 06s.xml">
       <configuration name="UsersMenuItemDaoTest.getUsersMenuItems" configurationId="JUnit" />
     </history-entry>
-    <history-entry file="UsersMenuItemDaoTest_getUsersMenuItems - 2017.03.06 at 22h 03m 56s.xml">
+    <history-entry file="UsersMenuItemDaoTest_getUsersMenuItems - 2017.03.06 at 23h 14m 30s.xml">
       <configuration name="UsersMenuItemDaoTest.getUsersMenuItems" configurationId="JUnit" />
     </history-entry>
-    <history-entry file="UsersMenuItemDaoTest_getUsersMenuItems - 2017.03.06 at 22h 56m 39s.xml">
-      <configuration name="UsersMenuItemDaoTest.getUsersMenuItems" configurationId="JUnit" />
+    <history-entry file="UsersMenuItemDaoTest_updateUserMenuItem - 2017.03.06 at 23h 37m 05s.xml">
+      <configuration name="UsersMenuItemDaoTest.updateUserMenuItem" configurationId="JUnit" />
     </history-entry>
-    <history-entry file="UsersMenuItemDaoTest_getUsersMenuItems - 2017.03.06 at 23h 00m 01s.xml">
-      <configuration name="UsersMenuItemDaoTest.getUsersMenuItems" configurationId="JUnit" />
+    <history-entry file="UsersMenuItemDaoTest_updateUserMenuItem - 2017.03.06 at 23h 42m 46s.xml">
+      <configuration name="UsersMenuItemDaoTest.updateUserMenuItem" configurationId="JUnit" />
+    </history-entry>
+    <history-entry file="UsersMenuItemDaoTest_updateUserMenuItem - 2017.03.06 at 23h 43m 50s.xml">
+      <configuration name="UsersMenuItemDaoTest.updateUserMenuItem" configurationId="JUnit" />
+    </history-entry>
+    <history-entry file="UsersMenuItemDaoTest_updateUserMenuItem - 2017.03.06 at 23h 44m 09s.xml">
+      <configuration name="UsersMenuItemDaoTest.updateUserMenuItem" configurationId="JUnit" />
+    </history-entry>
+    <history-entry file="UsersMenuItemDaoTest_updateUserMenuItem - 2017.03.06 at 23h 44m 33s.xml">
+      <configuration name="UsersMenuItemDaoTest.updateUserMenuItem" configurationId="JUnit" />
+    </history-entry>
+    <history-entry file="UsersMenuItemDaoTest_updateUserMenuItem - 2017.03.06 at 23h 51m 23s.xml">
+      <configuration name="UsersMenuItemDaoTest.updateUserMenuItem" configurationId="JUnit" />
     </history-entry>
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="96501000" />
+    <option name="totallyTimeSpent" value="99853000" />
   </component>
   <component name="ToolWindowManager">
     <frame x="57" y="24" width="1863" height="999" extended-state="6" />
@@ -1038,7 +1033,7 @@
         <state relative-caret-position="54">
           <caret line="3" column="31" lean-forward="false" selection-start-line="3" selection-start-column="31" selection-end-line="3" selection-end-column="31" />
           <folding>
-            <element signature="imports" expanded="true" />
+            <element signature="imports" expanded="false" />
           </folding>
         </state>
       </provider>
@@ -1086,7 +1081,7 @@
         <state relative-caret-position="54">
           <caret line="3" column="31" lean-forward="true" selection-start-line="3" selection-start-column="31" selection-end-line="3" selection-end-column="31" />
           <folding>
-            <element signature="imports" expanded="true" />
+            <element signature="imports" expanded="false" />
           </folding>
         </state>
       </provider>
@@ -1130,7 +1125,7 @@
         <state relative-caret-position="288">
           <caret line="25" column="59" lean-forward="true" selection-start-line="25" selection-start-column="59" selection-end-line="25" selection-end-column="59" />
           <folding>
-            <element signature="imports" expanded="true" />
+            <element signature="imports" expanded="false" />
           </folding>
         </state>
       </provider>
@@ -1165,7 +1160,7 @@
         <state relative-caret-position="90">
           <caret line="5" column="21" lean-forward="false" selection-start-line="5" selection-start-column="21" selection-end-line="5" selection-end-column="21" />
           <folding>
-            <element signature="imports" expanded="true" />
+            <element signature="imports" expanded="false" />
           </folding>
         </state>
       </provider>
@@ -1365,7 +1360,7 @@
         <state relative-caret-position="153">
           <caret line="40" column="0" lean-forward="false" selection-start-line="40" selection-start-column="0" selection-end-line="50" selection-end-column="20" />
           <folding>
-            <element signature="imports" expanded="true" />
+            <element signature="imports" expanded="false" />
           </folding>
         </state>
       </provider>
@@ -1378,36 +1373,10 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/edu/matc/persistence/UsersMenuItemDao.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="1673">
-          <caret line="103" column="26" lean-forward="false" selection-start-line="103" selection-start-column="26" selection-end-line="103" selection-end-column="26" />
-          <folding>
-            <element signature="imports" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/src/main/java/edu/matc/entity/Users.java">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="314">
           <caret line="81" column="85" lean-forward="false" selection-start-line="81" selection-start-column="60" selection-end-line="81" selection-end-column="85" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/edu/matc/entity/MenuItems.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="386">
-          <caret line="71" column="90" lean-forward="true" selection-start-line="71" selection-start-column="90" selection-end-line="71" selection-end-column="90" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/edu/matc/entity/UsersMenuItem.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="72">
-          <caret line="4" column="27" lean-forward="true" selection-start-line="4" selection-start-column="27" selection-end-line="4" selection-end-column="27" />
           <folding />
         </state>
       </provider>
@@ -1422,10 +1391,36 @@
         </state>
       </provider>
     </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/edu/matc/entity/MenuItems.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="386">
+          <caret line="71" column="90" lean-forward="true" selection-start-line="71" selection-start-column="90" selection-end-line="71" selection-end-column="90" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/edu/matc/entity/UsersMenuItem.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="-144">
+          <caret line="4" column="27" lean-forward="true" selection-start-line="4" selection-start-column="27" selection-end-line="4" selection-end-column="27" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/edu/matc/persistence/UsersMenuItemDao.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="-1279">
+          <caret line="23" column="24" lean-forward="true" selection-start-line="23" selection-start-column="24" selection-end-line="23" selection-end-column="24" />
+          <folding>
+            <element signature="imports" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
     <entry file="file://$PROJECT_DIR$/src/test/java/edu/matc/persistence/UsersMenuItemDaoTest.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="215">
-          <caret line="77" column="127" lean-forward="false" selection-start-line="77" selection-start-column="127" selection-end-line="77" selection-end-column="127" />
+        <state relative-caret-position="2178">
+          <caret line="121" column="5" lean-forward="false" selection-start-line="121" selection-start-column="5" selection-end-line="121" selection-end-column="5" />
           <folding>
             <element signature="imports" expanded="true" />
           </folding>
