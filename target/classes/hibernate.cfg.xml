@@ -26,6 +26,8 @@
         <mapping class="edu.matc.entity.MenuItems" />
         <mapping class="edu.matc.entity.UsersMenuItem" />
         <mapping class="edu.matc.entity.UsersMenuItemID" />
+        <mapping class="edu.matc.entity.UsersRestaurants" />
+        <mapping class="edu.matc.entity.UsersRestaurantsID" />
 
 
     </session-factory>

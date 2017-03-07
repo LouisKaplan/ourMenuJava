@@ -17,6 +17,7 @@ public class Users implements Serializable{
     private String userRole;
     private String userPassword;
     private Set<UsersMenuItem> usersMenuItem = new HashSet<UsersMenuItem>(0);
+    private Set<UsersRestaurants> usersRestaurants = new HashSet<UsersRestaurants>(0);
 
     @Id
     @GeneratedValue(generator = "increment")
@@ -86,6 +87,15 @@ public class Users implements Serializable{
 
     public void setUsersMenuItem(Set<UsersMenuItem> usersMenuItem) {
         this.usersMenuItem = usersMenuItem;
+    }
+
+    @OneToMany(fetch = FetchType.LAZY, mappedBy = "userID", cascade = CascadeType.ALL)
+    public Set<UsersRestaurants> getUsersRestaurants(){
+        return this.usersRestaurants;
+    }
+
+    public void setUsersRestaurants(Set<UsersRestaurants> usersRestaurants) {
+        this.usersRestaurants = usersRestaurants;
     }
 
     @Override

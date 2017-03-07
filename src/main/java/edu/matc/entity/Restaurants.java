@@ -2,17 +2,31 @@ package edu.matc.entity;
 
 import javax.persistence.*;
 import java.io.Serializable;
+import java.util.HashSet;
+import java.util.Set;
 
 @Entity
 @Table(name="restaurants")
 public class Restaurants implements Serializable{
 
+    private String restaurantName;
+    private String restaurantType;
+    private Set<UsersRestaurants> usersRestaurants = new HashSet<UsersRestaurants>(0);
+
     @Id
     @Column(name = "restaurantName")
-    private String restaurantName;
+    public String getRestaurantName() {
+        return restaurantName;
+    }
+
+    public void setRestaurantName(String restaurantName) {
+        this.restaurantName = restaurantName;
+    }
 
     @Column(name = "restaurantType")
-    private String restaurantType;
+    public String getRestaurantType() { return restaurantType; }
+
+    public void setRestaurantType(String restaurantType) { this.restaurantType = restaurantType; }
 
     public Restaurants() {
     }
@@ -23,17 +37,14 @@ public class Restaurants implements Serializable{
         this.restaurantType = restaurantType;
     }
 
-    public String getRestaurantName() {
-        return restaurantName;
+    @OneToMany(fetch = FetchType.LAZY, mappedBy = "restaurantName", cascade = CascadeType.ALL)
+    public Set<UsersRestaurants> getUsersRestaurants(){
+        return this.usersRestaurants;
     }
 
-    public void setRestaurantName(String restaurantName) {
-        this.restaurantName = restaurantName;
+    public void setUsersRestaurants(Set<UsersRestaurants> user) {
+        this.usersRestaurants = usersRestaurants;
     }
-
-    public String getRestaurantType() { return restaurantType; }
-
-    public void setRestaurantType(String restaurantType) { this.restaurantType = restaurantType; }
 
     @Override
     public String toString() {
