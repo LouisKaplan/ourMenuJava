@@ -25,8 +25,7 @@ public class UsersMenuItem implements Serializable {
         this.joinID = joinID;
     }
 
-    //@Column(name="userID")
-    @ManyToOne(fetch = FetchType.LAZY)
+    @ManyToOne(fetch = FetchType.LAZY, cascade = CascadeType.ALL)
     @JoinColumn(name = "userID")
     public Users getUserID() {
         return userID;
@@ -36,8 +35,7 @@ public class UsersMenuItem implements Serializable {
         this.userID = userID;
     }
 
-    // @Column(name="movieID")
-    @ManyToOne(fetch = FetchType.LAZY)
+    @ManyToOne(fetch = FetchType.LAZY, cascade = CascadeType.ALL)
     @JoinColumn(name = "menuItemID")
     public MenuItems getMenuItemID() {
         return menuItemID;

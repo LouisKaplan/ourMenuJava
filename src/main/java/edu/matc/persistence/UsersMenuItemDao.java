@@ -59,7 +59,7 @@ public class UsersMenuItemDao {
      * @return the id of the usersMenuItem
      */
 
-    public int addMenuItem(UsersMenuItem usersMenuItem) {
+    public int addUserMenuItem(UsersMenuItem usersMenuItem) {
         Session session = SessionFactoryProvider.getSessionFactory().openSession();
         Transaction tx = null;
         int id = 0;
@@ -80,7 +80,7 @@ public class UsersMenuItemDao {
      * delete a usersMenuItem by id
      * @param id the usersMenuItem's id
      */
-    public void deleteMenuItem(int id) {
+    public void deleteUserMenuItem(int id) {
         Session session = SessionFactoryProvider.getSessionFactory().openSession();
         Transaction tx = null;
         try{
@@ -101,7 +101,7 @@ public class UsersMenuItemDao {
      * @param usersMenuItem
      */
 
-    public void updateMenuItem(UsersMenuItem usersMenuItem) {
+    public void updateUserMenuItem(UsersMenuItem usersMenuItem) {
         Session session = SessionFactoryProvider.getSessionFactory().openSession();
         Transaction tx = null;
         try{

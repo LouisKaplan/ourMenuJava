@@ -61,7 +61,7 @@ public class UsersMenuItemDaoTest {
         }
 
         if (testUserItemID != 0) {
-            userItemDao.deleteMenuItem(testUserItemID);
+            userItemDao.deleteUserMenuItem(testUserItemID);
         }
     }
 
@@ -71,14 +71,14 @@ public class UsersMenuItemDaoTest {
         assertTrue("did not return at least one column", umi.size() > 0);
         log.info("all users: " + umi);
     }
-/*
-    @Test
-    public void getUser() throws Exception {
-        Users findUser = dao.getUser(1);
-        assertTrue("Did not find correct last name", findUser.getLastName().equals("TestLast"));
-        log.info("user by ID: " + findUser.getLastName());
-    }
 
+    @Test
+    public void getUsersMenuItems() throws Exception {
+        testUserItemID = userItemDao.addUserMenuItem(testUserItem);
+        assertEquals("userID does not match", testUserItem.getJoinID(), userItemDao.getUserMenuItem(testUserItemID).getJoinID());
+        //assertTrue("Did not find correct userID", UMI.getUserID().getUserid().equals(1));
+    }
+/*
     @Test
     public void addUser() throws Exception {
         newUserTestCase = dao.addUser(testUser);
