@@ -1,6 +1,6 @@
 package edu.matc.persistence;
 
-import edu.matc.entity.UsersMenuItem;
+import edu.matc.entity.Users;
 import edu.matc.entity.UsersRestaurants;
 import edu.matc.entity.UsersRestaurantsID;
 import org.apache.log4j.Logger;
@@ -78,8 +78,8 @@ public class UsersRestaurantsDao {
     }
 
     /**
-     * delete a usersMenuItem by id
-     * @param id the usersMenuItem's id
+     * delete a usersRestaurants by id
+     * @param id the usersResaurant's id
      */
     public void deleteUsersRestaurants(int id) {
         Session session = SessionFactoryProvider.getSessionFactory().openSession();

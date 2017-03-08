@@ -48,11 +48,11 @@ public class UsersRestaurantsDaoTest {
 
         restaurantDao = new RestaurantsDao();
         daoTestRestaurant = new Restaurants();
-        daoTestRestaurant.setRestaurantName("TestRestaurant");
+        daoTestRestaurant.setRestaurantName("TestRestaurant2");
         daoTestRestaurant.setRestaurantType("Ghost");
 
         daoTestRestaurant2 = new Restaurants();
-        daoTestRestaurant2.setRestaurantName("UpdateRestaurant");
+        daoTestRestaurant2.setRestaurantName("UpdateRestaurant2");
         daoTestRestaurant2.setRestaurantType("Update");
 
         userRestaurantDao = new UsersRestaurantsDao();
@@ -75,28 +75,28 @@ public class UsersRestaurantsDaoTest {
             userRestaurantDao.deleteUsersRestaurants(testUserRestaurantID);
         }
     }
+
+    @Test
+    public void getAllUsersRestaurants() throws Exception {
+        List<UsersRestaurants> ur = userRestaurantDao.getAllUsersRestaurants();
+        assertTrue("did not return at least one column", ur.size() > 0);
+        log.info("all users: " + ur);
+    }
+
+    @Test
+    public void getUsersRestaurants() throws Exception {
+        testUserRestaurantID = userRestaurantDao.addUsersRestaurants(testUserRestaurant);
+        assertEquals("joinID does not match", testUserRestaurant.getLinkID(), userRestaurantDao.getUsersRestaurants(testUserRestaurantID).getLinkID());
+        assertEquals("userID does not match", testUserRestaurant.getUserID().getUserid(), userRestaurantDao.getUsersRestaurants(testUserRestaurantID).getUserID().getUserid());
+        assertEquals("itemID does not match", testUserRestaurant.getRestaurantName().getRestaurantName(), userRestaurantDao.getUsersRestaurants(testUserRestaurantID).getRestaurantName().getRestaurantName());
+    }
+
+    @Test
+    public void addUserRestaurants() throws Exception {
+        testUserRestaurantID = userRestaurantDao.addUsersRestaurants(testUserRestaurant);
+        assertEquals("joinID does not match", testUserRestaurant.getLinkID(), userRestaurantDao.getUsersRestaurants(testUserRestaurantID).getLinkID());
+    }
 /*
-    @Test
-    public void getAllUsersMenuItems() throws Exception {
-        List<UsersMenuItem> umi = userItemDao.getAllUserMenuItems();
-        assertTrue("did not return at least one column", umi.size() > 0);
-        log.info("all users: " + umi);
-    }
-
-    @Test
-    public void getUsersMenuItems() throws Exception {
-        testUserItemID = userItemDao.addUserMenuItem(testUserItem);
-        assertEquals("joinID does not match", testUserItem.getJoinID(), userItemDao.getUserMenuItem(testUserItemID).getJoinID());
-        assertEquals("userID does not match", testUserItem.getUserID().getUserid(), userItemDao.getUserMenuItem(testUserItemID).getUserID().getUserid());
-        assertEquals("itemID does not match", testUserItem.getMenuItemID().getMenuItemID(), userItemDao.getUserMenuItem(testUserItemID).getMenuItemID().getMenuItemID());
-    }
-
-    @Test
-    public void addUserMenuItem() throws Exception {
-        testUserItemID = userItemDao.addUserMenuItem(testUserItem);
-        assertEquals("Join not inserted", testUserItem.getJoinID(), userItemDao.getUserMenuItem(testUserItemID).getJoinID());
-    }
-
     @Test
     public void updateUserMenuItem() throws Exception {
         testUserItemID = userItemDao.addUserMenuItem(testUserItem);
