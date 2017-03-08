@@ -96,27 +96,28 @@ public class UsersRestaurantsDaoTest {
         testUserRestaurantID = userRestaurantDao.addUsersRestaurants(testUserRestaurant);
         assertEquals("joinID does not match", testUserRestaurant.getLinkID(), userRestaurantDao.getUsersRestaurants(testUserRestaurantID).getLinkID());
     }
-/*
+
     @Test
-    public void updateUserMenuItem() throws Exception {
-        testUserItemID = userItemDao.addUserMenuItem(testUserItem);
+    public void updateUserRestaurant() throws Exception {
+        testUserRestaurantID = userRestaurantDao.addUsersRestaurants(testUserRestaurant);
 
-        assertEquals("Join not inserted", testUserItem.getJoinID(), userItemDao.getUserMenuItem(testUserItemID).getJoinID());
+        assertEquals("Join not inserted", testUserRestaurant.getLinkID(), userRestaurantDao.getUsersRestaurants(testUserRestaurantID).getLinkID());
 
-        testUserItem.setUserID(testUser2);
-        testUserItem.setMenuItemID(testItem2);
+        testUserRestaurant.setUserID(testUser2);
+        testUserRestaurant.setRestaurantName(daoTestRestaurant2);
 
-        userItemDao.updateUserMenuItem(testUserItem);
+        userRestaurantDao.updateUsersRestaurants(testUserRestaurant);
 
-        assertEquals("userID not updated", testUserItem.getUserID().getUserid(), userItemDao.getUserMenuItem(testUserItemID).getUserID().getUserid());
-        assertEquals("itemID not updated", testUserItem.getMenuItemID().getMenuItemID(), userItemDao.getUserMenuItem(testUserItemID).getMenuItemID().getMenuItemID());
+        assertEquals("userID not updated", testUserRestaurant.getUserID().getUserid(), userRestaurantDao.getUsersRestaurants(testUserRestaurantID).getUserID().getUserid());
+        assertEquals("restaurantName not updated", testUserRestaurant.getRestaurantName().getRestaurantName(), userRestaurantDao.getUsersRestaurants(testUserRestaurantID).getRestaurantName().getRestaurantName());
+
     }
 
     @Test
-    public void deleteUserMenuItem() throws Exception {
-        userItemDao.addUserMenuItem(testUserItem);
-        userItemDao.deleteUserMenuItem(testUserItem.getJoinID());
-        assertNull("userMenuItem was still found", userItemDao.getUserMenuItem(testUserItem.getJoinID()));
+    public void deleteUserRestaurant() throws Exception {
+        userRestaurantDao.addUsersRestaurants(testUserRestaurant);
+        userRestaurantDao.deleteUsersRestaurants(testUserRestaurant.getLinkID());
+        assertNull("userRestaurant was still found", userRestaurantDao.getUsersRestaurants(testUserRestaurant.getLinkID()));
     }
-  */
+
 }

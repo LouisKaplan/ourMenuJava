@@ -46,7 +46,7 @@ public class UserDaoTest {
     @Test
     public void getUser() throws Exception {
         Users findUser = dao.getUser(1);
-        assertTrue("Did not find correct last name", findUser.getLastName().equals("TestLast"));
+        assertTrue("Did not find correct last name", findUser.getLastName().equals("GhostLast"));
         log.info("user by ID: " + findUser.getLastName());
     }
 

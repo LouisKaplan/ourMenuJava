@@ -48,7 +48,7 @@ public class RestaurantDaoTest {
 
     @Test
     public void getUser() throws Exception {
-        Restaurants findRestaurant = dao.getRestaurant("testRestaurant");
+        Restaurants findRestaurant = dao.getRestaurant("GhostRestaurant");
         assertTrue("Did not find correct restaurant", findRestaurant.getRestaurantType().equals("Ghost"));
         log.info("Restaurant by name: " + findRestaurant.getRestaurantName());
     }

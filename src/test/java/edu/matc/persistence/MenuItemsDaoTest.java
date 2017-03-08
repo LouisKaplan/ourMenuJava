@@ -23,9 +23,9 @@ public class MenuItemsDaoTest {
         dao = new MenuItemsDao();
         testMenuItem = new MenuItems();
 
-        testMenuItem.setRestaurantName("TestRestaurant");
+        testMenuItem.setRestaurantName("GhostRestaurant");
         testMenuItem.setItemDescription("Tendies");
-        testMenuItem.setItemType("TestType");
+        testMenuItem.setItemType("Ghost");
     }
 
     @After
@@ -45,7 +45,7 @@ public class MenuItemsDaoTest {
     @Test
     public void getMenuItem() throws Exception {
         MenuItems findMenuItem = dao.getMenuItem(1);
-        assertTrue("Did not find correct menu item", findMenuItem.getItemDescription().equals("SquirrelSwirl"));
+        assertTrue("Did not find correct menu item", findMenuItem.getItemDescription().equals("Tendies"));
         log.info("menuItem by ID: " + findMenuItem.getItemDescription());
     }
 

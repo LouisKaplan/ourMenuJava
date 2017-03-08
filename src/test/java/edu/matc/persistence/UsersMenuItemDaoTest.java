@@ -48,12 +48,12 @@ public class UsersMenuItemDaoTest {
 
         itemDao = new MenuItemsDao();
         testItem = new MenuItems();
-        testItem.setRestaurantName("TestRestaurant");
+        testItem.setRestaurantName("GhostRestaurant");
         testItem.setItemDescription("Tendies");
         testItem.setItemType("TestType");
 
         testItem2 = new MenuItems();
-        testItem2.setRestaurantName("UpdateRestaurant");
+        testItem2.setRestaurantName("GhostRestaurant");
         testItem2.setItemDescription("UpdateTendies");
         testItem2.setItemType("UpdateType");
 
