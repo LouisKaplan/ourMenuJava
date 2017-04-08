@@ -1,0 +1,10 @@
+# Created by .ignore support plugin (hsz.mobi)
+.gitignore
+.idea/dataSources/0ff52aac-a21e-4293-a28e-7cbc84b1fbc8/_src_/
+.idea/dataSources/0ff52aac-a21e-4293-a28e-7cbc84b1fbc8/_staging_/
+.idea/dataSources/cac471a0-b80e-4e5b-9381-249084b4e59a/_src_/
+.idea/dataSources/cac471a0-b80e-4e5b-9381-249084b4e59a/_staging_/
+src/main/java/edu/matc/util/
+src/test/resources/
+target/generated-sources/
+target/generated-test-sources/

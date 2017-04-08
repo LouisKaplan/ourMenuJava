@@ -11,12 +11,12 @@
 </div>
 
 <div id="pageLinks">
-<p><a href="updateMenu"> Update Your Personal Menu</a>></p>
-<p><a href="createOrder">Create A Group Order</a></p>
-<p><a href="pizzaOrder">Pizza Denominator</a></p>
-<p><a href="groupSelector">Group Restaurant Selector</a></p>
-<p><a href="newRestaurant">Enter a New Restaurant</a></p>
-<p><a href="updateRestaurant">Update a Restaurant</a></p>
+<p><a href="personalMenuDisplay"> Update Your Personal Menu</a></p>
+<p><a href="groupOrderDisplay">Create A Group Order</a></p>
+<p><a href="pizzaDenominatorDisplay">Pizza Denominator</a></p>
+<p><a href="restaurantSelectorDisplay">Group Restaurant Selector</a></p>
+<p><a href="newRestaurantDisplay">Enter a New Restaurant</a></p>
+<p><a href="updateRestaurantDisplay">Update a Restaurant</a></p>
 </div>
 
 <c:import url="template/footer.jsp" />
