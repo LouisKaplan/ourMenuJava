@@ -548,3 +548,55 @@ Caused by: com.mysql.jdbc.exceptions.jdbc4.MySQLSyntaxErrorException: Unknown co
 2017-03-08 00:01:41,468 0    [main] WARN  org.hibernate.engine.jdbc.connections.internal.DriverManagerConnectionProviderImpl  - HHH000402: Using Hibernate built-in connection pool (not for production use!)
 2017-03-08 00:01:50,451 0    [main] WARN  org.hibernate.engine.jdbc.connections.internal.DriverManagerConnectionProviderImpl  - HHH000402: Using Hibernate built-in connection pool (not for production use!)
 2017-03-08 00:03:25,325 0    [main] WARN  org.hibernate.engine.jdbc.connections.internal.DriverManagerConnectionProviderImpl  - HHH000402: Using Hibernate built-in connection pool (not for production use!)
+2017-04-09 12:22:40,724 0    [main] WARN  org.hibernate.engine.jdbc.connections.internal.DriverManagerConnectionProviderImpl  - HHH000402: Using Hibernate built-in connection pool (not for production use!)
+2017-04-09 12:22:40,731 0    [main] WARN  org.hibernate.engine.jdbc.connections.internal.DriverManagerConnectionProviderImpl  - HHH000402: Using Hibernate built-in connection pool (not for production use!)
+2017-04-09 12:22:44,812 4088 [main] WARN  org.hibernate.engine.jdbc.spi.SqlExceptionHelper  - SQL Error: 1062, SQLState: 23000
+2017-04-09 12:22:44,813 4089 [main] ERROR org.hibernate.engine.jdbc.spi.SqlExceptionHelper  - Duplicate entry '31' for key 'PRIMARY'
+2017-04-09 12:22:44,814 4090 [main] WARN  org.hibernate.engine.jdbc.spi.SqlExceptionHelper  - SQL Warning Code: 1062, SQLState: 23000
+2017-04-09 12:22:44,815 4091 [main] WARN  org.hibernate.engine.jdbc.spi.SqlExceptionHelper  - Duplicate entry '31' for key 'PRIMARY'
+2017-04-09 12:22:45,139 4415 [main] WARN  org.hibernate.engine.jdbc.spi.SqlExceptionHelper  - SQL Error: 1062, SQLState: 23000
+2017-04-09 12:22:45,150 4426 [main] ERROR org.hibernate.engine.jdbc.spi.SqlExceptionHelper  - Duplicate entry '32' for key 'PRIMARY'
+2017-04-09 12:22:45,161 4437 [main] WARN  org.hibernate.engine.jdbc.spi.SqlExceptionHelper  - SQL Warning Code: 1062, SQLState: 23000
+2017-04-09 12:22:45,161 4437 [main] WARN  org.hibernate.engine.jdbc.spi.SqlExceptionHelper  - Duplicate entry '32' for key 'PRIMARY'
+2017-04-09 12:22:45,416 4692 [main] WARN  org.hibernate.engine.jdbc.spi.SqlExceptionHelper  - SQL Error: 1062, SQLState: 23000
+2017-04-09 12:22:45,421 4697 [main] ERROR org.hibernate.engine.jdbc.spi.SqlExceptionHelper  - Duplicate entry '33' for key 'PRIMARY'
+2017-04-09 12:22:45,425 4701 [main] WARN  org.hibernate.engine.jdbc.spi.SqlExceptionHelper  - SQL Warning Code: 1062, SQLState: 23000
+2017-04-09 12:22:45,425 4701 [main] WARN  org.hibernate.engine.jdbc.spi.SqlExceptionHelper  - Duplicate entry '33' for key 'PRIMARY'
+2017-04-09 12:22:45,676 4952 [main] WARN  org.hibernate.engine.jdbc.spi.SqlExceptionHelper  - SQL Error: 1062, SQLState: 23000
+2017-04-09 12:22:45,677 4953 [main] ERROR org.hibernate.engine.jdbc.spi.SqlExceptionHelper  - Duplicate entry '145' for key 'PRIMARY'
+2017-04-09 12:22:45,682 4958 [main] WARN  org.hibernate.engine.jdbc.spi.SqlExceptionHelper  - SQL Warning Code: 1062, SQLState: 23000
+2017-04-09 12:22:45,682 4958 [main] WARN  org.hibernate.engine.jdbc.spi.SqlExceptionHelper  - Duplicate entry '145' for key 'PRIMARY'
+2017-04-09 12:22:46,173 5449 [main] WARN  org.hibernate.engine.jdbc.spi.SqlExceptionHelper  - SQL Error: 1062, SQLState: 23000
+2017-04-09 12:22:46,180 5456 [main] ERROR org.hibernate.engine.jdbc.spi.SqlExceptionHelper  - Duplicate entry '147' for key 'PRIMARY'
+2017-04-09 12:22:46,187 5463 [main] WARN  org.hibernate.engine.jdbc.spi.SqlExceptionHelper  - SQL Warning Code: 1062, SQLState: 23000
+2017-04-09 12:22:46,188 5464 [main] WARN  org.hibernate.engine.jdbc.spi.SqlExceptionHelper  - Duplicate entry '147' for key 'PRIMARY'
+2017-04-09 12:22:46,370 5646 [main] WARN  org.hibernate.engine.jdbc.spi.SqlExceptionHelper  - SQL Error: 1062, SQLState: 23000
+2017-04-09 12:22:46,370 5646 [main] ERROR org.hibernate.engine.jdbc.spi.SqlExceptionHelper  - Duplicate entry '149' for key 'PRIMARY'
+2017-04-09 12:22:46,373 5649 [main] WARN  org.hibernate.engine.jdbc.spi.SqlExceptionHelper  - SQL Warning Code: 1062, SQLState: 23000
+2017-04-09 12:22:46,373 5649 [main] WARN  org.hibernate.engine.jdbc.spi.SqlExceptionHelper  - Duplicate entry '149' for key 'PRIMARY'
+2017-04-09 12:22:46,633 5909 [main] WARN  org.hibernate.engine.jdbc.spi.SqlExceptionHelper  - SQL Error: 1062, SQLState: 23000
+2017-04-09 12:22:46,634 5910 [main] ERROR org.hibernate.engine.jdbc.spi.SqlExceptionHelper  - Duplicate entry 'RestaurantTestCase' for key 'PRIMARY'
+2017-04-09 12:22:46,642 5918 [main] WARN  org.hibernate.engine.jdbc.spi.SqlExceptionHelper  - SQL Warning Code: 1062, SQLState: 23000
+2017-04-09 12:22:46,643 5919 [main] WARN  org.hibernate.engine.jdbc.spi.SqlExceptionHelper  - Duplicate entry 'RestaurantTestCase' for key 'PRIMARY'
+2017-04-09 12:22:46,849 6118 [main] WARN  org.hibernate.engine.jdbc.spi.SqlExceptionHelper  - SQL Error: 1062, SQLState: 23000
+2017-04-09 12:22:46,861 6130 [main] ERROR org.hibernate.engine.jdbc.spi.SqlExceptionHelper  - Duplicate entry 'RestaurantTestCase' for key 'PRIMARY'
+2017-04-09 12:22:46,870 6139 [main] WARN  org.hibernate.engine.jdbc.spi.SqlExceptionHelper  - SQL Warning Code: 1062, SQLState: 23000
+2017-04-09 12:22:46,876 6145 [main] WARN  org.hibernate.engine.jdbc.spi.SqlExceptionHelper  - Duplicate entry 'RestaurantTestCase' for key 'PRIMARY'
+2017-04-09 12:22:47,353 6629 [main] WARN  org.hibernate.engine.jdbc.spi.SqlExceptionHelper  - SQL Error: 1062, SQLState: 23000
+2017-04-09 12:22:47,360 6636 [main] ERROR org.hibernate.engine.jdbc.spi.SqlExceptionHelper  - Duplicate entry '151' for key 'PRIMARY'
+2017-04-09 12:22:47,364 6640 [main] WARN  org.hibernate.engine.jdbc.spi.SqlExceptionHelper  - SQL Warning Code: 1062, SQLState: 23000
+2017-04-09 12:22:47,376 6652 [main] WARN  org.hibernate.engine.jdbc.spi.SqlExceptionHelper  - Duplicate entry '151' for key 'PRIMARY'
+2017-04-09 12:22:47,929 7205 [main] WARN  org.hibernate.engine.jdbc.spi.SqlExceptionHelper  - SQL Error: 1062, SQLState: 23000
+2017-04-09 12:22:47,930 7206 [main] ERROR org.hibernate.engine.jdbc.spi.SqlExceptionHelper  - Duplicate entry '39' for key 'PRIMARY'
+2017-04-09 12:22:47,932 7208 [main] WARN  org.hibernate.engine.jdbc.spi.SqlExceptionHelper  - SQL Warning Code: 1062, SQLState: 23000
+2017-04-09 12:22:47,932 7208 [main] WARN  org.hibernate.engine.jdbc.spi.SqlExceptionHelper  - Duplicate entry '39' for key 'PRIMARY'
+2017-04-09 12:22:48,496 7765 [main] WARN  org.hibernate.engine.jdbc.spi.SqlExceptionHelper  - SQL Error: 1062, SQLState: 23000
+2017-04-09 12:22:48,500 7769 [main] ERROR org.hibernate.engine.jdbc.spi.SqlExceptionHelper  - Duplicate entry 'TestRestaurant2' for key 'PRIMARY'
+2017-04-09 12:22:48,502 7771 [main] WARN  org.hibernate.engine.jdbc.spi.SqlExceptionHelper  - SQL Warning Code: 1062, SQLState: 23000
+2017-04-09 12:22:48,504 7773 [main] WARN  org.hibernate.engine.jdbc.spi.SqlExceptionHelper  - Duplicate entry 'TestRestaurant2' for key 'PRIMARY'
+2017-04-09 12:34:24,903 0    [main] WARN  org.hibernate.engine.jdbc.connections.internal.DriverManagerConnectionProviderImpl  - HHH000402: Using Hibernate built-in connection pool (not for production use!)
+2017-04-09 12:34:45,265 0    [main] WARN  org.hibernate.engine.jdbc.connections.internal.DriverManagerConnectionProviderImpl  - HHH000402: Using Hibernate built-in connection pool (not for production use!)
+2017-04-09 12:35:05,911 0    [main] WARN  org.hibernate.engine.jdbc.connections.internal.DriverManagerConnectionProviderImpl  - HHH000402: Using Hibernate built-in connection pool (not for production use!)
+2017-04-09 12:35:46,994 0    [main] WARN  org.hibernate.engine.jdbc.connections.internal.DriverManagerConnectionProviderImpl  - HHH000402: Using Hibernate built-in connection pool (not for production use!)
+2017-04-09 12:36:04,846 1    [main] WARN  org.hibernate.engine.jdbc.connections.internal.DriverManagerConnectionProviderImpl  - HHH000402: Using Hibernate built-in connection pool (not for production use!)
+2017-04-09 12:36:18,280 0    [main] WARN  org.hibernate.engine.jdbc.connections.internal.DriverManagerConnectionProviderImpl  - HHH000402: Using Hibernate built-in connection pool (not for production use!)
