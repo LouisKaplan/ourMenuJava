@@ -13,6 +13,23 @@ public class Restaurants implements Serializable{
     private String restaurantType;
     private Set<UsersRestaurants> usersRestaurants = new HashSet<UsersRestaurants>(0);
 
+    public Restaurants() {
+    }
+
+    public Restaurants(String restaurantName,
+                       String restaurantType) {
+        this.restaurantName = restaurantName;
+        this.restaurantType = restaurantType;
+    }
+
+    public Restaurants(String restaurantName,
+                       String restaurantType,
+                       Set<UsersRestaurants> usersRestaurants) {
+        this.restaurantName = restaurantName;
+        this.restaurantType = restaurantType;
+        this.usersRestaurants = usersRestaurants;
+    }
+
     @Id
     @Column(name = "restaurantName")
     public String getRestaurantName() {
@@ -28,23 +45,25 @@ public class Restaurants implements Serializable{
 
     public void setRestaurantType(String restaurantType) { this.restaurantType = restaurantType; }
 
-    public Restaurants() {
-    }
 
-    public Restaurants(String restaurantName,
-                       String restaurantType) {
-        this.restaurantName = restaurantName;
-        this.restaurantType = restaurantType;
-    }
 
-    @OneToMany(fetch = FetchType.LAZY, mappedBy = "restaurantName", cascade = CascadeType.ALL)
+    @OneToMany(fetch = FetchType.LAZY, mappedBy = "pk.restaurants")
     public Set<UsersRestaurants> getUsersRestaurants(){
         return this.usersRestaurants;
     }
 
-    public void setUsersRestaurants(Set<UsersRestaurants> user) {
+    public void setUsersRestaurants(Set<UsersRestaurants> usersRestaurants) {
         this.usersRestaurants = usersRestaurants;
     }
+
+//    @OneToMany(fetch = FetchType.LAZY, mappedBy = "restaurantName", cascade = CascadeType.ALL)
+//    public Set<UsersRestaurants> getUsersRestaurants(){
+//        return this.usersRestaurants;
+//    }
+//
+//    public void setUsersRestaurants(Set<UsersRestaurants> user) {
+//        this.usersRestaurants = usersRestaurants;
+//    }
 
     @Override
     public String toString() {

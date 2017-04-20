@@ -8,54 +8,66 @@ import java.util.HashSet;
 import java.util.Set;
 
 @Entity
-@Table(name="users")
-public class Users implements Serializable{
+@Table(name="users", catalog = "ourMenu", uniqueConstraints = {
+        @UniqueConstraint(columnNames = "userName")
+})
+public class Users implements java.io.Serializable{
 
-    private int userid;
-    private String firstName;
-    private String lastName;
-    private String userRole;
+    private String userName;
+    private String displayName;
     private String userPassword;
-    private Set<UsersMenuItem> usersMenuItem = new HashSet<UsersMenuItem>(0);
+    private Set<MenuItems> menuItems = new HashSet<MenuItems>(0);
+//    private Set<UsersMenuItems> usersMenuItems = new HashSet<UsersMenuItems>(0);
     private Set<UsersRestaurants> usersRestaurants = new HashSet<UsersRestaurants>(0);
 
+    public Users() {
+    }
+
+    public Users(String userName,
+                 String displayName,
+                 String userPassword) {
+        this.userName = userName;
+        this.displayName = displayName;
+        this.userPassword = userPassword;
+    }
+
+    public Users(String userName,
+                 String displayName,
+                 String userPassword,
+                 Set<MenuItems> menuItems) {
+        this.userName = userName;
+        this.displayName = displayName;
+        this.userPassword = userPassword;
+        this.menuItems = menuItems;
+    }
+
+    public Users(Set<UsersRestaurants> usersRestaurants,
+                 String userName,
+                 String displayName,
+                 String userPassword) {
+        this.userName = userName;
+        this.displayName = displayName;
+        this.userPassword = userPassword;
+        this.usersRestaurants = usersRestaurants;
+    }
+
     @Id
-    @GeneratedValue(generator = "increment")
-    @GenericGenerator(name = "increment", strategy = "increment")
-    @Column(name = "userID")
-    public int getUserid() {
-        return userid;
+    @Column(name = "userName")
+    public String getUserName() {
+        return userName;
     }
 
-    public void setUserid(int userid) {
-        this.userid = userid;
+    public void setUserName(String userName) {
+        this.userName = userName;
     }
 
-    @Column(name = "userFirstName")
-    public String getFirstName() {
-        return firstName;
+    @Column(name = "displayName")
+    public String getDisplayName(){
+        return displayName;
     }
 
-    public void setFirstName(String firstName) {
-        this.firstName = firstName;
-    }
-
-    @Column(name = "userLastName")
-    public String getLastName() {
-        return lastName;
-    }
-
-    public void setLastName(String lastName) {
-        this.lastName = lastName;
-    }
-
-    @Column(name = "userRole")
-    public String getUserRole(){
-        return userRole;
-    }
-
-    public void setUserRole(String userRole) {
-        this.userRole = userRole;
+    public void setDisplayName(String displayName) {
+        this.displayName = displayName;
     }
 
     @Column(name = "userPassword")
@@ -67,30 +79,34 @@ public class Users implements Serializable{
         this.userPassword = userPassword;
     }
 
-    public Users() {
+
+
+    @ManyToMany(fetch = FetchType.LAZY, cascade = CascadeType.ALL)
+    @JoinTable(name = "UsersMenuItems", catalog= "ourMenu", joinColumns = {
+            @JoinColumn(name = "userName")
+    }, inverseJoinColumns = {
+            @JoinColumn(name = "menuItemID")
+    })
+    public Set<MenuItems> getMenuItems(){
+        return this.menuItems;
     }
 
-    public Users(String firstName,
-                 String lastName,
-                 String userRole,
-                 String userPassword) {
-        this.firstName = firstName;
-        this.lastName = lastName;
-        this.userRole = userRole;
-        this.userPassword = userPassword;
+    public void setMenuItems(Set<MenuItems> menuItems) {
+        this.menuItems = menuItems;
     }
 
-    @OneToMany(fetch = FetchType.LAZY, mappedBy = "userID", cascade = CascadeType.ALL)
-    public Set<UsersMenuItem> getUsersMenuItem(){
-        return this.usersMenuItem;
-    }
+//    @OneToMany(fetch = FetchType.LAZY, mappedBy = "userName", cascade = CascadeType.ALL)
+//    public Set<UsersMenuItems> getUsersMenuItems(){
+//        return this.usersMenuItems;
+//    }
+//
+//    public void setUsersMenuItems(Set<UsersMenuItems> usersMenuItems) {
+//        this.usersMenuItems = usersMenuItems;
+//    }
 
-    public void setUsersMenuItem(Set<UsersMenuItem> usersMenuItem) {
-        this.usersMenuItem = usersMenuItem;
-    }
-
-    @OneToMany(fetch = FetchType.LAZY, mappedBy = "userID", cascade = CascadeType.ALL)
+    @OneToMany(fetch = FetchType.LAZY, mappedBy = "pk.user", cascade = CascadeType.ALL)
     public Set<UsersRestaurants> getUsersRestaurants(){
+
         return this.usersRestaurants;
     }
 
@@ -101,10 +117,8 @@ public class Users implements Serializable{
     @Override
     public String toString() {
         return "User{" +
-                "userid=" + userid + '\'' +
-                ", firstName='" + firstName + '\'' +
-                ", lastName='" + lastName + '\'' +
-                ", userRole=" + userRole + '\'' +
+                "userName=" + userName + '\'' +
+                ", displayName=" + displayName + '\'' +
                 ", userPassword=" + userPassword + '\'' +
                 '}';
     }

@@ -8,14 +8,36 @@ import java.util.HashSet;
 import java.util.Set;
 
 @Entity
-@Table(name="menuItems")
-public class MenuItems implements Serializable{
+@Table(name="menuItems", catalog = "ourMenu")
+public class MenuItems implements java.io.Serializable{
 
     private int menuItemID;
     private String restaurantName;
     private String itemDescription;
     private String itemType;
-    private Set<UsersMenuItem> usersMenuItem = new HashSet<UsersMenuItem>(0);
+    private Set<Users> users = new HashSet<Users>(0);
+//    private Set<UsersMenuItems> usersMenuItems = new HashSet<UsersMenuItem>(0);
+
+    public MenuItems() {
+    }
+
+    public MenuItems(String restaurantName,
+                     String itemDescription,
+                     String itemType) {
+        this.restaurantName = restaurantName;
+        this.itemDescription = itemDescription;
+        this.itemType = itemType;
+    }
+
+    public MenuItems(String restaurantName,
+                     String itemDescription,
+                     String itemType,
+                     Set<Users> users) {
+        this.restaurantName = restaurantName;
+        this.itemDescription = itemDescription;
+        this.itemType = itemType;
+        this.users = users;
+    }
 
     @Id
     @GeneratedValue(generator = "increment")
@@ -58,25 +80,28 @@ public class MenuItems implements Serializable{
         this.itemType = itemType;
     }
 
-    public MenuItems() {
+
+
+    @ManyToMany(fetch = FetchType.LAZY, mappedBy = "menuItems")
+    public Set<Users> getUsers(){
+        return this.users;
     }
 
-    public MenuItems(String restaurantName,
-                     String itemDescription,
-                     String itemType) {
-        this.restaurantName = restaurantName;
-        this.itemDescription = itemDescription;
-        this.itemType = itemType;
+    public void setUsers(Set<Users> users) {
+        this.users = users;
     }
 
-    @OneToMany(fetch = FetchType.LAZY, mappedBy = "menuItemID", cascade = CascadeType.ALL)
-    public Set<UsersMenuItem> getUsersMenuItem(){
-        return this.usersMenuItem;
-    }
 
-    public void setUsersMenuItem(Set<UsersMenuItem> usersMenuItem) {
-        this.usersMenuItem = usersMenuItem;
-    }
+
+//    @OneToMany(fetch = FetchType.LAZY, mappedBy = "menuItemID", cascade = CascadeType.ALL)
+//    public Set<UsersMenuItem> getUsersMenuItem(){
+//        return this.usersMenuItem;
+//    }
+//
+//    public void setUsersMenuItem(Set<UsersMenuItem> usersMenuItem) {
+//        this.usersMenuItem = usersMenuItem;
+//    }
+
 
     @Override
     public String toString() {
