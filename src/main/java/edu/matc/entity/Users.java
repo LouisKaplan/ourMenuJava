@@ -104,7 +104,7 @@ public class Users implements java.io.Serializable{
 //        this.usersMenuItems = usersMenuItems;
 //    }
 
-    @OneToMany(fetch = FetchType.LAZY, mappedBy = "pk.user", cascade = CascadeType.ALL)
+    @OneToMany(fetch = FetchType.LAZY, mappedBy = "pk.users", cascade = CascadeType.ALL)
     public Set<UsersRestaurants> getUsersRestaurants(){
 
         return this.usersRestaurants;

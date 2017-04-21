@@ -45,5 +45,4 @@ public class UsersRestaurantsID implements java.io.Serializable{
         result = 31 * result + (restaurants != null ? restaurants.hashCode() : 0);
         return result;
     }
-
 }
