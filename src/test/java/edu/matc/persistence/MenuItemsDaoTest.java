@@ -39,7 +39,7 @@ public class MenuItemsDaoTest {
     public void getAllMenuItems() throws Exception {
         List<MenuItems> menuItems = dao.getAllMenuItems();
         assertTrue(menuItems.size() > 0);
-        log.info("all users: " + menuItems);
+        log.info("all menu items2: " + menuItems);
     }
 
     @Test

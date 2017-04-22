@@ -9,7 +9,6 @@ import org.hibernate.Transaction;
 import java.util.ArrayList;
 import java.util.List;
 
-
 public class MenuItemsDao {
 
     private final Logger log = Logger.getLogger(this.getClass());
@@ -45,6 +44,7 @@ public class MenuItemsDao {
      */
 
     public int addMenuItem(MenuItems menuItem) {
+
         Session session = SessionFactoryProvider.getSessionFactory().openSession();
         Transaction tx = null;
         int id = 0;
