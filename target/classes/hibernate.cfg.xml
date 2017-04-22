@@ -13,23 +13,21 @@
         <property name="connection.url">jdbc:mysql://localhost:3306/our_menu</property>
         <property name="connection.username">root</property>
         <property name="connection.password">student</property>
-
-        <!-- SQL dialect -->
         <property name="dialect">org.hibernate.dialect.MySQL5Dialect</property>
-
-        <!-- Echo all executed SQL to stdout -->
         <property name="show_sql">true</property>
 
         <!-- List the annotated entity class/es -->
         <mapping class="edu.matc.entity.Users" />
         <mapping class="edu.matc.entity.Restaurants" />
         <mapping class="edu.matc.entity.MenuItems" />
-        <mapping class="edu.matc.entity.UsersMenuItem" />
-        <mapping class="edu.matc.entity.UsersMenuItemID" />
         <mapping class="edu.matc.entity.UsersRestaurants" />
         <mapping class="edu.matc.entity.UsersRestaurantsID" />
+        <mapping class="edu.matc.entity.UserRoles" />
 
-
+<!--
+        <mapping class="edu.matc.entity.UsersMenuItems" />
+        <mapping class="edu.matc.entity.UsersMenuItemID" />
+-->
     </session-factory>
 
 </hibernate-configuration>

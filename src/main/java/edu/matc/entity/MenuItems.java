@@ -3,20 +3,30 @@ package edu.matc.entity;
 import org.hibernate.annotations.GenericGenerator;
 
 import javax.persistence.*;
-import java.io.Serializable;
 import java.util.HashSet;
 import java.util.Set;
 
 @Entity
-@Table(name="menuItems", catalog = "ourMenu")
+@Table(name="menuItems")
 public class MenuItems implements java.io.Serializable{
 
+    @Id
+    @GeneratedValue(generator = "increment")
+    @GenericGenerator(name = "increment", strategy = "increment")
+    @Column(name = "menuItemID")
     private int menuItemID;
+
+    @Column(name = "restaurantName")
     private String restaurantName;
+
+    @Column(name = "itemDescription")
     private String itemDescription;
+
+    @Column(name = "itemType")
     private String itemType;
+
+    @ManyToMany(fetch = FetchType.LAZY, mappedBy = "menuItems")
     private Set<Users> users = new HashSet<Users>(0);
-//    private Set<UsersMenuItems> usersMenuItems = new HashSet<UsersMenuItem>(0);
 
     public MenuItems() {
     }
@@ -39,10 +49,6 @@ public class MenuItems implements java.io.Serializable{
         this.users = users;
     }
 
-    @Id
-    @GeneratedValue(generator = "increment")
-    @GenericGenerator(name = "increment", strategy = "increment")
-    @Column(name = "menuItemID")
     public int getMenuItemID() {
         return menuItemID;
     }
@@ -52,7 +58,6 @@ public class MenuItems implements java.io.Serializable{
     }
 
 
-    @Column(name = "restaurantName")
     public String getRestaurantName() {
         return restaurantName;
     }
@@ -62,7 +67,6 @@ public class MenuItems implements java.io.Serializable{
     }
 
 
-    @Column(name = "itemDescription")
     public String getItemDescription() {
         return itemDescription;
     }
@@ -71,7 +75,7 @@ public class MenuItems implements java.io.Serializable{
         this.itemDescription = itemDescription;
     }
 
-    @Column(name = "itemType")
+
     public String getItemType() {
         return itemType;
     }
@@ -81,8 +85,6 @@ public class MenuItems implements java.io.Serializable{
     }
 
 
-
-    @ManyToMany(fetch = FetchType.LAZY, mappedBy = "menuItems")
     public Set<Users> getUsers(){
         return this.users;
     }
@@ -90,18 +92,6 @@ public class MenuItems implements java.io.Serializable{
     public void setUsers(Set<Users> users) {
         this.users = users;
     }
-
-
-
-//    @OneToMany(fetch = FetchType.LAZY, mappedBy = "menuItemID", cascade = CascadeType.ALL)
-//    public Set<UsersMenuItem> getUsersMenuItem(){
-//        return this.usersMenuItem;
-//    }
-//
-//    public void setUsersMenuItem(Set<UsersMenuItem> usersMenuItem) {
-//        this.usersMenuItem = usersMenuItem;
-//    }
-
 
     @Override
     public String toString() {

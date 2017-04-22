@@ -1,23 +1,33 @@
 package edu.matc.entity;
 
-import org.hibernate.annotations.GenericGenerator;
-
-import javax.persistence.*;
-import java.io.Serializable;
 import java.util.HashSet;
 import java.util.Set;
 
+import javax.persistence.*;
+
 @Entity
-@Table(name="users", catalog = "ourMenu", uniqueConstraints = {
+@Table(name = "users", uniqueConstraints = {
         @UniqueConstraint(columnNames = "userName")
 })
 public class Users implements java.io.Serializable{
 
+    @Id
+    @Column(name = "userName", unique = true, nullable = false)
     private String userName;
+
+    @Column(name = "displayName")
     private String displayName;
+
+    @Column(name = "userPassword")
     private String userPassword;
+
+    @ManyToMany(fetch = FetchType.LAZY, cascade = CascadeType.ALL)
+    @JoinTable(name = "UsersMenuItems", catalog= "ourMenu", joinColumns = {
+            @JoinColumn(name = "userName")},
+        inverseJoinColumns = { @JoinColumn(name = "menuItemID") })
     private Set<MenuItems> menuItems = new HashSet<MenuItems>(0);
-//    private Set<UsersMenuItems> usersMenuItems = new HashSet<UsersMenuItems>(0);
+
+    @OneToMany(fetch = FetchType.LAZY, mappedBy = "pk.users", cascade = CascadeType.ALL)
     private Set<UsersRestaurants> usersRestaurants = new HashSet<UsersRestaurants>(0);
 
     public Users() {
@@ -45,34 +55,33 @@ public class Users implements java.io.Serializable{
                  String userName,
                  String displayName,
                  String userPassword) {
+        this.usersRestaurants = usersRestaurants;
         this.userName = userName;
         this.displayName = displayName;
         this.userPassword = userPassword;
-        this.usersRestaurants = usersRestaurants;
+
     }
 
-    @Id
-    @Column(name = "userName")
     public String getUserName() {
-        return userName;
+        return this.userName;
     }
 
     public void setUserName(String userName) {
         this.userName = userName;
     }
 
-    @Column(name = "displayName")
+
     public String getDisplayName(){
-        return displayName;
+        return this.displayName;
     }
 
     public void setDisplayName(String displayName) {
         this.displayName = displayName;
     }
 
-    @Column(name = "userPassword")
+
     public String getUserPassword(){
-        return userPassword;
+        return this.userPassword;
     }
 
     public void setUserPassword(String userPassword) {
@@ -80,13 +89,6 @@ public class Users implements java.io.Serializable{
     }
 
 
-
-    @ManyToMany(fetch = FetchType.LAZY, cascade = CascadeType.ALL)
-    @JoinTable(name = "UsersMenuItems", catalog= "ourMenu", joinColumns = {
-            @JoinColumn(name = "userName")
-    }, inverseJoinColumns = {
-            @JoinColumn(name = "menuItemID")
-    })
     public Set<MenuItems> getMenuItems(){
         return this.menuItems;
     }
@@ -95,18 +97,8 @@ public class Users implements java.io.Serializable{
         this.menuItems = menuItems;
     }
 
-//    @OneToMany(fetch = FetchType.LAZY, mappedBy = "userName", cascade = CascadeType.ALL)
-//    public Set<UsersMenuItems> getUsersMenuItems(){
-//        return this.usersMenuItems;
-//    }
-//
-//    public void setUsersMenuItems(Set<UsersMenuItems> usersMenuItems) {
-//        this.usersMenuItems = usersMenuItems;
-//    }
 
-    @OneToMany(fetch = FetchType.LAZY, mappedBy = "pk.users", cascade = CascadeType.ALL)
     public Set<UsersRestaurants> getUsersRestaurants(){
-
         return this.usersRestaurants;
     }
 

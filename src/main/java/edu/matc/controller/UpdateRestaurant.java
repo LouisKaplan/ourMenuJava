@@ -38,7 +38,7 @@ public class UpdateRestaurant extends HttpServlet {
 
         HttpSession session = request.getSession();
         String url = "updateRestaurantDisplay";
-        UsersMenuItemDao userMenuDao = new UsersMenuItemDao();
+        //UsersMenuItemDao userMenuDao = new UsersMenuItemDao();
 
         try {
 

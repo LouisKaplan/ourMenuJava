@@ -1,32 +1,22 @@
 package edu.matc.entity;
 
-import org.hibernate.annotations.GenericGenerator;
-
 import javax.persistence.*;
-import java.io.Serializable;
 
 @Entity
-@Table(name="usersRestaurants", catalog = "ourMenu")
+@Table(name="usersRestaurants")
 @AssociationOverrides({
         @AssociationOverride(name = "pk.users",
-            joinColumns = @JoinColumn(name="userName")),
+            joinColumns = @JoinColumn(name = "userName")),
         @AssociationOverride(name = "pk.restaurants",
-            joinColumns = @JoinColumn(name="restaurantName")),
-})
+            joinColumns = @JoinColumn(name = "restaurantName")) })
 public class UsersRestaurants implements java.io.Serializable {
-
-    private UsersRestaurantsID pk = new UsersRestaurantsID();
-    private int userRating;
-
-//    private int linkID;
-//    private Users userID;
-//    private Restaurants restaurantName;
-//    private int restaurantRating;
 
     public UsersRestaurants(){
     }
 
     @EmbeddedId
+    private UsersRestaurantsID pk = new UsersRestaurantsID();
+
     public UsersRestaurantsID getPK(){
         return pk;
     }
@@ -53,7 +43,8 @@ public class UsersRestaurants implements java.io.Serializable {
         getPK().setRestaurants(restaurants);
     }
 
-    @Column(name = "userRating", length = 11)
+    @Column(name = "userRating")
+    private int userRating;
     public int getUserRating() {
         return this.userRating;
     }
@@ -80,48 +71,5 @@ public class UsersRestaurants implements java.io.Serializable {
     public int hashCode() {
         return (getPK() != null ? getPK().hashCode() : 0);
     }
-
-
-
-//    @Id
-//    @GeneratedValue(generator="increment")
-//    @GenericGenerator(name="increment", strategy = "increment")
-//    @Column(name = "linkID")
-//    public int getLinkID() {
-//        return linkID;
-//    }
-//
-//    public void setLinkID(int linkID) {
-//        this.linkID = linkID;
-//    }
-//
-//    @ManyToOne(fetch = FetchType.LAZY, cascade = CascadeType.ALL)
-//    @JoinColumn(name = "userID")
-//    public Users getUserID() {
-//        return userID;
-//    }
-//
-//    public void setUserID(Users userID) {
-//        this.userID = userID;
-//    }
-//
-//    @ManyToOne(fetch = FetchType.LAZY, cascade = CascadeType.ALL)
-//    @JoinColumn(name = "restaurantName")
-//    public Restaurants getRestaurantName() {
-//        return restaurantName;
-//    }
-//
-//    public void setRestaurantName(Restaurants restaurantName) {
-//        this.restaurantName = restaurantName;
-//    }
-//
-//    @Column(name = "restaurantRating")
-//    public int getRestaurantRating() {
-//        return restaurantRating;
-//    }
-//
-//    public void setRestaurantRating(int restaurantRating) {
-//        this.restaurantRating = restaurantRating;
-//    }
 
 }

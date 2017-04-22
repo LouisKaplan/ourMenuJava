@@ -7,10 +7,16 @@ import java.util.Set;
 
 @Entity
 @Table(name="restaurants")
-public class Restaurants implements Serializable{
+public class Restaurants implements java.io.Serializable {
 
+    @Id
+    @Column(name = "restaurantName")
     private String restaurantName;
+
+    @Column(name = "restaurantType")
     private String restaurantType;
+
+    @OneToMany(fetch = FetchType.LAZY, mappedBy = "pk.restaurants")
     private Set<UsersRestaurants> usersRestaurants = new HashSet<UsersRestaurants>(0);
 
     public Restaurants() {
@@ -30,45 +36,29 @@ public class Restaurants implements Serializable{
         this.usersRestaurants = usersRestaurants;
     }
 
-    @Id
-    @Column(name = "restaurantName")
     public String getRestaurantName() {
-        return restaurantName;
+        return this.restaurantName;
     }
 
     public void setRestaurantName(String restaurantName) {
         this.restaurantName = restaurantName;
     }
 
-    @Column(name = "restaurantType")
-    public String getRestaurantType() { return restaurantType; }
 
-    public void setRestaurantType(String restaurantType) { this.restaurantType = restaurantType; }
+    public String getRestaurantType() {
+        return this.restaurantType;
+    }
+
+    public void setRestaurantType(String restaurantType) {
+        this.restaurantType = restaurantType;
+    }
 
 
-
-    @OneToMany(fetch = FetchType.LAZY, mappedBy = "pk.restaurants")
-    public Set<UsersRestaurants> getUsersRestaurants(){
+    public Set<UsersRestaurants> getUsersRestaurants() {
         return this.usersRestaurants;
     }
 
     public void setUsersRestaurants(Set<UsersRestaurants> usersRestaurants) {
         this.usersRestaurants = usersRestaurants;
-    }
-
-//    @OneToMany(fetch = FetchType.LAZY, mappedBy = "restaurantName", cascade = CascadeType.ALL)
-//    public Set<UsersRestaurants> getUsersRestaurants(){
-//        return this.usersRestaurants;
-//    }
-//
-//    public void setUsersRestaurants(Set<UsersRestaurants> user) {
-//        this.usersRestaurants = usersRestaurants;
-//    }
-
-    @Override
-    public String toString() {
-        return "Restaurant{" +
-                "restaurantName='" + restaurantName +
-                "restaurantType='" + restaurantType + '}';
     }
 }

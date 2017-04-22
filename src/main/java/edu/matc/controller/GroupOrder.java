@@ -36,7 +36,7 @@ public class GroupOrder { /**
 
         HttpSession session = request.getSession();
         String url = "groupOrderDisplay";
-        UsersMenuItemDao userMenuDao = new UsersMenuItemDao();
+        //UsersMenuItemDao userMenuDao = new UsersMenuItemDao();
 
         try {
     
