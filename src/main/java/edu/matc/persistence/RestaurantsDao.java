@@ -19,10 +19,16 @@ public class RestaurantsDao {
      * @return All Restaurants
      */
     public List<Restaurants> getAllRestaurants() {
-        List<Restaurants> Restaurants = new ArrayList<Restaurants>();
+        List<Restaurants> restaurants = new ArrayList<Restaurants>();
         Session session = SessionFactoryProvider.getSessionFactory().openSession();
-        Restaurants = session.createCriteria(Restaurants.class).list();
-        return Restaurants;
+        try {
+            restaurants = session.createCriteria(Restaurants.class).list();
+        } catch (HibernateException e) {
+            log.error("Hibernate Exception", e);
+        }finally {
+            session.close();
+        }
+        return restaurants;
     }
 
     /**
@@ -33,8 +39,15 @@ public class RestaurantsDao {
      */
     public Restaurants getRestaurant(String restaurantName) {
         Session session = SessionFactoryProvider.getSessionFactory().openSession();
-        Restaurants restaurant = (Restaurants) session.get(Restaurants.class, restaurantName);
-        return restaurant;
+        Restaurants restaurants = null;
+        try {
+            restaurants = (Restaurants) session.get(Restaurants.class, restaurantName);
+        } catch (HibernateException e) {
+            log.error("Hibernate Exception", e);
+        } finally {
+            session.close();
+        }
+        return restaurants;
     }
 
     /**
@@ -43,6 +56,7 @@ public class RestaurantsDao {
      * @param restaurant
      * @return the name of the inserted restaurant
      */
+
     public String addRestaurant(Restaurants restaurant) {
         Session session = SessionFactoryProvider.getSessionFactory().openSession();
         Transaction tx = null;
@@ -69,7 +83,7 @@ public class RestaurantsDao {
         Transaction tx = null;
         try{
             tx = session.beginTransaction();
-            Restaurants restaurant = (Restaurants) session.get(Restaurants.class, restaurantName);
+            Restaurants restaurant = (Restaurants)session.get(Restaurants.class, restaurantName);
             session.delete(restaurant);
             tx.commit();
         }catch (HibernateException e) {

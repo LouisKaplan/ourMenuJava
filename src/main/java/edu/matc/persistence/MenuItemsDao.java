@@ -20,7 +20,13 @@ public class MenuItemsDao {
     public List<MenuItems> getAllMenuItems() {
         List<MenuItems> menuItems = new ArrayList<MenuItems>();
         Session session = SessionFactoryProvider.getSessionFactory().openSession();
-        menuItems = session.createCriteria(MenuItems.class).list();
+        try {
+            menuItems = session.createCriteria(MenuItems.class).list();
+        } catch (HibernateException e) {
+            log.error("Hibernate Exception", e);
+        }finally {
+            session.close();
+        }
         return menuItems;
     }
 
@@ -32,8 +38,15 @@ public class MenuItemsDao {
      */
     public MenuItems getMenuItem(int id) {
         Session session = SessionFactoryProvider.getSessionFactory().openSession();
-        MenuItems menuItem = (MenuItems) session.get(MenuItems.class, id);
-        return menuItem;
+        MenuItems menuItems = null;
+        try {
+            menuItems = (MenuItems) session.get(MenuItems.class, id);
+        } catch (HibernateException e) {
+            log.error("Hibernate Exception", e);
+        } finally {
+            session.close();
+        }
+        return menuItems;
     }
 
     /**

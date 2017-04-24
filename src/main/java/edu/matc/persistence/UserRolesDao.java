@@ -1,6 +1,6 @@
 package edu.matc.persistence;
 
-import edu.matc.entity.Users;
+import edu.matc.entity.UserRoles;
 import org.apache.log4j.Logger;
 import org.hibernate.HibernateException;
 import org.hibernate.Session;
@@ -9,61 +9,60 @@ import org.hibernate.Transaction;
 import java.util.ArrayList;
 import java.util.List;
 
-
-public class UsersDao {
+public class UserRolesDao {
 
     private final Logger log = Logger.getLogger(this.getClass());
 
-    /** Return a list of all Users
+    /** Return a list of all UserRoles
      *
-     * @return All Users
+     * @return All UserRoles
      */
-    public List<Users> getAllUsers() {
-        List<Users> users = new ArrayList<Users>();
+    public List<UserRoles> getAllUserRoles() {
+        List<UserRoles> userRoles = new ArrayList<UserRoles>();
         Session session = SessionFactoryProvider.getSessionFactory().openSession();
         try {
-            users = session.createCriteria(Users.class).list();
+            userRoles = session.createCriteria(UserRoles.class).list();
         } catch (HibernateException e) {
             log.error("Hibernate Exception", e);
         }finally {
             session.close();
         }
-        return users;
+        return userRoles;
     }
 
     /**
-     * retrieve a user given their id
+     * retrieve a userRoles given its userName
      *
-     * @param id the user's id
-     * @return user
+     * @param userName the userRoles's userName
+     * @return userRoles
      */
-    public Users getUser(int id) {
+    public UserRoles getMenuItem(String userName) {
         Session session = SessionFactoryProvider.getSessionFactory().openSession();
-        Users user = null;
+        UserRoles userRoles = null;
         try {
-            user = (Users) session.get(Users.class, id);
+            userRoles = (UserRoles) session.get(UserRoles.class, userName);
         } catch (HibernateException e) {
             log.error("Hibernate Exception", e);
         } finally {
             session.close();
         }
-        return user;
+        return userRoles;
     }
 
     /**
      * add a user
      *
-     * @param user
-     * @return the id of the inserted record
+     * @param userRoles
+     * @return the id of the menuItem
      */
 
-    public int addUser(Users user) {
+    public String addUserRole(UserRoles userRoles) {
         Session session = SessionFactoryProvider.getSessionFactory().openSession();
         Transaction tx = null;
-        int id = 0;
+        String id = null;
         try{
             tx = session.beginTransaction();
-            id = (Integer)session.save(user);
+            id = (String)session.save(userRoles);
             tx.commit();
         }catch (HibernateException e) {
             if (tx!=null) tx.rollback();
@@ -75,16 +74,16 @@ public class UsersDao {
     }
 
     /**
-     * delete a user by id
-     * @param id the user's id
+     * delete a menuItem by id
+     * @param userName the UserRole's userName
      */
-    public void deleteUser(int id) {
+    public void deleteUserRole(String userName) {
         Session session = SessionFactoryProvider.getSessionFactory().openSession();
         Transaction tx = null;
         try{
             tx = session.beginTransaction();
-            Users user = (Users)session.get(Users.class, id);
-            session.delete(user);
+            UserRoles userRole = (UserRoles)session.get(UserRoles.class, userName);
+            session.delete(userRole);
             tx.commit();
         }catch (HibernateException e) {
             if (tx!=null) tx.rollback();
@@ -95,16 +94,16 @@ public class UsersDao {
     }
 
     /**
-     * Update the user
-     * @param user
+     * Update the userRole
+     * @param userRole
      */
 
-    public void updateUser(Users user) {
+    public void updateUserRole(UserRoles userRole) {
         Session session = SessionFactoryProvider.getSessionFactory().openSession();
         Transaction tx = null;
         try{
             tx = session.beginTransaction();
-            session.update(user);
+            session.update(userRole);
             tx.commit();
         }catch (HibernateException e) {
             if (tx!=null) tx.rollback();
