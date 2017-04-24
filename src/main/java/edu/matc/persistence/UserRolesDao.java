@@ -63,7 +63,6 @@ public class UserRolesDao {
         try{
             tx = session.beginTransaction();
             id = (String) session.save(userRoles);
-
             tx.commit();
         }catch (HibernateException e) {
             if (tx!=null) tx.rollback();

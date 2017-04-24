@@ -9,6 +9,7 @@ import javax.persistence.*;
             joinColumns = @JoinColumn(name = "userName")),
         @AssociationOverride(name = "pk.restaurants",
             joinColumns = @JoinColumn(name = "restaurantName")) })
+
 public class UsersRestaurants implements java.io.Serializable {
 
     public UsersRestaurants(){

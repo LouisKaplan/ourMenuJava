@@ -34,14 +34,14 @@ public class UsersDao {
     /**
      * retrieve a user given their id
      *
-     * @param id the user's id
+     * @param userName the user's userName
      * @return user
      */
-    public Users getUser(int id) {
+    public Users getUser(String userName) {
         Session session = SessionFactoryProvider.getSessionFactory().openSession();
         Users user = null;
         try {
-            user = (Users) session.get(Users.class, id);
+            user = (Users) session.get(Users.class, userName);
         } catch (HibernateException e) {
             log.error("Hibernate Exception", e);
         } finally {
@@ -54,16 +54,16 @@ public class UsersDao {
      * add a user
      *
      * @param user
-     * @return the id of the inserted record
+     * @return the userName of the inserted record
      */
 
-    public int addUser(Users user) {
+    public String addUser(Users user) {
         Session session = SessionFactoryProvider.getSessionFactory().openSession();
         Transaction tx = null;
-        int id = 0;
+        String id = null;
         try{
             tx = session.beginTransaction();
-            id = (Integer)session.save(user);
+            id = (String)session.save(user);
             tx.commit();
         }catch (HibernateException e) {
             if (tx!=null) tx.rollback();
@@ -75,15 +75,15 @@ public class UsersDao {
     }
 
     /**
-     * delete a user by id
-     * @param id the user's id
+     * delete a user by userName
+     * @param userName the user's userName
      */
-    public void deleteUser(int id) {
+    public void deleteUser(String userName) {
         Session session = SessionFactoryProvider.getSessionFactory().openSession();
         Transaction tx = null;
         try{
             tx = session.beginTransaction();
-            Users user = (Users)session.get(Users.class, id);
+            Users user = (Users)session.get(Users.class, userName);
             session.delete(user);
             tx.commit();
         }catch (HibernateException e) {

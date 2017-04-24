@@ -22,7 +22,7 @@ public class Users implements java.io.Serializable{
     private String userPassword;
 
     @ManyToMany(fetch = FetchType.LAZY, cascade = CascadeType.ALL)
-    @JoinTable(name = "UsersMenuItems", catalog= "ourMenu", joinColumns = {
+    @JoinTable(name = "usersMenuItems", joinColumns = {
             @JoinColumn(name = "userName")},
         inverseJoinColumns = { @JoinColumn(name = "menuItemID") })
     private Set<MenuItems> menuItems = new HashSet<MenuItems>(0);
