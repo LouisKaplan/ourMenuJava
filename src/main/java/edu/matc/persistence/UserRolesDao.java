@@ -36,7 +36,7 @@ public class UserRolesDao {
      * @param userName the userRoles's userName
      * @return userRoles
      */
-    public UserRoles getMenuItem(String userName) {
+    public UserRoles getUserRole(String userName) {
         Session session = SessionFactoryProvider.getSessionFactory().openSession();
         UserRoles userRoles = null;
         try {
@@ -62,7 +62,8 @@ public class UserRolesDao {
         String id = null;
         try{
             tx = session.beginTransaction();
-            id = (String)session.save(userRoles);
+            id = (String) session.save(userRoles);
+
             tx.commit();
         }catch (HibernateException e) {
             if (tx!=null) tx.rollback();
@@ -75,14 +76,14 @@ public class UserRolesDao {
 
     /**
      * delete a menuItem by id
-     * @param userName the UserRole's userName
+     * @param passedUserRole the UserRole's userName
      */
-    public void deleteUserRole(String userName) {
+    public void deleteUserRole(String passedUserRole) {
         Session session = SessionFactoryProvider.getSessionFactory().openSession();
         Transaction tx = null;
         try{
             tx = session.beginTransaction();
-            UserRoles userRole = (UserRoles)session.get(UserRoles.class, userName);
+            UserRoles userRole = (UserRoles)session.get(UserRoles.class, passedUserRole);
             session.delete(userRole);
             tx.commit();
         }catch (HibernateException e) {

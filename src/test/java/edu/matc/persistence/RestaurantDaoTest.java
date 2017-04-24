@@ -25,7 +25,6 @@ public class RestaurantDaoTest {
 
         testRestaurant.setRestaurantName("RestaurantTestCase");
         testRestaurant.setRestaurantType("Ghost");
-        log.info(testRestaurant.getRestaurantName());
     }
 
     @After
@@ -46,7 +45,6 @@ public class RestaurantDaoTest {
     public void getRestaurant() throws Exception {
         restaurantTestID = dao.addRestaurant(testRestaurant);
         Restaurants findRestaurant = dao.getRestaurant("RestaurantTestCase");
-        log.info("TESTONE: " + findRestaurant);
         assertTrue("Did not find correct restaurant", findRestaurant.getRestaurantType().equals("Ghost"));
         log.info("Restaurant by name: " + findRestaurant.getRestaurantName());
     }
@@ -72,6 +70,6 @@ public class RestaurantDaoTest {
     public void deleteRestaurant() throws Exception {
         dao.addRestaurant(testRestaurant);
         dao.deleteRestaurant(testRestaurant.getRestaurantName());
-        assertNull("user was still found", dao.getRestaurant(testRestaurant.getRestaurantName()));
+        assertNull("Restaurant was still found", dao.getRestaurant(testRestaurant.getRestaurantName()));
     }
 }

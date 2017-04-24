@@ -2,16 +2,11 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="d6d75d4b-8542-4e7d-82b1-5d1ad74636e1" name="Default" comment="">
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/main/java/edu/matc/persistence/UserRolesDao.java" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/target/classes/edu/matc/persistence/MenuItemsDao.class" afterPath="$PROJECT_DIR$/target/classes/edu/matc/persistence/MenuItemsDao.class" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/target/classes/edu/matc/persistence/RestaurantsDao.class" afterPath="$PROJECT_DIR$/target/classes/edu/matc/persistence/RestaurantsDao.class" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/target/classes/edu/matc/persistence/UsersDao.class" afterPath="$PROJECT_DIR$/target/classes/edu/matc/persistence/UsersDao.class" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/MyAppLog.log" afterPath="$PROJECT_DIR$/MyAppLog.log" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/main/java/edu/matc/persistence/MenuItemsDao.java" afterPath="$PROJECT_DIR$/src/main/java/edu/matc/persistence/MenuItemsDao.java" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/main/java/edu/matc/persistence/RestaurantsDao.java" afterPath="$PROJECT_DIR$/src/main/java/edu/matc/persistence/RestaurantsDao.java" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/main/java/edu/matc/persistence/UsersDao.java" afterPath="$PROJECT_DIR$/src/main/java/edu/matc/persistence/UsersDao.java" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/main/java/edu/matc/entity/UserRoles.java" afterPath="$PROJECT_DIR$/src/main/java/edu/matc/entity/UserRoles.java" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/main/java/edu/matc/persistence/UserRolesDao.java" afterPath="$PROJECT_DIR$/src/main/java/edu/matc/persistence/UserRolesDao.java" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/test/java/edu/matc/persistence/RestaurantDaoTest.java" afterPath="$PROJECT_DIR$/src/test/java/edu/matc/persistence/RestaurantDaoTest.java" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/test/java/edu/matc/persistence/UserRolesDaoTest.java" afterPath="$PROJECT_DIR$/src/test/java/edu/matc/persistence/UserRolesDaoTest.java" />
     </list>
     <ignored path="$PROJECT_DIR$/out/" />
     <ignored path="$PROJECT_DIR$/target/" />
@@ -59,27 +54,41 @@
   </component>
   <component name="ExecutionTargetManager" SELECTED_TARGET="default_target" />
   <component name="FileEditorManager">
-    <splitter split-orientation="horizontal" split-proportion="0.5">
+    <splitter split-orientation="horizontal" split-proportion="0.43643367">
       <split-first>
         <leaf>
           <file leaf-file-name="UserRoles.java" pinned="false" current-in-tab="false">
             <entry file="file://$PROJECT_DIR$/src/main/java/edu/matc/entity/UserRoles.java">
               <provider selected="true" editor-type-id="text-editor">
-                <state relative-caret-position="414">
-                  <caret line="28" column="5" lean-forward="false" selection-start-line="28" selection-start-column="5" selection-end-line="28" selection-end-column="5" />
-                  <folding />
+                <state relative-caret-position="306">
+                  <caret line="17" column="0" lean-forward="false" selection-start-line="17" selection-start-column="0" selection-end-line="17" selection-end-column="0" />
+                  <folding>
+                    <element signature="imports" expanded="true" />
+                  </folding>
                 </state>
               </provider>
             </entry>
           </file>
-          <file leaf-file-name="RestaurantsDao.java" pinned="false" current-in-tab="true">
+          <file leaf-file-name="RestaurantsDao.java" pinned="false" current-in-tab="false">
             <entry file="file://$PROJECT_DIR$/src/main/java/edu/matc/persistence/RestaurantsDao.java">
               <provider selected="true" editor-type-id="text-editor">
-                <state relative-caret-position="-216">
-                  <caret line="33" column="7" lean-forward="true" selection-start-line="33" selection-start-column="7" selection-end-line="33" selection-end-column="7" />
+                <state relative-caret-position="-90">
+                  <caret line="10" column="0" lean-forward="true" selection-start-line="10" selection-start-column="0" selection-end-line="10" selection-end-column="0" />
                   <folding>
                     <element signature="imports" expanded="true" />
                     <element signature="e#547#560#0" expanded="true" />
+                  </folding>
+                </state>
+              </provider>
+            </entry>
+          </file>
+          <file leaf-file-name="RestaurantDaoTest.java" pinned="false" current-in-tab="true">
+            <entry file="file://$PROJECT_DIR$/src/test/java/edu/matc/persistence/RestaurantDaoTest.java">
+              <provider selected="true" editor-type-id="text-editor">
+                <state relative-caret-position="419">
+                  <caret line="72" column="30" lean-forward="false" selection-start-line="72" selection-start-column="30" selection-end-line="72" selection-end-column="30" />
+                  <folding>
+                    <element signature="imports" expanded="true" />
                   </folding>
                 </state>
               </provider>
@@ -89,14 +98,26 @@
       </split-first>
       <split-second>
         <leaf>
-          <file leaf-file-name="UserRolesDao.java" pinned="false" current-in-tab="true">
+          <file leaf-file-name="UserRolesDao.java" pinned="false" current-in-tab="false">
             <entry file="file://$PROJECT_DIR$/src/main/java/edu/matc/persistence/UserRolesDao.java">
               <provider selected="true" editor-type-id="text-editor">
-                <state relative-caret-position="234">
-                  <caret line="61" column="25" lean-forward="true" selection-start-line="61" selection-start-column="25" selection-end-line="61" selection-end-column="25" />
+                <state relative-caret-position="288">
+                  <caret line="43" column="0" lean-forward="false" selection-start-line="43" selection-start-column="0" selection-end-line="43" selection-end-column="0" />
                   <folding>
                     <element signature="imports" expanded="true" />
                     <element signature="e#530#541#0" expanded="true" />
+                  </folding>
+                </state>
+              </provider>
+            </entry>
+          </file>
+          <file leaf-file-name="UserRolesDaoTest.java" pinned="false" current-in-tab="true">
+            <entry file="file://$PROJECT_DIR$/src/test/java/edu/matc/persistence/UserRolesDaoTest.java">
+              <provider selected="true" editor-type-id="text-editor">
+                <state relative-caret-position="373">
+                  <caret line="75" column="88" lean-forward="true" selection-start-line="75" selection-start-column="88" selection-end-line="75" selection-end-column="88" />
+                  <folding>
+                    <element signature="imports" expanded="true" />
                   </folding>
                 </state>
               </provider>
@@ -149,7 +170,6 @@
   <component name="IdeDocumentHistory">
     <option name="CHANGED_PATHS">
       <list>
-        <option value="$PROJECT_DIR$/src/main/java/edu/matc/entity/restaurants.java" />
         <option value="$PROJECT_DIR$/src/main/java/edu/matc/entity/users.java" />
         <option value="$PROJECT_DIR$/src/main/java/edu/matc/persistence/usersDao.java" />
         <option value="$PROJECT_DIR$/src/main/java/edu/matc/persistence/restaurantsDao.java" />
@@ -190,7 +210,6 @@
         <option value="$PROJECT_DIR$/src/main/resources/hibernate.cfg.xml" />
         <option value="$PROJECT_DIR$/src/main/java/edu/matc/entity/MenuItems.java" />
         <option value="$PROJECT_DIR$/src/main/java/edu/matc/entity/Restaurants.java" />
-        <option value="$PROJECT_DIR$/src/main/java/edu/matc/entity/UserRoles.java" />
         <option value="$PROJECT_DIR$/src/main/java/edu/matc/entity/Users.java" />
         <option value="$PROJECT_DIR$/src/main/java/edu/matc/entity/UsersRestaurants.java" />
         <option value="$PROJECT_DIR$/src/main/resources/log4j.properties" />
@@ -198,8 +217,10 @@
         <option value="$PROJECT_DIR$/src/main/java/edu/matc/persistence/UsersDao.java" />
         <option value="$PROJECT_DIR$/src/main/java/edu/matc/persistence/MenuItemsDao.java" />
         <option value="$PROJECT_DIR$/src/main/java/edu/matc/persistence/RestaurantsDao.java" />
-        <option value="$PROJECT_DIR$/src/test/java/edu/matc/persistence/RestaurantDaoTest.java" />
+        <option value="$PROJECT_DIR$/src/main/java/edu/matc/entity/UserRoles.java" />
         <option value="$PROJECT_DIR$/src/main/java/edu/matc/persistence/UserRolesDao.java" />
+        <option value="$PROJECT_DIR$/src/test/java/edu/matc/persistence/RestaurantDaoTest.java" />
+        <option value="$PROJECT_DIR$/src/test/java/edu/matc/persistence/UserRolesDaoTest.java" />
       </list>
     </option>
   </component>
@@ -480,8 +501,8 @@
       <recent name="$PROJECT_DIR$/src/main/resources" />
     </key>
   </component>
-  <component name="RunManager" selected="JUnit.RestaurantDaoTest">
-    <configuration default="false" name="MenuItemsDaoTest" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+  <component name="RunManager" selected="JUnit.UserRolesDaoTest.deleteUserRole">
+    <configuration default="false" name="UserRolesDaoTest.getAllUserRoles" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
       <extension name="coverage" enabled="false" merge="false" sample_coverage="true" runner="idea">
         <pattern>
           <option name="PATTERN" value="edu.matc.persistence.*" />
@@ -492,34 +513,8 @@
       <option name="ALTERNATIVE_JRE_PATH_ENABLED" value="false" />
       <option name="ALTERNATIVE_JRE_PATH" />
       <option name="PACKAGE_NAME" value="edu.matc.persistence" />
-      <option name="MAIN_CLASS_NAME" value="edu.matc.persistence.MenuItemsDaoTest" />
-      <option name="METHOD_NAME" />
-      <option name="TEST_OBJECT" value="class" />
-      <option name="VM_PARAMETERS" value="-ea" />
-      <option name="PARAMETERS" />
-      <option name="WORKING_DIRECTORY" value="$MODULE_DIR$" />
-      <option name="ENV_VARIABLES" />
-      <option name="PASS_PARENT_ENVS" value="true" />
-      <option name="TEST_SEARCH_SCOPE">
-        <value defaultName="singleModule" />
-      </option>
-      <envs />
-      <patterns />
-      <method />
-    </configuration>
-    <configuration default="false" name="RestaurantDaoTest.getAllRestaurants" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
-      <extension name="coverage" enabled="false" merge="false" sample_coverage="true" runner="idea">
-        <pattern>
-          <option name="PATTERN" value="edu.matc.persistence.*" />
-          <option name="ENABLED" value="true" />
-        </pattern>
-      </extension>
-      <module name="ourMenuJava" />
-      <option name="ALTERNATIVE_JRE_PATH_ENABLED" value="false" />
-      <option name="ALTERNATIVE_JRE_PATH" />
-      <option name="PACKAGE_NAME" value="edu.matc.persistence" />
-      <option name="MAIN_CLASS_NAME" value="edu.matc.persistence.RestaurantDaoTest" />
-      <option name="METHOD_NAME" value="getAllRestaurants" />
+      <option name="MAIN_CLASS_NAME" value="edu.matc.persistence.UserRolesDaoTest" />
+      <option name="METHOD_NAME" value="getAllUserRoles" />
       <option name="TEST_OBJECT" value="method" />
       <option name="VM_PARAMETERS" value="-ea" />
       <option name="PARAMETERS" />
@@ -533,7 +528,7 @@
       <patterns />
       <method />
     </configuration>
-    <configuration default="false" name="RestaurantDaoTest.getUser" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+    <configuration default="false" name="UserRolesDaoTest.getUserRole" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
       <extension name="coverage" enabled="false" merge="false" sample_coverage="true" runner="idea">
         <pattern>
           <option name="PATTERN" value="edu.matc.persistence.*" />
@@ -544,8 +539,8 @@
       <option name="ALTERNATIVE_JRE_PATH_ENABLED" value="false" />
       <option name="ALTERNATIVE_JRE_PATH" />
       <option name="PACKAGE_NAME" value="edu.matc.persistence" />
-      <option name="MAIN_CLASS_NAME" value="edu.matc.persistence.RestaurantDaoTest" />
-      <option name="METHOD_NAME" value="getUser" />
+      <option name="MAIN_CLASS_NAME" value="edu.matc.persistence.UserRolesDaoTest" />
+      <option name="METHOD_NAME" value="getUserRole" />
       <option name="TEST_OBJECT" value="method" />
       <option name="VM_PARAMETERS" value="-ea" />
       <option name="PARAMETERS" />
@@ -559,7 +554,7 @@
       <patterns />
       <method />
     </configuration>
-    <configuration default="false" name="RestaurantDaoTest.getRestaurant" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+    <configuration default="false" name="UserRolesDaoTest.addRestaurant" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
       <extension name="coverage" enabled="false" merge="false" sample_coverage="true" runner="idea">
         <pattern>
           <option name="PATTERN" value="edu.matc.persistence.*" />
@@ -570,8 +565,8 @@
       <option name="ALTERNATIVE_JRE_PATH_ENABLED" value="false" />
       <option name="ALTERNATIVE_JRE_PATH" />
       <option name="PACKAGE_NAME" value="edu.matc.persistence" />
-      <option name="MAIN_CLASS_NAME" value="edu.matc.persistence.RestaurantDaoTest" />
-      <option name="METHOD_NAME" value="getRestaurant" />
+      <option name="MAIN_CLASS_NAME" value="edu.matc.persistence.UserRolesDaoTest" />
+      <option name="METHOD_NAME" value="addRestaurant" />
       <option name="TEST_OBJECT" value="method" />
       <option name="VM_PARAMETERS" value="-ea" />
       <option name="PARAMETERS" />
@@ -585,7 +580,7 @@
       <patterns />
       <method />
     </configuration>
-    <configuration default="false" name="RestaurantDaoTest" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+    <configuration default="false" name="UserRolesDaoTest.updateUserRole" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
       <extension name="coverage" enabled="false" merge="false" sample_coverage="true" runner="idea">
         <pattern>
           <option name="PATTERN" value="edu.matc.persistence.*" />
@@ -596,9 +591,35 @@
       <option name="ALTERNATIVE_JRE_PATH_ENABLED" value="false" />
       <option name="ALTERNATIVE_JRE_PATH" />
       <option name="PACKAGE_NAME" value="edu.matc.persistence" />
-      <option name="MAIN_CLASS_NAME" value="edu.matc.persistence.RestaurantDaoTest" />
-      <option name="METHOD_NAME" />
-      <option name="TEST_OBJECT" value="class" />
+      <option name="MAIN_CLASS_NAME" value="edu.matc.persistence.UserRolesDaoTest" />
+      <option name="METHOD_NAME" value="updateUserRole" />
+      <option name="TEST_OBJECT" value="method" />
+      <option name="VM_PARAMETERS" value="-ea" />
+      <option name="PARAMETERS" />
+      <option name="WORKING_DIRECTORY" value="$MODULE_DIR$" />
+      <option name="ENV_VARIABLES" />
+      <option name="PASS_PARENT_ENVS" value="true" />
+      <option name="TEST_SEARCH_SCOPE">
+        <value defaultName="singleModule" />
+      </option>
+      <envs />
+      <patterns />
+      <method />
+    </configuration>
+    <configuration default="false" name="UserRolesDaoTest.deleteUserRole" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+      <extension name="coverage" enabled="false" merge="false" sample_coverage="true" runner="idea">
+        <pattern>
+          <option name="PATTERN" value="edu.matc.persistence.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <module name="ourMenuJava" />
+      <option name="ALTERNATIVE_JRE_PATH_ENABLED" value="false" />
+      <option name="ALTERNATIVE_JRE_PATH" />
+      <option name="PACKAGE_NAME" value="edu.matc.persistence" />
+      <option name="MAIN_CLASS_NAME" value="edu.matc.persistence.UserRolesDaoTest" />
+      <option name="METHOD_NAME" value="deleteUserRole" />
+      <option name="TEST_OBJECT" value="method" />
       <option name="VM_PARAMETERS" value="-ea" />
       <option name="PARAMETERS" />
       <option name="WORKING_DIRECTORY" value="$MODULE_DIR$" />
@@ -991,19 +1012,19 @@
     </configuration>
     <list size="6">
       <item index="0" class="java.lang.String" itemvalue="TomEE Server.TomEE" />
-      <item index="1" class="java.lang.String" itemvalue="JUnit.MenuItemsDaoTest" />
-      <item index="2" class="java.lang.String" itemvalue="JUnit.RestaurantDaoTest.getAllRestaurants" />
-      <item index="3" class="java.lang.String" itemvalue="JUnit.RestaurantDaoTest.getUser" />
-      <item index="4" class="java.lang.String" itemvalue="JUnit.RestaurantDaoTest.getRestaurant" />
-      <item index="5" class="java.lang.String" itemvalue="JUnit.RestaurantDaoTest" />
+      <item index="1" class="java.lang.String" itemvalue="JUnit.UserRolesDaoTest.getAllUserRoles" />
+      <item index="2" class="java.lang.String" itemvalue="JUnit.UserRolesDaoTest.getUserRole" />
+      <item index="3" class="java.lang.String" itemvalue="JUnit.UserRolesDaoTest.addRestaurant" />
+      <item index="4" class="java.lang.String" itemvalue="JUnit.UserRolesDaoTest.updateUserRole" />
+      <item index="5" class="java.lang.String" itemvalue="JUnit.UserRolesDaoTest.deleteUserRole" />
     </list>
     <recent_temporary>
       <list size="5">
-        <item index="0" class="java.lang.String" itemvalue="JUnit.RestaurantDaoTest" />
-        <item index="1" class="java.lang.String" itemvalue="JUnit.RestaurantDaoTest.getRestaurant" />
-        <item index="2" class="java.lang.String" itemvalue="JUnit.RestaurantDaoTest.getAllRestaurants" />
-        <item index="3" class="java.lang.String" itemvalue="JUnit.MenuItemsDaoTest" />
-        <item index="4" class="java.lang.String" itemvalue="JUnit.RestaurantDaoTest.getUser" />
+        <item index="0" class="java.lang.String" itemvalue="JUnit.UserRolesDaoTest.deleteUserRole" />
+        <item index="1" class="java.lang.String" itemvalue="JUnit.UserRolesDaoTest.updateUserRole" />
+        <item index="2" class="java.lang.String" itemvalue="JUnit.UserRolesDaoTest.addRestaurant" />
+        <item index="3" class="java.lang.String" itemvalue="JUnit.UserRolesDaoTest.getUserRole" />
+        <item index="4" class="java.lang.String" itemvalue="JUnit.UserRolesDaoTest.getAllUserRoles" />
       </list>
     </recent_temporary>
     <configuration name="&lt;template&gt;" type="TestNG" default="true" selected="false">
@@ -1063,44 +1084,44 @@
       <workItem from="1492746871819" duration="89000" />
       <workItem from="1492824180357" duration="6144000" />
       <workItem from="1492996160559" duration="60000" />
-      <workItem from="1493043049356" duration="10122000" />
+      <workItem from="1493043049356" duration="17945000" />
     </task>
     <servers />
   </component>
   <component name="TestHistory">
-    <history-entry file="RestaurantDaoTest - 2017.04.24 at 11h 57m 26s.xml">
-      <configuration name="RestaurantDaoTest" configurationId="JUnit" />
+    <history-entry file="UserRolesDaoTest_addRestaurant - 2017.04.24 at 15h 12m 29s.xml">
+      <configuration name="UserRolesDaoTest.addRestaurant" configurationId="JUnit" />
     </history-entry>
-    <history-entry file="RestaurantDaoTest_getRestaurant - 2017.04.24 at 11h 21m 19s.xml">
-      <configuration name="RestaurantDaoTest.getRestaurant" configurationId="JUnit" />
+    <history-entry file="UserRolesDaoTest_getAllUserRoles - 2017.04.24 at 14h 53m 28s.xml">
+      <configuration name="UserRolesDaoTest.getAllUserRoles" configurationId="JUnit" />
     </history-entry>
-    <history-entry file="RestaurantDaoTest_getRestaurant - 2017.04.24 at 11h 23m 50s.xml">
-      <configuration name="RestaurantDaoTest.getRestaurant" configurationId="JUnit" />
+    <history-entry file="UserRolesDaoTest_getAllUserRoles - 2017.04.24 at 14h 55m 32s.xml">
+      <configuration name="UserRolesDaoTest.getAllUserRoles" configurationId="JUnit" />
     </history-entry>
-    <history-entry file="RestaurantDaoTest_getRestaurant - 2017.04.24 at 11h 24m 52s.xml">
-      <configuration name="RestaurantDaoTest.getRestaurant" configurationId="JUnit" />
+    <history-entry file="UserRolesDaoTest_getAllUserRoles - 2017.04.24 at 14h 57m 11s.xml">
+      <configuration name="UserRolesDaoTest.getAllUserRoles" configurationId="JUnit" />
     </history-entry>
-    <history-entry file="RestaurantDaoTest_getRestaurant - 2017.04.24 at 11h 25m 41s.xml">
-      <configuration name="RestaurantDaoTest.getRestaurant" configurationId="JUnit" />
+    <history-entry file="UserRolesDaoTest_getUserRole - 2017.04.24 at 14h 57m 21s.xml">
+      <configuration name="UserRolesDaoTest.getUserRole" configurationId="JUnit" />
     </history-entry>
-    <history-entry file="RestaurantDaoTest_getRestaurant - 2017.04.24 at 11h 39m 59s.xml">
-      <configuration name="RestaurantDaoTest.getRestaurant" configurationId="JUnit" />
+    <history-entry file="UserRolesDaoTest_getUserRole - 2017.04.24 at 14h 58m 01s.xml">
+      <configuration name="UserRolesDaoTest.getUserRole" configurationId="JUnit" />
     </history-entry>
-    <history-entry file="RestaurantDaoTest_getRestaurant - 2017.04.24 at 11h 47m 38s.xml">
-      <configuration name="RestaurantDaoTest.getRestaurant" configurationId="JUnit" />
+    <history-entry file="UserRolesDaoTest_getUserRole - 2017.04.24 at 14h 58m 33s.xml">
+      <configuration name="UserRolesDaoTest.getUserRole" configurationId="JUnit" />
     </history-entry>
-    <history-entry file="RestaurantDaoTest_getRestaurant - 2017.04.24 at 11h 48m 57s.xml">
-      <configuration name="RestaurantDaoTest.getRestaurant" configurationId="JUnit" />
+    <history-entry file="UserRolesDaoTest_getUserRole - 2017.04.24 at 15h 01m 35s.xml">
+      <configuration name="UserRolesDaoTest.getUserRole" configurationId="JUnit" />
     </history-entry>
-    <history-entry file="RestaurantDaoTest_getRestaurant - 2017.04.24 at 11h 51m 41s.xml">
-      <configuration name="RestaurantDaoTest.getRestaurant" configurationId="JUnit" />
+    <history-entry file="UserRolesDaoTest_getUserRole - 2017.04.24 at 15h 02m 03s.xml">
+      <configuration name="UserRolesDaoTest.getUserRole" configurationId="JUnit" />
     </history-entry>
-    <history-entry file="RestaurantDaoTest_getRestaurant - 2017.04.24 at 11h 56m 45s.xml">
-      <configuration name="RestaurantDaoTest.getRestaurant" configurationId="JUnit" />
+    <history-entry file="UserRolesDaoTest_updateUserRole - 2017.04.24 at 15h 25m 45s.xml">
+      <configuration name="UserRolesDaoTest.updateUserRole" configurationId="JUnit" />
     </history-entry>
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="194452000" />
+    <option name="totallyTimeSpent" value="202275000" />
   </component>
   <component name="ToolWindowManager">
     <frame x="57" y="24" width="1863" height="999" extended-state="6" />
@@ -1126,10 +1147,10 @@
       <window_info id="Image Layers" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="5" side_tool="false" content_ui="tabs" />
       <window_info id="Java Enterprise" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.32963374" sideWeight="0.5" order="8" side_tool="false" content_ui="tabs" />
       <window_info id="Capture Analysis" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
-      <window_info id="Run" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.3018868" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
+      <window_info id="Run" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.35072142" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
       <window_info id="Version Control" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.32963374" sideWeight="0.5" order="9" side_tool="false" content_ui="tabs" />
       <window_info id="Terminal" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.14317425" sideWeight="0.5" order="10" side_tool="false" content_ui="tabs" />
-      <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.17006055" sideWeight="0.5" order="0" side_tool="false" content_ui="combo" />
+      <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.17006055" sideWeight="0.5" order="0" side_tool="false" content_ui="combo" />
       <window_info id="Bean Validation" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="12" side_tool="false" content_ui="tabs" />
       <window_info id="Web" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="6" side_tool="true" content_ui="tabs" />
       <window_info id="Theme Preview" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="8" side_tool="false" content_ui="tabs" />
@@ -1186,7 +1207,7 @@
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager>
-      <option name="time" value="3" />
+      <option name="time" value="4" />
     </breakpoint-manager>
     <watches-manager />
   </component>
@@ -1195,7 +1216,6 @@
     <option name="FILTER_TARGETS" value="false" />
   </component>
   <component name="editorHistoryManager">
-    <entry file="file://$PROJECT_DIR$/src/main/java/edu/matc/entity/users.java" />
     <entry file="file://$PROJECT_DIR$/src/main/webapp/template/footer.jsp">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="72">
@@ -1516,25 +1536,7 @@
         <state relative-caret-position="149">
           <caret line="45" column="48" lean-forward="true" selection-start-line="45" selection-start-column="48" selection-end-line="45" selection-end-column="48" />
           <folding>
-            <element signature="imports" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/edu/matc/entity/MenuItems.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="72">
-          <caret line="8" column="7" lean-forward="true" selection-start-line="8" selection-start-column="7" selection-end-line="8" selection-end-column="7" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/test/java/edu/matc/persistence/RestaurantDaoTest.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="828">
-          <caret line="46" column="50" lean-forward="false" selection-start-line="46" selection-start-column="50" selection-end-line="46" selection-end-column="50" />
-          <folding>
-            <element signature="imports" expanded="true" />
+            <element signature="imports" expanded="false" />
           </folding>
         </state>
       </provider>
@@ -1547,9 +1549,17 @@
         </state>
       </provider>
     </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/edu/matc/entity/MenuItems.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="72">
+          <caret line="8" column="7" lean-forward="true" selection-start-line="8" selection-start-column="7" selection-end-line="8" selection-end-column="7" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
     <entry file="file://$PROJECT_DIR$/src/main/java/edu/matc/persistence/MenuItemsDao.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="-234">
+        <state relative-caret-position="-576">
           <caret line="17" column="28" lean-forward="true" selection-start-line="17" selection-start-column="28" selection-end-line="17" selection-end-column="28" />
           <folding>
             <element signature="imports" expanded="true" />
@@ -1560,16 +1570,29 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/src/main/java/edu/matc/entity/UserRoles.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="414">
-          <caret line="28" column="5" lean-forward="false" selection-start-line="28" selection-start-column="5" selection-end-line="28" selection-end-column="5" />
-          <folding />
+        <state relative-caret-position="306">
+          <caret line="17" column="0" lean-forward="false" selection-start-line="17" selection-start-column="0" selection-end-line="17" selection-end-column="0" />
+          <folding>
+            <element signature="imports" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/edu/matc/persistence/UserRolesDao.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="288">
+          <caret line="43" column="0" lean-forward="false" selection-start-line="43" selection-start-column="0" selection-end-line="43" selection-end-column="0" />
+          <folding>
+            <element signature="imports" expanded="true" />
+            <element signature="e#530#541#0" expanded="true" />
+          </folding>
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/src/main/java/edu/matc/persistence/RestaurantsDao.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="-216">
-          <caret line="33" column="7" lean-forward="true" selection-start-line="33" selection-start-column="7" selection-end-line="33" selection-end-column="7" />
+        <state relative-caret-position="-90">
+          <caret line="10" column="0" lean-forward="true" selection-start-line="10" selection-start-column="0" selection-end-line="10" selection-end-column="0" />
           <folding>
             <element signature="imports" expanded="true" />
             <element signature="e#547#560#0" expanded="true" />
@@ -1577,13 +1600,22 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/edu/matc/persistence/UserRolesDao.java">
+    <entry file="file://$PROJECT_DIR$/src/test/java/edu/matc/persistence/RestaurantDaoTest.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="234">
-          <caret line="61" column="25" lean-forward="true" selection-start-line="61" selection-start-column="25" selection-end-line="61" selection-end-column="25" />
+        <state relative-caret-position="419">
+          <caret line="72" column="30" lean-forward="false" selection-start-line="72" selection-start-column="30" selection-end-line="72" selection-end-column="30" />
           <folding>
             <element signature="imports" expanded="true" />
-            <element signature="e#530#541#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/test/java/edu/matc/persistence/UserRolesDaoTest.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="373">
+          <caret line="75" column="88" lean-forward="true" selection-start-line="75" selection-start-column="88" selection-end-line="75" selection-end-column="88" />
+          <folding>
+            <element signature="imports" expanded="true" />
           </folding>
         </state>
       </provider>

@@ -15,7 +15,6 @@ public class UserRoles implements java.io.Serializable{
     @Column(name = "userName")
     private String userName;
 
-    @Id
     @Column(name = "userRole")
     private String userRole;
 
@@ -32,7 +31,7 @@ public class UserRoles implements java.io.Serializable{
         return this.userName;
     }
 
-    public void setUserName(){
+    public void setUserName(String userName){
         this.userName = userName;
     }
 
@@ -41,7 +40,7 @@ public class UserRoles implements java.io.Serializable{
         return this.userRole;
     }
 
-    public void setUserRole(){
+    public void setUserRole(String userRole){
         this.userRole = userRole;
     }
 
