@@ -16,7 +16,7 @@ public class Restaurants implements java.io.Serializable {
     @Column(name = "restaurantType")
     private String restaurantType;
 
-//    @OneToMany(fetch = FetchType.LAZY, mappedBy = "pk.restaurants")
+//    @OneToMany(fetch = FetchType.LAZY, mappedBy = "restaurantName")
 //    private Set<UsersRestaurants> usersRestaurants = new HashSet<UsersRestaurants>(0);
 
     public Restaurants() {

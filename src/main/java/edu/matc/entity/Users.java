@@ -28,7 +28,7 @@ public class Users implements java.io.Serializable{
 //    @OneToMany(fetch = FetchType.LAZY, mappedBy = "userName")
 //    private Set<UsersMenuItems> usersMenuItems = new HashSet<MenuItems>(0);
 
-    @OneToMany(fetch = FetchType.LAZY, mappedBy = "users")
+    @OneToMany(fetch = FetchType.LAZY, mappedBy = "userName")
     private Set<UsersRestaurants> usersRestaurants = new HashSet<UsersRestaurants>(0);
 
 
@@ -104,7 +104,7 @@ public class Users implements java.io.Serializable{
         return this.usersRestaurants;
     }
 
-    public void setUsersRestaurants(Set<Restaurants> restaurants) {
+    public void setUsersRestaurants(Set<UsersRestaurants> usersRestaurants) {
         this.usersRestaurants = usersRestaurants;
     }
 

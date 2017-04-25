@@ -6,19 +6,14 @@ import javax.persistence.*;
 
 @Entity
 @Table(name="usersRestaurants")
-
 public class UsersRestaurants {
-
-
-    private int userRestID;
-    private Users users;
-    private Restaurants restaurants;
-    private int userRating;
 
     @Id
     @GeneratedValue(generator="increment")
     @GenericGenerator(name="increment", strategy = "increment")
     @Column(name = "userRestID")
+    private int userRestID;
+
     public int getUserRestID() {
         return userRestID;
     }
@@ -29,25 +24,31 @@ public class UsersRestaurants {
 
     @ManyToOne(fetch = FetchType.LAZY)
     @JoinColumn(name = "userName")
+    private Users userName;
+
     public Users getUsers() {
-        return users;
+        return userName;
     }
 
-    public void setUsers(Users users) {
-        this.users = users;
+    public void setUsers(Users userName) {
+        this.userName = userName;
     }
 
     @ManyToOne(fetch = FetchType.LAZY)
     @JoinColumn(name = "restaurantName")
+    private Restaurants restaurantName;
+
     public Restaurants getRestaurants() {
-        return restaurants;
+        return restaurantName;
     }
 
-    public void setRestaurants(Restaurants restaurants) {
-        this.restaurants = restaurants;
+    public void setRestaurants(Restaurants restaurantName) {
+        this.restaurantName = restaurantName;
     }
 
     @Column(name = "userRating")
+    private int userRating;
+
     public int getUserRating() {
         return userRating;
     }

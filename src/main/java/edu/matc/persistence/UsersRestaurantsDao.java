@@ -1,12 +1,11 @@
 package edu.matc.persistence;
 
-import edu.matc.entity.Users;
 import edu.matc.entity.UsersRestaurants;
-import edu.matc.entity.UsersRestaurantsID;
 import org.apache.log4j.Logger;
 import org.hibernate.HibernateException;
 import org.hibernate.Session;
 import org.hibernate.Transaction;
+import org.hibernate.criterion.Restrictions;
 
 import java.util.ArrayList;
 import java.util.List;
@@ -44,7 +43,6 @@ public class UsersRestaurantsDao {
         UsersRestaurants usersRestaurants = null;
         try {
             usersRestaurants = (UsersRestaurants) session.get(UsersRestaurants.class, id);
-            return usersRestaurants;
         } catch (HibernateException e) {
             log.error("Hibernate Exception", e);
         } finally {
@@ -53,17 +51,19 @@ public class UsersRestaurantsDao {
         return usersRestaurants;
     }
 
+
+
     /**
-     * add a user
+     * add a userRestaurants
      *
      * @param usersRestaurants
      * @return the id of the usersRestaurants
      */
 
-    public int addUsersRestaurants(UsersRestaurants usersRestaurants) {
+    public Integer addUsersRestaurants(UsersRestaurants usersRestaurants) {
         Session session = SessionFactoryProvider.getSessionFactory().openSession();
         Transaction tx = null;
-        int id = 0;
+        Integer id = 0;
         try{
             tx = session.beginTransaction();
             id = (Integer)session.save(usersRestaurants);
@@ -116,5 +116,4 @@ public class UsersRestaurantsDao {
             session.close();
         }
     }
-
 }
