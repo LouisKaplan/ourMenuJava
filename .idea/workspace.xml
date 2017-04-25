@@ -3,11 +3,6 @@
   <component name="ChangeListManager">
     <list default="true" id="d6d75d4b-8542-4e7d-82b1-5d1ad74636e1" name="Default" comment="">
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/MyAppLog.log" afterPath="$PROJECT_DIR$/MyAppLog.log" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/main/java/edu/matc/entity/Restaurants.java" afterPath="$PROJECT_DIR$/src/main/java/edu/matc/entity/Restaurants.java" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/main/java/edu/matc/entity/Users.java" afterPath="$PROJECT_DIR$/src/main/java/edu/matc/entity/Users.java" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/main/java/edu/matc/entity/UsersRestaurants.java" afterPath="$PROJECT_DIR$/src/main/java/edu/matc/entity/UsersRestaurants.java" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/main/java/edu/matc/persistence/UsersRestaurantsDao.java" afterPath="$PROJECT_DIR$/src/main/java/edu/matc/persistence/UsersRestaurantsDao.java" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/main/resources/hibernate.cfg.xml" afterPath="$PROJECT_DIR$/src/main/resources/hibernate.cfg.xml" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/test/java/edu/matc/persistence/UsersRestaurantsDaoTest.java" afterPath="$PROJECT_DIR$/src/test/java/edu/matc/persistence/UsersRestaurantsDaoTest.java" />
     </list>
     <ignored path="$PROJECT_DIR$/out/" />
@@ -56,7 +51,7 @@
   </component>
   <component name="ExecutionTargetManager" SELECTED_TARGET="default_target" />
   <component name="FileEditorManager">
-    <splitter split-orientation="horizontal" split-proportion="0.44472522">
+    <splitter split-orientation="horizontal" split-proportion="0.57575756">
       <split-first>
         <leaf>
           <file leaf-file-name="UsersRestaurants.java" pinned="false" current-in-tab="false">
@@ -74,17 +69,17 @@
           <file leaf-file-name="UsersRestaurantsDaoTest.java" pinned="false" current-in-tab="true">
             <entry file="file://$PROJECT_DIR$/src/test/java/edu/matc/persistence/UsersRestaurantsDaoTest.java">
               <provider selected="true" editor-type-id="text-editor">
-                <state relative-caret-position="216">
-                  <caret line="81" column="0" lean-forward="true" selection-start-line="81" selection-start-column="0" selection-end-line="81" selection-end-column="0" />
+                <state relative-caret-position="-252">
+                  <caret line="73" column="0" lean-forward="true" selection-start-line="73" selection-start-column="0" selection-end-line="73" selection-end-column="0" />
                   <folding>
-                    <marker date="1493089824810" expanded="true" signature="38:300" ph="..." />
-                    <marker date="1493089824810" expanded="true" signature="808:1881" ph="{...}" />
-                    <marker date="1493089824810" expanded="true" signature="1919:2265" ph="{...}" />
-                    <marker date="1493089824810" expanded="true" signature="2335:2533" ph="{...}" />
-                    <marker date="1493089824810" expanded="true" signature="2600:3349" ph="{...}" />
-                    <marker date="1493089824810" expanded="true" signature="3421:3676" ph="{...}" />
-                    <marker date="1493089824810" expanded="true" signature="3750:4597" ph="{...}" />
-                    <marker date="1493089824810" expanded="true" signature="4671:4960" ph="{...}" />
+                    <marker date="1493091923659" expanded="true" signature="38:300" ph="..." />
+                    <marker date="1493091923659" expanded="true" signature="808:1881" ph="{...}" />
+                    <marker date="1493091923659" expanded="true" signature="1919:2266" ph="{...}" />
+                    <marker date="1493091923659" expanded="true" signature="2336:2534" ph="{...}" />
+                    <marker date="1493091923659" expanded="true" signature="2601:3477" ph="{...}" />
+                    <marker date="1493091923659" expanded="true" signature="3549:3804" ph="{...}" />
+                    <marker date="1493091923659" expanded="true" signature="3878:4725" ph="{...}" />
+                    <marker date="1493091923659" expanded="true" signature="4799:5088" ph="{...}" />
                   </folding>
                 </state>
               </provider>
@@ -96,7 +91,7 @@
                 <state relative-caret-position="440">
                   <caret line="55" column="0" lean-forward="true" selection-start-line="55" selection-start-column="0" selection-end-line="55" selection-end-column="0" />
                   <folding>
-                    <marker date="1493090370419" expanded="false" signature="517:535" ph="&lt;~&gt;" />
+                    <marker date="1493090813391" expanded="false" signature="517:535" ph="&lt;~&gt;" />
                   </folding>
                 </state>
               </provider>
@@ -106,11 +101,11 @@
       </split-first>
       <split-second>
         <leaf>
-          <file leaf-file-name="UserDaoTest.java" pinned="false" current-in-tab="false">
+          <file leaf-file-name="UserDaoTest.java" pinned="false" current-in-tab="true">
             <entry file="file://$PROJECT_DIR$/src/test/java/edu/matc/persistence/UserDaoTest.java">
               <provider selected="true" editor-type-id="text-editor">
-                <state relative-caret-position="828">
-                  <caret line="52" column="9" lean-forward="true" selection-start-line="52" selection-start-column="9" selection-end-line="52" selection-end-column="9" />
+                <state relative-caret-position="216">
+                  <caret line="42" column="5" lean-forward="true" selection-start-line="42" selection-start-column="5" selection-end-line="42" selection-end-column="5" />
                   <folding>
                     <element signature="imports" expanded="true" />
                   </folding>
@@ -130,10 +125,10 @@
               </provider>
             </entry>
           </file>
-          <file leaf-file-name="Users.java" pinned="false" current-in-tab="true">
+          <file leaf-file-name="Users.java" pinned="false" current-in-tab="false">
             <entry file="file://$PROJECT_DIR$/src/main/java/edu/matc/entity/Users.java">
               <provider selected="true" editor-type-id="text-editor">
-                <state relative-caret-position="180">
+                <state relative-caret-position="288">
                   <caret line="25" column="32" lean-forward="true" selection-start-line="25" selection-start-column="32" selection-end-line="25" selection-end-column="32" />
                   <folding>
                     <element signature="e#872#890#0" expanded="true" />
@@ -236,10 +231,10 @@
         <option value="$PROJECT_DIR$/src/main/java/edu/matc/entity/UsersRestaurantsID.java" />
         <option value="$PROJECT_DIR$/src/main/java/edu/matc/persistence/UsersRestaurantsDao.java" />
         <option value="$PROJECT_DIR$/src/main/resources/hibernate.cfg.xml" />
-        <option value="$PROJECT_DIR$/src/test/java/edu/matc/persistence/UsersRestaurantsDaoTest.java" />
         <option value="$PROJECT_DIR$/src/main/java/edu/matc/entity/Users.java" />
         <option value="$PROJECT_DIR$/src/main/java/edu/matc/entity/UsersRestaurants.java" />
         <option value="$PROJECT_DIR$/src/main/java/edu/matc/entity/Restaurants.java" />
+        <option value="$PROJECT_DIR$/src/test/java/edu/matc/persistence/UsersRestaurantsDaoTest.java" />
       </list>
     </option>
   </component>
@@ -1103,20 +1098,11 @@
       <workItem from="1492746871819" duration="89000" />
       <workItem from="1492824180357" duration="6144000" />
       <workItem from="1492996160559" duration="60000" />
-      <workItem from="1493043049356" duration="40312000" />
+      <workItem from="1493043049356" duration="41536000" />
     </task>
     <servers />
   </component>
   <component name="TestHistory">
-    <history-entry file="UserDaoTest - 2017.04.24 at 21h 51m 09s.xml">
-      <configuration name="UserDaoTest" configurationId="JUnit" />
-    </history-entry>
-    <history-entry file="UsersRestaurantsDaoTest_getUsersRestaurants - 2017.04.24 at 21h 28m 41s.xml">
-      <configuration name="UsersRestaurantsDaoTest.getUsersRestaurants" configurationId="JUnit" />
-    </history-entry>
-    <history-entry file="UsersRestaurantsDaoTest_getUsersRestaurants - 2017.04.24 at 21h 51m 26s.xml">
-      <configuration name="UsersRestaurantsDaoTest.getUsersRestaurants" configurationId="JUnit" />
-    </history-entry>
     <history-entry file="UsersRestaurantsDaoTest_getUsersRestaurants - 2017.04.24 at 21h 52m 18s.xml">
       <configuration name="UsersRestaurantsDaoTest.getUsersRestaurants" configurationId="JUnit" />
     </history-entry>
@@ -1138,9 +1124,18 @@
     <history-entry file="UsersRestaurantsDaoTest_getUsersRestaurants - 2017.04.24 at 22h 23m 06s.xml">
       <configuration name="UsersRestaurantsDaoTest.getUsersRestaurants" configurationId="JUnit" />
     </history-entry>
+    <history-entry file="UsersRestaurantsDaoTest_getUsersRestaurants - 2017.04.24 at 22h 27m 00s.xml">
+      <configuration name="UsersRestaurantsDaoTest.getUsersRestaurants" configurationId="JUnit" />
+    </history-entry>
+    <history-entry file="UsersRestaurantsDaoTest_getUsersRestaurants - 2017.04.24 at 22h 44m 47s.xml">
+      <configuration name="UsersRestaurantsDaoTest.getUsersRestaurants" configurationId="JUnit" />
+    </history-entry>
+    <history-entry file="UsersRestaurantsDaoTest_getUsersRestaurants - 2017.04.24 at 22h 47m 15s.xml">
+      <configuration name="UsersRestaurantsDaoTest.getUsersRestaurants" configurationId="JUnit" />
+    </history-entry>
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="224642000" />
+    <option name="totallyTimeSpent" value="225866000" />
   </component>
   <component name="ToolWindowManager">
     <frame x="57" y="24" width="1863" height="1056" extended-state="6" />
@@ -1166,10 +1161,10 @@
       <window_info id="Image Layers" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="5" side_tool="false" content_ui="tabs" />
       <window_info id="Java Enterprise" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.32963374" sideWeight="0.5" order="8" side_tool="false" content_ui="tabs" />
       <window_info id="Capture Analysis" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
-      <window_info id="Run" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.20668058" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
+      <window_info id="Run" active="true" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.3716075" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
       <window_info id="Version Control" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.32963374" sideWeight="0.5" order="9" side_tool="false" content_ui="tabs" />
       <window_info id="Terminal" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.14300627" sideWeight="0.5" order="10" side_tool="false" content_ui="tabs" />
-      <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.1287837" sideWeight="0.5" order="0" side_tool="false" content_ui="combo" />
+      <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.12823336" sideWeight="0.5" order="0" side_tool="false" content_ui="combo" />
       <window_info id="Bean Validation" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="12" side_tool="false" content_ui="tabs" />
       <window_info id="Web" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="6" side_tool="true" content_ui="tabs" />
       <window_info id="Theme Preview" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="8" side_tool="false" content_ui="tabs" />
@@ -1201,16 +1196,16 @@
       <window_info id="UI Designer" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="4" side_tool="false" content_ui="tabs" />
       <window_info id="Debug" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.39979124" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
       <window_info id="TODO" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="6" side_tool="false" content_ui="tabs" />
-      <window_info id="Messages" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.27453026" sideWeight="0.5" order="11" side_tool="false" content_ui="tabs" />
+      <window_info id="Messages" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.27348644" sideWeight="0.5" order="11" side_tool="false" content_ui="tabs" />
       <window_info id="Palette&#9;" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="6" side_tool="false" content_ui="tabs" />
       <window_info id="Image Layers" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="5" side_tool="false" content_ui="tabs" />
       <window_info id="Java Enterprise" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.32963374" sideWeight="0.5" order="8" side_tool="false" content_ui="tabs" />
       <window_info id="Capture Analysis" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
       <window_info id="Inspection" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.4" sideWeight="0.5" order="5" side_tool="false" content_ui="tabs" />
-      <window_info id="Run" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.3018868" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
+      <window_info id="Run" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.3716075" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
       <window_info id="Version Control" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.32963374" sideWeight="0.5" order="9" side_tool="false" content_ui="tabs" />
-      <window_info id="Terminal" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.14317425" sideWeight="0.5" order="10" side_tool="false" content_ui="tabs" />
-      <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.17006055" sideWeight="0.5" order="0" side_tool="false" content_ui="combo" />
+      <window_info id="Terminal" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.14300627" sideWeight="0.5" order="10" side_tool="false" content_ui="tabs" />
+      <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.1287837" sideWeight="0.5" order="0" side_tool="false" content_ui="combo" />
       <window_info id="Bean Validation" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="12" side_tool="false" content_ui="tabs" />
       <window_info id="Web" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="6" side_tool="true" content_ui="tabs" />
       <window_info id="Find" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.16179541" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
@@ -1576,36 +1571,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/test/java/edu/matc/persistence/UserDaoTest.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="828">
-          <caret line="52" column="9" lean-forward="true" selection-start-line="52" selection-start-column="9" selection-end-line="52" selection-end-column="9" />
-          <folding>
-            <element signature="imports" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/edu/matc/persistence/UsersRestaurantsDao.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="1404">
-          <caret line="78" column="0" lean-forward="true" selection-start-line="78" selection-start-column="0" selection-end-line="78" selection-end-column="0" />
-          <folding>
-            <element signature="imports" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/edu/matc/entity/Users.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="180">
-          <caret line="25" column="32" lean-forward="true" selection-start-line="25" selection-start-column="32" selection-end-line="25" selection-end-column="32" />
-          <folding>
-            <element signature="e#872#890#0" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/src/main/java/edu/matc/entity/UsersRestaurants.java">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="450">
@@ -1621,24 +1586,54 @@
         <state relative-caret-position="440">
           <caret line="55" column="0" lean-forward="true" selection-start-line="55" selection-start-column="0" selection-end-line="55" selection-end-column="0" />
           <folding>
-            <marker date="1493090370419" expanded="false" signature="517:535" ph="&lt;~&gt;" />
+            <marker date="1493090813391" expanded="false" signature="517:535" ph="&lt;~&gt;" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/edu/matc/entity/Users.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="288">
+          <caret line="25" column="32" lean-forward="true" selection-start-line="25" selection-start-column="32" selection-end-line="25" selection-end-column="32" />
+          <folding>
+            <element signature="e#872#890#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/edu/matc/persistence/UsersRestaurantsDao.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="1404">
+          <caret line="78" column="0" lean-forward="true" selection-start-line="78" selection-start-column="0" selection-end-line="78" selection-end-column="0" />
+          <folding>
+            <element signature="imports" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/test/java/edu/matc/persistence/UserDaoTest.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="216">
+          <caret line="42" column="5" lean-forward="true" selection-start-line="42" selection-start-column="5" selection-end-line="42" selection-end-column="5" />
+          <folding>
+            <element signature="imports" expanded="true" />
           </folding>
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/src/test/java/edu/matc/persistence/UsersRestaurantsDaoTest.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="216">
-          <caret line="81" column="0" lean-forward="true" selection-start-line="81" selection-start-column="0" selection-end-line="81" selection-end-column="0" />
+        <state relative-caret-position="-252">
+          <caret line="73" column="0" lean-forward="true" selection-start-line="73" selection-start-column="0" selection-end-line="73" selection-end-column="0" />
           <folding>
-            <marker date="1493089824810" expanded="true" signature="38:300" ph="..." />
-            <marker date="1493089824810" expanded="true" signature="808:1881" ph="{...}" />
-            <marker date="1493089824810" expanded="true" signature="1919:2265" ph="{...}" />
-            <marker date="1493089824810" expanded="true" signature="2335:2533" ph="{...}" />
-            <marker date="1493089824810" expanded="true" signature="2600:3349" ph="{...}" />
-            <marker date="1493089824810" expanded="true" signature="3421:3676" ph="{...}" />
-            <marker date="1493089824810" expanded="true" signature="3750:4597" ph="{...}" />
-            <marker date="1493089824810" expanded="true" signature="4671:4960" ph="{...}" />
+            <marker date="1493091923659" expanded="true" signature="38:300" ph="..." />
+            <marker date="1493091923659" expanded="true" signature="808:1881" ph="{...}" />
+            <marker date="1493091923659" expanded="true" signature="1919:2266" ph="{...}" />
+            <marker date="1493091923659" expanded="true" signature="2336:2534" ph="{...}" />
+            <marker date="1493091923659" expanded="true" signature="2601:3477" ph="{...}" />
+            <marker date="1493091923659" expanded="true" signature="3549:3804" ph="{...}" />
+            <marker date="1493091923659" expanded="true" signature="3878:4725" ph="{...}" />
+            <marker date="1493091923659" expanded="true" signature="4799:5088" ph="{...}" />
           </folding>
         </state>
       </provider>

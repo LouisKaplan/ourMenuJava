@@ -2723,3 +2723,43 @@ Caused by: com.mysql.jdbc.exceptions.jdbc4.MySQLSyntaxErrorException: Unknown co
 2017-04-24 22:26:59,868 3022 [main] INFO  org.hibernate.engine.jdbc.batch.internal.AbstractBatchImpl  - HHH000010: On release of batch it still contained JDBC statements
 2017-04-24 22:26:59,869 3023 [main] WARN  org.hibernate.engine.jdbc.spi.SqlExceptionHelper  - SQL Warning Code: 1452, SQLState: 23000
 2017-04-24 22:26:59,870 3024 [main] WARN  org.hibernate.engine.jdbc.spi.SqlExceptionHelper  - Cannot add or update a child row: a foreign key constraint fails (`our_menu`.`usersRestaurants`, CONSTRAINT `usersRestaurants_ibfk_1` FOREIGN KEY (`userName`) REFERENCES `users` (`userName`))
+2017-04-24 22:44:44,373 0    [main] INFO  org.hibernate.annotations.common.Version  - HCANN000001: Hibernate Commons Annotations {4.0.5.Final}
+2017-04-24 22:44:44,402 29   [main] INFO  org.hibernate.Version  - HHH000412: Hibernate Core {4.3.11.Final}
+2017-04-24 22:44:44,403 30   [main] INFO  org.hibernate.cfg.Environment  - HHH000206: hibernate.properties not found
+2017-04-24 22:44:44,411 38   [main] INFO  org.hibernate.cfg.Environment  - HHH000021: Bytecode provider name : javassist
+2017-04-24 22:44:44,449 76   [main] INFO  org.hibernate.cfg.Configuration  - HHH000043: Configuring from resource: /hibernate.cfg.xml
+2017-04-24 22:44:44,450 77   [main] INFO  org.hibernate.cfg.Configuration  - HHH000040: Configuration resource: /hibernate.cfg.xml
+2017-04-24 22:44:44,643 270  [main] INFO  org.hibernate.cfg.Configuration  - HHH000041: Configured SessionFactory: null
+2017-04-24 22:44:44,882 509  [main] WARN  org.hibernate.engine.jdbc.connections.internal.DriverManagerConnectionProviderImpl  - HHH000402: Using Hibernate built-in connection pool (not for production use!)
+2017-04-24 22:44:44,909 536  [main] INFO  org.hibernate.engine.jdbc.connections.internal.DriverManagerConnectionProviderImpl  - HHH000401: using driver [com.mysql.jdbc.Driver] at URL [jdbc:mysql://localhost:3306/our_menu]
+2017-04-24 22:44:44,911 538  [main] INFO  org.hibernate.engine.jdbc.connections.internal.DriverManagerConnectionProviderImpl  - HHH000046: Connection properties: {user=root, password=****}
+2017-04-24 22:44:44,912 539  [main] INFO  org.hibernate.engine.jdbc.connections.internal.DriverManagerConnectionProviderImpl  - HHH000006: Autocommit mode: false
+2017-04-24 22:44:44,915 542  [main] INFO  org.hibernate.engine.jdbc.connections.internal.DriverManagerConnectionProviderImpl  - HHH000115: Hibernate connection pool size: 20 (min=1)
+2017-04-24 22:44:45,843 1470 [main] INFO  org.hibernate.dialect.Dialect  - HHH000400: Using dialect: org.hibernate.dialect.MySQL5Dialect
+2017-04-24 22:44:46,404 2031 [main] INFO  org.hibernate.engine.transaction.internal.TransactionFactoryInitiator  - HHH000399: Using default transaction strategy (direct JDBC transactions)
+2017-04-24 22:44:46,420 2047 [main] INFO  org.hibernate.hql.internal.ast.ASTQueryTranslatorFactory  - HHH000397: Using ASTQueryTranslatorFactory
+2017-04-24 22:44:47,370 2997 [main] WARN  org.hibernate.engine.jdbc.spi.SqlExceptionHelper  - SQL Error: 1451, SQLState: 23000
+2017-04-24 22:44:47,370 2997 [main] ERROR org.hibernate.engine.jdbc.spi.SqlExceptionHelper  - Cannot delete or update a parent row: a foreign key constraint fails (`our_menu`.`usersRestaurants`, CONSTRAINT `usersRestaurants_ibfk_1` FOREIGN KEY (`userName`) REFERENCES `users` (`userName`))
+2017-04-24 22:44:47,371 2998 [main] INFO  org.hibernate.engine.jdbc.batch.internal.AbstractBatchImpl  - HHH000010: On release of batch it still contained JDBC statements
+2017-04-24 22:44:47,372 2999 [main] WARN  org.hibernate.engine.jdbc.spi.SqlExceptionHelper  - SQL Warning Code: 1451, SQLState: 23000
+2017-04-24 22:44:47,373 3000 [main] WARN  org.hibernate.engine.jdbc.spi.SqlExceptionHelper  - Cannot delete or update a parent row: a foreign key constraint fails (`our_menu`.`usersRestaurants`, CONSTRAINT `usersRestaurants_ibfk_1` FOREIGN KEY (`userName`) REFERENCES `users` (`userName`))
+2017-04-24 22:44:47,387 3014 [main] WARN  org.hibernate.engine.jdbc.spi.SqlExceptionHelper  - SQL Error: 1451, SQLState: 23000
+2017-04-24 22:44:47,387 3014 [main] ERROR org.hibernate.engine.jdbc.spi.SqlExceptionHelper  - Cannot delete or update a parent row: a foreign key constraint fails (`our_menu`.`usersRestaurants`, CONSTRAINT `usersRestaurants_ibfk_2` FOREIGN KEY (`restaurantName`) REFERENCES `restaurants` (`restaurantName`))
+2017-04-24 22:44:47,387 3014 [main] INFO  org.hibernate.engine.jdbc.batch.internal.AbstractBatchImpl  - HHH000010: On release of batch it still contained JDBC statements
+2017-04-24 22:44:47,390 3017 [main] WARN  org.hibernate.engine.jdbc.spi.SqlExceptionHelper  - SQL Warning Code: 1451, SQLState: 23000
+2017-04-24 22:44:47,390 3017 [main] WARN  org.hibernate.engine.jdbc.spi.SqlExceptionHelper  - Cannot delete or update a parent row: a foreign key constraint fails (`our_menu`.`usersRestaurants`, CONSTRAINT `usersRestaurants_ibfk_2` FOREIGN KEY (`restaurantName`) REFERENCES `restaurants` (`restaurantName`))
+2017-04-24 22:47:12,367 0    [main] INFO  org.hibernate.annotations.common.Version  - HCANN000001: Hibernate Commons Annotations {4.0.5.Final}
+2017-04-24 22:47:12,392 25   [main] INFO  org.hibernate.Version  - HHH000412: Hibernate Core {4.3.11.Final}
+2017-04-24 22:47:12,393 26   [main] INFO  org.hibernate.cfg.Environment  - HHH000206: hibernate.properties not found
+2017-04-24 22:47:12,403 36   [main] INFO  org.hibernate.cfg.Environment  - HHH000021: Bytecode provider name : javassist
+2017-04-24 22:47:12,475 108  [main] INFO  org.hibernate.cfg.Configuration  - HHH000043: Configuring from resource: /hibernate.cfg.xml
+2017-04-24 22:47:12,476 109  [main] INFO  org.hibernate.cfg.Configuration  - HHH000040: Configuration resource: /hibernate.cfg.xml
+2017-04-24 22:47:12,656 289  [main] INFO  org.hibernate.cfg.Configuration  - HHH000041: Configured SessionFactory: null
+2017-04-24 22:47:12,936 569  [main] WARN  org.hibernate.engine.jdbc.connections.internal.DriverManagerConnectionProviderImpl  - HHH000402: Using Hibernate built-in connection pool (not for production use!)
+2017-04-24 22:47:12,952 585  [main] INFO  org.hibernate.engine.jdbc.connections.internal.DriverManagerConnectionProviderImpl  - HHH000401: using driver [com.mysql.jdbc.Driver] at URL [jdbc:mysql://localhost:3306/our_menu]
+2017-04-24 22:47:12,953 586  [main] INFO  org.hibernate.engine.jdbc.connections.internal.DriverManagerConnectionProviderImpl  - HHH000046: Connection properties: {user=root, password=****}
+2017-04-24 22:47:12,956 589  [main] INFO  org.hibernate.engine.jdbc.connections.internal.DriverManagerConnectionProviderImpl  - HHH000006: Autocommit mode: false
+2017-04-24 22:47:12,957 590  [main] INFO  org.hibernate.engine.jdbc.connections.internal.DriverManagerConnectionProviderImpl  - HHH000115: Hibernate connection pool size: 20 (min=1)
+2017-04-24 22:47:13,877 1510 [main] INFO  org.hibernate.dialect.Dialect  - HHH000400: Using dialect: org.hibernate.dialect.MySQL5Dialect
+2017-04-24 22:47:14,413 2046 [main] INFO  org.hibernate.engine.transaction.internal.TransactionFactoryInitiator  - HHH000399: Using default transaction strategy (direct JDBC transactions)
+2017-04-24 22:47:14,435 2068 [main] INFO  org.hibernate.hql.internal.ast.ASTQueryTranslatorFactory  - HHH000397: Using ASTQueryTranslatorFactory

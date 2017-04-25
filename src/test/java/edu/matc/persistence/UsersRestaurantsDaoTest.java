@@ -67,16 +67,17 @@ public class UsersRestaurantsDaoTest {
 
     @After
     public void cleanup(){
+
+        if (testUserRestaurantID != 0) {
+            userRestaurantDao.deleteUsersRestaurants(testUserRestaurantID);
+        }
+
         if (testUserName != "XXX") {
             userDao.deleteUser(testUserName);
         }
 
         if (testRestaurantName != "XXX") {
             restaurantDao.deleteRestaurant(testRestaurantName);
-        }
-
-        if (testUserRestaurantID != 0) {
-            userRestaurantDao.deleteUsersRestaurants(testUserRestaurantID);
         }
     }
 
@@ -89,6 +90,8 @@ public class UsersRestaurantsDaoTest {
 
     @Test
     public void getUsersRestaurants() throws Exception {
+        testUserName = userDao.addUser(testUser);
+        testRestaurantName = restaurantDao.addRestaurant(daoTestRestaurant);
         testUserRestaurantID = userRestaurantDao.addUsersRestaurants(testUserRestaurant);
         assertEquals("joinID does not match",
                 testUserRestaurant.getUserRestID(),
