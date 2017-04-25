@@ -53,10 +53,12 @@ public class UserRolesDaoTest {
     @Test
     public void addUserRole() throws Exception {
         testUserName = dao.addUserRole(testUserRole);
-        assertEquals("User Name Not Added", testUserRole.getUserName(),
-                                                    dao.getUserRole(testUserName).getUserName());
-        assertEquals("User Role Not Added", testUserRole.getUserRole(),
-                                                    dao.getUserRole(testUserName).getUserRole());
+        assertEquals("User Name Not Added",
+                testUserRole.getUserName(),
+                dao.getUserRole(testUserName).getUserName());
+        assertEquals("User Role Not Added",
+                testUserRole.getUserRole(),
+                dao.getUserRole(testUserName).getUserRole());
     }
 
     @Test
@@ -66,7 +68,9 @@ public class UserRolesDaoTest {
         testUserRole.setUserRole("UserRoleProgress");
 
         dao.updateUserRole(testUserRole);
-        assertEquals("Restaurant Type Not Updated", testUserRole.getUserRole(), dao.getUserRole(testUserName).getUserRole());
+        assertEquals("Restaurant Type Not Updated",
+                testUserRole.getUserRole(),
+                dao.getUserRole(testUserName).getUserRole());
     }
 
     @Test

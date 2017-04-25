@@ -16,8 +16,8 @@ public class Restaurants implements java.io.Serializable {
     @Column(name = "restaurantType")
     private String restaurantType;
 
-    @OneToMany(fetch = FetchType.LAZY, mappedBy = "pk.restaurants")
-    private Set<UsersRestaurants> usersRestaurants = new HashSet<UsersRestaurants>(0);
+//    @OneToMany(fetch = FetchType.LAZY, mappedBy = "pk.restaurants")
+//    private Set<UsersRestaurants> usersRestaurants = new HashSet<UsersRestaurants>(0);
 
     public Restaurants() {
     }
@@ -28,13 +28,13 @@ public class Restaurants implements java.io.Serializable {
         this.restaurantType = restaurantType;
     }
 
-    public Restaurants(String restaurantName,
-                       String restaurantType,
-                       Set<UsersRestaurants> usersRestaurants) {
-        this.restaurantName = restaurantName;
-        this.restaurantType = restaurantType;
-        this.usersRestaurants = usersRestaurants;
-    }
+//    public Restaurants(String restaurantName,
+//                       String restaurantType,
+//                       Set<UsersRestaurants> usersRestaurants) {
+//        this.restaurantName = restaurantName;
+//        this.restaurantType = restaurantType;
+//        this.usersRestaurants = usersRestaurants;
+//    }
 
     public String getRestaurantName() {
         return this.restaurantName;
@@ -54,11 +54,11 @@ public class Restaurants implements java.io.Serializable {
     }
 
 
-    public Set<UsersRestaurants> getUsersRestaurants() {
-        return this.usersRestaurants;
-    }
-
-    public void setUsersRestaurants(Set<UsersRestaurants> usersRestaurants) {
-        this.usersRestaurants = usersRestaurants;
-    }
+//    public Set<UsersRestaurants> getUsersRestaurants() {
+//        return this.usersRestaurants;
+//    }
+//
+//    public void setUsersRestaurants(Set<UsersRestaurants> usersRestaurants) {
+//        this.usersRestaurants = usersRestaurants;
+//    }
 }

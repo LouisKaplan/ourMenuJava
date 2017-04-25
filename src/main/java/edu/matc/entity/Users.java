@@ -1,14 +1,18 @@
 package edu.matc.entity;
 
+import org.hibernate.annotations.*;
+
 import java.util.HashSet;
 import java.util.Set;
 
 import javax.persistence.*;
+import javax.persistence.AccessType;
+import javax.persistence.CascadeType;
+import javax.persistence.Entity;
+import javax.persistence.Table;
 
 @Entity
-@Table(name = "users", uniqueConstraints = {
-        @UniqueConstraint(columnNames = "userName")
-})
+@Table(name = "users")
 public class Users implements java.io.Serializable{
 
     @Id
@@ -21,14 +25,12 @@ public class Users implements java.io.Serializable{
     @Column(name = "userPassword")
     private String userPassword;
 
-    @ManyToMany(fetch = FetchType.LAZY, cascade = CascadeType.ALL)
-    @JoinTable(name = "usersMenuItems", joinColumns = {
-            @JoinColumn(name = "userName")},
-        inverseJoinColumns = { @JoinColumn(name = "menuItemID") })
-    private Set<MenuItems> menuItems = new HashSet<MenuItems>(0);
+//    @OneToMany(fetch = FetchType.LAZY, mappedBy = "userName")
+//    private Set<UsersMenuItems> usersMenuItems = new HashSet<MenuItems>(0);
 
-    @OneToMany(fetch = FetchType.LAZY, mappedBy = "pk.users", cascade = CascadeType.ALL)
+    @OneToMany(fetch = FetchType.LAZY, mappedBy = "users")
     private Set<UsersRestaurants> usersRestaurants = new HashSet<UsersRestaurants>(0);
+
 
     public Users() {
     }
@@ -41,26 +43,26 @@ public class Users implements java.io.Serializable{
         this.userPassword = userPassword;
     }
 
-    public Users(String userName,
-                 String displayName,
-                 String userPassword,
-                 Set<MenuItems> menuItems) {
-        this.userName = userName;
-        this.displayName = displayName;
-        this.userPassword = userPassword;
-        this.menuItems = menuItems;
-    }
-
-    public Users(Set<UsersRestaurants> usersRestaurants,
-                 String userName,
-                 String displayName,
-                 String userPassword) {
-        this.usersRestaurants = usersRestaurants;
-        this.userName = userName;
-        this.displayName = displayName;
-        this.userPassword = userPassword;
-
-    }
+//    public Users(String userName,
+//                 String displayName,
+//                 String userPassword,
+//                 Set<MenuItems> menuItems) {
+//        this.userName = userName;
+//        this.displayName = displayName;
+//        this.userPassword = userPassword;
+//        this.menuItems = menuItems;
+//    }
+//
+//    public Users(Set<Restaurants> restaurants,
+//                 String userName,
+//                 String displayName,
+//                 String userPassword) {
+//        this.restaurants = restaurants;
+//        this.userName = userName;
+//        this.displayName = displayName;
+//        this.userPassword = userPassword;
+//
+//    }
 
     public String getUserName() {
         return this.userName;
@@ -89,20 +91,20 @@ public class Users implements java.io.Serializable{
     }
 
 
-    public Set<MenuItems> getMenuItems(){
-        return this.menuItems;
-    }
-
-    public void setMenuItems(Set<MenuItems> menuItems) {
-        this.menuItems = menuItems;
-    }
+//    public Set<UsersMenuItems> getUsersMenuItems(){
+//        return this.usersMenuItems;
+//    }
+//
+//    public void setUsersMenuItems(Set<UsersMenuItems> usersMenuItems) {
+//        this.usersMenuItems = usersMenuItems;
+//    }
 
 
     public Set<UsersRestaurants> getUsersRestaurants(){
         return this.usersRestaurants;
     }
 
-    public void setUsersRestaurants(Set<UsersRestaurants> usersRestaurants) {
+    public void setUsersRestaurants(Set<Restaurants> restaurants) {
         this.usersRestaurants = usersRestaurants;
     }
 

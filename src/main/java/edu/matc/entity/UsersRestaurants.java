@@ -1,76 +1,58 @@
 package edu.matc.entity;
 
+import org.hibernate.annotations.GenericGenerator;
+
 import javax.persistence.*;
 
 @Entity
 @Table(name="usersRestaurants")
-@AssociationOverrides({
-        @AssociationOverride(name = "pk.users",
-            joinColumns = @JoinColumn(name = "userName")),
-        @AssociationOverride(name = "pk.restaurants",
-            joinColumns = @JoinColumn(name = "restaurantName")) })
 
-public class UsersRestaurants implements java.io.Serializable {
+public class UsersRestaurants {
 
-    public UsersRestaurants(){
+
+    private int userRestID;
+    private Users users;
+    private Restaurants restaurants;
+    private int userRating;
+
+    @Id
+    @GeneratedValue(generator="increment")
+    @GenericGenerator(name="increment", strategy = "increment")
+    @Column(name = "userRestID")
+    public int getUserRestID() {
+        return userRestID;
     }
 
-    @EmbeddedId
-    private UsersRestaurantsID pk = new UsersRestaurantsID();
-
-    public UsersRestaurantsID getPK(){
-        return pk;
+    public void setUserRestID(int userRestID) {
+        this.userRestID = userRestID;
     }
 
-    public void setPK (UsersRestaurantsID pk){
-        this.pk = pk;
+    @ManyToOne(fetch = FetchType.LAZY)
+    @JoinColumn(name = "userName")
+    public Users getUsers() {
+        return users;
     }
 
-    @Transient
-    public Users getUsers(){
-        return getPK().getUsers();
+    public void setUsers(Users users) {
+        this.users = users;
     }
 
-    public void setUsers(Users users){
-        getPK().setUsers(users);
+    @ManyToOne(fetch = FetchType.LAZY)
+    @JoinColumn(name = "restaurantName")
+    public Restaurants getRestaurants() {
+        return restaurants;
     }
 
-    @Transient
-    public Restaurants getRestaurants(){
-        return getPK().getRestaurants();
-    }
-
-    public void setRestaurants(Restaurants restaurants){
-        getPK().setRestaurants(restaurants);
+    public void setRestaurants(Restaurants restaurants) {
+        this.restaurants = restaurants;
     }
 
     @Column(name = "userRating")
-    private int userRating;
     public int getUserRating() {
-        return this.userRating;
+        return userRating;
     }
 
     public void setUserRating(int userRating) {
         this.userRating = userRating;
     }
-
-    public boolean equals(Object o) {
-        if (this == o)
-            return true;
-        if (o == null || getClass() != o.getClass())
-            return false;
-
-        UsersRestaurants that = (UsersRestaurants) o;
-
-        if (getPK() != null ? !getPK().equals(that.getPK())
-                : that.getPK() != null)
-            return false;
-
-        return true;
-    }
-
-    public int hashCode() {
-        return (getPK() != null ? getPK().hashCode() : 0);
-    }
-
 }

@@ -25,8 +25,8 @@ public class MenuItems implements java.io.Serializable{
     @Column(name = "itemType")
     private String itemType;
 
-    @ManyToMany(fetch = FetchType.LAZY, mappedBy = "menuItems")
-    private Set<Users> users = new HashSet<Users>(0);
+//    @ManyToMany(fetch = FetchType.LAZY, mappedBy = "menuItems")
+//    private Set<Users> users = new HashSet<Users>(0);
 
     public MenuItems() {
     }
@@ -39,15 +39,15 @@ public class MenuItems implements java.io.Serializable{
         this.itemType = itemType;
     }
 
-    public MenuItems(String restaurantName,
-                     String itemDescription,
-                     String itemType,
-                     Set<Users> users) {
-        this.restaurantName = restaurantName;
-        this.itemDescription = itemDescription;
-        this.itemType = itemType;
-        this.users = users;
-    }
+//    public MenuItems(String restaurantName,
+//                     String itemDescription,
+//                     String itemType,
+//                     Set<Users> users) {
+//        this.restaurantName = restaurantName;
+//        this.itemDescription = itemDescription;
+//        this.itemType = itemType;
+//        this.users = users;
+//    }
 
     public int getMenuItemID() {
         return menuItemID;
@@ -85,13 +85,13 @@ public class MenuItems implements java.io.Serializable{
     }
 
 
-    public Set<Users> getUsers(){
-        return this.users;
-    }
-
-    public void setUsers(Set<Users> users) {
-        this.users = users;
-    }
+//    public Set<Users> getUsers(){
+//        return this.users;
+//    }
+//
+//    public void setUsers(Set<Users> users) {
+//        this.users = users;
+//    }
 
     @Override
     public String toString() {

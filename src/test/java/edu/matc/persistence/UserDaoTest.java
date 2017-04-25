@@ -49,31 +49,39 @@ public class UserDaoTest {
         assertTrue("Did not find correct display name", findUser.getDisplayName().equals("Test Testerson"));
         log.info("user display name found by userName: " + findUser.getDisplayName());
     }
-//
-//    @Test
-//    public void addUser() throws Exception {
-//        newUserTestCase = dao.addUser(testUser);
-//        assertEquals("actor first name not added", testUser.getFirstName(), dao.getUser(newUserTestCase).getFirstName());
-//        assertEquals("actor last name not added", testUser.getLastName(), dao.getUser(newUserTestCase).getLastName());
-//    }
-//
-//    @Test
-//    public void updateUser() throws Exception {
-//        newUserTestCase = dao.addUser(testUser);
-//
-//        testUser.setFirstName("FirstInProgress");
-//        testUser.setLastName("LastInProgress");
-//
-//        dao.updateUser(testUser);
-//        assertEquals("actor first name not updated", testUser.getFirstName(), dao.getUser(newUserTestCase).getFirstName());
-//        assertEquals("actor last name not updated", testUser.getLastName(), dao.getUser(newUserTestCase).getLastName());
-//    }
-//
-//    @Test
-//    public void deleteUser() throws Exception {
-//        dao.addUser(testUser);
-//        dao.deleteUser(testUser.getUserid());
-//        assertNull("user was still found", dao.getUser(testUser.getUserid()));
-//    }
+
+    @Test
+    public void addUser() throws Exception {
+        testUserName = dao.addUser(testUser);
+        assertEquals("user display name not added",
+                testUser.getDisplayName(),
+                dao.getUser(testUserName).getDisplayName());
+        assertEquals("user password not added",
+                testUser.getUserPassword(),
+                dao.getUser(testUserName).getUserPassword());
+    }
+
+    @Test
+    public void updateUser() throws Exception {
+        testUserName = dao.addUser(testUser);
+
+        testUser.setDisplayName("FirstInProgress");
+        testUser.setUserPassword("LastInProgress");
+
+        dao.updateUser(testUser);
+        assertEquals("user disaply name not updated",
+                testUser.getDisplayName(),
+                dao.getUser(testUserName).getDisplayName());
+        assertEquals("user password not updated",
+                testUser.getUserPassword(),
+                dao.getUser(testUserName).getUserPassword());
+    }
+
+    @Test
+    public void deleteUser() throws Exception {
+        dao.addUser(testUser);
+        dao.deleteUser(testUser.getUserName());
+        assertNull("user was still found", dao.getUser(testUser.getUserName()));
+    }
 
 }
