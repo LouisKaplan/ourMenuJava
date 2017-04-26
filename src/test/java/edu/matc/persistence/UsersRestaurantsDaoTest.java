@@ -23,10 +23,12 @@ public class UsersRestaurantsDaoTest {
     Users testUser;
     Users testUser2;
     String testUserName = "XXX";
+    String testUserName2 = "XXX";
 
     Restaurants daoTestRestaurant;
     Restaurants daoTestRestaurant2;
     String testRestaurantName = "XXX";
+    String testRestaurantName2 = "XXX";
 
     UsersRestaurants testUserRestaurant;
     int testUserRestaurantID = 0;
@@ -76,8 +78,16 @@ public class UsersRestaurantsDaoTest {
             userDao.deleteUser(testUserName);
         }
 
+        if (testUserName2 != "XXX") {
+            userDao.deleteUser(testUserName2);
+        }
+
         if (testRestaurantName != "XXX") {
             restaurantDao.deleteRestaurant(testRestaurantName);
+        }
+
+        if (testRestaurantName2 != "XXX") {
+            restaurantDao.deleteRestaurant(testRestaurantName2);
         }
     }
 
@@ -96,41 +106,53 @@ public class UsersRestaurantsDaoTest {
         assertEquals("joinID does not match",
                 testUserRestaurant.getUserRestID(),
                 userRestaurantDao.getUsersRestaurants(testUserRestaurantID).getUserRestID());
-//        assertEquals("userID does not match",
-//                testUserRestaurant.getUserID().getUserid(),
-//                userRestaurantDao.getUsersRestaurants(testUserRestaurantID).getUserID().getUserid());
-//        assertEquals("itemID does not match",
-//                testUserRestaurant.getRestaurantName().getRestaurantName(),
-//                userRestaurantDao.getUsersRestaurants(testUserRestaurantID).getRestaurantName().getRestaurantName());
+        assertEquals("userName does not match",
+                testUserRestaurant.getUsers().getUserName(),
+                userRestaurantDao.getUsersRestaurants(testUserRestaurantID).getUsers().getUserName());
+        assertEquals("itemID does not match",
+                testUserRestaurant.getRestaurants().getRestaurantName(),
+                userRestaurantDao.getUsersRestaurants(testUserRestaurantID).getRestaurants().getRestaurantName());
     }
-//
-//    @Test
-//    public void addUserRestaurants() throws Exception {
-//        testUserRestaurantID = userRestaurantDao.addUsersRestaurants(testUserRestaurant);
-//        assertEquals("joinID does not match", testUserRestaurant.getLinkID(), userRestaurantDao.getUsersRestaurants(testUserRestaurantID).getLinkID());
-//    }
-//
-//    @Test
-//    public void updateUserRestaurant() throws Exception {
-//        testUserRestaurantID = userRestaurantDao.addUsersRestaurants(testUserRestaurant);
-//
-//        assertEquals("Join not inserted", testUserRestaurant.getLinkID(), userRestaurantDao.getUsersRestaurants(testUserRestaurantID).getLinkID());
-//
-//        testUserRestaurant.setUserID(testUser2);
-//        testUserRestaurant.setRestaurantName(daoTestRestaurant2);
-//
-//        userRestaurantDao.updateUsersRestaurants(testUserRestaurant);
-//
-//        assertEquals("userID not updated", testUserRestaurant.getUserID().getUserid(), userRestaurantDao.getUsersRestaurants(testUserRestaurantID).getUserID().getUserid());
-//        assertEquals("restaurantName not updated", testUserRestaurant.getRestaurantName().getRestaurantName(), userRestaurantDao.getUsersRestaurants(testUserRestaurantID).getRestaurantName().getRestaurantName());
-//
-//    }
-//
-//    @Test
-//    public void deleteUserRestaurant() throws Exception {
-//        userRestaurantDao.addUsersRestaurants(testUserRestaurant);
-//        userRestaurantDao.deleteUsersRestaurants(testUserRestaurant.getLinkID());
-//        assertNull("userRestaurant was still found", userRestaurantDao.getUsersRestaurants(testUserRestaurant.getLinkID()));
-//    }
+
+    @Test
+    public void addUserRestaurants() throws Exception {
+        testUserName = userDao.addUser(testUser);
+        testRestaurantName = restaurantDao.addRestaurant(daoTestRestaurant);
+        testUserRestaurantID = userRestaurantDao.addUsersRestaurants(testUserRestaurant);
+        assertEquals("joinID does not match",
+                testUserRestaurant.getUserRestID(),
+                userRestaurantDao.getUsersRestaurants(testUserRestaurantID).getUserRestID());
+    }
+
+    @Test
+    public void updateUserRestaurant() throws Exception {
+        testUserName = userDao.addUser(testUser);
+        testUserName2 = userDao.addUser(testUser2);
+        testRestaurantName = restaurantDao.addRestaurant(daoTestRestaurant);
+        testRestaurantName2 = restaurantDao.addRestaurant(daoTestRestaurant2);
+        testUserRestaurantID = userRestaurantDao.addUsersRestaurants(testUserRestaurant);
+
+        assertEquals("joinID does not match",
+                testUserRestaurant.getUserRestID(),
+                userRestaurantDao.getUsersRestaurants(testUserRestaurantID).getUserRestID());
+
+        testUserRestaurant.setUsers(testUser2);
+        testUserRestaurant.setRestaurants(daoTestRestaurant2);
+
+        userRestaurantDao.updateUsersRestaurants(testUserRestaurant);
+
+        assertEquals("userID not updated", testUserRestaurant.getUsers().getUserName(), userRestaurantDao.getUsersRestaurants(testUserRestaurantID).getUsers().getUserName());
+        assertEquals("restaurantName not updated", testUserRestaurant.getRestaurants().getRestaurantName(), userRestaurantDao.getUsersRestaurants(testUserRestaurantID).getRestaurants().getRestaurantName());
+
+    }
+
+    @Test
+    public void deleteUserRestaurant() throws Exception {
+        testUserName = userDao.addUser(testUser);
+        testRestaurantName = restaurantDao.addRestaurant(daoTestRestaurant);
+        userRestaurantDao.addUsersRestaurants(testUserRestaurant);
+        userRestaurantDao.deleteUsersRestaurants(testUserRestaurant.getUserRestID());
+        assertNull("userRestaurant was still found", userRestaurantDao.getUsersRestaurants(testUserRestaurant.getUserRestID()));
+    }
 
 }

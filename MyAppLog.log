@@ -2763,3 +2763,398 @@ Caused by: com.mysql.jdbc.exceptions.jdbc4.MySQLSyntaxErrorException: Unknown co
 2017-04-24 22:47:13,877 1510 [main] INFO  org.hibernate.dialect.Dialect  - HHH000400: Using dialect: org.hibernate.dialect.MySQL5Dialect
 2017-04-24 22:47:14,413 2046 [main] INFO  org.hibernate.engine.transaction.internal.TransactionFactoryInitiator  - HHH000399: Using default transaction strategy (direct JDBC transactions)
 2017-04-24 22:47:14,435 2068 [main] INFO  org.hibernate.hql.internal.ast.ASTQueryTranslatorFactory  - HHH000397: Using ASTQueryTranslatorFactory
+2017-04-25 21:44:40,809 0    [main] INFO  org.hibernate.annotations.common.Version  - HCANN000001: Hibernate Commons Annotations {4.0.5.Final}
+2017-04-25 21:44:40,880 71   [main] INFO  org.hibernate.Version  - HHH000412: Hibernate Core {4.3.11.Final}
+2017-04-25 21:44:40,891 82   [main] INFO  org.hibernate.cfg.Environment  - HHH000206: hibernate.properties not found
+2017-04-25 21:44:40,895 86   [main] INFO  org.hibernate.cfg.Environment  - HHH000021: Bytecode provider name : javassist
+2017-04-25 21:44:40,999 190  [main] INFO  org.hibernate.cfg.Configuration  - HHH000043: Configuring from resource: /hibernate.cfg.xml
+2017-04-25 21:44:41,000 191  [main] INFO  org.hibernate.cfg.Configuration  - HHH000040: Configuration resource: /hibernate.cfg.xml
+2017-04-25 21:44:41,393 584  [main] INFO  org.hibernate.cfg.Configuration  - HHH000041: Configured SessionFactory: null
+2017-04-25 21:44:41,970 1161 [main] WARN  org.hibernate.engine.jdbc.connections.internal.DriverManagerConnectionProviderImpl  - HHH000402: Using Hibernate built-in connection pool (not for production use!)
+2017-04-25 21:44:42,061 1252 [main] INFO  org.hibernate.engine.jdbc.connections.internal.DriverManagerConnectionProviderImpl  - HHH000401: using driver [com.mysql.jdbc.Driver] at URL [jdbc:mysql://localhost:3306/our_menu]
+2017-04-25 21:44:42,067 1258 [main] INFO  org.hibernate.engine.jdbc.connections.internal.DriverManagerConnectionProviderImpl  - HHH000046: Connection properties: {user=root, password=****}
+2017-04-25 21:44:42,067 1258 [main] INFO  org.hibernate.engine.jdbc.connections.internal.DriverManagerConnectionProviderImpl  - HHH000006: Autocommit mode: false
+2017-04-25 21:44:42,068 1259 [main] INFO  org.hibernate.engine.jdbc.connections.internal.DriverManagerConnectionProviderImpl  - HHH000115: Hibernate connection pool size: 20 (min=1)
+2017-04-25 21:44:43,170 2361 [main] INFO  org.hibernate.dialect.Dialect  - HHH000400: Using dialect: org.hibernate.dialect.MySQL5Dialect
+2017-04-25 21:44:43,694 2885 [main] INFO  org.hibernate.engine.transaction.internal.TransactionFactoryInitiator  - HHH000399: Using default transaction strategy (direct JDBC transactions)
+2017-04-25 21:44:43,761 2952 [main] INFO  org.hibernate.hql.internal.ast.ASTQueryTranslatorFactory  - HHH000397: Using ASTQueryTranslatorFactory
+2017-04-25 21:45:43,406 0    [main] INFO  org.hibernate.annotations.common.Version  - HCANN000001: Hibernate Commons Annotations {4.0.5.Final}
+2017-04-25 21:45:43,447 41   [main] INFO  org.hibernate.Version  - HHH000412: Hibernate Core {4.3.11.Final}
+2017-04-25 21:45:43,449 43   [main] INFO  org.hibernate.cfg.Environment  - HHH000206: hibernate.properties not found
+2017-04-25 21:45:43,471 65   [main] INFO  org.hibernate.cfg.Environment  - HHH000021: Bytecode provider name : javassist
+2017-04-25 21:45:43,564 158  [main] INFO  org.hibernate.cfg.Configuration  - HHH000043: Configuring from resource: /hibernate.cfg.xml
+2017-04-25 21:45:43,564 158  [main] INFO  org.hibernate.cfg.Configuration  - HHH000040: Configuration resource: /hibernate.cfg.xml
+2017-04-25 21:45:43,774 368  [main] INFO  org.hibernate.cfg.Configuration  - HHH000041: Configured SessionFactory: null
+2017-04-25 21:45:44,040 634  [main] WARN  org.hibernate.engine.jdbc.connections.internal.DriverManagerConnectionProviderImpl  - HHH000402: Using Hibernate built-in connection pool (not for production use!)
+2017-04-25 21:45:44,062 656  [main] INFO  org.hibernate.engine.jdbc.connections.internal.DriverManagerConnectionProviderImpl  - HHH000401: using driver [com.mysql.jdbc.Driver] at URL [jdbc:mysql://localhost:3306/our_menu]
+2017-04-25 21:45:44,071 665  [main] INFO  org.hibernate.engine.jdbc.connections.internal.DriverManagerConnectionProviderImpl  - HHH000046: Connection properties: {user=root, password=****}
+2017-04-25 21:45:44,072 666  [main] INFO  org.hibernate.engine.jdbc.connections.internal.DriverManagerConnectionProviderImpl  - HHH000006: Autocommit mode: false
+2017-04-25 21:45:44,073 667  [main] INFO  org.hibernate.engine.jdbc.connections.internal.DriverManagerConnectionProviderImpl  - HHH000115: Hibernate connection pool size: 20 (min=1)
+2017-04-25 21:45:45,144 1738 [main] INFO  org.hibernate.dialect.Dialect  - HHH000400: Using dialect: org.hibernate.dialect.MySQL5Dialect
+2017-04-25 21:45:45,700 2294 [main] INFO  org.hibernate.engine.transaction.internal.TransactionFactoryInitiator  - HHH000399: Using default transaction strategy (direct JDBC transactions)
+2017-04-25 21:45:45,704 2298 [main] INFO  org.hibernate.hql.internal.ast.ASTQueryTranslatorFactory  - HHH000397: Using ASTQueryTranslatorFactory
+2017-04-25 22:15:00,025 0    [main] INFO  org.hibernate.annotations.common.Version  - HCANN000001: Hibernate Commons Annotations {4.0.5.Final}
+2017-04-25 22:15:00,050 25   [main] INFO  org.hibernate.Version  - HHH000412: Hibernate Core {4.3.11.Final}
+2017-04-25 22:15:00,053 28   [main] INFO  org.hibernate.cfg.Environment  - HHH000206: hibernate.properties not found
+2017-04-25 22:15:00,057 32   [main] INFO  org.hibernate.cfg.Environment  - HHH000021: Bytecode provider name : javassist
+2017-04-25 22:15:00,145 120  [main] INFO  org.hibernate.cfg.Configuration  - HHH000043: Configuring from resource: /hibernate.cfg.xml
+2017-04-25 22:15:00,145 120  [main] INFO  org.hibernate.cfg.Configuration  - HHH000040: Configuration resource: /hibernate.cfg.xml
+2017-04-25 22:15:00,362 337  [main] INFO  org.hibernate.cfg.Configuration  - HHH000041: Configured SessionFactory: null
+2017-04-25 22:15:00,664 639  [main] WARN  org.hibernate.engine.jdbc.connections.internal.DriverManagerConnectionProviderImpl  - HHH000402: Using Hibernate built-in connection pool (not for production use!)
+2017-04-25 22:15:00,681 656  [main] INFO  org.hibernate.engine.jdbc.connections.internal.DriverManagerConnectionProviderImpl  - HHH000401: using driver [com.mysql.jdbc.Driver] at URL [jdbc:mysql://localhost:3306/our_menu]
+2017-04-25 22:15:00,686 661  [main] INFO  org.hibernate.engine.jdbc.connections.internal.DriverManagerConnectionProviderImpl  - HHH000046: Connection properties: {user=root, password=****}
+2017-04-25 22:15:00,691 666  [main] INFO  org.hibernate.engine.jdbc.connections.internal.DriverManagerConnectionProviderImpl  - HHH000006: Autocommit mode: false
+2017-04-25 22:15:00,694 669  [main] INFO  org.hibernate.engine.jdbc.connections.internal.DriverManagerConnectionProviderImpl  - HHH000115: Hibernate connection pool size: 20 (min=1)
+2017-04-25 22:15:01,627 1602 [main] INFO  org.hibernate.dialect.Dialect  - HHH000400: Using dialect: org.hibernate.dialect.MySQL5Dialect
+2017-04-25 22:15:02,455 2430 [main] INFO  org.hibernate.engine.transaction.internal.TransactionFactoryInitiator  - HHH000399: Using default transaction strategy (direct JDBC transactions)
+2017-04-25 22:15:02,465 2440 [main] INFO  org.hibernate.hql.internal.ast.ASTQueryTranslatorFactory  - HHH000397: Using ASTQueryTranslatorFactory
+2017-04-25 22:21:07,704 0    [main] INFO  org.hibernate.annotations.common.Version  - HCANN000001: Hibernate Commons Annotations {4.0.5.Final}
+2017-04-25 22:21:07,734 30   [main] INFO  org.hibernate.Version  - HHH000412: Hibernate Core {4.3.11.Final}
+2017-04-25 22:21:07,741 37   [main] INFO  org.hibernate.cfg.Environment  - HHH000206: hibernate.properties not found
+2017-04-25 22:21:07,761 57   [main] INFO  org.hibernate.cfg.Environment  - HHH000021: Bytecode provider name : javassist
+2017-04-25 22:21:07,849 145  [main] INFO  org.hibernate.cfg.Configuration  - HHH000043: Configuring from resource: /hibernate.cfg.xml
+2017-04-25 22:21:07,853 149  [main] INFO  org.hibernate.cfg.Configuration  - HHH000040: Configuration resource: /hibernate.cfg.xml
+2017-04-25 22:21:08,075 371  [main] INFO  org.hibernate.cfg.Configuration  - HHH000041: Configured SessionFactory: null
+2017-04-25 22:21:08,401 697  [main] WARN  org.hibernate.engine.jdbc.connections.internal.DriverManagerConnectionProviderImpl  - HHH000402: Using Hibernate built-in connection pool (not for production use!)
+2017-04-25 22:21:08,441 737  [main] INFO  org.hibernate.engine.jdbc.connections.internal.DriverManagerConnectionProviderImpl  - HHH000401: using driver [com.mysql.jdbc.Driver] at URL [jdbc:mysql://localhost:3306/our_menu]
+2017-04-25 22:21:08,442 738  [main] INFO  org.hibernate.engine.jdbc.connections.internal.DriverManagerConnectionProviderImpl  - HHH000046: Connection properties: {user=root, password=****}
+2017-04-25 22:21:08,443 739  [main] INFO  org.hibernate.engine.jdbc.connections.internal.DriverManagerConnectionProviderImpl  - HHH000006: Autocommit mode: false
+2017-04-25 22:21:08,445 741  [main] INFO  org.hibernate.engine.jdbc.connections.internal.DriverManagerConnectionProviderImpl  - HHH000115: Hibernate connection pool size: 20 (min=1)
+2017-04-25 22:21:09,573 1869 [main] INFO  org.hibernate.dialect.Dialect  - HHH000400: Using dialect: org.hibernate.dialect.MySQL5Dialect
+2017-04-25 22:21:10,155 2451 [main] INFO  org.hibernate.engine.transaction.internal.TransactionFactoryInitiator  - HHH000399: Using default transaction strategy (direct JDBC transactions)
+2017-04-25 22:21:10,168 2464 [main] INFO  org.hibernate.hql.internal.ast.ASTQueryTranslatorFactory  - HHH000397: Using ASTQueryTranslatorFactory
+2017-04-25 22:21:30,121 2    [main] INFO  org.hibernate.annotations.common.Version  - HCANN000001: Hibernate Commons Annotations {4.0.5.Final}
+2017-04-25 22:21:30,147 28   [main] INFO  org.hibernate.Version  - HHH000412: Hibernate Core {4.3.11.Final}
+2017-04-25 22:21:30,158 39   [main] INFO  org.hibernate.cfg.Environment  - HHH000206: hibernate.properties not found
+2017-04-25 22:21:30,176 57   [main] INFO  org.hibernate.cfg.Environment  - HHH000021: Bytecode provider name : javassist
+2017-04-25 22:21:30,262 143  [main] INFO  org.hibernate.cfg.Configuration  - HHH000043: Configuring from resource: /hibernate.cfg.xml
+2017-04-25 22:21:30,262 143  [main] INFO  org.hibernate.cfg.Configuration  - HHH000040: Configuration resource: /hibernate.cfg.xml
+2017-04-25 22:21:30,525 406  [main] INFO  org.hibernate.cfg.Configuration  - HHH000041: Configured SessionFactory: null
+2017-04-25 22:21:30,811 692  [main] WARN  org.hibernate.engine.jdbc.connections.internal.DriverManagerConnectionProviderImpl  - HHH000402: Using Hibernate built-in connection pool (not for production use!)
+2017-04-25 22:21:30,825 706  [main] INFO  org.hibernate.engine.jdbc.connections.internal.DriverManagerConnectionProviderImpl  - HHH000401: using driver [com.mysql.jdbc.Driver] at URL [jdbc:mysql://localhost:3306/our_menu]
+2017-04-25 22:21:30,832 713  [main] INFO  org.hibernate.engine.jdbc.connections.internal.DriverManagerConnectionProviderImpl  - HHH000046: Connection properties: {user=root, password=****}
+2017-04-25 22:21:30,832 713  [main] INFO  org.hibernate.engine.jdbc.connections.internal.DriverManagerConnectionProviderImpl  - HHH000006: Autocommit mode: false
+2017-04-25 22:21:30,833 714  [main] INFO  org.hibernate.engine.jdbc.connections.internal.DriverManagerConnectionProviderImpl  - HHH000115: Hibernate connection pool size: 20 (min=1)
+2017-04-25 22:21:31,811 1692 [main] INFO  org.hibernate.dialect.Dialect  - HHH000400: Using dialect: org.hibernate.dialect.MySQL5Dialect
+2017-04-25 22:21:32,367 2248 [main] INFO  org.hibernate.engine.transaction.internal.TransactionFactoryInitiator  - HHH000399: Using default transaction strategy (direct JDBC transactions)
+2017-04-25 22:21:32,400 2281 [main] INFO  org.hibernate.hql.internal.ast.ASTQueryTranslatorFactory  - HHH000397: Using ASTQueryTranslatorFactory
+2017-04-25 22:22:54,708 0    [main] INFO  org.hibernate.annotations.common.Version  - HCANN000001: Hibernate Commons Annotations {4.0.5.Final}
+2017-04-25 22:22:54,739 31   [main] INFO  org.hibernate.Version  - HHH000412: Hibernate Core {4.3.11.Final}
+2017-04-25 22:22:54,742 34   [main] INFO  org.hibernate.cfg.Environment  - HHH000206: hibernate.properties not found
+2017-04-25 22:22:54,752 44   [main] INFO  org.hibernate.cfg.Environment  - HHH000021: Bytecode provider name : javassist
+2017-04-25 22:22:54,809 101  [main] INFO  org.hibernate.cfg.Configuration  - HHH000043: Configuring from resource: /hibernate.cfg.xml
+2017-04-25 22:22:54,810 102  [main] INFO  org.hibernate.cfg.Configuration  - HHH000040: Configuration resource: /hibernate.cfg.xml
+2017-04-25 22:22:55,020 312  [main] INFO  org.hibernate.cfg.Configuration  - HHH000041: Configured SessionFactory: null
+2017-04-25 22:22:55,318 610  [main] WARN  org.hibernate.engine.jdbc.connections.internal.DriverManagerConnectionProviderImpl  - HHH000402: Using Hibernate built-in connection pool (not for production use!)
+2017-04-25 22:22:55,333 625  [main] INFO  org.hibernate.engine.jdbc.connections.internal.DriverManagerConnectionProviderImpl  - HHH000401: using driver [com.mysql.jdbc.Driver] at URL [jdbc:mysql://localhost:3306/our_menu]
+2017-04-25 22:22:55,337 629  [main] INFO  org.hibernate.engine.jdbc.connections.internal.DriverManagerConnectionProviderImpl  - HHH000046: Connection properties: {user=root, password=****}
+2017-04-25 22:22:55,349 641  [main] INFO  org.hibernate.engine.jdbc.connections.internal.DriverManagerConnectionProviderImpl  - HHH000006: Autocommit mode: false
+2017-04-25 22:22:55,351 643  [main] INFO  org.hibernate.engine.jdbc.connections.internal.DriverManagerConnectionProviderImpl  - HHH000115: Hibernate connection pool size: 20 (min=1)
+2017-04-25 22:22:56,303 1595 [main] INFO  org.hibernate.dialect.Dialect  - HHH000400: Using dialect: org.hibernate.dialect.MySQL5Dialect
+2017-04-25 22:22:56,910 2202 [main] INFO  org.hibernate.engine.transaction.internal.TransactionFactoryInitiator  - HHH000399: Using default transaction strategy (direct JDBC transactions)
+2017-04-25 22:22:56,919 2211 [main] INFO  org.hibernate.hql.internal.ast.ASTQueryTranslatorFactory  - HHH000397: Using ASTQueryTranslatorFactory
+2017-04-25 22:25:16,102 0    [main] INFO  org.hibernate.annotations.common.Version  - HCANN000001: Hibernate Commons Annotations {4.0.5.Final}
+2017-04-25 22:25:16,129 27   [main] INFO  org.hibernate.Version  - HHH000412: Hibernate Core {4.3.11.Final}
+2017-04-25 22:25:16,142 40   [main] INFO  org.hibernate.cfg.Environment  - HHH000206: hibernate.properties not found
+2017-04-25 22:25:16,154 52   [main] INFO  org.hibernate.cfg.Environment  - HHH000021: Bytecode provider name : javassist
+2017-04-25 22:25:16,221 119  [main] INFO  org.hibernate.cfg.Configuration  - HHH000043: Configuring from resource: /hibernate.cfg.xml
+2017-04-25 22:25:16,226 124  [main] INFO  org.hibernate.cfg.Configuration  - HHH000040: Configuration resource: /hibernate.cfg.xml
+2017-04-25 22:25:16,426 324  [main] INFO  org.hibernate.cfg.Configuration  - HHH000041: Configured SessionFactory: null
+2017-04-25 22:25:16,749 647  [main] WARN  org.hibernate.engine.jdbc.connections.internal.DriverManagerConnectionProviderImpl  - HHH000402: Using Hibernate built-in connection pool (not for production use!)
+2017-04-25 22:25:16,777 675  [main] INFO  org.hibernate.engine.jdbc.connections.internal.DriverManagerConnectionProviderImpl  - HHH000401: using driver [com.mysql.jdbc.Driver] at URL [jdbc:mysql://localhost:3306/our_menu]
+2017-04-25 22:25:16,779 677  [main] INFO  org.hibernate.engine.jdbc.connections.internal.DriverManagerConnectionProviderImpl  - HHH000046: Connection properties: {user=root, password=****}
+2017-04-25 22:25:16,779 677  [main] INFO  org.hibernate.engine.jdbc.connections.internal.DriverManagerConnectionProviderImpl  - HHH000006: Autocommit mode: false
+2017-04-25 22:25:16,786 684  [main] INFO  org.hibernate.engine.jdbc.connections.internal.DriverManagerConnectionProviderImpl  - HHH000115: Hibernate connection pool size: 20 (min=1)
+2017-04-25 22:25:17,921 1819 [main] INFO  org.hibernate.dialect.Dialect  - HHH000400: Using dialect: org.hibernate.dialect.MySQL5Dialect
+2017-04-25 22:25:18,460 2358 [main] INFO  org.hibernate.engine.transaction.internal.TransactionFactoryInitiator  - HHH000399: Using default transaction strategy (direct JDBC transactions)
+2017-04-25 22:25:18,472 2370 [main] INFO  org.hibernate.hql.internal.ast.ASTQueryTranslatorFactory  - HHH000397: Using ASTQueryTranslatorFactory
+2017-04-25 22:36:13,943 0    [main] INFO  org.hibernate.annotations.common.Version  - HCANN000001: Hibernate Commons Annotations {4.0.5.Final}
+2017-04-25 22:36:13,966 23   [main] INFO  org.hibernate.Version  - HHH000412: Hibernate Core {4.3.11.Final}
+2017-04-25 22:36:13,971 28   [main] INFO  org.hibernate.cfg.Environment  - HHH000206: hibernate.properties not found
+2017-04-25 22:36:13,982 39   [main] INFO  org.hibernate.cfg.Environment  - HHH000021: Bytecode provider name : javassist
+2017-04-25 22:36:14,044 101  [main] INFO  org.hibernate.cfg.Configuration  - HHH000043: Configuring from resource: /hibernate.cfg.xml
+2017-04-25 22:36:14,044 101  [main] INFO  org.hibernate.cfg.Configuration  - HHH000040: Configuration resource: /hibernate.cfg.xml
+2017-04-25 22:36:14,220 277  [main] INFO  org.hibernate.cfg.Configuration  - HHH000041: Configured SessionFactory: null
+2017-04-25 22:36:14,513 570  [main] WARN  org.hibernate.engine.jdbc.connections.internal.DriverManagerConnectionProviderImpl  - HHH000402: Using Hibernate built-in connection pool (not for production use!)
+2017-04-25 22:36:14,526 583  [main] INFO  org.hibernate.engine.jdbc.connections.internal.DriverManagerConnectionProviderImpl  - HHH000401: using driver [com.mysql.jdbc.Driver] at URL [jdbc:mysql://localhost:3306/our_menu]
+2017-04-25 22:36:14,533 590  [main] INFO  org.hibernate.engine.jdbc.connections.internal.DriverManagerConnectionProviderImpl  - HHH000046: Connection properties: {user=root, password=****}
+2017-04-25 22:36:14,534 591  [main] INFO  org.hibernate.engine.jdbc.connections.internal.DriverManagerConnectionProviderImpl  - HHH000006: Autocommit mode: false
+2017-04-25 22:36:14,535 592  [main] INFO  org.hibernate.engine.jdbc.connections.internal.DriverManagerConnectionProviderImpl  - HHH000115: Hibernate connection pool size: 20 (min=1)
+2017-04-25 22:36:15,447 1504 [main] INFO  org.hibernate.dialect.Dialect  - HHH000400: Using dialect: org.hibernate.dialect.MySQL5Dialect
+2017-04-25 22:36:16,001 2058 [main] INFO  org.hibernate.engine.transaction.internal.TransactionFactoryInitiator  - HHH000399: Using default transaction strategy (direct JDBC transactions)
+2017-04-25 22:36:16,021 2078 [main] INFO  org.hibernate.hql.internal.ast.ASTQueryTranslatorFactory  - HHH000397: Using ASTQueryTranslatorFactory
+2017-04-25 22:38:03,650 0    [main] INFO  org.hibernate.annotations.common.Version  - HCANN000001: Hibernate Commons Annotations {4.0.5.Final}
+2017-04-25 22:38:03,684 34   [main] INFO  org.hibernate.Version  - HHH000412: Hibernate Core {4.3.11.Final}
+2017-04-25 22:38:03,687 37   [main] INFO  org.hibernate.cfg.Environment  - HHH000206: hibernate.properties not found
+2017-04-25 22:38:03,701 51   [main] INFO  org.hibernate.cfg.Environment  - HHH000021: Bytecode provider name : javassist
+2017-04-25 22:38:03,772 122  [main] INFO  org.hibernate.cfg.Configuration  - HHH000043: Configuring from resource: /hibernate.cfg.xml
+2017-04-25 22:38:03,772 122  [main] INFO  org.hibernate.cfg.Configuration  - HHH000040: Configuration resource: /hibernate.cfg.xml
+2017-04-25 22:38:03,964 314  [main] INFO  org.hibernate.cfg.Configuration  - HHH000041: Configured SessionFactory: null
+2017-04-25 22:38:04,224 574  [main] WARN  org.hibernate.engine.jdbc.connections.internal.DriverManagerConnectionProviderImpl  - HHH000402: Using Hibernate built-in connection pool (not for production use!)
+2017-04-25 22:38:04,240 590  [main] INFO  org.hibernate.engine.jdbc.connections.internal.DriverManagerConnectionProviderImpl  - HHH000401: using driver [com.mysql.jdbc.Driver] at URL [jdbc:mysql://localhost:3306/our_menu]
+2017-04-25 22:38:04,248 598  [main] INFO  org.hibernate.engine.jdbc.connections.internal.DriverManagerConnectionProviderImpl  - HHH000046: Connection properties: {user=root, password=****}
+2017-04-25 22:38:04,249 599  [main] INFO  org.hibernate.engine.jdbc.connections.internal.DriverManagerConnectionProviderImpl  - HHH000006: Autocommit mode: false
+2017-04-25 22:38:04,250 600  [main] INFO  org.hibernate.engine.jdbc.connections.internal.DriverManagerConnectionProviderImpl  - HHH000115: Hibernate connection pool size: 20 (min=1)
+2017-04-25 22:38:05,243 1593 [main] INFO  org.hibernate.dialect.Dialect  - HHH000400: Using dialect: org.hibernate.dialect.MySQL5Dialect
+2017-04-25 22:38:06,056 2406 [main] INFO  org.hibernate.engine.transaction.internal.TransactionFactoryInitiator  - HHH000399: Using default transaction strategy (direct JDBC transactions)
+2017-04-25 22:38:06,065 2415 [main] INFO  org.hibernate.hql.internal.ast.ASTQueryTranslatorFactory  - HHH000397: Using ASTQueryTranslatorFactory
+2017-04-25 22:38:06,887 3237 [main] WARN  org.hibernate.engine.jdbc.spi.SqlExceptionHelper  - SQL Error: 1452, SQLState: 23000
+2017-04-25 22:38:06,890 3240 [main] ERROR org.hibernate.engine.jdbc.spi.SqlExceptionHelper  - Cannot add or update a child row: a foreign key constraint fails (`our_menu`.`usersRestaurants`, CONSTRAINT `usersRestaurants_ibfk_1` FOREIGN KEY (`restaurantName`) REFERENCES `restaurants` (`restaurantName`) ON DELETE CASCADE ON UPDATE CASCADE)
+2017-04-25 22:38:06,891 3241 [main] INFO  org.hibernate.engine.jdbc.batch.internal.AbstractBatchImpl  - HHH000010: On release of batch it still contained JDBC statements
+2017-04-25 22:38:06,894 3244 [main] WARN  org.hibernate.engine.jdbc.spi.SqlExceptionHelper  - SQL Warning Code: 1452, SQLState: 23000
+2017-04-25 22:38:06,895 3245 [main] WARN  org.hibernate.engine.jdbc.spi.SqlExceptionHelper  - Cannot add or update a child row: a foreign key constraint fails (`our_menu`.`usersRestaurants`, CONSTRAINT `usersRestaurants_ibfk_1` FOREIGN KEY (`restaurantName`) REFERENCES `restaurants` (`restaurantName`) ON DELETE CASCADE ON UPDATE CASCADE)
+2017-04-25 22:41:16,515 0    [main] INFO  org.hibernate.annotations.common.Version  - HCANN000001: Hibernate Commons Annotations {4.0.5.Final}
+2017-04-25 22:41:16,545 30   [main] INFO  org.hibernate.Version  - HHH000412: Hibernate Core {4.3.11.Final}
+2017-04-25 22:41:16,546 31   [main] INFO  org.hibernate.cfg.Environment  - HHH000206: hibernate.properties not found
+2017-04-25 22:41:16,550 35   [main] INFO  org.hibernate.cfg.Environment  - HHH000021: Bytecode provider name : javassist
+2017-04-25 22:41:16,599 84   [main] INFO  org.hibernate.cfg.Configuration  - HHH000043: Configuring from resource: /hibernate.cfg.xml
+2017-04-25 22:41:16,599 84   [main] INFO  org.hibernate.cfg.Configuration  - HHH000040: Configuration resource: /hibernate.cfg.xml
+2017-04-25 22:41:16,764 249  [main] INFO  org.hibernate.cfg.Configuration  - HHH000041: Configured SessionFactory: null
+2017-04-25 22:41:17,027 512  [main] WARN  org.hibernate.engine.jdbc.connections.internal.DriverManagerConnectionProviderImpl  - HHH000402: Using Hibernate built-in connection pool (not for production use!)
+2017-04-25 22:41:17,052 537  [main] INFO  org.hibernate.engine.jdbc.connections.internal.DriverManagerConnectionProviderImpl  - HHH000401: using driver [com.mysql.jdbc.Driver] at URL [jdbc:mysql://localhost:3306/our_menu]
+2017-04-25 22:41:17,060 545  [main] INFO  org.hibernate.engine.jdbc.connections.internal.DriverManagerConnectionProviderImpl  - HHH000046: Connection properties: {user=root, password=****}
+2017-04-25 22:41:17,062 547  [main] INFO  org.hibernate.engine.jdbc.connections.internal.DriverManagerConnectionProviderImpl  - HHH000006: Autocommit mode: false
+2017-04-25 22:41:17,063 548  [main] INFO  org.hibernate.engine.jdbc.connections.internal.DriverManagerConnectionProviderImpl  - HHH000115: Hibernate connection pool size: 20 (min=1)
+2017-04-25 22:41:17,897 1382 [main] INFO  org.hibernate.dialect.Dialect  - HHH000400: Using dialect: org.hibernate.dialect.MySQL5Dialect
+2017-04-25 22:41:18,476 1961 [main] INFO  org.hibernate.engine.transaction.internal.TransactionFactoryInitiator  - HHH000399: Using default transaction strategy (direct JDBC transactions)
+2017-04-25 22:41:18,492 1977 [main] INFO  org.hibernate.hql.internal.ast.ASTQueryTranslatorFactory  - HHH000397: Using ASTQueryTranslatorFactory
+2017-04-25 22:44:18,675 0    [main] INFO  org.hibernate.annotations.common.Version  - HCANN000001: Hibernate Commons Annotations {4.0.5.Final}
+2017-04-25 22:44:18,697 22   [main] INFO  org.hibernate.Version  - HHH000412: Hibernate Core {4.3.11.Final}
+2017-04-25 22:44:18,707 32   [main] INFO  org.hibernate.cfg.Environment  - HHH000206: hibernate.properties not found
+2017-04-25 22:44:18,715 40   [main] INFO  org.hibernate.cfg.Environment  - HHH000021: Bytecode provider name : javassist
+2017-04-25 22:44:18,785 110  [main] INFO  org.hibernate.cfg.Configuration  - HHH000043: Configuring from resource: /hibernate.cfg.xml
+2017-04-25 22:44:18,794 119  [main] INFO  org.hibernate.cfg.Configuration  - HHH000040: Configuration resource: /hibernate.cfg.xml
+2017-04-25 22:44:18,979 304  [main] INFO  org.hibernate.cfg.Configuration  - HHH000041: Configured SessionFactory: null
+2017-04-25 22:44:19,248 573  [main] WARN  org.hibernate.engine.jdbc.connections.internal.DriverManagerConnectionProviderImpl  - HHH000402: Using Hibernate built-in connection pool (not for production use!)
+2017-04-25 22:44:19,267 592  [main] INFO  org.hibernate.engine.jdbc.connections.internal.DriverManagerConnectionProviderImpl  - HHH000401: using driver [com.mysql.jdbc.Driver] at URL [jdbc:mysql://localhost:3306/our_menu]
+2017-04-25 22:44:19,269 594  [main] INFO  org.hibernate.engine.jdbc.connections.internal.DriverManagerConnectionProviderImpl  - HHH000046: Connection properties: {user=root, password=****}
+2017-04-25 22:44:19,270 595  [main] INFO  org.hibernate.engine.jdbc.connections.internal.DriverManagerConnectionProviderImpl  - HHH000006: Autocommit mode: false
+2017-04-25 22:44:19,272 597  [main] INFO  org.hibernate.engine.jdbc.connections.internal.DriverManagerConnectionProviderImpl  - HHH000115: Hibernate connection pool size: 20 (min=1)
+2017-04-25 22:44:20,156 1481 [main] INFO  org.hibernate.dialect.Dialect  - HHH000400: Using dialect: org.hibernate.dialect.MySQL5Dialect
+2017-04-25 22:44:20,700 2025 [main] INFO  org.hibernate.engine.transaction.internal.TransactionFactoryInitiator  - HHH000399: Using default transaction strategy (direct JDBC transactions)
+2017-04-25 22:44:20,716 2041 [main] INFO  org.hibernate.hql.internal.ast.ASTQueryTranslatorFactory  - HHH000397: Using ASTQueryTranslatorFactory
+2017-04-25 22:44:21,606 2931 [main] WARN  org.hibernate.engine.jdbc.spi.SqlExceptionHelper  - SQL Error: 1452, SQLState: 23000
+2017-04-25 22:44:21,607 2932 [main] ERROR org.hibernate.engine.jdbc.spi.SqlExceptionHelper  - Cannot add or update a child row: a foreign key constraint fails (`our_menu`.`usersRestaurants`, CONSTRAINT `usersRestaurants_ibfk_1` FOREIGN KEY (`restaurantName`) REFERENCES `restaurants` (`restaurantName`) ON DELETE CASCADE ON UPDATE CASCADE)
+2017-04-25 22:44:21,607 2932 [main] INFO  org.hibernate.engine.jdbc.batch.internal.AbstractBatchImpl  - HHH000010: On release of batch it still contained JDBC statements
+2017-04-25 22:44:21,608 2933 [main] WARN  org.hibernate.engine.jdbc.spi.SqlExceptionHelper  - SQL Warning Code: 1452, SQLState: 23000
+2017-04-25 22:44:21,609 2934 [main] WARN  org.hibernate.engine.jdbc.spi.SqlExceptionHelper  - Cannot add or update a child row: a foreign key constraint fails (`our_menu`.`usersRestaurants`, CONSTRAINT `usersRestaurants_ibfk_1` FOREIGN KEY (`restaurantName`) REFERENCES `restaurants` (`restaurantName`) ON DELETE CASCADE ON UPDATE CASCADE)
+2017-04-25 22:45:37,529 0    [main] INFO  org.hibernate.annotations.common.Version  - HCANN000001: Hibernate Commons Annotations {4.0.5.Final}
+2017-04-25 22:45:37,557 28   [main] INFO  org.hibernate.Version  - HHH000412: Hibernate Core {4.3.11.Final}
+2017-04-25 22:45:37,559 30   [main] INFO  org.hibernate.cfg.Environment  - HHH000206: hibernate.properties not found
+2017-04-25 22:45:37,569 40   [main] INFO  org.hibernate.cfg.Environment  - HHH000021: Bytecode provider name : javassist
+2017-04-25 22:45:37,634 105  [main] INFO  org.hibernate.cfg.Configuration  - HHH000043: Configuring from resource: /hibernate.cfg.xml
+2017-04-25 22:45:37,634 105  [main] INFO  org.hibernate.cfg.Configuration  - HHH000040: Configuration resource: /hibernate.cfg.xml
+2017-04-25 22:45:37,792 263  [main] INFO  org.hibernate.cfg.Configuration  - HHH000041: Configured SessionFactory: null
+2017-04-25 22:45:38,078 549  [main] WARN  org.hibernate.engine.jdbc.connections.internal.DriverManagerConnectionProviderImpl  - HHH000402: Using Hibernate built-in connection pool (not for production use!)
+2017-04-25 22:45:38,101 572  [main] INFO  org.hibernate.engine.jdbc.connections.internal.DriverManagerConnectionProviderImpl  - HHH000401: using driver [com.mysql.jdbc.Driver] at URL [jdbc:mysql://localhost:3306/our_menu]
+2017-04-25 22:45:38,102 573  [main] INFO  org.hibernate.engine.jdbc.connections.internal.DriverManagerConnectionProviderImpl  - HHH000046: Connection properties: {user=root, password=****}
+2017-04-25 22:45:38,103 574  [main] INFO  org.hibernate.engine.jdbc.connections.internal.DriverManagerConnectionProviderImpl  - HHH000006: Autocommit mode: false
+2017-04-25 22:45:38,105 576  [main] INFO  org.hibernate.engine.jdbc.connections.internal.DriverManagerConnectionProviderImpl  - HHH000115: Hibernate connection pool size: 20 (min=1)
+2017-04-25 22:45:39,016 1487 [main] INFO  org.hibernate.dialect.Dialect  - HHH000400: Using dialect: org.hibernate.dialect.MySQL5Dialect
+2017-04-25 22:45:39,582 2053 [main] INFO  org.hibernate.engine.transaction.internal.TransactionFactoryInitiator  - HHH000399: Using default transaction strategy (direct JDBC transactions)
+2017-04-25 22:45:39,596 2067 [main] INFO  org.hibernate.hql.internal.ast.ASTQueryTranslatorFactory  - HHH000397: Using ASTQueryTranslatorFactory
+2017-04-25 22:45:40,520 2991 [main] WARN  org.hibernate.engine.jdbc.spi.SqlExceptionHelper  - SQL Error: 1452, SQLState: 23000
+2017-04-25 22:45:40,520 2991 [main] ERROR org.hibernate.engine.jdbc.spi.SqlExceptionHelper  - Cannot add or update a child row: a foreign key constraint fails (`our_menu`.`usersRestaurants`, CONSTRAINT `usersRestaurants_ibfk_1` FOREIGN KEY (`restaurantName`) REFERENCES `restaurants` (`restaurantName`) ON DELETE CASCADE ON UPDATE CASCADE)
+2017-04-25 22:45:40,521 2992 [main] INFO  org.hibernate.engine.jdbc.batch.internal.AbstractBatchImpl  - HHH000010: On release of batch it still contained JDBC statements
+2017-04-25 22:45:40,522 2993 [main] WARN  org.hibernate.engine.jdbc.spi.SqlExceptionHelper  - SQL Warning Code: 1452, SQLState: 23000
+2017-04-25 22:45:40,523 2994 [main] WARN  org.hibernate.engine.jdbc.spi.SqlExceptionHelper  - Cannot add or update a child row: a foreign key constraint fails (`our_menu`.`usersRestaurants`, CONSTRAINT `usersRestaurants_ibfk_1` FOREIGN KEY (`restaurantName`) REFERENCES `restaurants` (`restaurantName`) ON DELETE CASCADE ON UPDATE CASCADE)
+2017-04-25 22:46:10,943 0    [main] INFO  org.hibernate.annotations.common.Version  - HCANN000001: Hibernate Commons Annotations {4.0.5.Final}
+2017-04-25 22:46:10,963 20   [main] INFO  org.hibernate.Version  - HHH000412: Hibernate Core {4.3.11.Final}
+2017-04-25 22:46:10,964 21   [main] INFO  org.hibernate.cfg.Environment  - HHH000206: hibernate.properties not found
+2017-04-25 22:46:10,979 36   [main] INFO  org.hibernate.cfg.Environment  - HHH000021: Bytecode provider name : javassist
+2017-04-25 22:46:11,044 101  [main] INFO  org.hibernate.cfg.Configuration  - HHH000043: Configuring from resource: /hibernate.cfg.xml
+2017-04-25 22:46:11,044 101  [main] INFO  org.hibernate.cfg.Configuration  - HHH000040: Configuration resource: /hibernate.cfg.xml
+2017-04-25 22:46:11,225 282  [main] INFO  org.hibernate.cfg.Configuration  - HHH000041: Configured SessionFactory: null
+2017-04-25 22:46:11,485 542  [main] WARN  org.hibernate.engine.jdbc.connections.internal.DriverManagerConnectionProviderImpl  - HHH000402: Using Hibernate built-in connection pool (not for production use!)
+2017-04-25 22:46:11,503 560  [main] INFO  org.hibernate.engine.jdbc.connections.internal.DriverManagerConnectionProviderImpl  - HHH000401: using driver [com.mysql.jdbc.Driver] at URL [jdbc:mysql://localhost:3306/our_menu]
+2017-04-25 22:46:11,509 566  [main] INFO  org.hibernate.engine.jdbc.connections.internal.DriverManagerConnectionProviderImpl  - HHH000046: Connection properties: {user=root, password=****}
+2017-04-25 22:46:11,509 566  [main] INFO  org.hibernate.engine.jdbc.connections.internal.DriverManagerConnectionProviderImpl  - HHH000006: Autocommit mode: false
+2017-04-25 22:46:11,512 569  [main] INFO  org.hibernate.engine.jdbc.connections.internal.DriverManagerConnectionProviderImpl  - HHH000115: Hibernate connection pool size: 20 (min=1)
+2017-04-25 22:46:12,423 1480 [main] INFO  org.hibernate.dialect.Dialect  - HHH000400: Using dialect: org.hibernate.dialect.MySQL5Dialect
+2017-04-25 22:46:12,942 1999 [main] INFO  org.hibernate.engine.transaction.internal.TransactionFactoryInitiator  - HHH000399: Using default transaction strategy (direct JDBC transactions)
+2017-04-25 22:46:12,959 2016 [main] INFO  org.hibernate.hql.internal.ast.ASTQueryTranslatorFactory  - HHH000397: Using ASTQueryTranslatorFactory
+2017-04-25 22:57:31,363 0    [main] INFO  org.hibernate.annotations.common.Version  - HCANN000001: Hibernate Commons Annotations {4.0.5.Final}
+2017-04-25 22:57:31,387 24   [main] INFO  org.hibernate.Version  - HHH000412: Hibernate Core {4.3.11.Final}
+2017-04-25 22:57:31,388 25   [main] INFO  org.hibernate.cfg.Environment  - HHH000206: hibernate.properties not found
+2017-04-25 22:57:31,399 36   [main] INFO  org.hibernate.cfg.Environment  - HHH000021: Bytecode provider name : javassist
+2017-04-25 22:57:31,483 120  [main] INFO  org.hibernate.cfg.Configuration  - HHH000043: Configuring from resource: /hibernate.cfg.xml
+2017-04-25 22:57:31,489 126  [main] INFO  org.hibernate.cfg.Configuration  - HHH000040: Configuration resource: /hibernate.cfg.xml
+2017-04-25 22:57:31,700 337  [main] INFO  org.hibernate.cfg.Configuration  - HHH000041: Configured SessionFactory: null
+2017-04-25 22:57:32,011 648  [main] WARN  org.hibernate.engine.jdbc.connections.internal.DriverManagerConnectionProviderImpl  - HHH000402: Using Hibernate built-in connection pool (not for production use!)
+2017-04-25 22:57:32,034 671  [main] INFO  org.hibernate.engine.jdbc.connections.internal.DriverManagerConnectionProviderImpl  - HHH000401: using driver [com.mysql.jdbc.Driver] at URL [jdbc:mysql://localhost:3306/our_menu]
+2017-04-25 22:57:32,035 672  [main] INFO  org.hibernate.engine.jdbc.connections.internal.DriverManagerConnectionProviderImpl  - HHH000046: Connection properties: {user=root, password=****}
+2017-04-25 22:57:32,037 674  [main] INFO  org.hibernate.engine.jdbc.connections.internal.DriverManagerConnectionProviderImpl  - HHH000006: Autocommit mode: false
+2017-04-25 22:57:32,043 680  [main] INFO  org.hibernate.engine.jdbc.connections.internal.DriverManagerConnectionProviderImpl  - HHH000115: Hibernate connection pool size: 20 (min=1)
+2017-04-25 22:57:32,930 1567 [main] INFO  org.hibernate.dialect.Dialect  - HHH000400: Using dialect: org.hibernate.dialect.MySQL5Dialect
+2017-04-25 22:57:33,476 2113 [main] INFO  org.hibernate.engine.transaction.internal.TransactionFactoryInitiator  - HHH000399: Using default transaction strategy (direct JDBC transactions)
+2017-04-25 22:57:33,485 2122 [main] INFO  org.hibernate.hql.internal.ast.ASTQueryTranslatorFactory  - HHH000397: Using ASTQueryTranslatorFactory
+2017-04-25 23:01:55,182 0    [main] INFO  org.hibernate.annotations.common.Version  - HCANN000001: Hibernate Commons Annotations {4.0.5.Final}
+2017-04-25 23:01:55,207 25   [main] INFO  org.hibernate.Version  - HHH000412: Hibernate Core {4.3.11.Final}
+2017-04-25 23:01:55,212 30   [main] INFO  org.hibernate.cfg.Environment  - HHH000206: hibernate.properties not found
+2017-04-25 23:01:55,219 37   [main] INFO  org.hibernate.cfg.Environment  - HHH000021: Bytecode provider name : javassist
+2017-04-25 23:01:55,277 95   [main] INFO  org.hibernate.cfg.Configuration  - HHH000043: Configuring from resource: /hibernate.cfg.xml
+2017-04-25 23:01:55,277 95   [main] INFO  org.hibernate.cfg.Configuration  - HHH000040: Configuration resource: /hibernate.cfg.xml
+2017-04-25 23:01:55,451 269  [main] INFO  org.hibernate.cfg.Configuration  - HHH000041: Configured SessionFactory: null
+2017-04-25 23:01:55,700 518  [main] WARN  org.hibernate.engine.jdbc.connections.internal.DriverManagerConnectionProviderImpl  - HHH000402: Using Hibernate built-in connection pool (not for production use!)
+2017-04-25 23:01:55,722 540  [main] INFO  org.hibernate.engine.jdbc.connections.internal.DriverManagerConnectionProviderImpl  - HHH000401: using driver [com.mysql.jdbc.Driver] at URL [jdbc:mysql://localhost:3306/our_menu]
+2017-04-25 23:01:55,723 541  [main] INFO  org.hibernate.engine.jdbc.connections.internal.DriverManagerConnectionProviderImpl  - HHH000046: Connection properties: {user=root, password=****}
+2017-04-25 23:01:55,725 543  [main] INFO  org.hibernate.engine.jdbc.connections.internal.DriverManagerConnectionProviderImpl  - HHH000006: Autocommit mode: false
+2017-04-25 23:01:55,727 545  [main] INFO  org.hibernate.engine.jdbc.connections.internal.DriverManagerConnectionProviderImpl  - HHH000115: Hibernate connection pool size: 20 (min=1)
+2017-04-25 23:01:56,610 1428 [main] INFO  org.hibernate.dialect.Dialect  - HHH000400: Using dialect: org.hibernate.dialect.MySQL5Dialect
+2017-04-25 23:01:57,142 1960 [main] INFO  org.hibernate.engine.transaction.internal.TransactionFactoryInitiator  - HHH000399: Using default transaction strategy (direct JDBC transactions)
+2017-04-25 23:01:57,154 1972 [main] INFO  org.hibernate.hql.internal.ast.ASTQueryTranslatorFactory  - HHH000397: Using ASTQueryTranslatorFactory
+2017-04-25 23:02:14,454 0    [main] INFO  org.hibernate.annotations.common.Version  - HCANN000001: Hibernate Commons Annotations {4.0.5.Final}
+2017-04-25 23:02:14,478 24   [main] INFO  org.hibernate.Version  - HHH000412: Hibernate Core {4.3.11.Final}
+2017-04-25 23:02:14,479 25   [main] INFO  org.hibernate.cfg.Environment  - HHH000206: hibernate.properties not found
+2017-04-25 23:02:14,493 39   [main] INFO  org.hibernate.cfg.Environment  - HHH000021: Bytecode provider name : javassist
+2017-04-25 23:02:14,556 102  [main] INFO  org.hibernate.cfg.Configuration  - HHH000043: Configuring from resource: /hibernate.cfg.xml
+2017-04-25 23:02:14,556 102  [main] INFO  org.hibernate.cfg.Configuration  - HHH000040: Configuration resource: /hibernate.cfg.xml
+2017-04-25 23:02:14,725 271  [main] INFO  org.hibernate.cfg.Configuration  - HHH000041: Configured SessionFactory: null
+2017-04-25 23:02:14,980 526  [main] WARN  org.hibernate.engine.jdbc.connections.internal.DriverManagerConnectionProviderImpl  - HHH000402: Using Hibernate built-in connection pool (not for production use!)
+2017-04-25 23:02:14,998 544  [main] INFO  org.hibernate.engine.jdbc.connections.internal.DriverManagerConnectionProviderImpl  - HHH000401: using driver [com.mysql.jdbc.Driver] at URL [jdbc:mysql://localhost:3306/our_menu]
+2017-04-25 23:02:15,002 548  [main] INFO  org.hibernate.engine.jdbc.connections.internal.DriverManagerConnectionProviderImpl  - HHH000046: Connection properties: {user=root, password=****}
+2017-04-25 23:02:15,003 549  [main] INFO  org.hibernate.engine.jdbc.connections.internal.DriverManagerConnectionProviderImpl  - HHH000006: Autocommit mode: false
+2017-04-25 23:02:15,008 554  [main] INFO  org.hibernate.engine.jdbc.connections.internal.DriverManagerConnectionProviderImpl  - HHH000115: Hibernate connection pool size: 20 (min=1)
+2017-04-25 23:02:15,907 1453 [main] INFO  org.hibernate.dialect.Dialect  - HHH000400: Using dialect: org.hibernate.dialect.MySQL5Dialect
+2017-04-25 23:02:16,594 2140 [main] INFO  org.hibernate.engine.transaction.internal.TransactionFactoryInitiator  - HHH000399: Using default transaction strategy (direct JDBC transactions)
+2017-04-25 23:02:16,605 2151 [main] INFO  org.hibernate.hql.internal.ast.ASTQueryTranslatorFactory  - HHH000397: Using ASTQueryTranslatorFactory
+2017-04-25 23:02:36,016 0    [main] INFO  org.hibernate.annotations.common.Version  - HCANN000001: Hibernate Commons Annotations {4.0.5.Final}
+2017-04-25 23:02:36,037 21   [main] INFO  org.hibernate.Version  - HHH000412: Hibernate Core {4.3.11.Final}
+2017-04-25 23:02:36,050 34   [main] INFO  org.hibernate.cfg.Environment  - HHH000206: hibernate.properties not found
+2017-04-25 23:02:36,057 41   [main] INFO  org.hibernate.cfg.Environment  - HHH000021: Bytecode provider name : javassist
+2017-04-25 23:02:36,121 105  [main] INFO  org.hibernate.cfg.Configuration  - HHH000043: Configuring from resource: /hibernate.cfg.xml
+2017-04-25 23:02:36,122 106  [main] INFO  org.hibernate.cfg.Configuration  - HHH000040: Configuration resource: /hibernate.cfg.xml
+2017-04-25 23:02:36,288 272  [main] INFO  org.hibernate.cfg.Configuration  - HHH000041: Configured SessionFactory: null
+2017-04-25 23:02:36,527 511  [main] WARN  org.hibernate.engine.jdbc.connections.internal.DriverManagerConnectionProviderImpl  - HHH000402: Using Hibernate built-in connection pool (not for production use!)
+2017-04-25 23:02:36,547 531  [main] INFO  org.hibernate.engine.jdbc.connections.internal.DriverManagerConnectionProviderImpl  - HHH000401: using driver [com.mysql.jdbc.Driver] at URL [jdbc:mysql://localhost:3306/our_menu]
+2017-04-25 23:02:36,547 531  [main] INFO  org.hibernate.engine.jdbc.connections.internal.DriverManagerConnectionProviderImpl  - HHH000046: Connection properties: {user=root, password=****}
+2017-04-25 23:02:36,547 531  [main] INFO  org.hibernate.engine.jdbc.connections.internal.DriverManagerConnectionProviderImpl  - HHH000006: Autocommit mode: false
+2017-04-25 23:02:36,548 532  [main] INFO  org.hibernate.engine.jdbc.connections.internal.DriverManagerConnectionProviderImpl  - HHH000115: Hibernate connection pool size: 20 (min=1)
+2017-04-25 23:02:37,431 1415 [main] INFO  org.hibernate.dialect.Dialect  - HHH000400: Using dialect: org.hibernate.dialect.MySQL5Dialect
+2017-04-25 23:02:37,973 1957 [main] INFO  org.hibernate.engine.transaction.internal.TransactionFactoryInitiator  - HHH000399: Using default transaction strategy (direct JDBC transactions)
+2017-04-25 23:02:37,990 1974 [main] INFO  org.hibernate.hql.internal.ast.ASTQueryTranslatorFactory  - HHH000397: Using ASTQueryTranslatorFactory
+2017-04-25 23:02:38,971 2955 [main] INFO  edu.matc.persistence.UsersRestaurantsDaoTest  - all users: [edu.matc.entity.UsersRestaurants@1d2bd371]
+2017-04-25 23:02:39,036 3020 [main] WARN  org.hibernate.engine.jdbc.spi.SqlExceptionHelper  - SQL Error: 1452, SQLState: 23000
+2017-04-25 23:02:39,036 3020 [main] ERROR org.hibernate.engine.jdbc.spi.SqlExceptionHelper  - Cannot add or update a child row: a foreign key constraint fails (`our_menu`.`usersRestaurants`, CONSTRAINT `usersRestaurants_ibfk_1` FOREIGN KEY (`restaurantName`) REFERENCES `restaurants` (`restaurantName`) ON DELETE CASCADE ON UPDATE CASCADE)
+2017-04-25 23:02:39,038 3022 [main] INFO  org.hibernate.engine.jdbc.batch.internal.AbstractBatchImpl  - HHH000010: On release of batch it still contained JDBC statements
+2017-04-25 23:02:39,049 3033 [main] WARN  org.hibernate.engine.jdbc.spi.SqlExceptionHelper  - SQL Warning Code: 1452, SQLState: 23000
+2017-04-25 23:02:39,049 3033 [main] WARN  org.hibernate.engine.jdbc.spi.SqlExceptionHelper  - Cannot add or update a child row: a foreign key constraint fails (`our_menu`.`usersRestaurants`, CONSTRAINT `usersRestaurants_ibfk_1` FOREIGN KEY (`restaurantName`) REFERENCES `restaurants` (`restaurantName`) ON DELETE CASCADE ON UPDATE CASCADE)
+2017-04-25 23:03:13,825 0    [main] INFO  org.hibernate.annotations.common.Version  - HCANN000001: Hibernate Commons Annotations {4.0.5.Final}
+2017-04-25 23:03:13,853 28   [main] INFO  org.hibernate.Version  - HHH000412: Hibernate Core {4.3.11.Final}
+2017-04-25 23:03:13,858 33   [main] INFO  org.hibernate.cfg.Environment  - HHH000206: hibernate.properties not found
+2017-04-25 23:03:13,861 36   [main] INFO  org.hibernate.cfg.Environment  - HHH000021: Bytecode provider name : javassist
+2017-04-25 23:03:13,928 103  [main] INFO  org.hibernate.cfg.Configuration  - HHH000043: Configuring from resource: /hibernate.cfg.xml
+2017-04-25 23:03:13,928 103  [main] INFO  org.hibernate.cfg.Configuration  - HHH000040: Configuration resource: /hibernate.cfg.xml
+2017-04-25 23:03:14,104 279  [main] INFO  org.hibernate.cfg.Configuration  - HHH000041: Configured SessionFactory: null
+2017-04-25 23:03:14,358 533  [main] WARN  org.hibernate.engine.jdbc.connections.internal.DriverManagerConnectionProviderImpl  - HHH000402: Using Hibernate built-in connection pool (not for production use!)
+2017-04-25 23:03:14,380 555  [main] INFO  org.hibernate.engine.jdbc.connections.internal.DriverManagerConnectionProviderImpl  - HHH000401: using driver [com.mysql.jdbc.Driver] at URL [jdbc:mysql://localhost:3306/our_menu]
+2017-04-25 23:03:14,382 557  [main] INFO  org.hibernate.engine.jdbc.connections.internal.DriverManagerConnectionProviderImpl  - HHH000046: Connection properties: {user=root, password=****}
+2017-04-25 23:03:14,385 560  [main] INFO  org.hibernate.engine.jdbc.connections.internal.DriverManagerConnectionProviderImpl  - HHH000006: Autocommit mode: false
+2017-04-25 23:03:14,386 561  [main] INFO  org.hibernate.engine.jdbc.connections.internal.DriverManagerConnectionProviderImpl  - HHH000115: Hibernate connection pool size: 20 (min=1)
+2017-04-25 23:03:15,248 1423 [main] INFO  org.hibernate.dialect.Dialect  - HHH000400: Using dialect: org.hibernate.dialect.MySQL5Dialect
+2017-04-25 23:03:15,793 1968 [main] INFO  org.hibernate.engine.transaction.internal.TransactionFactoryInitiator  - HHH000399: Using default transaction strategy (direct JDBC transactions)
+2017-04-25 23:03:15,803 1978 [main] INFO  org.hibernate.hql.internal.ast.ASTQueryTranslatorFactory  - HHH000397: Using ASTQueryTranslatorFactory
+2017-04-25 23:03:16,829 3004 [main] WARN  org.hibernate.engine.jdbc.spi.SqlExceptionHelper  - SQL Error: 1452, SQLState: 23000
+2017-04-25 23:03:16,829 3004 [main] ERROR org.hibernate.engine.jdbc.spi.SqlExceptionHelper  - Cannot add or update a child row: a foreign key constraint fails (`our_menu`.`usersRestaurants`, CONSTRAINT `usersRestaurants_ibfk_1` FOREIGN KEY (`restaurantName`) REFERENCES `restaurants` (`restaurantName`) ON DELETE CASCADE ON UPDATE CASCADE)
+2017-04-25 23:03:16,829 3004 [main] INFO  org.hibernate.engine.jdbc.batch.internal.AbstractBatchImpl  - HHH000010: On release of batch it still contained JDBC statements
+2017-04-25 23:03:16,831 3006 [main] WARN  org.hibernate.engine.jdbc.spi.SqlExceptionHelper  - SQL Warning Code: 1452, SQLState: 23000
+2017-04-25 23:03:16,833 3008 [main] WARN  org.hibernate.engine.jdbc.spi.SqlExceptionHelper  - Cannot add or update a child row: a foreign key constraint fails (`our_menu`.`usersRestaurants`, CONSTRAINT `usersRestaurants_ibfk_1` FOREIGN KEY (`restaurantName`) REFERENCES `restaurants` (`restaurantName`) ON DELETE CASCADE ON UPDATE CASCADE)
+2017-04-25 23:07:15,679 0    [main] INFO  org.hibernate.annotations.common.Version  - HCANN000001: Hibernate Commons Annotations {4.0.5.Final}
+2017-04-25 23:07:15,706 27   [main] INFO  org.hibernate.Version  - HHH000412: Hibernate Core {4.3.11.Final}
+2017-04-25 23:07:15,711 32   [main] INFO  org.hibernate.cfg.Environment  - HHH000206: hibernate.properties not found
+2017-04-25 23:07:15,713 34   [main] INFO  org.hibernate.cfg.Environment  - HHH000021: Bytecode provider name : javassist
+2017-04-25 23:07:15,779 100  [main] INFO  org.hibernate.cfg.Configuration  - HHH000043: Configuring from resource: /hibernate.cfg.xml
+2017-04-25 23:07:15,779 100  [main] INFO  org.hibernate.cfg.Configuration  - HHH000040: Configuration resource: /hibernate.cfg.xml
+2017-04-25 23:07:15,941 262  [main] INFO  org.hibernate.cfg.Configuration  - HHH000041: Configured SessionFactory: null
+2017-04-25 23:07:16,189 510  [main] WARN  org.hibernate.engine.jdbc.connections.internal.DriverManagerConnectionProviderImpl  - HHH000402: Using Hibernate built-in connection pool (not for production use!)
+2017-04-25 23:07:16,205 526  [main] INFO  org.hibernate.engine.jdbc.connections.internal.DriverManagerConnectionProviderImpl  - HHH000401: using driver [com.mysql.jdbc.Driver] at URL [jdbc:mysql://localhost:3306/our_menu]
+2017-04-25 23:07:16,206 527  [main] INFO  org.hibernate.engine.jdbc.connections.internal.DriverManagerConnectionProviderImpl  - HHH000046: Connection properties: {user=root, password=****}
+2017-04-25 23:07:16,208 529  [main] INFO  org.hibernate.engine.jdbc.connections.internal.DriverManagerConnectionProviderImpl  - HHH000006: Autocommit mode: false
+2017-04-25 23:07:16,208 529  [main] INFO  org.hibernate.engine.jdbc.connections.internal.DriverManagerConnectionProviderImpl  - HHH000115: Hibernate connection pool size: 20 (min=1)
+2017-04-25 23:07:17,048 1369 [main] INFO  org.hibernate.dialect.Dialect  - HHH000400: Using dialect: org.hibernate.dialect.MySQL5Dialect
+2017-04-25 23:07:17,644 1965 [main] INFO  org.hibernate.engine.transaction.internal.TransactionFactoryInitiator  - HHH000399: Using default transaction strategy (direct JDBC transactions)
+2017-04-25 23:07:17,658 1979 [main] INFO  org.hibernate.hql.internal.ast.ASTQueryTranslatorFactory  - HHH000397: Using ASTQueryTranslatorFactory
+2017-04-25 23:07:45,550 0    [main] INFO  org.hibernate.annotations.common.Version  - HCANN000001: Hibernate Commons Annotations {4.0.5.Final}
+2017-04-25 23:07:45,568 18   [main] INFO  org.hibernate.Version  - HHH000412: Hibernate Core {4.3.11.Final}
+2017-04-25 23:07:45,583 33   [main] INFO  org.hibernate.cfg.Environment  - HHH000206: hibernate.properties not found
+2017-04-25 23:07:45,591 41   [main] INFO  org.hibernate.cfg.Environment  - HHH000021: Bytecode provider name : javassist
+2017-04-25 23:07:45,690 140  [main] INFO  org.hibernate.cfg.Configuration  - HHH000043: Configuring from resource: /hibernate.cfg.xml
+2017-04-25 23:07:45,690 140  [main] INFO  org.hibernate.cfg.Configuration  - HHH000040: Configuration resource: /hibernate.cfg.xml
+2017-04-25 23:07:45,873 323  [main] INFO  org.hibernate.cfg.Configuration  - HHH000041: Configured SessionFactory: null
+2017-04-25 23:07:46,122 572  [main] WARN  org.hibernate.engine.jdbc.connections.internal.DriverManagerConnectionProviderImpl  - HHH000402: Using Hibernate built-in connection pool (not for production use!)
+2017-04-25 23:07:46,144 594  [main] INFO  org.hibernate.engine.jdbc.connections.internal.DriverManagerConnectionProviderImpl  - HHH000401: using driver [com.mysql.jdbc.Driver] at URL [jdbc:mysql://localhost:3306/our_menu]
+2017-04-25 23:07:46,148 598  [main] INFO  org.hibernate.engine.jdbc.connections.internal.DriverManagerConnectionProviderImpl  - HHH000046: Connection properties: {user=root, password=****}
+2017-04-25 23:07:46,150 600  [main] INFO  org.hibernate.engine.jdbc.connections.internal.DriverManagerConnectionProviderImpl  - HHH000006: Autocommit mode: false
+2017-04-25 23:07:46,151 601  [main] INFO  org.hibernate.engine.jdbc.connections.internal.DriverManagerConnectionProviderImpl  - HHH000115: Hibernate connection pool size: 20 (min=1)
+2017-04-25 23:07:47,077 1527 [main] INFO  org.hibernate.dialect.Dialect  - HHH000400: Using dialect: org.hibernate.dialect.MySQL5Dialect
+2017-04-25 23:07:47,624 2074 [main] INFO  org.hibernate.engine.transaction.internal.TransactionFactoryInitiator  - HHH000399: Using default transaction strategy (direct JDBC transactions)
+2017-04-25 23:07:47,626 2076 [main] INFO  org.hibernate.hql.internal.ast.ASTQueryTranslatorFactory  - HHH000397: Using ASTQueryTranslatorFactory
+2017-04-25 23:07:48,741 3191 [main] INFO  edu.matc.persistence.MenuItemsDaoTest  - all menu items2: [MenuItem{menuItemID=1', restaurantName='GhostRestaurant', itemDescription='Tendies', itemType=Ghost'}, MenuItem{menuItemID=4', restaurantName='GhostRestaurant', itemDescription='Tendies', itemType=Ghost'}, MenuItem{menuItemID=5', restaurantName='GhostRestaurant', itemDescription='Tendies', itemType=Ghost'}, MenuItem{menuItemID=6', restaurantName='Chipotle', itemDescription='Burrito', itemType=BurritoType'}, MenuItem{menuItemID=7', restaurantName='Chipotle', itemDescription='Bowl', itemType=BurritoType'}, MenuItem{menuItemID=8', restaurantName='Chipotle', itemDescription='Salad Bowl', itemType=BurritoType'}, MenuItem{menuItemID=9', restaurantName='Chipotle', itemDescription='Hard Tacos', itemType=BurritoType'}, MenuItem{menuItemID=10', restaurantName='Chipotle', itemDescription='Soft Corn Tacos', itemType=BurritoType'}, MenuItem{menuItemID=11', restaurantName='Chipotle', itemDescription='Soft Flour Tacos', itemType=BurritoType'}, MenuItem{menuItemID=12', restaurantName='Chipotle', itemDescription='Kids Meal', itemType=BurritoType'}, MenuItem{menuItemID=13', restaurantName='Chipotle', itemDescription='Steak', itemType=Protiens'}, MenuItem{menuItemID=14', restaurantName='Chipotle', itemDescription='Carnitas', itemType=Protiens'}, MenuItem{menuItemID=15', restaurantName='Chipotle', itemDescription='Chicken', itemType=Protiens'}, MenuItem{menuItemID=16', restaurantName='Chipotle', itemDescription='Chorizo', itemType=Protiens'}, MenuItem{menuItemID=17', restaurantName='Chipotle', itemDescription='Barbacoa', itemType=Protiens'}, MenuItem{menuItemID=18', restaurantName='Chipotle', itemDescription='Sofritas', itemType=Protiens'}, MenuItem{menuItemID=19', restaurantName='Chipotle', itemDescription='Fajita Veggies', itemType=Extras'}, MenuItem{menuItemID=20', restaurantName='Chipotle', itemDescription='Brown Rice', itemType=Extras'}, MenuItem{menuItemID=21', restaurantName='Chipotle', itemDescription='White Rice', itemType=Extras'}, MenuItem{menuItemID=22', restaurantName='Chipotle', itemDescription='Black Beans', itemType=Extras'}, MenuItem{menuItemID=23', restaurantName='Chipotle', itemDescription='Pinto Beans', itemType=Extras'}, MenuItem{menuItemID=24', restaurantName='Chipotle', itemDescription='Tomato Salsa', itemType=Extras'}, MenuItem{menuItemID=25', restaurantName='Chipotle', itemDescription='Red Chili Salsa', itemType=Extras'}, MenuItem{menuItemID=26', restaurantName='Chipotle', itemDescription='Green Chili Salsa', itemType=Extras'}, MenuItem{menuItemID=27', restaurantName='Chipotle', itemDescription='Corn', itemType=Extras'}, MenuItem{menuItemID=28', restaurantName='Chipotle', itemDescription='Sour Cream', itemType=Extras'}, MenuItem{menuItemID=29', restaurantName='Chipotle', itemDescription='Guacamole', itemType=Extras'}, MenuItem{menuItemID=30', restaurantName='Chipotle', itemDescription='Cheese', itemType=Extras'}, MenuItem{menuItemID=31', restaurantName='Chipotle', itemDescription='Lettuce', itemType=Extras'}, MenuItem{menuItemID=32', restaurantName='Chipotle', itemDescription='Dressing', itemType=Extras'}, MenuItem{menuItemID=52', restaurantName='Banzo', itemDescription='The Banzo (Falafel)', itemType=FillingType'}, MenuItem{menuItemID=53', restaurantName='Banzo', itemDescription='The Chick (Chicken)', itemType=FillingType'}, MenuItem{menuItemID=54', restaurantName='Banzo', itemDescription='The Kebab (Beef)', itemType=FillingType'}, MenuItem{menuItemID=55', restaurantName='Banzo', itemDescription='The Harvest (Falafel + Eggplant)', itemType=FillingType'}, MenuItem{menuItemID=56', restaurantName='Banzo', itemDescription='The Schnitzel (Fried Chicken)', itemType=FillingType'}, MenuItem{menuItemID=57', restaurantName='Banzo', itemDescription='F-Bomb (Falafel + Chicken)', itemType=FillingType'}, MenuItem{menuItemID=58', restaurantName='Banzo', itemDescription='F-Bomb (Falafel + Beef)', itemType=FillingType'}, MenuItem{menuItemID=59', restaurantName='Banzo', itemDescription='Pita Sandwich', itemType=MealType'}, MenuItem{menuItemID=60', restaurantName='Banzo', itemDescription='Platter', itemType=MealType'}, MenuItem{menuItemID=61', restaurantName='Banzo', itemDescription='Hummus Plate', itemType=MealType'}, MenuItem{menuItemID=62', restaurantName='Banzo', itemDescription='Salad', itemType=MealType'}, MenuItem{menuItemID=63', restaurantName='Banzo', itemDescription='Extra Falael', itemType=Extras'}, MenuItem{menuItemID=64', restaurantName='Banzo', itemDescription='Couscous Tabouli', itemType=Extras'}, MenuItem{menuItemID=65', restaurantName='Banzo', itemDescription='Babagabush', itemType=Extras'}, MenuItem{menuItemID=66', restaurantName='Banzo', itemDescription='Hummus', itemType=Extras'}, MenuItem{menuItemID=67', restaurantName='Banzo', itemDescription='Fries', itemType=Extras'}, MenuItem{menuItemID=68', restaurantName='Banzo', itemDescription='Chopped Side Salad', itemType=Extras'}, MenuItem{menuItemID=69', restaurantName='Banzo', itemDescription='Majadra Rice', itemType=Extras'}, MenuItem{menuItemID=70', restaurantName='Banzo', itemDescription='Lentil Soup', itemType=Extras'}, MenuItem{menuItemID=71', restaurantName='That BBQ Joint', itemDescription='Pulled Pork', itemType=Sandwich'}, MenuItem{menuItemID=72', restaurantName='That BBQ Joint', itemDescription='Beef Brisket', itemType=Sandwich'}, MenuItem{menuItemID=73', restaurantName='That BBQ Joint', itemDescription='Chicken Salad', itemType=Sandwich'}, MenuItem{menuItemID=74', restaurantName='That BBQ Joint', itemDescription='Italian Beef', itemType=Sandwich'}, MenuItem{menuItemID=75', restaurantName='That BBQ Joint', itemDescription='Reuben', itemType=Sandwich'}, MenuItem{menuItemID=76', restaurantName='That BBQ Joint', itemDescription='Quarter Pound Beef Dog', itemType=Sandwich'}, MenuItem{menuItemID=77', restaurantName='That BBQ Joint', itemDescription='Boca Mo (Veg)', itemType=Sandwich'}, MenuItem{menuItemID=78', restaurantName='That BBQ Joint', itemDescription='3 Rib Basket +2 sides', itemType=Ribs'}, MenuItem{menuItemID=79', restaurantName='That BBQ Joint', itemDescription='6 Rib Basket +2 sides', itemType=Ribs'}, MenuItem{menuItemID=80', restaurantName='That BBQ Joint', itemDescription='Half Smoked Chicken +2 sides', itemType=Chicken'}, MenuItem{menuItemID=81', restaurantName='That BBQ Joint', itemDescription='Six Wings +2 sides', itemType=Chicken'}, MenuItem{menuItemID=82', restaurantName='That BBQ Joint', itemDescription='Pound of Pulled Pork', itemType=Bulk'}, MenuItem{menuItemID=83', restaurantName='That BBQ Joint', itemDescription='Pound of Beef Brisket', itemType=Bulk'}, MenuItem{menuItemID=84', restaurantName='That BBQ Joint', itemDescription='Pound of Corned Beef', itemType=Bulk'}, MenuItem{menuItemID=85', restaurantName='That BBQ Joint', itemDescription='Full Slab of Ribs', itemType=Bulk'}, MenuItem{menuItemID=86', restaurantName='That BBQ Joint', itemDescription='Rib Tips', itemType=Bulk'}, MenuItem{menuItemID=87', restaurantName='That BBQ Joint', itemDescription='Whole Chicken', itemType=Bulk'}, MenuItem{menuItemID=88', restaurantName='That BBQ Joint', itemDescription='Pound of Wings', itemType=Bulk'}, MenuItem{menuItemID=89', restaurantName='That BBQ Joint', itemDescription='Side - Beans', itemType=Sides'}, MenuItem{menuItemID=90', restaurantName='That BBQ Joint', itemDescription='Side - Brisket Chili', itemType=Sides'}, MenuItem{menuItemID=91', restaurantName='That BBQ Joint', itemDescription='Side - Collard Greens', itemType=Sides'}, MenuItem{menuItemID=92', restaurantName='That BBQ Joint', itemDescription='Side - Creamy Slaw', itemType=Sides'}, MenuItem{menuItemID=93', restaurantName='That BBQ Joint', itemDescription='Side - Spicy Vinegar Slaw', itemType=Sides'}, MenuItem{menuItemID=94', restaurantName='That BBQ Joint', itemDescription='Side - Creamy Pasta Salad', itemType=Sides'}, MenuItem{menuItemID=95', restaurantName='That BBQ Joint', itemDescription='Fries', itemType=Extras'}, MenuItem{menuItemID=96', restaurantName='That BBQ Joint', itemDescription='Sweet Potato Fries', itemType=Extras'}, MenuItem{menuItemID=97', restaurantName='That BBQ Joint', itemDescription='Jalapeno Hush Puppies', itemType=Extras'}, MenuItem{menuItemID=98', restaurantName='That BBQ Joint', itemDescription='Fried Okra', itemType=Extras'}, MenuItem{menuItemID=99', restaurantName='That BBQ Joint', itemDescription='Mac and Cheese Ball', itemType=Extras'}, MenuItem{menuItemID=100', restaurantName='That BBQ Joint', itemDescription='Extra Wing', itemType=Extras'}, MenuItem{menuItemID=101', restaurantName='That BBQ Joint', itemDescription='Extra Rib', itemType=Extras'}, MenuItem{menuItemID=102', restaurantName='That BBQ Joint', itemDescription='Extra Mustard Sauce ($0.50)', itemType=Extras'}, MenuItem{menuItemID=103', restaurantName='That BBQ Joint', itemDescription='Extra Original Sauce ($0.50)', itemType=Extras'}, MenuItem{menuItemID=104', restaurantName='That BBQ Joint', itemDescription='Extra Spicy Sauce ($0.50)', itemType=Extras'}, MenuItem{menuItemID=105', restaurantName='Pizza', itemDescription='Alfredo Sauce', itemType=Sauce'}, MenuItem{menuItemID=106', restaurantName='Pizza', itemDescription='BBQ Sauce', itemType=Sauce'}, MenuItem{menuItemID=107', restaurantName='Pizza', itemDescription='Bleu Cheese', itemType=Sauce'}, MenuItem{menuItemID=108', restaurantName='Pizza', itemDescription='Garlic Sauce', itemType=Sauce'}, MenuItem{menuItemID=109', restaurantName='Pizza', itemDescription='Marinara', itemType=Sauce'}, MenuItem{menuItemID=110', restaurantName='Pizza', itemDescription='Hot Sauce', itemType=Sauce'}, MenuItem{menuItemID=111', restaurantName='Pizza', itemDescription='Sweet and Spicy Sauce', itemType=Sauce'}, MenuItem{menuItemID=112', restaurantName='Pizza', itemDescription='Ranch Dressing Sauce', itemType=Sauce'}, MenuItem{menuItemID=113', restaurantName='Pizza', itemDescription='Pesto', itemType=Sauce'}, MenuItem{menuItemID=114', restaurantName='Pizza', itemDescription='Cheese Sauce', itemType=Sauce'}, MenuItem{menuItemID=115', restaurantName='Pizza', itemDescription='No Sauce', itemType=Sauce'}, MenuItem{menuItemID=116', restaurantName='Pizza', itemDescription='Bacon', itemType=Meats'}, MenuItem{menuItemID=117', restaurantName='Pizza', itemDescription='Beef', itemType=Meats'}, MenuItem{menuItemID=118', restaurantName='Pizza', itemDescription='Ham', itemType=Meats'}, MenuItem{menuItemID=119', restaurantName='Pizza', itemDescription='Italian Sausage', itemType=Meat'}, MenuItem{menuItemID=120', restaurantName='Pizza', itemDescription='Pepperoni', itemType=Meat'}, MenuItem{menuItemID=121', restaurantName='Pizza', itemDescription='Philly Steak', itemType=Meat'}, MenuItem{menuItemID=122', restaurantName='Pizza', itemDescription='Chicken', itemType=Meat'}, MenuItem{menuItemID=123', restaurantName='Pizza', itemDescription='Salami', itemType=Meat'}, MenuItem{menuItemID=124', restaurantName='Pizza', itemDescription='Anchovies', itemType=Meat'}, MenuItem{menuItemID=125', restaurantName='Pizza', itemDescription='American Cheese', itemType=Cheese'}, MenuItem{menuItemID=126', restaurantName='Pizza', itemDescription='Regular Pizza Cheese', itemType=Cheese'}, MenuItem{menuItemID=127', restaurantName='Pizza', itemDescription='Cheddar Cheese', itemType=Cheese'}, MenuItem{menuItemID=128', restaurantName='Pizza', itemDescription='Extra Cheese', itemType=Cheese'}, MenuItem{menuItemID=129', restaurantName='Pizza', itemDescription='Feta', itemType=Cheese'}, MenuItem{menuItemID=130', restaurantName='Pizza', itemDescription='Parmesan', itemType=Cheese'}, MenuItem{menuItemID=131', restaurantName='Pizza', itemDescription='Provolone', itemType=Cheese'}, MenuItem{menuItemID=132', restaurantName='Pizza', itemDescription='Tomatoes', itemType=Veggie'}, MenuItem{menuItemID=133', restaurantName='Pizza', itemDescription='Banana Peppers', itemType=Veggie'}, MenuItem{menuItemID=134', restaurantName='Pizza', itemDescription='Black Olives', itemType=Veggie'}, MenuItem{menuItemID=135', restaurantName='Pizza', itemDescription='Green Olives', itemType=Veggie'}, MenuItem{menuItemID=136', restaurantName='Pizza', itemDescription='Green Peppers', itemType=Veggie'}, MenuItem{menuItemID=137', restaurantName='Pizza', itemDescription='Jalapenos', itemType=Veggie'}, MenuItem{menuItemID=138', restaurantName='Pizza', itemDescription='Mushrooms', itemType=Veggie'}, MenuItem{menuItemID=139', restaurantName='Pizza', itemDescription='Onions', itemType=Veggie'}, MenuItem{menuItemID=140', restaurantName='Pizza', itemDescription='Pineapple', itemType=Veggie'}, MenuItem{menuItemID=141', restaurantName='Pizza', itemDescription='Roasted Red Peppers', itemType=Veggie'}, MenuItem{menuItemID=142', restaurantName='Pizza', itemDescription='Spinach', itemType=Veggie'}, MenuItem{menuItemID=143', restaurantName='Pizza', itemDescription='Kale', itemType=Veggie'}, MenuItem{menuItemID=144', restaurantName='Pizza', itemDescription='Roasted Garlic', itemType=Veggie'}, MenuItem{menuItemID=147', restaurantName='GhostRestaurant', itemDescription='Tendies', itemType=TestType'}, MenuItem{menuItemID=150', restaurantName='GhostRestaurant', itemDescription='Tendies', itemType=TestType'}, MenuItem{menuItemID=153', restaurantName='GhostRestaurant', itemDescription='Tendies', itemType=TestType'}]
+2017-04-25 23:07:48,754 3204 [main] INFO  edu.matc.persistence.MenuItemsDaoTest  - menuItem by ID: Tendies
+2017-04-25 23:07:55,654 0    [main] INFO  org.hibernate.annotations.common.Version  - HCANN000001: Hibernate Commons Annotations {4.0.5.Final}
+2017-04-25 23:07:55,671 17   [main] INFO  org.hibernate.Version  - HHH000412: Hibernate Core {4.3.11.Final}
+2017-04-25 23:07:55,696 42   [main] INFO  org.hibernate.cfg.Environment  - HHH000206: hibernate.properties not found
+2017-04-25 23:07:55,703 49   [main] INFO  org.hibernate.cfg.Environment  - HHH000021: Bytecode provider name : javassist
+2017-04-25 23:07:55,774 120  [main] INFO  org.hibernate.cfg.Configuration  - HHH000043: Configuring from resource: /hibernate.cfg.xml
+2017-04-25 23:07:55,776 122  [main] INFO  org.hibernate.cfg.Configuration  - HHH000040: Configuration resource: /hibernate.cfg.xml
+2017-04-25 23:07:55,943 289  [main] INFO  org.hibernate.cfg.Configuration  - HHH000041: Configured SessionFactory: null
+2017-04-25 23:07:56,194 540  [main] WARN  org.hibernate.engine.jdbc.connections.internal.DriverManagerConnectionProviderImpl  - HHH000402: Using Hibernate built-in connection pool (not for production use!)
+2017-04-25 23:07:56,210 556  [main] INFO  org.hibernate.engine.jdbc.connections.internal.DriverManagerConnectionProviderImpl  - HHH000401: using driver [com.mysql.jdbc.Driver] at URL [jdbc:mysql://localhost:3306/our_menu]
+2017-04-25 23:07:56,217 563  [main] INFO  org.hibernate.engine.jdbc.connections.internal.DriverManagerConnectionProviderImpl  - HHH000046: Connection properties: {user=root, password=****}
+2017-04-25 23:07:56,218 564  [main] INFO  org.hibernate.engine.jdbc.connections.internal.DriverManagerConnectionProviderImpl  - HHH000006: Autocommit mode: false
+2017-04-25 23:07:56,223 569  [main] INFO  org.hibernate.engine.jdbc.connections.internal.DriverManagerConnectionProviderImpl  - HHH000115: Hibernate connection pool size: 20 (min=1)
+2017-04-25 23:07:57,122 1468 [main] INFO  org.hibernate.dialect.Dialect  - HHH000400: Using dialect: org.hibernate.dialect.MySQL5Dialect
+2017-04-25 23:07:57,657 2003 [main] INFO  org.hibernate.engine.transaction.internal.TransactionFactoryInitiator  - HHH000399: Using default transaction strategy (direct JDBC transactions)
+2017-04-25 23:07:57,665 2011 [main] INFO  org.hibernate.hql.internal.ast.ASTQueryTranslatorFactory  - HHH000397: Using ASTQueryTranslatorFactory
+2017-04-25 23:07:58,480 2826 [main] INFO  edu.matc.persistence.RestaurantDaoTest  - Restaurant by name: RestaurantTestCase
+2017-04-25 23:07:58,547 2893 [main] INFO  edu.matc.persistence.RestaurantDaoTest  - all users: [edu.matc.entity.Restaurants@542e560f, edu.matc.entity.Restaurants@626c44e7, edu.matc.entity.Restaurants@4dc8caa7, edu.matc.entity.Restaurants@1d730606, edu.matc.entity.Restaurants@3bcbb589, edu.matc.entity.Restaurants@3b00856b]
+2017-04-25 23:08:14,328 0    [main] INFO  org.hibernate.annotations.common.Version  - HCANN000001: Hibernate Commons Annotations {4.0.5.Final}
+2017-04-25 23:08:14,350 22   [main] INFO  org.hibernate.Version  - HHH000412: Hibernate Core {4.3.11.Final}
+2017-04-25 23:08:14,361 33   [main] INFO  org.hibernate.cfg.Environment  - HHH000206: hibernate.properties not found
+2017-04-25 23:08:14,362 34   [main] INFO  org.hibernate.cfg.Environment  - HHH000021: Bytecode provider name : javassist
+2017-04-25 23:08:14,424 96   [main] INFO  org.hibernate.cfg.Configuration  - HHH000043: Configuring from resource: /hibernate.cfg.xml
+2017-04-25 23:08:14,425 97   [main] INFO  org.hibernate.cfg.Configuration  - HHH000040: Configuration resource: /hibernate.cfg.xml
+2017-04-25 23:08:14,601 273  [main] INFO  org.hibernate.cfg.Configuration  - HHH000041: Configured SessionFactory: null
+2017-04-25 23:08:14,868 540  [main] WARN  org.hibernate.engine.jdbc.connections.internal.DriverManagerConnectionProviderImpl  - HHH000402: Using Hibernate built-in connection pool (not for production use!)
+2017-04-25 23:08:14,888 560  [main] INFO  org.hibernate.engine.jdbc.connections.internal.DriverManagerConnectionProviderImpl  - HHH000401: using driver [com.mysql.jdbc.Driver] at URL [jdbc:mysql://localhost:3306/our_menu]
+2017-04-25 23:08:14,889 561  [main] INFO  org.hibernate.engine.jdbc.connections.internal.DriverManagerConnectionProviderImpl  - HHH000046: Connection properties: {user=root, password=****}
+2017-04-25 23:08:14,889 561  [main] INFO  org.hibernate.engine.jdbc.connections.internal.DriverManagerConnectionProviderImpl  - HHH000006: Autocommit mode: false
+2017-04-25 23:08:14,895 567  [main] INFO  org.hibernate.engine.jdbc.connections.internal.DriverManagerConnectionProviderImpl  - HHH000115: Hibernate connection pool size: 20 (min=1)
+2017-04-25 23:08:15,809 1481 [main] INFO  org.hibernate.dialect.Dialect  - HHH000400: Using dialect: org.hibernate.dialect.MySQL5Dialect
+2017-04-25 23:08:16,405 2077 [main] INFO  org.hibernate.engine.transaction.internal.TransactionFactoryInitiator  - HHH000399: Using default transaction strategy (direct JDBC transactions)
+2017-04-25 23:08:16,415 2087 [main] INFO  org.hibernate.hql.internal.ast.ASTQueryTranslatorFactory  - HHH000397: Using ASTQueryTranslatorFactory
+2017-04-25 23:08:17,659 3331 [main] INFO  edu.matc.persistence.UserDaoTest  - all users: [User{userName=LouKap', displayName=Louis Kaplan', userPassword=password67890'}, User{userName=TestUser', displayName=Test Thompson', userPassword=badPassword'}]
+2017-04-25 23:08:17,703 3375 [main] INFO  edu.matc.persistence.UserDaoTest  - user display name found by userName: Test Testerson
+2017-04-25 23:08:25,555 0    [main] INFO  org.hibernate.annotations.common.Version  - HCANN000001: Hibernate Commons Annotations {4.0.5.Final}
+2017-04-25 23:08:25,573 18   [main] INFO  org.hibernate.Version  - HHH000412: Hibernate Core {4.3.11.Final}
+2017-04-25 23:08:25,585 30   [main] INFO  org.hibernate.cfg.Environment  - HHH000206: hibernate.properties not found
+2017-04-25 23:08:25,595 40   [main] INFO  org.hibernate.cfg.Environment  - HHH000021: Bytecode provider name : javassist
+2017-04-25 23:08:25,663 108  [main] INFO  org.hibernate.cfg.Configuration  - HHH000043: Configuring from resource: /hibernate.cfg.xml
+2017-04-25 23:08:25,663 108  [main] INFO  org.hibernate.cfg.Configuration  - HHH000040: Configuration resource: /hibernate.cfg.xml
+2017-04-25 23:08:25,831 276  [main] INFO  org.hibernate.cfg.Configuration  - HHH000041: Configured SessionFactory: null
+2017-04-25 23:08:26,096 541  [main] WARN  org.hibernate.engine.jdbc.connections.internal.DriverManagerConnectionProviderImpl  - HHH000402: Using Hibernate built-in connection pool (not for production use!)
+2017-04-25 23:08:26,107 552  [main] INFO  org.hibernate.engine.jdbc.connections.internal.DriverManagerConnectionProviderImpl  - HHH000401: using driver [com.mysql.jdbc.Driver] at URL [jdbc:mysql://localhost:3306/our_menu]
+2017-04-25 23:08:26,108 553  [main] INFO  org.hibernate.engine.jdbc.connections.internal.DriverManagerConnectionProviderImpl  - HHH000046: Connection properties: {user=root, password=****}
+2017-04-25 23:08:26,108 553  [main] INFO  org.hibernate.engine.jdbc.connections.internal.DriverManagerConnectionProviderImpl  - HHH000006: Autocommit mode: false
+2017-04-25 23:08:26,108 553  [main] INFO  org.hibernate.engine.jdbc.connections.internal.DriverManagerConnectionProviderImpl  - HHH000115: Hibernate connection pool size: 20 (min=1)
+2017-04-25 23:08:27,117 1562 [main] INFO  org.hibernate.dialect.Dialect  - HHH000400: Using dialect: org.hibernate.dialect.MySQL5Dialect
+2017-04-25 23:08:27,805 2250 [main] INFO  org.hibernate.engine.transaction.internal.TransactionFactoryInitiator  - HHH000399: Using default transaction strategy (direct JDBC transactions)
+2017-04-25 23:08:27,818 2263 [main] INFO  org.hibernate.hql.internal.ast.ASTQueryTranslatorFactory  - HHH000397: Using ASTQueryTranslatorFactory
+2017-04-25 23:08:28,623 3068 [main] INFO  edu.matc.persistence.UserRolesDaoTest  - all users: [UserRoles{userName=LouKap', userRole='admin'}]
+2017-04-25 23:08:28,811 3256 [main] INFO  edu.matc.persistence.UserRolesDaoTest  - UserRole by name: TestUser
+2017-04-25 23:08:38,218 0    [main] INFO  org.hibernate.annotations.common.Version  - HCANN000001: Hibernate Commons Annotations {4.0.5.Final}
+2017-04-25 23:08:38,242 24   [main] INFO  org.hibernate.Version  - HHH000412: Hibernate Core {4.3.11.Final}
+2017-04-25 23:08:38,266 48   [main] INFO  org.hibernate.cfg.Environment  - HHH000206: hibernate.properties not found
+2017-04-25 23:08:38,268 50   [main] INFO  org.hibernate.cfg.Environment  - HHH000021: Bytecode provider name : javassist
+2017-04-25 23:08:38,347 129  [main] INFO  org.hibernate.cfg.Configuration  - HHH000043: Configuring from resource: /hibernate.cfg.xml
+2017-04-25 23:08:38,359 141  [main] INFO  org.hibernate.cfg.Configuration  - HHH000040: Configuration resource: /hibernate.cfg.xml
+2017-04-25 23:08:38,581 363  [main] INFO  org.hibernate.cfg.Configuration  - HHH000041: Configured SessionFactory: null
+2017-04-25 23:08:38,860 642  [main] WARN  org.hibernate.engine.jdbc.connections.internal.DriverManagerConnectionProviderImpl  - HHH000402: Using Hibernate built-in connection pool (not for production use!)
+2017-04-25 23:08:38,873 655  [main] INFO  org.hibernate.engine.jdbc.connections.internal.DriverManagerConnectionProviderImpl  - HHH000401: using driver [com.mysql.jdbc.Driver] at URL [jdbc:mysql://localhost:3306/our_menu]
+2017-04-25 23:08:38,874 656  [main] INFO  org.hibernate.engine.jdbc.connections.internal.DriverManagerConnectionProviderImpl  - HHH000046: Connection properties: {user=root, password=****}
+2017-04-25 23:08:38,876 658  [main] INFO  org.hibernate.engine.jdbc.connections.internal.DriverManagerConnectionProviderImpl  - HHH000006: Autocommit mode: false
+2017-04-25 23:08:38,877 659  [main] INFO  org.hibernate.engine.jdbc.connections.internal.DriverManagerConnectionProviderImpl  - HHH000115: Hibernate connection pool size: 20 (min=1)
+2017-04-25 23:08:39,869 1651 [main] INFO  org.hibernate.dialect.Dialect  - HHH000400: Using dialect: org.hibernate.dialect.MySQL5Dialect
+2017-04-25 23:08:40,425 2207 [main] INFO  org.hibernate.engine.transaction.internal.TransactionFactoryInitiator  - HHH000399: Using default transaction strategy (direct JDBC transactions)
+2017-04-25 23:08:40,439 2221 [main] INFO  org.hibernate.hql.internal.ast.ASTQueryTranslatorFactory  - HHH000397: Using ASTQueryTranslatorFactory
+2017-04-25 23:08:41,676 3458 [main] INFO  edu.matc.persistence.UsersRestaurantsDaoTest  - all users: [edu.matc.entity.UsersRestaurants@1d2bd371]
