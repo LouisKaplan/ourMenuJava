@@ -1,70 +1,70 @@
 package edu.matc.persistence;
 
-import edu.matc.entity.UsersRestaurants;
+import edu.matc.entity.UsersMenuItems;
 import org.apache.log4j.Logger;
 import org.hibernate.HibernateException;
 import org.hibernate.Session;
 import org.hibernate.Transaction;
-import org.hibernate.criterion.Restrictions;
+
 
 import java.util.ArrayList;
 import java.util.List;
 
 
-public class UsersRestaurantsDao {
+public class UsersMenuItemsDao {
 
     private final Logger log = Logger.getLogger(this.getClass());
 
-    /** Return a list of all UsersRestaurants
+    /** Return a list of all UsersMenuItems
      *
-     * @return All UsersRestaurants
+     * @return All UsersMenuItems
      */
-    public List<UsersRestaurants> getAllUsersRestaurants() {
-        List<UsersRestaurants> usersRestaurants = new ArrayList<UsersRestaurants>();
+    public List<UsersMenuItems> getAllUsersMenuItems() {
+        List<UsersMenuItems> usersMenuItems = new ArrayList<UsersMenuItems>();
         Session session = SessionFactoryProvider.getSessionFactory().openSession();
         try {
-            usersRestaurants = session.createCriteria(UsersRestaurants.class).list();
+            usersMenuItems = session.createCriteria(UsersMenuItems.class).list();
         } catch (HibernateException e) {
             log.error("Hibernate Exception", e);
         }finally {
             session.close();
         }
-        return usersRestaurants;
+        return usersMenuItems;
     }
 
     /**
-     * retrieve a UsersRestaurants given its ID
+     * retrieve a usersMenuItem given its ID
      *
-     * @param id the UsersRestaurants's id
-     * @return UsersRestaurants
+     * @param id the usersMenuItems's id
+     * @return usersMenuItems
      */
-    public UsersRestaurants getUsersRestaurants(int id) {
+    public UsersMenuItems getUsersMenuItems(int id) {
         Session session = SessionFactoryProvider.getSessionFactory().openSession();
-        UsersRestaurants usersRestaurants = null;
+        UsersMenuItems usersMenuItems = null;
         try {
-            usersRestaurants = (UsersRestaurants) session.get(UsersRestaurants.class, id);
+            usersMenuItems = (UsersMenuItems) session.get(UsersMenuItems.class, id);
         } catch (HibernateException e) {
             log.error("Hibernate Exception", e);
         } finally {
             session.close();
         }
-        return usersRestaurants;
+        return usersMenuItems;
     }
 
     /**
-     * add a userRestaurants
+     * add a user
      *
-     * @param usersRestaurants
-     * @return the id of the usersRestaurants
+     * @param usersMenuItems
+     * @return the id of the usersMenuItems
      */
 
-    public Integer addUsersRestaurants(UsersRestaurants usersRestaurants) {
+    public int addUserMenuItem(UsersMenuItems usersMenuItems) {
         Session session = SessionFactoryProvider.getSessionFactory().openSession();
         Transaction tx = null;
-        Integer id = 0;
+        int id = 0;
         try{
             tx = session.beginTransaction();
-            id = (Integer)session.save(usersRestaurants);
+            id = (Integer)session.save(usersMenuItems);
             tx.commit();
         }catch (HibernateException e) {
             if (tx!=null) tx.rollback();
@@ -76,16 +76,16 @@ public class UsersRestaurantsDao {
     }
 
     /**
-     * delete a usersRestaurants by id
-     * @param id the usersResaurant's id
+     * delete a usersMenuItems by id
+     * @param id the usersMenuItems's id
      */
-    public void deleteUsersRestaurants(int id) {
+    public void deleteUserMenuItem(int id) {
         Session session = SessionFactoryProvider.getSessionFactory().openSession();
         Transaction tx = null;
         try{
             tx = session.beginTransaction();
-            UsersRestaurants usersRestaurants = (UsersRestaurants) session.get(UsersRestaurants.class, id);
-            session.delete(usersRestaurants);
+            UsersMenuItems usersMenuItems = (UsersMenuItems)session.get(UsersMenuItems.class, id);
+            session.delete(usersMenuItems);
             tx.commit();
         }catch (HibernateException e) {
             if (tx!=null) tx.rollback();
@@ -96,16 +96,16 @@ public class UsersRestaurantsDao {
     }
 
     /**
-     * Update the usersRestaurants
-     * @param usersRestaurants
+     * Update the usersMenuItems
+     * @param usersMenuItems
      */
 
-    public void updateUsersRestaurants(UsersRestaurants usersRestaurants) {
+    public void updateUserMenuItem(UsersMenuItems usersMenuItems) {
         Session session = SessionFactoryProvider.getSessionFactory().openSession();
         Transaction tx = null;
         try{
             tx = session.beginTransaction();
-            session.update(usersRestaurants);
+            session.update(usersMenuItems);
             tx.commit();
         }catch (HibernateException e) {
             if (tx!=null) tx.rollback();

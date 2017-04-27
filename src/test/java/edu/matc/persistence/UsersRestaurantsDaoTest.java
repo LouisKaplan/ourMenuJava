@@ -141,8 +141,12 @@ public class UsersRestaurantsDaoTest {
 
         userRestaurantDao.updateUsersRestaurants(testUserRestaurant);
 
-        assertEquals("userID not updated", testUserRestaurant.getUsers().getUserName(), userRestaurantDao.getUsersRestaurants(testUserRestaurantID).getUsers().getUserName());
-        assertEquals("restaurantName not updated", testUserRestaurant.getRestaurants().getRestaurantName(), userRestaurantDao.getUsersRestaurants(testUserRestaurantID).getRestaurants().getRestaurantName());
+        assertEquals("userID not updated",
+                testUserRestaurant.getUsers().getUserName(),
+                userRestaurantDao.getUsersRestaurants(testUserRestaurantID).getUsers().getUserName());
+        assertEquals("restaurantName not updated",
+                testUserRestaurant.getRestaurants().getRestaurantName(),
+                userRestaurantDao.getUsersRestaurants(testUserRestaurantID).getRestaurants().getRestaurantName());
 
     }
 
@@ -152,7 +156,8 @@ public class UsersRestaurantsDaoTest {
         testRestaurantName = restaurantDao.addRestaurant(daoTestRestaurant);
         userRestaurantDao.addUsersRestaurants(testUserRestaurant);
         userRestaurantDao.deleteUsersRestaurants(testUserRestaurant.getUserRestID());
-        assertNull("userRestaurant was still found", userRestaurantDao.getUsersRestaurants(testUserRestaurant.getUserRestID()));
+        assertNull("userRestaurant was still found",
+                userRestaurantDao.getUsersRestaurants(testUserRestaurant.getUserRestID()));
     }
 
 }

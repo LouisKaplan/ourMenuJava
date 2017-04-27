@@ -1,9 +1,9 @@
 package edu.matc.entity;
 
 import javax.persistence.*;
+
 import java.io.Serializable;
-import java.util.HashSet;
-import java.util.Set;
+
 
 @Entity
 @Table(name="restaurants")
@@ -22,11 +22,11 @@ public class Restaurants implements java.io.Serializable {
     public Restaurants() {
     }
 
-    public Restaurants(String restaurantName,
-                       String restaurantType) {
-        this.restaurantName = restaurantName;
-        this.restaurantType = restaurantType;
-    }
+//    public Restaurants(String restaurantName,
+//                       String restaurantType) {
+//        this.restaurantName = restaurantName;
+//        this.restaurantType = restaurantType;
+//    }
 
 //    public Restaurants(String restaurantName,
 //                       String restaurantType,

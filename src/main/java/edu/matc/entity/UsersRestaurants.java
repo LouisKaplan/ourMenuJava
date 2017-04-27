@@ -22,6 +22,7 @@ public class UsersRestaurants {
         this.userRestID = userRestID;
     }
 
+
     @ManyToOne(fetch = FetchType.LAZY)
     @JoinColumn(name = "userName")
     private Users userName;
@@ -34,6 +35,7 @@ public class UsersRestaurants {
         this.userName = userName;
     }
 
+
     @ManyToOne(fetch = FetchType.LAZY)
     @JoinColumn(name = "restaurantName")
     private Restaurants restaurantName;
@@ -45,6 +47,7 @@ public class UsersRestaurants {
     public void setRestaurants(Restaurants restaurantName) {
         this.restaurantName = restaurantName;
     }
+
 
     @Column(name = "userRating")
     private int userRating;

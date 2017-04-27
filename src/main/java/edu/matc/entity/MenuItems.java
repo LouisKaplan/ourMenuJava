@@ -3,8 +3,7 @@ package edu.matc.entity;
 import org.hibernate.annotations.GenericGenerator;
 
 import javax.persistence.*;
-import java.util.HashSet;
-import java.util.Set;
+
 
 @Entity
 @Table(name="menuItems")
@@ -31,13 +30,13 @@ public class MenuItems implements java.io.Serializable{
     public MenuItems() {
     }
 
-    public MenuItems(String restaurantName,
-                     String itemDescription,
-                     String itemType) {
-        this.restaurantName = restaurantName;
-        this.itemDescription = itemDescription;
-        this.itemType = itemType;
-    }
+//    public MenuItems(String restaurantName,
+//                     String itemDescription,
+//                     String itemType) {
+//        this.restaurantName = restaurantName;
+//        this.itemDescription = itemDescription;
+//        this.itemType = itemType;
+//    }
 
 //    public MenuItems(String restaurantName,
 //                     String itemDescription,
