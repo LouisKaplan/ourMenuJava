@@ -34,5 +34,12 @@
 
 </div><!-- end #container -->
 
+<p><a href="homeDisplay">Home</a></p>
+<p><a href="groupOrderDisplay">Create A Group Order</a></p>
+<p><a href="pizzaDenominatorDisplay">Pizza Denominator</a></p>
+<p><a href="restaurantSelectorDisplay">Group Restaurant Selector</a></p>
+<p><a href="newRestaurantDisplay">Enter a New Restaurant</a></p>
+<p><a href="updateRestaurantDisplay">Update a Restaurant</a></p>
+
 </body>
 </html>

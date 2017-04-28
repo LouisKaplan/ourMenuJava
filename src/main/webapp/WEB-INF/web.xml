@@ -10,7 +10,7 @@
   <login-config>
     <auth-method>FORM</auth-method>
     <form-login-config>
-      <form-login-page>/index.jsp</form-login-page>
+      <form-login-page>/loginPage.jsp</form-login-page>
       <form-error-page>/loginError.jsp</form-error-page>
     </form-login-config>
   </login-config>

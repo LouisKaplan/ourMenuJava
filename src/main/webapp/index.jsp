@@ -20,6 +20,7 @@
 
 <!-- Page Links-->
 <div id="pageLinks">
+    <p><a href="homeDisplay">Home</a></p>
 <p><a href="personalMenuDisplay"> Update Your Personal Menu</a></p>
 <p><a href="groupOrderDisplay">Create A Group Order</a></p>
 <p><a href="pizzaDenominatorDisplay">Pizza Denominator</a></p>
