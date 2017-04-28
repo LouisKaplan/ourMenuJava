@@ -6,10 +6,12 @@
 
 <body>
 
-<div id="ourMenuTitle">
+<div id="pageTitle">
     <h2>ourMenu</h2>
 </div>
 <!-- Create Login-->
+
+<div id="login">
 <FORM ACTION="j_security_check" METHOD="POST">
     <TABLE>
         <TR><TD>User name: <INPUT TYPE="TEXT" NAME="j_username">
@@ -17,6 +19,12 @@
         <TR><TH><INPUT TYPE="SUBMIT" VALUE="Log In">
     </TABLE>
 </FORM>
+</div>
+
+<div id="newUser">
+    <p>First time here?</p>
+    <p>Create an account now!</p>
+</div>
 
 <!-- Page Links-->
 <div id="pageLinks">
