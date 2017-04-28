@@ -9,7 +9,16 @@
 <div id="ourMenuTitle">
     <h2>ourMenu</h2>
 </div>
+<!-- Create Login-->
+<FORM ACTION="j_security_check" METHOD="POST">
+    <TABLE>
+        <TR><TD>User name: <INPUT TYPE="TEXT" NAME="j_username">
+        <TR><TD>Password: <INPUT TYPE="PASSWORD" NAME="j_password">
+        <TR><TH><INPUT TYPE="SUBMIT" VALUE="Log In">
+    </TABLE>
+</FORM>
 
+<!-- Page Links-->
 <div id="pageLinks">
 <p><a href="personalMenuDisplay"> Update Your Personal Menu</a></p>
 <p><a href="groupOrderDisplay">Create A Group Order</a></p>
