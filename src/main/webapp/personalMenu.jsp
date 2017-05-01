@@ -39,7 +39,7 @@
 <p><a href="pizzaDenominatorDisplay">Pizza Denominator</a></p>
 <p><a href="restaurantSelectorDisplay">Group Restaurant Selector</a></p>
 <p><a href="newRestaurantDisplay">Enter a New Restaurant</a></p>
-<p><a href="updateRestaurantDisplay">Update a Restaurant</a></p>
+<p><a href="updateRestaurantDisplay">Update a Restaurant (admin only)</a></p>
 
 </body>
 </html>

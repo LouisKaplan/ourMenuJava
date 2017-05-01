@@ -10,7 +10,7 @@
     <h2>Create a New Account</h2>
 </div>
 <div id="newAccount">
-    <form action="addUser" method="post">
+    <form action="newUser" method="post">
         <p>
             <label for="userName">Enter a username. This will not be shown to other users.</label>
             <input type="text" class="form-control" id="userName" name="userName"

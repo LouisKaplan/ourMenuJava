@@ -6,10 +6,12 @@
 
 <body>
 
-<div id="ourMenuTitle">
+<div id="pageTitle">
     <h2>ourMenu</h2>
 </div>
 <!-- Create Login-->
+
+<div id="login">
 <FORM ACTION="j_security_check" METHOD="POST">
     <TABLE>
         <TR><TD>User name: <INPUT TYPE="TEXT" NAME="j_username">
@@ -17,16 +19,22 @@
         <TR><TH><INPUT TYPE="SUBMIT" VALUE="Log In">
     </TABLE>
 </FORM>
+</div>
+
+<div id="newUser">
+    <p>First time here?</p>
+    <p><a href="newUserDisplay">Create an account now</a></p>
+    <br/>
+</div>
 
 <!-- Page Links-->
 <div id="pageLinks">
-    <p><a href="homeDisplay">Home</a></p>
 <p><a href="personalMenuDisplay"> Update Your Personal Menu</a></p>
 <p><a href="groupOrderDisplay">Create A Group Order</a></p>
 <p><a href="pizzaDenominatorDisplay">Pizza Denominator</a></p>
 <p><a href="restaurantSelectorDisplay">Group Restaurant Selector</a></p>
 <p><a href="newRestaurantDisplay">Enter a New Restaurant</a></p>
-<p><a href="updateRestaurantDisplay">Update a Restaurant</a></p>
+<p><a href="updateRestaurantDisplay">Update a Restaurant (admin only)</a></p>
 </div>
 
 <c:import url="template/footer.jsp" />

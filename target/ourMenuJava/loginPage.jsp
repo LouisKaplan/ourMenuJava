@@ -17,7 +17,7 @@
         <TR><TH><INPUT TYPE="SUBMIT" VALUE="Log In">
     </TABLE>
 </FORM>
-
+<p><a href="newUserDisplay">Create an account now</a></p>
 <c:import url="template/footer.jsp" />
 
 </body>

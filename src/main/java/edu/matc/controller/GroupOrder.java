@@ -1,9 +1,13 @@
 package edu.matc.controller;
 
+import edu.matc.entity.Restaurants;
+import edu.matc.entity.Users;
 import edu.matc.persistence.*;
 
 import javax.servlet.*;
 import java.io.*;
+import java.util.ArrayList;
+import java.util.List;
 import javax.servlet.http.*;
 import javax.servlet.annotation.*;
 
@@ -32,11 +36,15 @@ public class GroupOrder { /**
  *@exception  IOException       if there is an IO failure
  */
 
-    public void doPost(HttpServletRequest request, HttpServletResponse response) throws ServletException, IOException {
+    public void doGet(HttpServletRequest request, HttpServletResponse response) throws ServletException, IOException {
 
         HttpSession session = request.getSession();
         String url = "groupOrderDisplay";
-        //UsersMenuItemDao userMenuDao = new UsersMenuItemDao();
+
+
+
+
+
 
         try {
     
@@ -47,4 +55,28 @@ public class GroupOrder { /**
         }
 
     }
+
+    public List<String> getListOfUsers(){
+        UsersDao usersDao = new UsersDao();
+        List<Users> usersList = usersDao.getAllUsers();
+        List<String> userNamesList = new ArrayList<String>();
+
+        for (Users user :usersList) {
+            userNamesList.add(user.getDisplayName());
+        }
+        return userNamesList;
+    }
+
+    public List<String> getListOfUsers(){
+        RestaurantsDao restaurantsDao = new RestaurantsDao();
+        List<Restaurants> restaurantsList = restaurantsDao.getAllRestaurants();
+        List<String> restaurantNamesList = new ArrayList<String>();
+
+        for (Users user :usersList) {
+            userNamesList.add(user.getDisplayName());
+        }
+        return userNamesList;
+    }
+
 }
+

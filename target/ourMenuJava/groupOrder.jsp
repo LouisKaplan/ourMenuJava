@@ -15,13 +15,41 @@
     <c:import url="template/footer.jsp" />
 </div><!-- end #container -->
 
+<div id="selectMenus">
+<h1>Select Diners:</h1>
+    <ol class="selectable" id="selectDiners">
+        <li class="ui-widget-content">Item 1</li>
+        <li class="ui-widget-content">Item 2</li>
+        <li class="ui-widget-content">Item 3</li>
+        <li class="ui-widget-content">Item 4</li>
+        <li class="ui-widget-content">Item 5</li>
+        <li class="ui-widget-content">Item 6</li>
+        <li class="ui-widget-content">Item 7</li>
+    </ol>
+    <br/>
+<h1>Select Restaurant</h1>
+    <ol class="selectable" id="selectRestaurant">
+        <li class="ui-widget-content">Item 1</li>
+        <li class="ui-widget-content">Item 2</li>
+        <li class="ui-widget-content">Item 3</li>
+        <li class="ui-widget-content">Item 4</li>
+        <li class="ui-widget-content">Item 5</li>
+        <li class="ui-widget-content">Item 6</li>
+        <li class="ui-widget-content">Item 7</li>
+    </ol>
+
+
+
+
+</div>
+
 <div id="pageLinks">
     <p><a href="homeDisplay">Home</a></p>
     <p><a href="personalMenuDisplay"> Update Your Personal Menu</a></p>
     <p><a href="pizzaDenominatorDisplay">Pizza Denominator</a></p>
     <p><a href="restaurantSelectorDisplay">Group Restaurant Selector</a></p>
     <p><a href="newRestaurantDisplay">Enter a New Restaurant</a></p>
-    <p><a href="updateRestaurantDisplay">Update a Restaurant</a></p>
+    <p><a href="updateRestaurantDisplay">Update a Restaurant (admin only)</a></p>
 </div>
 </body>
 </html>
