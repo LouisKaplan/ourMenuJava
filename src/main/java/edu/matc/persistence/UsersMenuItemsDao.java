@@ -1,10 +1,12 @@
 package edu.matc.persistence;
 
+import edu.matc.entity.Users;
 import edu.matc.entity.UsersMenuItems;
 import org.apache.log4j.Logger;
 import org.hibernate.HibernateException;
 import org.hibernate.Session;
 import org.hibernate.Transaction;
+import org.hibernate.criterion.Restrictions;
 
 
 import java.util.ArrayList;
@@ -43,6 +45,20 @@ public class UsersMenuItemsDao {
         UsersMenuItems usersMenuItems = null;
         try {
             usersMenuItems = (UsersMenuItems) session.get(UsersMenuItems.class, id);
+        } catch (HibernateException e) {
+            log.error("Hibernate Exception", e);
+        } finally {
+            session.close();
+        }
+        return usersMenuItems;
+    }
+
+    public List<UsersMenuItems> getUsersMenuItemsByUser(Users user) {
+        Session session = SessionFactoryProvider.getSessionFactory().openSession();
+        List<UsersMenuItems> usersMenuItems = null;
+        try {
+            usersMenuItems = session.createCriteria(UsersMenuItems.class).add
+                    (Restrictions.eq("userName",user)).list();
         } catch (HibernateException e) {
             log.error("Hibernate Exception", e);
         } finally {

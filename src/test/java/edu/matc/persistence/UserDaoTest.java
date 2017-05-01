@@ -43,6 +43,15 @@ public class UserDaoTest {
     }
 
     @Test
+    public void getUserByDisplayName() throws Exception {
+        testUserName = dao.addUser(testUser);
+        List<Users> findUser = dao.getUserByDisplayName("Test Testerson");
+
+        assertTrue("Did not find correct display name", findUser.get(0).getUserName().equals("DaoTest"));
+        log.info("user display name found by userName: " + findUser.get(0).getUserName());
+    }
+
+    @Test
     public void getUser() throws Exception {
         testUserName = dao.addUser(testUser);
         Users findUser = dao.getUser(testUserName);

@@ -5,6 +5,7 @@ import org.apache.log4j.Logger;
 import org.hibernate.HibernateException;
 import org.hibernate.Session;
 import org.hibernate.Transaction;
+import org.hibernate.criterion.Restrictions;
 
 import java.util.ArrayList;
 import java.util.List;
@@ -30,6 +31,22 @@ public class UsersDao {
         }
         return users;
     }
+
+    public List<Users> getUserByDisplayName(String displayName) {
+        Session session = SessionFactoryProvider.getSessionFactory().openSession();
+        List<Users> user = null;
+        try {
+            user = session.createCriteria(Users.class).add
+                    (Restrictions.eq("displayName",displayName)).list();
+
+        } catch (HibernateException e) {
+            log.error("Hibernate Exception", e);
+        } finally {
+            session.close();
+        }
+        return user;
+    }
+
 
     /**
      * retrieve a user given their id

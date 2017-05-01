@@ -5,6 +5,7 @@ import org.apache.log4j.Logger;
 import org.hibernate.HibernateException;
 import org.hibernate.Session;
 import org.hibernate.Transaction;
+import org.hibernate.criterion.Restrictions;
 
 import java.util.ArrayList;
 import java.util.List;
@@ -29,6 +30,36 @@ public class MenuItemsDao {
         }
         return menuItems;
     }
+
+    public List<MenuItems> getMenuItemsByRestaurant(String restaurantName) {
+        Session session = SessionFactoryProvider.getSessionFactory().openSession();
+        List<MenuItems> menuItems = null;
+        try {
+            menuItems = session.createCriteria(MenuItems.class).add
+                    (Restrictions.eq("restaurantName",restaurantName)).list();
+        } catch (HibernateException e) {
+            log.error("Hibernate Exception", e);
+        }finally {
+            session.close();
+        }
+        return menuItems;
+    }
+
+    public List<MenuItems> getMenuItemsByID(int id) {
+        List<MenuItems> menuItems = new ArrayList<MenuItems>();
+        Session session = SessionFactoryProvider.getSessionFactory().openSession();
+        try {
+            menuItems = session.createCriteria(MenuItems.class).add
+                    (Restrictions.eq("menuItemID",id)).list();
+        } catch (HibernateException e) {
+            log.error("Hibernate Exception - getMenuItemsByID", e);
+        }finally {
+            session.close();
+        }
+        return menuItems;
+    }
+
+
 
     /**
      * retrieve a menuItem given its ID

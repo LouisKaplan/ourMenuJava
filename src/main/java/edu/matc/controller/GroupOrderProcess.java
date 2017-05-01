@@ -1,13 +1,16 @@
 package edu.matc.controller;
 
+import edu.matc.entity.MenuItems;
 import edu.matc.entity.Restaurants;
 import edu.matc.entity.Users;
+import edu.matc.entity.UsersMenuItems;
 import edu.matc.persistence.*;
 
 import javax.servlet.*;
 import java.io.*;
 import java.lang.reflect.Array;
 import java.util.ArrayList;
+import java.util.HashMap;
 import java.util.List;
 import javax.servlet.http.*;
 import javax.servlet.annotation.*;
@@ -31,12 +34,15 @@ public class GroupOrderProcess extends HttpServlet{
         RequestDispatcher dispatcher;
         HttpSession session = request.getSession(true);
 
+        String restaurantNameFromForm = request.getParameter("restaurantNameSelect");
+        String[] userNamesFromForm = request.getParameterValues("selectDiners");
 
-        String restaurantName = request.getParameter("restaurantNameSelect");
-        String[] userList = request.getParameterValues("selectDiners");
+
+        List<Users> userNameList = convertDisplayNamesToUserObjects(userNamesFromForm);
+        List<MenuItems> menuItemsList = findMenuItemsByRestaurant(restaurantNameFromForm);
+        findMenuItemsByUser(userNameList, menuItemsList);
 
 
-        convertDisplayNamesToUserNames(userList);
 
 
         String url = "groupOrderProcessDisplay";
@@ -51,17 +57,74 @@ public class GroupOrderProcess extends HttpServlet{
 
     }
 
-    public void convertDisplayNamesToUserNames(String[] userList){
+    public List<Users> convertDisplayNamesToUserObjects(String[] userList){
         int i = 0;
+        List<Users> listOfSelectedUsers = new ArrayList<Users>();
         UsersDao userDao = new UsersDao();
 
-        while(i <userList.length){
+        while(i < userList.length){
+            List<Users> userToAdd = userDao.getUserByDisplayName(userList[i]);
+            listOfSelectedUsers.add(userToAdd.get(0));
+            log.info("USER TO ADD: " + userToAdd);
+            i++;
+        }
+        return listOfSelectedUsers;
+    }
+
+    public List<MenuItems> findMenuItemsByRestaurant(String restaurantName){
+        MenuItemsDao itemsDao = new MenuItemsDao();
+        List<MenuItems> itemsList = itemsDao.getMenuItemsByRestaurant(restaurantName);
+            log.info("MenuItems: " + itemsList);
+        return itemsList;
+    }
+
+    public List<String> findMenuItemNames (List<MenuItems> menuItemsList){
+        MenuItemsDao itemsDao = new MenuItemsDao();
+        List<String> listOfMenuItemNames = new ArrayList<String>();
+
+        for(MenuItems menuItem:menuItemsList){
+            listOfMenuItemNames.add(menuItem.getItemDescription());
+        }
+        return listOfMenuItemNames;
+    }
 
 
+
+
+    public HashMap<String, List<String>> findMenuItemsByUser(List<Users> userNameList, List<MenuItems> menuItemsList){
+        UsersMenuItemsDao umiDAO = new UsersMenuItemsDao();
+        MenuItemsDao menuDAO = new MenuItemsDao();
+        HashMap<String, List<String>> umiMap = new HashMap<String, List<String>>();
+
+        for(Users user:userNameList){
+            List<UsersMenuItems> listOfUMI = umiDAO.getUsersMenuItemsByUser(user);
+            for (UsersMenuItems umi:listOfUMI){
+                if (menuItemsList.contains(menuDAO.getMenuItem(umi.getUserItemID()))){
+
+                }
+            }
         }
 
 
     }
 
 
+
+
 }
+
+
+
+
+//    public Users getUserNameByDisplayName(String displayName){
+//        UsersDao userDao = new UsersDao();
+//        List<Users> workingUserList = userDao.getAllUsers();
+//        Users returnUser = new Users();
+//        for(Users user: workingUserList){
+//            String matchName = user.getDisplayName();
+//            if (matchName == displayName){
+//                returnUser = user;
+//            }
+//        }
+//        return returnUser;
+//    }
