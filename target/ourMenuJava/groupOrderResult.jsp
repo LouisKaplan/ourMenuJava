@@ -11,7 +11,7 @@
             <h1>GroupOrderResult</h1>
 
             <div id="groupOrderResult">
-                <h1>Your Menus</h1>
+                <h1>Your ${groupOrderRestaurantName} Menu</h1>
                     <c:forEach var="user" items="${selectedUsers}">
                         ${user}
                          <c:forEach var="entry" items="${userMap}">

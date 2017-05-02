@@ -22,10 +22,6 @@
     </style>
 
     <script>
-//        $( function() {
-//            $(".selectable").selectable();
-//        } );
-
         $( function() {
             $( "input" ).checkboxradio();
             $( "fieldset" ).controlgroup();

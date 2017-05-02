@@ -15,8 +15,7 @@ import javax.servlet.annotation.*;
 import org.apache.log4j.Logger;
 
 @WebServlet(
-        urlPatterns={"/groupOrderProcess"}
-)
+        urlPatterns={"/groupOrderProcess"})
 public class GroupOrderProcess extends HttpServlet{
 
     private final Logger log = Logger.getLogger(this.getClass());
@@ -40,8 +39,8 @@ public class GroupOrderProcess extends HttpServlet{
 
 
         session.setAttribute("selectedUsers", userNamesFromForm);
-
         session.setAttribute("userMap", userOrder);
+        session.setAttribute("groupOrderRestaurantName", restaurantNameFromForm);
 
 
         String url = "groupOrderProcessDisplay";
