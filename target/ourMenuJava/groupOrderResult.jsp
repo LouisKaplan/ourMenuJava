@@ -10,7 +10,25 @@
         <div class="blogItem">
             <h1>GroupOrderResult</h1>
 
+            <div id="groupOrderResult">
+                <h1>Your Menus</h1>
+                    <c:forEach var="user" items="${selectedUsers}">
+                        ${user}
+                         <c:forEach var="entry" items="${userMap}">
 
+                             <c:choose>
+                                 <c:when test="${entry.key == user}">
+                                     ${entry.value}
+                                 </c:when>
+                                 <c:otherwise>
+                                 </c:otherwise>
+                             </c:choose>
+
+                         </c:forEach>
+                        </br></br>
+                    </c:forEach>
+                </select>
+            </div>
 
 
 

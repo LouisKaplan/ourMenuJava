@@ -1,14 +1,12 @@
 package edu.matc.controller;
 
 import edu.matc.entity.MenuItems;
-import edu.matc.entity.Restaurants;
 import edu.matc.entity.Users;
 import edu.matc.entity.UsersMenuItems;
 import edu.matc.persistence.*;
 
 import javax.servlet.*;
 import java.io.*;
-import java.lang.reflect.Array;
 import java.util.ArrayList;
 import java.util.HashMap;
 import java.util.List;
@@ -37,12 +35,13 @@ public class GroupOrderProcess extends HttpServlet{
         String restaurantNameFromForm = request.getParameter("restaurantNameSelect");
         String[] userNamesFromForm = request.getParameterValues("selectDiners");
 
-
         List<Users> userNameList = convertDisplayNamesToUserObjects(userNamesFromForm);
-        List<MenuItems> menuItemsList = findMenuItemsByRestaurant(restaurantNameFromForm);
-        findMenuItemsByUser(userNameList, menuItemsList);
+        HashMap<String, List<String>> userOrder = findMenuItemsByUser(userNameList, restaurantNameFromForm);
 
 
+        session.setAttribute("selectedUsers", userNamesFromForm);
+
+        session.setAttribute("userMap", userOrder);
 
 
         String url = "groupOrderProcessDisplay";
@@ -50,11 +49,9 @@ public class GroupOrderProcess extends HttpServlet{
         try {
             dispatcher = request.getRequestDispatcher(url);
             dispatcher.forward(request, response);
-
         } catch (IOException ioException) {
             ioException.printStackTrace();
         }
-
     }
 
     public List<Users> convertDisplayNamesToUserObjects(String[] userList){
@@ -65,7 +62,6 @@ public class GroupOrderProcess extends HttpServlet{
         while(i < userList.length){
             List<Users> userToAdd = userDao.getUserByDisplayName(userList[i]);
             listOfSelectedUsers.add(userToAdd.get(0));
-            log.info("USER TO ADD: " + userToAdd);
             i++;
         }
         return listOfSelectedUsers;
@@ -74,7 +70,6 @@ public class GroupOrderProcess extends HttpServlet{
     public List<MenuItems> findMenuItemsByRestaurant(String restaurantName){
         MenuItemsDao itemsDao = new MenuItemsDao();
         List<MenuItems> itemsList = itemsDao.getMenuItemsByRestaurant(restaurantName);
-            log.info("MenuItems: " + itemsList);
         return itemsList;
     }
 
@@ -91,40 +86,23 @@ public class GroupOrderProcess extends HttpServlet{
 
 
 
-    public HashMap<String, List<String>> findMenuItemsByUser(List<Users> userNameList, List<MenuItems> menuItemsList){
+    public HashMap<String, List<String>> findMenuItemsByUser(List<Users> userNameList, String restaurantName){
         UsersMenuItemsDao umiDAO = new UsersMenuItemsDao();
-        MenuItemsDao menuDAO = new MenuItemsDao();
         HashMap<String, List<String>> umiMap = new HashMap<String, List<String>>();
 
         for(Users user:userNameList){
+            List<MenuItems> menuItemsByUser = new ArrayList<MenuItems>();
             List<UsersMenuItems> listOfUMI = umiDAO.getUsersMenuItemsByUser(user);
+            List<String> menuItemNamesForUser;
             for (UsersMenuItems umi:listOfUMI){
-                if (menuItemsList.contains(menuDAO.getMenuItem(umi.getUserItemID()))){
 
+                if (umi.getMenuItemID().getRestaurantName().equals(restaurantName)){
+                    menuItemsByUser.add(umi.getMenuItemID());
                 }
             }
+            menuItemNamesForUser = findMenuItemNames(menuItemsByUser);
+            umiMap.put(user.getDisplayName(), menuItemNamesForUser);
         }
-
-
+        return umiMap;
     }
-
-
-
-
 }
-
-
-
-
-//    public Users getUserNameByDisplayName(String displayName){
-//        UsersDao userDao = new UsersDao();
-//        List<Users> workingUserList = userDao.getAllUsers();
-//        Users returnUser = new Users();
-//        for(Users user: workingUserList){
-//            String matchName = user.getDisplayName();
-//            if (matchName == displayName){
-//                returnUser = user;
-//            }
-//        }
-//        return returnUser;
-//    }

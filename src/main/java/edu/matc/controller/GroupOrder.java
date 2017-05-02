@@ -33,7 +33,6 @@ public class GroupOrder extends HttpServlet{
         List<String> allUserList = getListOfUsers();
         List<String> allRestaurantList = getListOfRestaurants();
 
-        session.setAttribute("SessionWorks", "Session does work");
         session.setAttribute("allRestaurantList", allRestaurantList);
         session.setAttribute("allUserList", allUserList);
 
