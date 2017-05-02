@@ -1,5 +1,5 @@
-<div id="footer">
+<%--<div id="footer">--%>
 
-    <p>Copyright &copy; Louis Kaplan</p>
+    <%--<p>Copyright &copy; Louis Kaplan</p>--%>
 
-</div><!-- end #footer -->
+<%--</div><!-- end #footer -->--%>

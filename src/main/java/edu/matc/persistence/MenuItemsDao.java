@@ -59,6 +59,20 @@ public class MenuItemsDao {
         return menuItems;
     }
 
+    public List<MenuItems> getMenuItemsByName(String description) {
+        List<MenuItems> menuItems = new ArrayList<MenuItems>();
+        Session session = SessionFactoryProvider.getSessionFactory().openSession();
+        try {
+            menuItems = session.createCriteria(MenuItems.class).add
+                    (Restrictions.eq("itemDescription", description)).list();
+        } catch (HibernateException e) {
+            log.error("Hibernate Exception - getMenuItemsByID", e);
+        }finally {
+            session.close();
+        }
+        return menuItems;
+    }
+
 
 
     /**

@@ -11,7 +11,6 @@
 
     <div class="blogItem">
         <h1>Group Order</h1>
-        <h3>${user.displayName}</h3>
     </div>
 
     <style>

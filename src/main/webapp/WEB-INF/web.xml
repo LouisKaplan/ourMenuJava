@@ -32,7 +32,6 @@
   <security-constraint>
     <web-resource-collection>
       <web-resource-name>allUsers</web-resource-name>
-      <url-pattern>/newRestaurant</url-pattern>
       <url-pattern>/personalMenu</url-pattern>
     </web-resource-collection>
     <auth-constraint>

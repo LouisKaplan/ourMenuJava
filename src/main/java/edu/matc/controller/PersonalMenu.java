@@ -47,7 +47,7 @@ public class PersonalMenu extends HttpServlet {
         List<Restaurants> restList = restDao.getAllRestaurants();
 
         HashMap<String, List<String>> restMenuMap = buildRestaurantArray(restList);
-        log.info("$$$$$$$$$$$$$$$$ " + restMenuMap);
+        session.setAttribute("restMenuMap", restMenuMap);
 
         String url = "personalMenuDisplay";
         try {
@@ -78,7 +78,9 @@ public class PersonalMenu extends HttpServlet {
             restName = rest.getRestaurantName();
             menuItemsByRest = menuDao.getMenuItemsByRestaurant(restName);
             List<String> menuItemNames = findMenuItemNames(menuItemsByRest);
-            restItemMap.put(restName, menuItemNames);
+            if (menuItemNames.size() >= 2) {
+                restItemMap.put(restName, menuItemNames);
+            }
         }
             return restItemMap;
     }

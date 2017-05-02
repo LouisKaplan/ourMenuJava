@@ -8,24 +8,25 @@
 <div id="container">
     <div id="mainContent">
         <div class="blogItem">
-            <h1>GroupOrderResult</h1>
 
             <div id="groupOrderResult">
                 <h1>Your ${groupOrderRestaurantName} Menu</h1>
                     <c:forEach var="user" items="${selectedUsers}">
-                        ${user}
+                       <h3>${user}</h3>
                          <c:forEach var="entry" items="${userMap}">
-
                              <c:choose>
                                  <c:when test="${entry.key == user}">
-                                     ${entry.value}
+                                     <c:forEach var="value" items="${entry.value}">
+                                        <h4>${value}</h4>
+
+                                     </c:forEach>
                                  </c:when>
                                  <c:otherwise>
                                  </c:otherwise>
                              </c:choose>
 
                          </c:forEach>
-                        </br></br>
+                        </br>
                     </c:forEach>
                 </select>
             </div>

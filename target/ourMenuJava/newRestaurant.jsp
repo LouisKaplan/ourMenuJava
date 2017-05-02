@@ -13,7 +13,7 @@
 
             <h1>New Restaurant</h1>
             <form action="newRestaurant" method="get">
-                <table id="newRestaurantTable" class="display" cellspacing="0" cellpadding="0" width="25%">
+                <table id="newRestaurantTable" class="display" cellspacing="0" cellpadding="0" width="30%">
                     <tr>
                         <td>
                             <label for="newRestaurantName">New Restaurant Name:</label>
@@ -22,7 +22,7 @@
                             placeholder="New Restaurant Name">
                         </td>
                         <td>
-                            <label for="newRestaurantCategory">New Restaurant Category:</label>
+                            <label for="newRestaurantCategory">Restaurant Category:</label>
                             <input type="text" class="newRestaurant" id="newRestaurantCategory"
                             name="newRestaurantCategory"
                             placeholder="New Restaurant Category">
@@ -30,7 +30,7 @@
                     </tr>
                 </table>
                 </br>
-                <table id="newMenuItemsTable" class="display" cellspacing="0" cellpadding="0" width="25%">
+                <table id="newMenuItemsTable" class="display" cellspacing="0" cellpadding="0" width="30%">
                     <tr>
                         <td>
                             <label for="newMenuItem1">Restaurant Menu:</label>

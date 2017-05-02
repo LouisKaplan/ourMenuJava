@@ -5,8 +5,8 @@
     <p id="groupOrderLink"><a href="groupOrder">Get A Group Order</a></p>
     <p id="pizzaLink"><a href="pizzaDenominator">Pizza Denominator</a></p>
     <p id="restaurantSelectorLink"><a href="restaurantSelector">Group Restaurant Selector</a></p>
-    <p id="newRestaurantLink"><a href="newRestaurantDisplay">Enter a New Restaurant (req login)</a></p>
-    <p id="updateRestaurantLink"><a href="updateRestaurantDisplay">Update a Restaurant (admin only)</a></p>
+    <p id="newRestaurantLink"><a href="newRestaurantDisplay">Enter a New Restaurant</a></p>
+    <%--<p id="updateRestaurantLink"><a href="updateRestaurantDisplay">Update a Restaurant (admin only)</a></p>--%>
     <p id="loginPage"><a href="loginPage.jsp">Login</a></p>
 </div>
 
