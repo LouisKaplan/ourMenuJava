@@ -7,7 +7,7 @@
 <c:import url="template/head.jsp" />
 
 <body>
-<div id="groupOrderBody">
+<div id="pizzaBody">
 
     <div class="blogItem">
         <h1>Pizza Denominator</h1>

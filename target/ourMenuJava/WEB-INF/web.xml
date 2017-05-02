@@ -22,7 +22,7 @@
   <security-constraint>
     <web-resource-collection>
       <web-resource-name>adminOnly</web-resource-name>
-      <url-pattern>/updateRestaurantDisplay</url-pattern>
+      <url-pattern>/updateRestaurant</url-pattern>
     </web-resource-collection>
     <auth-constraint>
       <role-name>admin</role-name>
@@ -32,8 +32,8 @@
   <security-constraint>
     <web-resource-collection>
       <web-resource-name>allUsers</web-resource-name>
-      <url-pattern>/newRestaurantDisplay</url-pattern>
-      <url-pattern>/personalMenuDisplay</url-pattern>
+      <url-pattern>/newRestaurant</url-pattern>
+      <url-pattern>/personalMenu</url-pattern>
     </web-resource-collection>
     <auth-constraint>
       <role-name>user</role-name>

@@ -1,11 +1,15 @@
 package edu.matc.controller;
 
+import edu.matc.entity.Users;
 import edu.matc.persistence.*;
 
 import javax.servlet.*;
 import java.io.*;
+import java.util.ArrayList;
+import java.util.List;
 import javax.servlet.http.*;
 import javax.servlet.annotation.*;
+import org.apache.log4j.Logger;
 
 /**
  * This servlet is the main controller class for the process of adding an employee.
@@ -14,38 +18,64 @@ import javax.servlet.annotation.*;
  */
 
 @WebServlet(
-        name="restaurantSelector",
         urlPatterns={"/restaurantSelector"}
 )
 public class RestaurantSelector extends HttpServlet {
+    private final Logger log = Logger.getLogger(this.getClass());
 
     /**
-     *  doPost uses the information from the JSP submission form to update the SQL database.
-     *  This method gets the EmployeeDirectory from the servlet context and then instantiates the session.
-     *  It uses a request to pull data from the employee add form, which it then assigns to variables.
-     *  After that, it calls the method in EmployeeDirectory that does the work of adding the information
-     *      from those variables to the database.
-     *  Finally, it updates a message, which will be passed to the JSP to confirm that the information has been added.
-     *
-     *
      *@param  request                   the HttpServletRequest object
      *@param  response                   the HttpServletResponse object
      *@exception  ServletException  if there is a Servlet failure
      *@exception  IOException       if there is an IO failure
      */
 
-    public void doPost(HttpServletRequest request, HttpServletResponse response) throws ServletException, IOException {
+    @Override
+    public void doGet(HttpServletRequest request, HttpServletResponse response) throws ServletException, IOException {
 
-        HttpSession session = request.getSession();
+        RequestDispatcher dispatcher;
+        HttpSession session = request.getSession(true);
+
+        List<String> allUserList = getListOfUsers();
+        session.setAttribute("allUserList", allUserList);
+
         String url = "restaurantSelectorDisplay";
-        //UsersMenuItemDao userMenuDao = new UsersMenuItemDao();
-
         try {
-
-            response.sendRedirect(url);
-
+            dispatcher = request.getRequestDispatcher(url);
+            dispatcher.forward(request, response);
         } catch (IOException ioException) {
             ioException.printStackTrace();
         }
     }
+
+    public List<String> getListOfUsers(){
+        UsersDao usersDao = new UsersDao();
+        List<Users> usersList = new ArrayList<Users>();
+        try {
+            usersList = usersDao.getAllUsers();
+        } catch (Exception e){
+            log.error("Error getting all Users ", e);
+        }
+        List<String> userNamesList = new ArrayList<String>();
+
+        for (Users user :usersList) {
+            userNamesList.add(user.getDisplayName());
+        }
+        return userNamesList;
+    }
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 }

@@ -1,11 +1,22 @@
 package edu.matc.controller;
 
-import edu.matc.persistence.*;
+import edu.matc.entity.MenuItems;
+import edu.matc.entity.Restaurants;
+import edu.matc.persistence.MenuItemsDao;
+import edu.matc.persistence.RestaurantsDao;
+import org.apache.log4j.Logger;
 
-import javax.servlet.*;
-import java.io.*;
-import javax.servlet.http.*;
-import javax.servlet.annotation.*;
+import javax.servlet.RequestDispatcher;
+import javax.servlet.ServletException;
+import javax.servlet.annotation.WebServlet;
+import javax.servlet.http.HttpServlet;
+import javax.servlet.http.HttpServletRequest;
+import javax.servlet.http.HttpServletResponse;
+import javax.servlet.http.HttpSession;
+import java.io.IOException;
+import java.util.ArrayList;
+import java.util.HashMap;
+import java.util.List;
 
 /**
  * This servlet is the main controller class for the process of adding an employee.
@@ -18,35 +29,57 @@ import javax.servlet.annotation.*;
         urlPatterns={"/personalMenu"}
 )
 public class PersonalMenu extends HttpServlet {
-
+    private final Logger log = Logger.getLogger(this.getClass());
     /**
-     *  doPost uses the information from the JSP submission form to update the SQL database.
-     *  This method gets the EmployeeDirectory from the servlet context and then instantiates the session.
-     *  It uses a request to pull data from the employee add form, which it then assigns to variables.
-     *  After that, it calls the method in EmployeeDirectory that does the work of adding the information
-     *      from those variables to the database.
-     *  Finally, it updates a message, which will be passed to the JSP to confirm that the information has been added.
-     *
-     *
      *@param  request                   the HttpServletRequest object
      *@param  response                   the HttpServletResponse object
      *@exception  ServletException  if there is a Servlet failure
      *@exception  IOException       if there is an IO failure
      */
 
-    public void doPost(HttpServletRequest request, HttpServletResponse response) throws ServletException, IOException {
+    public void doGet(HttpServletRequest request, HttpServletResponse response) throws ServletException, IOException {
 
+        RequestDispatcher dispatcher;
         HttpSession session = request.getSession();
+        String userName = (String) session.getAttribute("user");
+
+        RestaurantsDao restDao = new RestaurantsDao();
+        List<Restaurants> restList = restDao.getAllRestaurants();
+
+        HashMap<String, List<String>> restMenuMap = buildRestaurantArray(restList);
+        log.info("$$$$$$$$$$$$$$$$ " + restMenuMap);
+
         String url = "personalMenuDisplay";
-        //UsersMenuItemDao userMenuDao = new UsersMenuItemDao();
-
         try {
-
-            response.sendRedirect(url);
-
+            dispatcher = request.getRequestDispatcher(url);
+            dispatcher.forward(request, response);
         } catch (IOException ioException) {
             ioException.printStackTrace();
         }
+    }
 
+    public List<String> findMenuItemNames (List<MenuItems> menuItemsList){
+        List<String> listOfMenuItemNames = new ArrayList<String>();
+
+        for(MenuItems menuItem:menuItemsList){
+            listOfMenuItemNames.add(menuItem.getItemDescription());
+        }
+        return listOfMenuItemNames;
+    }
+
+
+    public HashMap<String, List<String>> buildRestaurantArray (List<Restaurants> restList){
+        MenuItemsDao menuDao = new MenuItemsDao();
+        HashMap<String, List<String>> restItemMap = new HashMap<String, List<String>>();
+        String restName = "";
+
+        for (Restaurants rest: restList) {
+            List<MenuItems> menuItemsByRest = new ArrayList<>();
+            restName = rest.getRestaurantName();
+            menuItemsByRest = menuDao.getMenuItemsByRestaurant(restName);
+            List<String> menuItemNames = findMenuItemNames(menuItemsByRest);
+            restItemMap.put(restName, menuItemNames);
+        }
+            return restItemMap;
     }
 }

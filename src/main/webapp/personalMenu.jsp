@@ -5,6 +5,11 @@
 <c:import url="template/head.jsp" />
 
 <body>
+<%= request.getUserPrincipal().getName() %>
+A
+${user}
+B
+
 
 <div id="container">
 
@@ -14,15 +19,6 @@
 
             <h1>myMenu</h1>
 
-            <form action="employeeSearchResults" method="GET">
-                <h4>Enter your search:</h4>
-                <input type="text" name="variableEntryField" /><br />
-                <h4>Type of search:</h4>
-                <input type="radio" name="type" value="id" checked="checked"> ID<br>
-                <input type="radio" name="type" value="lastName"> Last Name<br>
-                <br />
-                <input type="submit" name="" value="Enter" />
-            </form>
 
         </div><!-- end #blogItem -->
 

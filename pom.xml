@@ -19,6 +19,7 @@
         </configuration>
       </plugin>
     </plugins>
+    <finalName>ourMenuJava</finalName>
   </build>
 
   <dependencies>
@@ -63,7 +64,4 @@
     </dependency>
 
   </dependencies>
-  <build>
-    <finalName>ourMenuJava</finalName>
-  </build>
 </project>
