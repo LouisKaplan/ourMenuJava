@@ -55,7 +55,11 @@ public class NewRestaurant extends HttpServlet {
         int i = 1;
         HashMap<String, String> menuItemsAndCategories = new HashMap<String, String>();
         while (i < 25){
-            menuItemsAndCategories.put(request.getParameter("newMenuItem" + i), request.getParameter("newItemCategory" + i));
+            String key = request.getParameter("newMenuItem" + i);
+            String value = request.getParameter("newItemCategory" + i);
+            if (key != "" && value != "") {
+                menuItemsAndCategories.put(key, value);
+            }
             i++;
         }
         log.info(menuItemsAndCategories);
@@ -76,19 +80,20 @@ public class NewRestaurant extends HttpServlet {
         for(Map.Entry<String, String> entry : map.entrySet()){
             String item = entry.getKey();
             String category = entry.getValue();
-            if (item != "" && category != "");
-            MenuItems newMenuItem = new MenuItems();
-            newMenuItem.setRestaurantName(restaurantName);
-            newMenuItem.setItemDescription(item);
-            newMenuItem.setItemType(category);
-            addMenuItemToDatabase(newMenuItem, session);
+            if (item != "" && category != "") {
+                MenuItems newMenuItem = new MenuItems();
+                newMenuItem.setRestaurantName(restaurantName);
+                newMenuItem.setItemDescription(item);
+                newMenuItem.setItemType(category);
+                addMenuItemToDatabase(newMenuItem, session);
+            }
         }
     }
 
     public void addMenuItemToDatabase(MenuItems newItem, HttpSession session){
         MenuItemsDao menuItemsDao = new MenuItemsDao();
         menuItemsDao.addMenuItem(newItem);
-        session.setAttribute("newMenuItemsSuccessMessage", "MenuItems Added");
+        session.setAttribute("newMenuItemsSuccessMessage", "Menu Items Added");
     }
 
 }

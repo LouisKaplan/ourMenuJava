@@ -61,8 +61,3 @@
 </body>
 
 </html>
-<%--<ol class="selectable" id="selectDiners">--%>
-<%--<c:forEach var="user" items="${allUserList}">--%>
-<%--<li class="ui-widget-content">${user}</li>--%>
-<%--</c:forEach>--%>
-<%--</ol>--%>

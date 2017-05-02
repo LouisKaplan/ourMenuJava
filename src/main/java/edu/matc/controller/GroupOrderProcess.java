@@ -66,11 +66,11 @@ public class GroupOrderProcess extends HttpServlet{
         return listOfSelectedUsers;
     }
 
-    public List<MenuItems> findMenuItemsByRestaurant(String restaurantName){
-        MenuItemsDao itemsDao = new MenuItemsDao();
-        List<MenuItems> itemsList = itemsDao.getMenuItemsByRestaurant(restaurantName);
-        return itemsList;
-    }
+//    public List<MenuItems> findMenuItemsByRestaurant(String restaurantName){
+//        MenuItemsDao itemsDao = new MenuItemsDao();
+//        List<MenuItems> itemsList = itemsDao.getMenuItemsByRestaurant(restaurantName);
+//        return itemsList;
+//    }
 
     public List<String> findMenuItemNames (List<MenuItems> menuItemsList){
         MenuItemsDao itemsDao = new MenuItemsDao();
