@@ -27,7 +27,7 @@
         } );
     </script>
 
-    <form action="pizzaDenominator" method="get">
+    <form action="pizzaDenominatorProcess" method="get">
 
         <div id="selectDinersDiv">
             <h1>Who's Up For Some Pizza?</h1>
@@ -42,6 +42,11 @@
                 class="btn btn-primary">Find Orders</button>
     </form>
 </div>
+
+${pizzaDenominatorMessage}
+</br>
+${finalPizzaList}
+
 <br/>
 <br/>
 <br/>

@@ -73,7 +73,6 @@ public class GroupOrderProcess extends HttpServlet{
 //    }
 
     public List<String> findMenuItemNames (List<MenuItems> menuItemsList){
-        MenuItemsDao itemsDao = new MenuItemsDao();
         List<String> listOfMenuItemNames = new ArrayList<String>();
 
         for(MenuItems menuItem:menuItemsList){

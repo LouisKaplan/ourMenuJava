@@ -33,6 +33,21 @@ public class PizzaDenominatorProcess extends HttpServlet{
 
         String[] userNamesFromForm = request.getParameterValues("selectDiners");
         List<Users> userNameList = convertDisplayNamesToUserObjects(userNamesFromForm);
+
+        List<List<String>> userPizzaList = findPizzaPreferencesByUser(userNameList);
+        List<String> finalPizzaList = denominate(userPizzaList);
+
+        session.setAttribute("finalPizzaList", finalPizzaList);
+        session.setAttribute("pizzaDenominatorMessage", "A pizza that will make everyone happy:");
+
+        String url = "pizzaDenominatorDisplay";
+
+        try {
+            dispatcher = request.getRequestDispatcher(url);
+            dispatcher.forward(request, response);
+        } catch (IOException ioException) {
+            ioException.printStackTrace();
+        }
     }
 
     public List<Users> convertDisplayNamesToUserObjects(String[] userList){
@@ -48,7 +63,6 @@ public class PizzaDenominatorProcess extends HttpServlet{
     }
 
     public List<String> findMenuItemNames (List<MenuItems> menuItemsList){
-        MenuItemsDao itemsDao = new MenuItemsDao();
         List<String> listOfMenuItemNames = new ArrayList<String>();
 
         for(MenuItems menuItem:menuItemsList){
@@ -57,4 +71,40 @@ public class PizzaDenominatorProcess extends HttpServlet{
         return listOfMenuItemNames;
     }
 
+    public List<List<String>> findPizzaPreferencesByUser(List<Users> userNameList){
+        UsersMenuItemsDao umiDAO = new UsersMenuItemsDao();
+        List<List<String>> umiList = new ArrayList<List<String>>();
+
+        for(Users user:userNameList){
+            List<MenuItems> menuItemsByUser = new ArrayList<MenuItems>();
+            List<UsersMenuItems> listOfUMI = umiDAO.getUsersMenuItemsByUser(user);
+            List<String> menuItemNamesForUser;
+            for (UsersMenuItems umi:listOfUMI){
+
+                if (umi.getMenuItemID().getRestaurantName().equals("Pizza")){
+                    menuItemsByUser.add(umi.getMenuItemID());
+                }
+            }
+            menuItemNamesForUser = findMenuItemNames(menuItemsByUser);
+            umiList.add(menuItemNamesForUser);
+        }
+        return umiList;
+    }
+
+    public List<String> denominate(List<List<String>> userPizzaList) {
+        List<String> comparisonList = userPizzaList.get(0);
+        List<String> toBeRemoved = new ArrayList<String>();
+        for (String compareString : comparisonList) {
+            for (List<String> loopList : userPizzaList) {
+                if (loopList.contains(compareString) == false) {
+                    toBeRemoved.add(compareString);
+                    break;
+                }
+            }
+        }
+        for (String removeWord : toBeRemoved
+             ) {comparisonList.remove(removeWord);
+
+        } return comparisonList;
+    }
 }
