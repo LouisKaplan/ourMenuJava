@@ -41,8 +41,9 @@ public class PersonalMenu extends HttpServlet {
 
         RequestDispatcher dispatcher;
         HttpSession session = request.getSession();
+        log.info((String) session.getAttribute("user"));
         String userName = (String) session.getAttribute("user");
-
+        log.info("#########PERSONAL MENU SESSION USER: " + userName);
         RestaurantsDao restDao = new RestaurantsDao();
         List<Restaurants> restList = restDao.getAllRestaurants();
 

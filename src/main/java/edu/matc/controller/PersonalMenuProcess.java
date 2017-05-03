@@ -34,10 +34,12 @@ public class PersonalMenuProcess extends HttpServlet {
         HttpSession session = request.getSession(true);
 
         String userName = (String) session.getAttribute("user");
+        log.info("$$$$$$$$$$$SESSION USER: " + userName);
 
         String[] menuItemsFromForm = request.getParameterValues("menuItem");
         List<MenuItems> foundMenuItems = convertMenuItemNamesToUserObjects(menuItemsFromForm);
         String restaurantName = getRestaurantForItems( foundMenuItems);
+        log.info("$$$$$$$$$$$$$$RESTAURANT NAME " + restaurantName);
         if (foundMenuItems.size() > 0){deleteOldOrder(userName, restaurantName);}
         addNewOrder (session, userName, foundMenuItems);
 
@@ -57,7 +59,7 @@ public class PersonalMenuProcess extends HttpServlet {
         MenuItemsDao menuDao = new MenuItemsDao();
 
         while(i < menuItemsFromForm.length){
-            log.info("$$$$$$$$$MenuItemFromFormExists:" + menuItemsFromForm[i]);
+            //log.info("$$$$$$$$$MenuItemFromFormExists:" + menuItemsFromForm[i]);
             List<MenuItems> menuItemToAdd = menuDao.getMenuItemsByName(menuItemsFromForm[i]);
             listOfMenuItems.add(menuItemToAdd.get(0));
             i++;
@@ -77,8 +79,12 @@ public class PersonalMenuProcess extends HttpServlet {
         int idToDelete = 0;
 
         for (UsersMenuItems umi : umiList
-             ) {if (umi.getUserName().getUserName().equals(userName) &&
+             ) {
+//            log.info("CHECKPOINT LOOP: " + umi.getUserName().getUserName());
+//            log.info("CHECKPOINT LOOP 2: "+ umi.getMenuItemID().getRestaurantName());
+            if (umi.getUserName().getUserName().equals(userName) &&
                 umi.getMenuItemID().getRestaurantName().equals(restaurantName)){
+
                  idToDelete = umi.getUserItemID();
                  log.info("DELETED: " + userName + " ID: " + idToDelete);
                  umiDao.deleteUserMenuItem(idToDelete);

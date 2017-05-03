@@ -28,7 +28,7 @@ public class AddLoginToSession  extends HttpServlet {
 
         String userName = request.getParameter("j_username");
         String userPassword = request.getParameter("j_password");
-
+        log.info("####ADD TO SESSION CHECKPOINT ONE " + userName);
         Users user = dao.getUser(userName);
 
         session.setAttribute("user", userName);
@@ -36,22 +36,27 @@ public class AddLoginToSession  extends HttpServlet {
 
         if (user == null){
             checksOut = false;
+            log.info("####ADD TO SESSION CHECKPOINT TWO");
         } else {
+            log.info("####ADD TO SESSION CHECKPOINT 3");
             checkCredentials(userPassword, user);
         }
         if(checksOut){
+            log.info("####ADD TO SESSION CHECKPOINT 4");
             session.setAttribute("failure", null);
             String url = "j_security_check?j_username=" + userName + "&j_password=" + userPassword;
             String redirectURL = response.encodeRedirectURL(url);
             response.sendRedirect(redirectURL);
+            log.info("####ADD TO SESSION CHECKPOINT 5 " + userName);
             session.setAttribute("user", userName);
         } else {
-        response.sendRedirect("/loginPage.jsp");
+        response.sendRedirect("/index.jsp");
     }
 
     }
 
     private void checkCredentials(String userPassword, Users user) {
+        log.info("####ADD TO SESSION CHECKPOINT Six");
         if(!user.getUserPassword().equals(userPassword)){
             checksOut = false;
         }
