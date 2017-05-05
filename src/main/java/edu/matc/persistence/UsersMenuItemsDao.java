@@ -1,5 +1,6 @@
 package edu.matc.persistence;
 
+import edu.matc.entity.MenuItems;
 import edu.matc.entity.Users;
 import edu.matc.entity.UsersMenuItems;
 import org.apache.log4j.Logger;
@@ -66,6 +67,22 @@ public class UsersMenuItemsDao {
         }
         return usersMenuItems;
     }
+
+    public List<UsersMenuItems> getUsersMenuItemsByMenuItem(MenuItems menuItems) {
+        Session session = SessionFactoryProvider.getSessionFactory().openSession();
+        List<UsersMenuItems> usersMenuItems = null;
+        try {
+            usersMenuItems = session.createCriteria(UsersMenuItems.class).add
+                    (Restrictions.eq("menuItemID",menuItems)).list();
+        } catch (HibernateException e) {
+            log.error("Hibernate Exception", e);
+        } finally {
+            session.close();
+        }
+        return usersMenuItems;
+    }
+
+
 
     /**
      * add a user

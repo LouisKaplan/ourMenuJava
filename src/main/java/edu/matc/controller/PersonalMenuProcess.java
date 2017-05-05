@@ -34,10 +34,11 @@ public class PersonalMenuProcess extends HttpServlet {
         String userName = (String) session.getAttribute("user");
 
         String[] menuItemsFromForm = request.getParameterValues("menuItem");
-        List<MenuItems> foundMenuItems = convertMenuItemNamesToUserObjects(menuItemsFromForm);
-
         String restaurantName = request.getParameter("restaurantName");
-        log.info("REST NAME FROM PARAMETER:" + restaurantName);
+
+        List<MenuItems> foundMenuItems = convertMenuItemNamesToMenuItemObjects(menuItemsFromForm, restaurantName);
+
+
         if (foundMenuItems.size() > 0){deleteOldOrder(userName, restaurantName);}
         addNewOrder (session, userName, foundMenuItems);
 
@@ -56,15 +57,16 @@ public class PersonalMenuProcess extends HttpServlet {
         }
     }
 
-    public List<MenuItems> convertMenuItemNamesToUserObjects(String[] menuItemsFromForm){
+    public List<MenuItems> convertMenuItemNamesToMenuItemObjects(String[] menuItemsFromForm, String restaurantName){
         int i = 0;
         List<MenuItems> listOfMenuItems = new ArrayList<MenuItems>();
         MenuItemsDao menuDao = new MenuItemsDao();
 
         while(i < menuItemsFromForm.length){
             List<MenuItems> menuItemToAdd = menuDao.getMenuItemsByName(menuItemsFromForm[i]);
-            listOfMenuItems.add(menuItemToAdd.get(0));
-            i++;
+            if(menuItemToAdd.get(0).getRestaurantName().equals(restaurantName)) {
+                listOfMenuItems.add(menuItemToAdd.get(0));
+            }i++;
         }
         return listOfMenuItems;
     }
@@ -80,7 +82,6 @@ public class PersonalMenuProcess extends HttpServlet {
                 umi.getMenuItemID().getRestaurantName().equals(restaurantName)){
 
                  idToDelete = umi.getUserItemID();
-                 log.info("DELETED: " + userName + " ID: " + idToDelete);
                  umiDao.deleteUserMenuItem(idToDelete);
             }
         }
@@ -97,7 +98,6 @@ public class PersonalMenuProcess extends HttpServlet {
              umiDao.addUserMenuItem(umi);
              menuItemNames.add(umi.getMenuItemID().getItemDescription());
         }
-        log.info(userName + " added " + menuItemNames.toString());
         session.setAttribute("updateMenuMessage", userName + " changed their order to: " + menuItemNames.toString());
     }
 
@@ -130,17 +130,15 @@ public class PersonalMenuProcess extends HttpServlet {
 
         for (UsersRestaurants urLoop : urList
              ) {if(urLoop.getUsers().getUserName().equals(userName) &&
-                urLoop.getRestaurants().getRestaurantName().equals(restaurantName)){
-                 urLoop.setUserRating(finalRestaurantRating);
-                 urDAO.updateUsersRestaurants(urLoop);
-                 urFound = true;
-        }
-
-        }
+                    urLoop.getRestaurants().getRestaurantName().equals(restaurantName)
+                    && !urFound){
+                        urLoop.setUserRating(finalRestaurantRating);
+                        urDAO.updateUsersRestaurants(urLoop);
+                        urFound = true;
+                    }
+            }
         if(urFound == false){
             urDAO.addUsersRestaurants(newUR);
         }
-
-
     }
 }

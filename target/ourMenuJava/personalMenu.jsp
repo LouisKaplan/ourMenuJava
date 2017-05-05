@@ -54,7 +54,7 @@
     <option value="10">10</option>
 </select>
 
-            <input type="hidden" name="restaurantName" value = ${entry.key}>
+            <input type="hidden" name="restaurantName" value ="${entry.key}">
             <input type="submit" value="Submit">
         </form>
         </div>

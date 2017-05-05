@@ -30,13 +30,13 @@ public class MenuItems implements java.io.Serializable{
     public MenuItems() {
     }
 
-//    public MenuItems(String restaurantName,
-//                     String itemDescription,
-//                     String itemType) {
-//        this.restaurantName = restaurantName;
-//        this.itemDescription = itemDescription;
-//        this.itemType = itemType;
-//    }
+    public MenuItems(String restaurantName,
+                     String itemDescription,
+                     String itemType) {
+        this.restaurantName = restaurantName;
+        this.itemDescription = itemDescription;
+        this.itemType = itemType;
+    }
 
 //    public MenuItems(String restaurantName,
 //                     String itemDescription,
