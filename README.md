@@ -1,2 +1,34 @@
-# ourMenuJava
-ourMenu Java Project
+# ourMenu
+ 
+### Problem Statement:
+Collecting a food order can be a hassle, especially at a convention or a competition. I frequently attend Magic: The Gathering competitions with more than 1200 people in attendance, and making a food run for half a dozen friends who might be scattered around the room is difficult.
+ 
+Forcing someone to stop what they're doing to give you their order can be disruptive and time consuming. Instead, ourMenu users can store their favorite (or a default that they'll always be happy with) order for a variety of restaurants. Later, the food-runner can simply pull up a list of diners and a list of restaurants, choose options from each list, and display an order for each person for the selected restaurant.
+ 
+I eventually realized that I could add many other functions by collecting just a LITTLE more data. For example:
+ 
+* By asking users to give each restaurant a score from 1-10, we can select a list of users and find the restaurant that they collectively score the highest.
+ 
+* By aggregating people's pizza preferences, we can come up with a set of ingredients that all present diners enjoy.
+ 
+In addition, I wanted to make sure I had easy ways to add restaurants and their menu items, a very simple interface for users to update their personal orders, and a way for admins to update existing restaurants.
+ 
+All of this is the core functionality. There are many other things that can be implemented in the future - comments about allergies, food that the users NEVER want, dietary restrictions, etc.
+ 
+ 
+### Technologies:
+* Java
+* HTML
+* CSS
+* Maven
+* MySql
+* jQuery
+* jQuery UI
+* Bootstrap
+* Hibernate
+* Jackson
+ 
+### Independent Research:
+* jQuery
+* jQuery UI
+* Bootstrap

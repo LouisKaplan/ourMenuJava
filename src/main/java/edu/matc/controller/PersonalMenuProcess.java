@@ -1,8 +1,6 @@
 package edu.matc.controller;
 
-import edu.matc.entity.MenuItems;
-import edu.matc.entity.Users;
-import edu.matc.entity.UsersMenuItems;
+import edu.matc.entity.*;
 import edu.matc.persistence.*;
 
 import javax.servlet.*;
@@ -34,14 +32,19 @@ public class PersonalMenuProcess extends HttpServlet {
         HttpSession session = request.getSession(true);
 
         String userName = (String) session.getAttribute("user");
-        log.info("$$$$$$$$$$$SESSION USER: " + userName);
 
         String[] menuItemsFromForm = request.getParameterValues("menuItem");
         List<MenuItems> foundMenuItems = convertMenuItemNamesToUserObjects(menuItemsFromForm);
-        String restaurantName = getRestaurantForItems( foundMenuItems);
-        log.info("$$$$$$$$$$$$$$RESTAURANT NAME " + restaurantName);
+
+        String restaurantName = request.getParameter("restaurantName");
+        log.info("REST NAME FROM PARAMETER:" + restaurantName);
         if (foundMenuItems.size() > 0){deleteOldOrder(userName, restaurantName);}
         addNewOrder (session, userName, foundMenuItems);
+
+        String restaurantRating = request.getParameter("restaurantRating");
+        int finalRestaurantRating = findRealRating(restaurantRating);
+        if (finalRestaurantRating != 0){updateUserRestaurantRating(userName, restaurantName, finalRestaurantRating);}
+
 
         String url = "personalMenuDisplay";
 
@@ -59,18 +62,11 @@ public class PersonalMenuProcess extends HttpServlet {
         MenuItemsDao menuDao = new MenuItemsDao();
 
         while(i < menuItemsFromForm.length){
-            //log.info("$$$$$$$$$MenuItemFromFormExists:" + menuItemsFromForm[i]);
             List<MenuItems> menuItemToAdd = menuDao.getMenuItemsByName(menuItemsFromForm[i]);
             listOfMenuItems.add(menuItemToAdd.get(0));
             i++;
         }
         return listOfMenuItems;
-    }
-
-    public String getRestaurantForItems(List<MenuItems> menuItems){
-        String restaurantName = menuItems.get(0).getRestaurantName();
-        return restaurantName;
-
     }
 
     public void deleteOldOrder(String userName, String restaurantName){
@@ -80,8 +76,6 @@ public class PersonalMenuProcess extends HttpServlet {
 
         for (UsersMenuItems umi : umiList
              ) {
-//            log.info("CHECKPOINT LOOP: " + umi.getUserName().getUserName());
-//            log.info("CHECKPOINT LOOP 2: "+ umi.getMenuItemID().getRestaurantName());
             if (umi.getUserName().getUserName().equals(userName) &&
                 umi.getMenuItemID().getRestaurantName().equals(restaurantName)){
 
@@ -105,6 +99,47 @@ public class PersonalMenuProcess extends HttpServlet {
         }
         log.info(userName + " added " + menuItemNames.toString());
         session.setAttribute("updateMenuMessage", userName + " changed their order to: " + menuItemNames.toString());
+    }
+
+    public int findRealRating(String ratingAnswer){
+        int realRating;
+        if(ratingAnswer != "none"){
+            realRating = Integer.parseInt(ratingAnswer);
+        } else {
+            realRating = 0;
+        } return realRating;
+    }
+
+    public void updateUserRestaurantRating(String userName, String restaurantName, int finalRestaurantRating){
+        UsersDao userDao = new UsersDao();
+        RestaurantsDao restDao = new RestaurantsDao();
+        UsersRestaurantsDao urDAO = new UsersRestaurantsDao();
+
+        UsersRestaurants newUR = new UsersRestaurants();
+
+        Users userObject = userDao.getUser(userName);
+        newUR.setUsers(userObject);
+
+        Restaurants restObject = restDao.getRestaurant(restaurantName);
+        newUR.setRestaurants(restObject);
+
+        newUR.setUserRating(finalRestaurantRating);
+
+        List<UsersRestaurants> urList = urDAO.getAllUsersRestaurants();
+        boolean urFound = false;
+
+        for (UsersRestaurants urLoop : urList
+             ) {if(urLoop.getUsers().getUserName().equals(userName) &&
+                urLoop.getRestaurants().getRestaurantName().equals(restaurantName)){
+                 urLoop.setUserRating(finalRestaurantRating);
+                 urDAO.updateUsersRestaurants(urLoop);
+                 urFound = true;
+        }
+
+        }
+        if(urFound == false){
+            urDAO.addUsersRestaurants(newUR);
+        }
 
 
     }

@@ -41,9 +41,7 @@ public class PersonalMenu extends HttpServlet {
 
         RequestDispatcher dispatcher;
         HttpSession session = request.getSession();
-        log.info((String) session.getAttribute("user"));
         String userName = (String) session.getAttribute("user");
-        log.info("#########PERSONAL MENU SESSION USER: " + userName);
         RestaurantsDao restDao = new RestaurantsDao();
         List<Restaurants> restList = restDao.getAllRestaurants();
 
@@ -75,7 +73,7 @@ public class PersonalMenu extends HttpServlet {
         String restName = "";
 
         for (Restaurants rest: restList) {
-            List<MenuItems> menuItemsByRest = new ArrayList<>();
+            List<MenuItems> menuItemsByRest;
             restName = rest.getRestaurantName();
             menuItemsByRest = menuDao.getMenuItemsByRestaurant(restName);
             List<String> menuItemNames = findMenuItemNames(menuItemsByRest);

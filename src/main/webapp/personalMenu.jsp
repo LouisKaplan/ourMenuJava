@@ -11,12 +11,14 @@
     #accordion {
         width: 30%;
     }
+
 </style>
 <script>
     $( function() {
         $( "#accordion" ).accordion({heightStyle: "content", collapsible: true});
     } );
 </script>
+
 <div id="container">
 
     <div id="mainContent">
@@ -35,6 +37,24 @@
             <c:forEach var="item" items="${entry.value}">
                 <input type="checkbox" name="menuItem" value="${item}"> ${item}<br>
             </c:forEach>
+            </br>
+            <label for="restaurantRating">Rating for this restaurant (10 is best):</label>
+
+<select name="restaurantRating" id="restaurantRating">
+    <option value="none">none</option>
+    <option value="1">1</option>
+    <option value="2">2</option>
+    <option value="3">3</option>
+    <option value="4">4</option>
+    <option value="5">5</option>
+    <option value="6">6</option>
+    <option value="7">7</option>
+    <option value="8">8</option>
+    <option value="9">9</option>
+    <option value="10">10</option>
+</select>
+
+            <input type="hidden" name="restaurantName" value = ${entry.key}>
             <input type="submit" value="Submit">
         </form>
         </div>
