@@ -36,7 +36,7 @@
                     <form action="updateRestaurantProcess" method="get">
 
                         <c:forEach var="item" items="${entry.value}">
-                            <input type="checkbox" name="deleteMenuItem" value="${item}"> ${item}<br>
+                            <input type="checkbox" name="deleteMenuItem" value="${item}">${item}<br>
                         </c:forEach>
 
                         <h2>Enter Any New Menu Items:</h2>
@@ -165,7 +165,7 @@
                             </tr>
                         </table>
 
-                        <input type="hidden" name="restaurantName" value = ${entry.key}>
+                        <input type="hidden" name="restaurantName" value ="${entry.key}">
                         <input type="submit" value="Submit">
                     </form>
                 </div>

@@ -13,10 +13,8 @@ import java.lang.*;
  * @version 1.0
  */
 @WebServlet(
-        name = "updateRestaurantDisplay",
         urlPatterns = { "/updateRestaurantDisplay" }
 )
-
 public class UpdateRestaurantDisplay extends HttpServlet {
 
     /**

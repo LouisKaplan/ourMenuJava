@@ -70,9 +70,7 @@ public class UpdateRestaurant extends HttpServlet {
             restName = rest.getRestaurantName();
             menuItemsByRest = menuDao.getMenuItemsByRestaurant(restName);
             List<String> menuItemNames = findMenuItemNames(menuItemsByRest);
-            if (menuItemNames.size() >= 2) {
-                restItemMap.put(restName, menuItemNames);
-            }
+            restItemMap.put(restName, menuItemNames);
         }
         return restItemMap;
     }

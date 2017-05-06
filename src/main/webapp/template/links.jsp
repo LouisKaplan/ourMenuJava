@@ -7,4 +7,5 @@
     <p id="restaurantSelectorLink"><a href="restaurantSelector">Group Restaurant Selector</a></p>
     <p id="newRestaurantLink"><a href="newRestaurantDisplay">Enter a New Restaurant</a></p>
     <p id="updateRestaurantLink"><a href="updateRestaurant">Update a Restaurant (admin only)</a></p>
+    <p id="logout"><a href="logUserOut">Log Out</a></p>
 </div>

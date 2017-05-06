@@ -32,16 +32,12 @@ public class Home { /**
  *@exception  IOException       if there is an IO failure
  */
 
-public void doPost(HttpServletRequest request, HttpServletResponse response) throws ServletException, IOException {
+public void doGet(HttpServletRequest request, HttpServletResponse response) throws ServletException, IOException {
 
     HttpSession session = request.getSession();
     String url = "homeDisplay";
-    //UsersMenuItemDao userMenuDao = new UsersMenuItemDao();
-
     try {
-
         response.sendRedirect(url);
-
     } catch (IOException ioException) {
         ioException.printStackTrace();
     }
