@@ -2,6 +2,7 @@ package edu.matc.googleMaps;
 
 import com.fasterxml.jackson.databind.ObjectMapper;
 import org.apache.log4j.Logger;
+import edu.matc.googleMaps.Results;
 
 import javax.ws.rs.client.*;
 import javax.ws.rs.core.MediaType;
@@ -30,27 +31,24 @@ public class GetCoordinates {
         this.apiUserKey = apiUserKey;
     }
 
-    public OWList MakeCall(double miniLon, double miniLat, double maxiLon, double maxiLat) throws Exception{
+    public Results MakeCall(String restaurantName, String city, String state) throws Exception{
         //bbox bounding box [lon-left,lat-bottom,lon-right,lat-top,zoom]
 
         //Load properties file and assign your key to the apiKey variable
 
         //Append the call string with our input data
         apiUserKey += apiKey;
-        this.minLon = miniLon;
-        this.minLat = miniLat;
-        this.maxLon = maxiLon;
-        this.maxLat = maxiLat;
+        this.restaurantName = restaurantName;
+        this.city = city;
+        this.state = state;
 
-        apiParameters += (minLon + "," +
-                minLat + "," +
-                maxLon + "," +
-                maxLat + "," +
-                boxZoom);
+        apiParameters += (restaurantName + "," +
+                city + "," +
+                state);
 
         log.info("Calling " + apiURL + apiParameters + apiUserKey);
 
-        https://maps.googleapis.com/maps/api/geocode/json?components=locality:santa+cruz|country:ES&key=YOUR_API_KEY
+//        https://maps.googleapis.com/maps/api/geocode/json?components=locality:santa+cruz|country:ES&key=YOUR_API_KEY
 
         //Make the call
         Client client = ClientBuilder.newClient();
@@ -61,9 +59,7 @@ public class GetCoordinates {
         String response = target.request(MediaType.APPLICATION_JSON).get(String.class);
         log.info("Response message is " + response);
         ObjectMapper mapper = new ObjectMapper();
-        OWList list = mapper.readValue(response, OWList.class);
-
-
+        Results list = mapper.readValue(response, Results.class);
 
         //Return all the JSON data
         return list;
