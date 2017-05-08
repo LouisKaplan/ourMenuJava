@@ -38,6 +38,12 @@
             </select>
         </div>
 
+    </br>
+
+        <input type="text" id="selectCity" name="selectCity" placeholder="Enter City For Search">
+        <input type="text" id="selectState" name="selectState" placeholder="Enter State For Search">
+
+
         <button type="submit" name="submit" value="Enter"
                 class="btn btn-primary">Find Us A Restaurant!</button>
     </form>

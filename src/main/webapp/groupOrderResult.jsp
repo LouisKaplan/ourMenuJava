@@ -3,12 +3,7 @@
 <%@ taglib prefix="c" uri="http://java.sun.com/jsp/jstl/core" %>
 
 <c:import url="template/head.jsp" />
-<style>
-    #map {
-        height: 400px;
-        width: 100%;
-    }
-</style>
+
 <body>
 <div id="container">
     <div id="mainContent">
@@ -36,24 +31,7 @@
                 </select>
             </div>
 
-            <div id="map">
-            <script>
-                function initMap() {
-                    var uluru = {lat: -25.363, lng: 131.044};
-                    var map = new google.maps.Map(document.getElementById('map'), {
-                        zoom: 4,
-                        center: uluru
-                    });
-                    var marker = new google.maps.Marker({
-                        position: uluru,
-                        map: map
-                    });
-                }
-            </script>
-            <script async defer
-                    src="https://maps.googleapis.com/maps/api/js?key=AIzaSyDz1O1acC_sddBXfr-eG08np8GrpG3ufeU&callback=initMap">
-            </script>
-            </div>
+
 
         </div>
     </div>
