@@ -32,3 +32,18 @@ All of this is the core functionality. There are many other things that can be i
 * jQuery
 * jQuery UI
 * Bootstrap
+
+### FINAL NOTE:
+Things I didn't get done: Authentication still doesn't work on AWS. It works fine locally. Code comments are nowhere near done. Both of those things got left behind because of time constraints. Everything else is at least somewhere in the ballpark of where I wanted to be. Unfortunately, without authorization, the personal menu and update a restaurant pages are not visible.
+
+### MAJOR CHANGES SINCE PRESENTATION:
+* Added restaurant ratings for users (not visible without login - screenshot here: http://imgur.com/a/mB5Os )
+* Added styling to website (also not visible on AWS - see on above screenshot)
+* Implemented google maps API and added function to Restaurant Selector. User now enters in city and state while searching for a restaurant, and the results page shows a location for the restaurant that the group prefers: http://imgur.com/pdbLMrB and http://imgur.com/8AnANDa
+* Edit Restaurant page has been added. This allows users to add or remove menu items for specific restaurants: http://imgur.com/UHw1Aom
+* Fixed MANY bugs
+* Implemented a logout function and page
+* Auploaded to AWS. Everything seems to work there except authentication. I've messed with it a bunch and read all the answers in the slack channel, but it's not working and it's almost 2am - I'm done :)
+
+Thanks for looking at all this!
+
