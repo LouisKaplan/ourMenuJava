@@ -29,11 +29,6 @@ public class GetCoordinates {
     private final Logger log = Logger.getLogger(this.getClass());
 
     public GetCoordinates(){
-//        String apiKey, String apiURL, String apiParameters, String apiUserKey
-//        this.apiKey = apiKey;
-//        this.apiURL = apiURL;
-//        this.apiParameters = apiParameters;
-//        this.apiUserKey = apiUserKey;
     }
 
     public Results MakeCall(String restaurant, String city, String state) throws Exception{
@@ -52,14 +47,12 @@ public class GetCoordinates {
 
         log.info("Calling " + apiURL + apiParameters + apiUserKey);
 
-//        https://maps.googleapis.com/maps/api/geocode/json?components=locality:santa+cruz|country:ES&key=YOUR_API_KEY
 
-        //Make the call
         Client client = ClientBuilder.newClient();
         WebTarget target =
                 client.target(apiURL + apiParameters + apiUserKey);
 
-        //This is the response
+
         String response = target.request(MediaType.APPLICATION_JSON).get(String.class);
         log.info("Response message is " + response);
         ObjectMapper mapper = new ObjectMapper();
@@ -80,13 +73,13 @@ public class GetCoordinates {
             this.apiKey = ourMenuProperties.getProperty("GoogleMapsAPI");
 
         } catch (IOException ex) {
-            log.error("$$$$$$$$$$$$$$$$$ERROR ONE " + ex);
+            log.error("IO ERROR " + ex);
         } finally {
             if (inputStream != null) {
                 try {
                     inputStream.close();
                 } catch (IOException e) {
-                    log.error("$$$$$$$$$$$$$$$$$ERROR TWO " + e);
+                    log.error("IO ERROR " + e);
                 }
             }
         }

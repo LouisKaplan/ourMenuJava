@@ -41,7 +41,6 @@ public class NewUser extends HttpServlet{
         String userName = req.getParameter("userName");
         String displayName = req.getParameter("displayName");
 
-        log.info("NEW USER CHECKPOINT A " + password + confirmPassword + userName + displayName);
         newUser = new NewUserObject(password, confirmPassword, userName,
                 displayName);
 
@@ -53,7 +52,6 @@ public class NewUser extends HttpServlet{
          else forward to New User form again
          */
         if (newUser.isEverythingValid()) {
-            log.info("NEW USER CHECKPOINT B ");
             Users user = addUser(userName, displayName, password);
             loginUser(req, userName, password);
             session.setAttribute("user", user.getUserName());
@@ -72,11 +70,10 @@ public class NewUser extends HttpServlet{
             password) {
 
         try {
-            log.info("!!!!!!!!!!!!!!!!!USER LOGIN CHECKPOINT");
             request.login(userName, password);
 
         } catch (ServletException e) {
-            log.error("!!!!!!!!!!!!!!!!!FAILED TO LOGIN AFTER ADDING", e);
+            log.error("FAILED TO LOGIN AFTER ADDING", e);
         }
 
     }
@@ -86,20 +83,17 @@ public class NewUser extends HttpServlet{
      */
     private Users addUser(String userName, String displayName, String
             password) {
-        log.info("NEW USER CHECKPOINT D ");
         Users user = new Users(userName,displayName,password);
         UserRoles userRole = new UserRoles(userName, "user");
         UsersDao userDao = new UsersDao();
         UserRolesDao roleDao = new UserRolesDao();
 
         try {
-            log.info("NEW USER CHECKPOINT E ");
             userDao.addUser(user);
             roleDao.addUserRole(userRole);
         } catch (Exception exception) {
             log.error("Unable to add user ", exception);
         }
-        log.info("NEW USER CHECKPOINT F ");
         return user;
     }
 

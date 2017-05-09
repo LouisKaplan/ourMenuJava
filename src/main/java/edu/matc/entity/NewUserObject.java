@@ -1,6 +1,5 @@
 package edu.matc.entity;
 
-import edu.matc.entity.Users;
 import edu.matc.persistence.UsersDao;
 import org.apache.log4j.Logger;
 

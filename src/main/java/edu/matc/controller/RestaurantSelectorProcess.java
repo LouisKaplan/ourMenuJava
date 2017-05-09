@@ -52,8 +52,6 @@ public class RestaurantSelectorProcess extends HttpServlet{
         getMapCoordinates(mapResults);
         session.setAttribute("mapLat", lat);
         session.setAttribute("mapLon", lon);
-        log.info("$$$$$$$$$$$$LATITUDE: " + lat);
-        log.info("$$$$$$$$$$$$LONGITUDE:" + lon);
 
         session.setAttribute("sortedMap", sortedMap);
 

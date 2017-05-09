@@ -2,16 +2,11 @@ package edu.matc.controller;
 
 import edu.matc.entity.MenuItems;
 import edu.matc.entity.Restaurants;
-import edu.matc.entity.Users;
-import edu.matc.entity.UsersMenuItems;
 import edu.matc.persistence.*;
 
 import javax.servlet.*;
-import java.awt.*;
 import java.io.*;
-import java.util.ArrayList;
 import java.util.HashMap;
-import java.util.List;
 import java.util.Map;
 import javax.servlet.http.*;
 import javax.servlet.annotation.*;

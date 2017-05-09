@@ -2,7 +2,6 @@ package edu.matc.entity;
 
 import javax.persistence.*;
 
-import java.io.Serializable;
 
 
 @Entity
@@ -16,25 +15,10 @@ public class Restaurants implements java.io.Serializable {
     @Column(name = "restaurantType")
     private String restaurantType;
 
-//    @OneToMany(fetch = FetchType.LAZY, mappedBy = "restaurantName")
-//    private Set<UsersRestaurants> usersRestaurants = new HashSet<UsersRestaurants>(0);
 
     public Restaurants() {
     }
 
-//    public Restaurants(String restaurantName,
-//                       String restaurantType) {
-//        this.restaurantName = restaurantName;
-//        this.restaurantType = restaurantType;
-//    }
-
-//    public Restaurants(String restaurantName,
-//                       String restaurantType,
-//                       Set<UsersRestaurants> usersRestaurants) {
-//        this.restaurantName = restaurantName;
-//        this.restaurantType = restaurantType;
-//        this.usersRestaurants = usersRestaurants;
-//    }
 
     public String getRestaurantName() {
         return this.restaurantName;
@@ -53,12 +37,4 @@ public class Restaurants implements java.io.Serializable {
         this.restaurantType = restaurantType;
     }
 
-
-//    public Set<UsersRestaurants> getUsersRestaurants() {
-//        return this.usersRestaurants;
-//    }
-//
-//    public void setUsersRestaurants(Set<UsersRestaurants> usersRestaurants) {
-//        this.usersRestaurants = usersRestaurants;
-//    }
 }

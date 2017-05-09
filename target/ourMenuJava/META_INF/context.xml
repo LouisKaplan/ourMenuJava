@@ -1,0 +1,11 @@
+<Context docBase="ourMenuJava" path="/ourMenuJava" reloadable="true">
+    <Realm className="org.apache.catalina.realm.JDBCRealm"
+           driverName="com.mysql.jdbc.Driver"
+           connectionURL="jdbc:mysql:///our_menu?user=tomcat&amp;password=tomcat"
+           userTable="users"
+           userNameCol="userName"
+           userCredCol="userPassword"
+           userRoleTable="userRoles"
+           roleNameCol="userRole">
+    </Realm>
+</Context>

@@ -2,23 +2,192 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="d6d75d4b-8542-4e7d-82b1-5d1ad74636e1" name="Default" comment="">
-      <change type="DELETED" beforePath="$PROJECT_DIR$/src/test/java/com/google/MapsAPITest.java" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/target/test-classes/com/google/MapsAPITest.class" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/target/classes/edu/matc/controller/AddLoginToSession.class" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/target/classes/edu/matc/controller/GroupOrder.class" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/target/classes/edu/matc/controller/GroupOrderDisplay.class" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/target/classes/edu/matc/controller/GroupOrderProcess.class" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/target/classes/edu/matc/controller/GroupOrderProcessDisplay.class" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/target/classes/edu/matc/controller/Home.class" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/target/classes/edu/matc/controller/HomeDisplay.class" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/target/classes/edu/matc/controller/LogUserOut.class" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/target/classes/edu/matc/controller/NewRestaurant.class" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/target/classes/edu/matc/controller/NewRestaurantDisplay.class" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/target/classes/edu/matc/controller/NewUser.class" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/target/classes/edu/matc/controller/NewUserDisplay.class" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/target/classes/edu/matc/controller/PersonalMenu.class" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/target/classes/edu/matc/controller/PersonalMenuDisplay.class" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/target/classes/edu/matc/controller/PersonalMenuProcess.class" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/target/classes/edu/matc/controller/PizzaDenominator.class" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/target/classes/edu/matc/controller/PizzaDenominatorDisplay.class" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/target/classes/edu/matc/controller/PizzaDenominatorProcess.class" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/target/classes/edu/matc/controller/RestaurantSelector.class" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/target/classes/edu/matc/controller/RestaurantSelectorDisplay.class" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/target/classes/edu/matc/controller/RestaurantSelectorProcess.class" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/target/classes/edu/matc/controller/RestaurantSelectorResultDisplay.class" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/target/classes/edu/matc/controller/UpdateRestaurant.class" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/target/classes/edu/matc/controller/UpdateRestaurantDisplay.class" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/target/classes/edu/matc/controller/UpdateRestaurantProcess.class" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/target/classes/edu/matc/entity/MenuItems.class" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/target/classes/edu/matc/entity/NewUserObject.class" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/target/classes/edu/matc/entity/Restaurants.class" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/target/classes/edu/matc/entity/UserRoles.class" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/target/classes/edu/matc/entity/Users.class" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/target/classes/edu/matc/entity/UsersMenuItems.class" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/target/classes/edu/matc/entity/UsersRestaurants.class" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/target/classes/edu/matc/googleMaps/AddressComponentsItem.class" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/target/classes/edu/matc/googleMaps/Geometry.class" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/target/classes/edu/matc/googleMaps/GetCoordinates.class" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/target/classes/edu/matc/googleMaps/Location.class" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/target/classes/edu/matc/googleMaps/Northeast.class" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/target/classes/edu/matc/googleMaps/Results.class" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/target/classes/edu/matc/googleMaps/ResultsItem.class" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/target/classes/edu/matc/googleMaps/Southwest.class" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/target/classes/edu/matc/googleMaps/Viewport.class" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/target/classes/edu/matc/persistence/MenuItemsDao.class" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/target/classes/edu/matc/persistence/RestaurantsDao.class" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/target/classes/edu/matc/persistence/SessionFactoryProvider.class" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/target/classes/edu/matc/persistence/UserRolesDao.class" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/target/classes/edu/matc/persistence/UsersDao.class" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/target/classes/edu/matc/persistence/UsersMenuItemsDao.class" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/target/classes/edu/matc/persistence/UsersRestaurantsDao.class" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/target/classes/hibernate.cfg.xml" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/target/classes/log4j.properties" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/target/classes/ourMenu.properties" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/target/maven-archiver/pom.properties" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/target/maven-status/maven-compiler-plugin/compile/default-compile/createdFiles.lst" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/target/maven-status/maven-compiler-plugin/compile/default-compile/inputFiles.lst" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/target/maven-status/maven-compiler-plugin/testCompile/default-testCompile/createdFiles.lst" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/target/maven-status/maven-compiler-plugin/testCompile/default-testCompile/inputFiles.lst" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/target/ourMenuJava.war" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/target/ourMenuJava/META-INF/MANIFEST.MF" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/target/ourMenuJava/WEB-INF/classes/edu/matc/controller/AddLoginToSession.class" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/target/ourMenuJava/WEB-INF/classes/edu/matc/controller/GroupOrder.class" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/target/ourMenuJava/WEB-INF/classes/edu/matc/controller/GroupOrderDisplay.class" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/target/ourMenuJava/WEB-INF/classes/edu/matc/controller/GroupOrderProcess.class" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/target/ourMenuJava/WEB-INF/classes/edu/matc/controller/GroupOrderProcessDisplay.class" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/target/ourMenuJava/WEB-INF/classes/edu/matc/controller/Home.class" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/target/ourMenuJava/WEB-INF/classes/edu/matc/controller/HomeDisplay.class" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/target/ourMenuJava/WEB-INF/classes/edu/matc/controller/LogUserOut.class" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/target/ourMenuJava/WEB-INF/classes/edu/matc/controller/NewRestaurant.class" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/target/ourMenuJava/WEB-INF/classes/edu/matc/controller/NewRestaurantDisplay.class" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/target/ourMenuJava/WEB-INF/classes/edu/matc/controller/NewUser.class" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/target/ourMenuJava/WEB-INF/classes/edu/matc/controller/NewUserDisplay.class" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/target/ourMenuJava/WEB-INF/classes/edu/matc/controller/PersonalMenu.class" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/target/ourMenuJava/WEB-INF/classes/edu/matc/controller/PersonalMenuDisplay.class" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/target/ourMenuJava/WEB-INF/classes/edu/matc/controller/PersonalMenuProcess.class" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/target/ourMenuJava/WEB-INF/classes/edu/matc/controller/PizzaDenominator.class" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/target/ourMenuJava/WEB-INF/classes/edu/matc/controller/PizzaDenominatorDisplay.class" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/target/ourMenuJava/WEB-INF/classes/edu/matc/controller/PizzaDenominatorProcess.class" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/target/ourMenuJava/WEB-INF/classes/edu/matc/controller/RestaurantSelector.class" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/target/ourMenuJava/WEB-INF/classes/edu/matc/controller/RestaurantSelectorDisplay.class" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/target/ourMenuJava/WEB-INF/classes/edu/matc/controller/RestaurantSelectorProcess.class" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/target/ourMenuJava/WEB-INF/classes/edu/matc/controller/RestaurantSelectorResultDisplay.class" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/target/ourMenuJava/WEB-INF/classes/edu/matc/controller/UpdateRestaurant.class" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/target/ourMenuJava/WEB-INF/classes/edu/matc/controller/UpdateRestaurantDisplay.class" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/target/ourMenuJava/WEB-INF/classes/edu/matc/controller/UpdateRestaurantProcess.class" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/target/ourMenuJava/WEB-INF/classes/edu/matc/entity/MenuItems.class" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/target/ourMenuJava/WEB-INF/classes/edu/matc/entity/NewUserObject.class" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/target/ourMenuJava/WEB-INF/classes/edu/matc/entity/Restaurants.class" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/target/ourMenuJava/WEB-INF/classes/edu/matc/entity/UserRoles.class" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/target/ourMenuJava/WEB-INF/classes/edu/matc/entity/Users.class" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/target/ourMenuJava/WEB-INF/classes/edu/matc/entity/UsersMenuItems.class" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/target/ourMenuJava/WEB-INF/classes/edu/matc/entity/UsersRestaurants.class" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/target/ourMenuJava/WEB-INF/classes/edu/matc/googleMaps/AddressComponentsItem.class" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/target/ourMenuJava/WEB-INF/classes/edu/matc/googleMaps/Geometry.class" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/target/ourMenuJava/WEB-INF/classes/edu/matc/googleMaps/GetCoordinates.class" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/target/ourMenuJava/WEB-INF/classes/edu/matc/googleMaps/Location.class" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/target/ourMenuJava/WEB-INF/classes/edu/matc/googleMaps/Northeast.class" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/target/ourMenuJava/WEB-INF/classes/edu/matc/googleMaps/Results.class" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/target/ourMenuJava/WEB-INF/classes/edu/matc/googleMaps/ResultsItem.class" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/target/ourMenuJava/WEB-INF/classes/edu/matc/googleMaps/Southwest.class" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/target/ourMenuJava/WEB-INF/classes/edu/matc/googleMaps/Viewport.class" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/target/ourMenuJava/WEB-INF/classes/edu/matc/persistence/MenuItemsDao.class" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/target/ourMenuJava/WEB-INF/classes/edu/matc/persistence/RestaurantsDao.class" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/target/ourMenuJava/WEB-INF/classes/edu/matc/persistence/SessionFactoryProvider.class" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/target/ourMenuJava/WEB-INF/classes/edu/matc/persistence/UserRolesDao.class" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/target/ourMenuJava/WEB-INF/classes/edu/matc/persistence/UsersDao.class" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/target/ourMenuJava/WEB-INF/classes/edu/matc/persistence/UsersMenuItemsDao.class" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/target/ourMenuJava/WEB-INF/classes/edu/matc/persistence/UsersRestaurantsDao.class" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/target/ourMenuJava/WEB-INF/classes/hibernate.cfg.xml" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/target/ourMenuJava/WEB-INF/classes/log4j.properties" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/target/ourMenuJava/WEB-INF/classes/ourMenu.properties" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/target/ourMenuJava/WEB-INF/lib/antlr-2.7.7.jar" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/target/ourMenuJava/WEB-INF/lib/aopalliance-repackaged-2.5.0-b05.jar" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/target/ourMenuJava/WEB-INF/lib/dom4j-1.6.1.jar" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/target/ourMenuJava/WEB-INF/lib/hibernate-commons-annotations-4.0.5.Final.jar" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/target/ourMenuJava/WEB-INF/lib/hibernate-core-4.3.11.Final.jar" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/target/ourMenuJava/WEB-INF/lib/hibernate-jpa-2.1-api-1.0.0.Final.jar" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/target/ourMenuJava/WEB-INF/lib/hk2-api-2.5.0-b05.jar" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/target/ourMenuJava/WEB-INF/lib/hk2-locator-2.5.0-b05.jar" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/target/ourMenuJava/WEB-INF/lib/hk2-utils-2.5.0-b05.jar" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/target/ourMenuJava/WEB-INF/lib/jackson-annotations-2.8.3.jar" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/target/ourMenuJava/WEB-INF/lib/jackson-core-2.8.3.jar" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/target/ourMenuJava/WEB-INF/lib/jackson-databind-2.8.3.jar" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/target/ourMenuJava/WEB-INF/lib/jandex-1.1.0.Final.jar" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/target/ourMenuJava/WEB-INF/lib/javaee-web-api-7.0.jar" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/target/ourMenuJava/WEB-INF/lib/javassist-3.18.1-GA.jar" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/target/ourMenuJava/WEB-INF/lib/javax.annotation-api-1.2.jar" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/target/ourMenuJava/WEB-INF/lib/javax.inject-2.5.0-b05.jar" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/target/ourMenuJava/WEB-INF/lib/javax.ws.rs-api-2.0.1.jar" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/target/ourMenuJava/WEB-INF/lib/jboss-logging-3.1.3.GA.jar" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/target/ourMenuJava/WEB-INF/lib/jboss-logging-annotations-1.2.0.Beta1.jar" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/target/ourMenuJava/WEB-INF/lib/jboss-transaction-api_1.2_spec-1.0.0.Final.jar" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/target/ourMenuJava/WEB-INF/lib/jersey-client-2.23.2.jar" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/target/ourMenuJava/WEB-INF/lib/jersey-common-2.23.2.jar" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/target/ourMenuJava/WEB-INF/lib/jersey-guava-2.23.2.jar" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/target/ourMenuJava/WEB-INF/lib/jstl-1.2.jar" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/target/ourMenuJava/WEB-INF/lib/log4j-1.2.17.jar" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/target/ourMenuJava/WEB-INF/lib/mysql-connector-java-5.1.39.jar" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/target/ourMenuJava/WEB-INF/lib/osgi-resource-locator-1.0.1.jar" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/target/ourMenuJava/WEB-INF/lib/xml-apis-1.0.b2.jar" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/target/ourMenuJava/WEB-INF/web.xml" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/target/ourMenuJava/groupOrder.jsp" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/target/ourMenuJava/groupOrderResult.jsp" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/target/ourMenuJava/index.jsp" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/target/ourMenuJava/loginError.jsp" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/target/ourMenuJava/loginPage.jsp" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/target/ourMenuJava/newRestaurant.jsp" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/target/ourMenuJava/newUser.jsp" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/target/ourMenuJava/personalMenu.jsp" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/target/ourMenuJava/pizzaDenominator.jsp" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/target/ourMenuJava/restaurantSelector.jsp" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/target/ourMenuJava/restaurantSelectorResult.jsp" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/target/ourMenuJava/template/backgroundIcons.jpg" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/target/ourMenuJava/template/footer.jsp" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/target/ourMenuJava/template/head.jsp" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/target/ourMenuJava/template/header.jsp" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/target/ourMenuJava/template/links.jsp" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/target/ourMenuJava/template/style.css" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/target/ourMenuJava/updateRestaurant.jsp" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/target/surefire-reports/TEST-com.google.MapsAPITest.xml" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/target/surefire-reports/TEST-edu.matc.persistence.MenuItemsDaoTest.xml" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/target/surefire-reports/TEST-edu.matc.persistence.RestaurantDaoTest.xml" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/target/surefire-reports/TEST-edu.matc.persistence.UserDaoTest.xml" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/target/surefire-reports/TEST-edu.matc.persistence.UserRolesDaoTest.xml" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/target/surefire-reports/TEST-edu.matc.persistence.UsersMenuItemDaoTest.xml" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/target/surefire-reports/TEST-edu.matc.persistence.UsersRestaurantsDaoTest.xml" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/target/surefire-reports/com.google.MapsAPITest.txt" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/target/surefire-reports/edu.matc.persistence.MenuItemsDaoTest.txt" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/target/surefire-reports/edu.matc.persistence.RestaurantDaoTest.txt" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/target/surefire-reports/edu.matc.persistence.UserDaoTest.txt" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/target/surefire-reports/edu.matc.persistence.UserRolesDaoTest.txt" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/target/surefire-reports/edu.matc.persistence.UsersMenuItemDaoTest.txt" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/target/surefire-reports/edu.matc.persistence.UsersRestaurantsDaoTest.txt" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/target/test-classes/edu/matc/persistence/MenuItemsDaoTest.class" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/target/test-classes/edu/matc/persistence/RestaurantDaoTest.class" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/target/test-classes/edu/matc/persistence/UserDaoTest.class" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/target/test-classes/edu/matc/persistence/UserRolesDaoTest.class" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/target/test-classes/edu/matc/persistence/UsersMenuItemDaoTest.class" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/target/test-classes/edu/matc/persistence/UsersRestaurantsDaoTest.class" afterPath="" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/MyAppLog.log" afterPath="$PROJECT_DIR$/MyAppLog.log" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/target/maven-status/maven-compiler-plugin/compile/default-compile/inputFiles.lst" afterPath="$PROJECT_DIR$/target/maven-status/maven-compiler-plugin/compile/default-compile/inputFiles.lst" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/target/surefire-reports/TEST-edu.matc.persistence.MenuItemsDaoTest.xml" afterPath="$PROJECT_DIR$/target/surefire-reports/TEST-edu.matc.persistence.MenuItemsDaoTest.xml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/target/surefire-reports/TEST-edu.matc.persistence.RestaurantDaoTest.xml" afterPath="$PROJECT_DIR$/target/surefire-reports/TEST-edu.matc.persistence.RestaurantDaoTest.xml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/target/surefire-reports/TEST-edu.matc.persistence.UserDaoTest.xml" afterPath="$PROJECT_DIR$/target/surefire-reports/TEST-edu.matc.persistence.UserDaoTest.xml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/target/surefire-reports/TEST-edu.matc.persistence.UserRolesDaoTest.xml" afterPath="$PROJECT_DIR$/target/surefire-reports/TEST-edu.matc.persistence.UserRolesDaoTest.xml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/target/surefire-reports/TEST-edu.matc.persistence.UsersMenuItemDaoTest.xml" afterPath="$PROJECT_DIR$/target/surefire-reports/TEST-edu.matc.persistence.UsersMenuItemDaoTest.xml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/target/surefire-reports/TEST-edu.matc.persistence.UsersRestaurantsDaoTest.xml" afterPath="$PROJECT_DIR$/target/surefire-reports/TEST-edu.matc.persistence.UsersRestaurantsDaoTest.xml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/target/surefire-reports/edu.matc.persistence.MenuItemsDaoTest.txt" afterPath="$PROJECT_DIR$/target/surefire-reports/edu.matc.persistence.MenuItemsDaoTest.txt" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/target/surefire-reports/edu.matc.persistence.RestaurantDaoTest.txt" afterPath="$PROJECT_DIR$/target/surefire-reports/edu.matc.persistence.RestaurantDaoTest.txt" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/target/surefire-reports/edu.matc.persistence.UserDaoTest.txt" afterPath="$PROJECT_DIR$/target/surefire-reports/edu.matc.persistence.UserDaoTest.txt" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/target/surefire-reports/edu.matc.persistence.UserRolesDaoTest.txt" afterPath="$PROJECT_DIR$/target/surefire-reports/edu.matc.persistence.UserRolesDaoTest.txt" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/target/surefire-reports/edu.matc.persistence.UsersMenuItemDaoTest.txt" afterPath="$PROJECT_DIR$/target/surefire-reports/edu.matc.persistence.UsersMenuItemDaoTest.txt" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/target/surefire-reports/edu.matc.persistence.UsersRestaurantsDaoTest.txt" afterPath="$PROJECT_DIR$/target/surefire-reports/edu.matc.persistence.UsersRestaurantsDaoTest.txt" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/main/resources/hibernate.cfg.xml" afterPath="$PROJECT_DIR$/src/main/resources/hibernate.cfg.xml" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/test/java/edu/matc/persistence/MenuItemsDaoTest.java" afterPath="$PROJECT_DIR$/src/test/java/edu/matc/persistence/MenuItemsDaoTest.java" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/test/java/edu/matc/persistence/RestaurantDaoTest.java" afterPath="$PROJECT_DIR$/src/test/java/edu/matc/persistence/RestaurantDaoTest.java" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/test/java/edu/matc/persistence/UserDaoTest.java" afterPath="$PROJECT_DIR$/src/test/java/edu/matc/persistence/UserDaoTest.java" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/test/java/edu/matc/persistence/UserRolesDaoTest.java" afterPath="$PROJECT_DIR$/src/test/java/edu/matc/persistence/UserRolesDaoTest.java" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/test/java/edu/matc/persistence/UsersMenuItemDaoTest.java" afterPath="$PROJECT_DIR$/src/test/java/edu/matc/persistence/UsersMenuItemDaoTest.java" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/test/java/edu/matc/persistence/UsersRestaurantsDaoTest.java" afterPath="$PROJECT_DIR$/src/test/java/edu/matc/persistence/UsersRestaurantsDaoTest.java" />
     </list>
     <ignored path="$PROJECT_DIR$/out/" />
     <ignored path="$PROJECT_DIR$/target/" />
@@ -69,13 +238,13 @@
   </component>
   <component name="ExecutionTargetManager" SELECTED_TARGET="default_target" />
   <component name="FileEditorManager">
-    <splitter split-orientation="horizontal" split-proportion="0.309375">
+    <splitter split-orientation="horizontal" split-proportion="0.18112488">
       <split-first>
         <leaf SIDE_TABS_SIZE_LIMIT_KEY="300">
           <file leaf-file-name="GetCoordinates.java" pinned="false" current-in-tab="true">
             <entry file="file://$PROJECT_DIR$/src/main/java/edu/matc/googleMaps/GetCoordinates.java">
               <provider selected="true" editor-type-id="text-editor">
-                <state relative-caret-position="285">
+                <state relative-caret-position="237">
                   <caret line="65" column="57" lean-forward="false" selection-start-line="65" selection-start-column="57" selection-end-line="65" selection-end-column="57" />
                   <folding />
                 </state>
@@ -86,7 +255,7 @@
             <entry file="file://$PROJECT_DIR$/src/main/resources/ourMenu.properties">
               <provider selected="true" editor-type-id="text-editor">
                 <state relative-caret-position="18">
-                  <caret line="1" column="27" lean-forward="true" selection-start-line="1" selection-start-column="27" selection-end-line="1" selection-end-column="27" />
+                  <caret line="1" column="27" lean-forward="false" selection-start-line="1" selection-start-column="27" selection-end-line="1" selection-end-column="27" />
                   <folding />
                 </state>
               </provider>
@@ -95,22 +264,12 @@
         </leaf>
       </split-first>
       <split-second>
-        <leaf>
-          <file leaf-file-name="RestaurantSelectorProcess.java" pinned="false" current-in-tab="false">
-            <entry file="file://$PROJECT_DIR$/src/main/java/edu/matc/controller/RestaurantSelectorProcess.java">
-              <provider selected="true" editor-type-id="text-editor">
-                <state relative-caret-position="433">
-                  <caret line="171" column="45" lean-forward="true" selection-start-line="171" selection-start-column="45" selection-end-line="171" selection-end-column="45" />
-                  <folding />
-                </state>
-              </provider>
-            </entry>
-          </file>
+        <leaf SIDE_TABS_SIZE_LIMIT_KEY="300">
           <file leaf-file-name="restaurantSelectorResult.jsp" pinned="false" current-in-tab="false">
             <entry file="file://$PROJECT_DIR$/src/main/webapp/restaurantSelectorResult.jsp">
               <provider selected="true" editor-type-id="text-editor">
-                <state relative-caret-position="325">
-                  <caret line="26" column="18" lean-forward="true" selection-start-line="26" selection-start-column="18" selection-end-line="26" selection-end-column="18" />
+                <state relative-caret-position="468">
+                  <caret line="26" column="18" lean-forward="false" selection-start-line="26" selection-start-column="18" selection-end-line="26" selection-end-column="18" />
                   <folding />
                 </state>
               </provider>
@@ -126,61 +285,41 @@
               </provider>
             </entry>
           </file>
-          <file leaf-file-name="MenuItemsDaoTest.java" pinned="false" current-in-tab="false">
-            <entry file="file://$PROJECT_DIR$/src/test/java/edu/matc/persistence/MenuItemsDaoTest.java">
+          <file leaf-file-name="hibernate.cfg.xml" pinned="false" current-in-tab="false">
+            <entry file="file://$PROJECT_DIR$/src/main/resources/hibernate.cfg.xml">
               <provider selected="true" editor-type-id="text-editor">
-                <state relative-caret-position="-418">
-                  <caret line="12" column="13" lean-forward="false" selection-start-line="12" selection-start-column="13" selection-end-line="12" selection-end-column="13" />
+                <state relative-caret-position="162">
+                  <caret line="12" column="54" lean-forward="false" selection-start-line="12" selection-start-column="54" selection-end-line="12" selection-end-column="54" />
                   <folding />
                 </state>
               </provider>
             </entry>
           </file>
-          <file leaf-file-name="RestaurantDaoTest.java" pinned="false" current-in-tab="false">
-            <entry file="file://$PROJECT_DIR$/src/test/java/edu/matc/persistence/RestaurantDaoTest.java">
+          <file leaf-file-name="web.xml" pinned="false" current-in-tab="false">
+            <entry file="file://$PROJECT_DIR$/src/main/webapp/WEB-INF/web.xml">
               <provider selected="true" editor-type-id="text-editor">
-                <state relative-caret-position="-389">
-                  <caret line="12" column="13" lean-forward="false" selection-start-line="12" selection-start-column="13" selection-end-line="12" selection-end-column="13" />
+                <state relative-caret-position="360">
+                  <caret line="20" column="29" lean-forward="false" selection-start-line="20" selection-start-column="29" selection-end-line="20" selection-end-column="29" />
                   <folding />
                 </state>
               </provider>
             </entry>
           </file>
-          <file leaf-file-name="UserDaoTest.java" pinned="false" current-in-tab="false">
-            <entry file="file://$PROJECT_DIR$/src/test/java/edu/matc/persistence/UserDaoTest.java">
+          <file leaf-file-name="context.xml" pinned="false" current-in-tab="true">
+            <entry file="file://$PROJECT_DIR$/src/main/webapp/META_INF/context.xml">
               <provider selected="true" editor-type-id="text-editor">
-                <state relative-caret-position="-767">
-                  <caret line="12" column="13" lean-forward="false" selection-start-line="12" selection-start-column="13" selection-end-line="12" selection-end-column="13" />
+                <state relative-caret-position="0">
+                  <caret line="0" column="49" lean-forward="false" selection-start-line="0" selection-start-column="49" selection-end-line="0" selection-end-column="49" />
                   <folding />
                 </state>
               </provider>
             </entry>
           </file>
-          <file leaf-file-name="UserRolesDaoTest.java" pinned="false" current-in-tab="false">
-            <entry file="file://$PROJECT_DIR$/src/test/java/edu/matc/persistence/UserRolesDaoTest.java">
+          <file leaf-file-name=".gitignore" pinned="false" current-in-tab="false">
+            <entry file="file://$PROJECT_DIR$/.gitignore">
               <provider selected="true" editor-type-id="text-editor">
-                <state relative-caret-position="-533">
-                  <caret line="12" column="13" lean-forward="false" selection-start-line="12" selection-start-column="13" selection-end-line="12" selection-end-column="13" />
-                  <folding />
-                </state>
-              </provider>
-            </entry>
-          </file>
-          <file leaf-file-name="UsersRestaurantsDaoTest.java" pinned="false" current-in-tab="false">
-            <entry file="file://$PROJECT_DIR$/src/test/java/edu/matc/persistence/UsersRestaurantsDaoTest.java">
-              <provider selected="true" editor-type-id="text-editor">
-                <state relative-caret-position="-1955">
-                  <caret line="14" column="13" lean-forward="false" selection-start-line="14" selection-start-column="13" selection-end-line="14" selection-end-column="13" />
-                  <folding />
-                </state>
-              </provider>
-            </entry>
-          </file>
-          <file leaf-file-name="UsersMenuItemDaoTest.java" pinned="false" current-in-tab="true">
-            <entry file="file://$PROJECT_DIR$/src/test/java/edu/matc/persistence/UsersMenuItemDaoTest.java">
-              <provider selected="true" editor-type-id="text-editor">
-                <state relative-caret-position="-1710">
-                  <caret line="14" column="13" lean-forward="false" selection-start-line="14" selection-start-column="13" selection-end-line="14" selection-end-column="13" />
+                <state relative-caret-position="126">
+                  <caret line="7" column="19" lean-forward="false" selection-start-line="7" selection-start-column="19" selection-end-line="7" selection-end-column="19" />
                   <folding />
                 </state>
               </provider>
@@ -241,16 +380,7 @@
   <component name="IdeDocumentHistory">
     <option name="CHANGED_PATHS">
       <list>
-        <option value="$PROJECT_DIR$/src/main/webapp/WEB-INF/loginError.jsp" />
-        <option value="$PROJECT_DIR$/src/main/java/edu/matc/controller/HomeDisplay.java" />
-        <option value="$PROJECT_DIR$/src/main/java/edu/matc/controller/NewUserDisplay.java" />
-        <option value="$PROJECT_DIR$/src/main/webapp/newUser.jsp" />
-        <option value="$PROJECT_DIR$/src/main/webapp/loginError.jsp" />
-        <option value="$PROJECT_DIR$/src/main/webapp/index.jsp" />
-        <option value="$PROJECT_DIR$/src/main/webapp/javascript.js" />
-        <option value="$PROJECT_DIR$/src/main/java/edu/matc/controller/GroupOrderProcessDisplay.java" />
         <option value="$PROJECT_DIR$/src/main/java/edu/matc/persistence/UsersDao.java" />
-        <option value="$PROJECT_DIR$/src/test/java/edu/matc/persistence/UserDaoTest.java" />
         <option value="$PROJECT_DIR$/src/main/java/edu/matc/controller/GroupOrder.java" />
         <option value="$PROJECT_DIR$/src/main/java/edu/matc/controller/NewRestaurant.java" />
         <option value="$PROJECT_DIR$/src/main/java/edu/matc/controller/PizzaDenominator.java" />
@@ -292,6 +422,15 @@
         <option value="$PROJECT_DIR$/src/main/java/edu/matc/controller/RestaurantSelectorProcess.java" />
         <option value="$PROJECT_DIR$/src/main/java/edu/matc/googleMaps/GetCoordinates.java" />
         <option value="$PROJECT_DIR$/src/main/webapp/restaurantSelectorResult.jsp" />
+        <option value="$PROJECT_DIR$/src/test/java/edu/matc/persistence/MenuItemsDaoTest.java" />
+        <option value="$PROJECT_DIR$/src/test/java/edu/matc/persistence/RestaurantDaoTest.java" />
+        <option value="$PROJECT_DIR$/src/test/java/edu/matc/persistence/UserDaoTest.java" />
+        <option value="$PROJECT_DIR$/src/test/java/edu/matc/persistence/UserRolesDaoTest.java" />
+        <option value="$PROJECT_DIR$/src/test/java/edu/matc/persistence/UsersMenuItemDaoTest.java" />
+        <option value="$PROJECT_DIR$/src/test/java/edu/matc/persistence/UsersRestaurantsDaoTest.java" />
+        <option value="$PROJECT_DIR$/.gitignore" />
+        <option value="$PROJECT_DIR$/src/main/resources/hibernate.cfg.xml" />
+        <option value="$PROJECT_DIR$/src/main/webapp/META_INF/context.xml" />
       </list>
     </option>
   </component>
@@ -362,10 +501,10 @@
     </treeState>
   </component>
   <component name="ProjectFrameBounds">
-    <option name="x" value="57" />
-    <option name="y" value="24" />
-    <option name="width" value="1863" />
-    <option name="height" value="1056" />
+    <option name="x" value="194" />
+    <option name="y" value="110" />
+    <option name="width" value="1853" />
+    <option name="height" value="970" />
   </component>
   <component name="ProjectLevelVcsManager" settingsEditedManually="true" />
   <component name="ProjectView">
@@ -383,9 +522,8 @@
       <foldersAlwaysOnTop value="true" />
     </navigator>
     <panes>
-      <pane id="Scope" />
-      <pane id="PackagesPane" />
       <pane id="Scratches" />
+      <pane id="PackagesPane" />
       <pane id="ProjectPane">
         <subPane>
           <PATH>
@@ -409,36 +547,6 @@
             </PATH_ELEMENT>
             <PATH_ELEMENT>
               <option name="myItemId" value="src" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="test" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-          </PATH>
-          <PATH>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="ourMenuJava" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="ourMenuJava" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="src" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="test" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="java" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="persistence" />
               <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
             </PATH_ELEMENT>
           </PATH>
@@ -482,6 +590,32 @@
               <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
             </PATH_ELEMENT>
             <PATH_ELEMENT>
+              <option name="myItemId" value="webapp" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="META_INF" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+          </PATH>
+          <PATH>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="ourMenuJava" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="ourMenuJava" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="src" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="main" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
               <option name="myItemId" value="resources" />
               <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
             </PATH_ELEMENT>
@@ -503,77 +637,10 @@
               <option name="myItemId" value="main" />
               <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
             </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="java" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="matc" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-          </PATH>
-          <PATH>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="ourMenuJava" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="ourMenuJava" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="src" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="main" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="java" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="matc" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="googleMaps" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-          </PATH>
-          <PATH>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="ourMenuJava" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="ourMenuJava" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="src" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="main" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="java" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="matc" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="controller" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
           </PATH>
         </subPane>
       </pane>
+      <pane id="Scope" />
     </panes>
   </component>
   <component name="PropertiesComponent">
@@ -600,7 +667,7 @@
       <recent name="$PROJECT_DIR$/src/main/resources" />
     </key>
   </component>
-  <component name="RunManager" selected="JUnit.UsersMenuItemDaoTest.updateUserMenuItem">
+  <component name="RunManager" selected="TomEE Server.TomEE">
     <configuration default="false" name="UserDaoTest.getUserByDisplayName" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
       <extension name="coverage" enabled="false" merge="false" sample_coverage="true" runner="idea">
         <pattern>
@@ -1201,7 +1268,9 @@
       <workItem from="1494122036386" duration="2696000" />
       <workItem from="1494124755721" duration="1838000" />
       <workItem from="1494208587485" duration="5652000" />
-      <workItem from="1494286090168" duration="11789000" />
+      <workItem from="1494286090168" duration="13056000" />
+      <workItem from="1494304687021" duration="1683000" />
+      <workItem from="1494306425231" duration="3804000" />
     </task>
     <servers />
   </component>
@@ -1238,16 +1307,16 @@
     </history-entry>
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="426637000" />
+    <option name="totallyTimeSpent" value="433391000" />
   </component>
   <component name="ToolWindowManager">
-    <frame x="57" y="24" width="1863" height="1056" extended-state="6" />
+    <frame x="194" y="110" width="1853" height="970" extended-state="0" />
     <editor active="false" />
     <layout>
       <window_info id="Palette" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
       <window_info id="Nl-Palette" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
       <window_info id="Event Log" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="7" side_tool="true" content_ui="tabs" />
-      <window_info id="Maven Projects" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.21298844" sideWeight="0.5" order="9" side_tool="false" content_ui="tabs" />
+      <window_info id="Maven Projects" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.15495296" sideWeight="0.5" order="9" side_tool="false" content_ui="tabs" />
       <window_info id="CDI" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="10" side_tool="false" content_ui="tabs" />
       <window_info id="Properties" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="4" side_tool="false" content_ui="tabs" />
       <window_info id="Capture Tool" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="8" side_tool="false" content_ui="tabs" />
@@ -1259,15 +1328,14 @@
       <window_info id="UI Designer" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="4" side_tool="false" content_ui="tabs" />
       <window_info id="Debug" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.39979124" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
       <window_info id="TODO" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="6" side_tool="false" content_ui="tabs" />
-      <window_info id="Messages" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.2682672" sideWeight="0.5" order="11" side_tool="false" content_ui="tabs" />
       <window_info id="Palette&#9;" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="6" side_tool="false" content_ui="tabs" />
       <window_info id="Image Layers" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="5" side_tool="false" content_ui="tabs" />
       <window_info id="Java Enterprise" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.32881" sideWeight="0.5" order="8" side_tool="false" content_ui="tabs" />
       <window_info id="Capture Analysis" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
-      <window_info id="Run" active="true" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.5407098" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
+      <window_info id="Run" active="true" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.35550457" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
       <window_info id="Version Control" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.32881" sideWeight="0.5" order="9" side_tool="false" content_ui="tabs" />
       <window_info id="Terminal" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.18162839" sideWeight="0.5" order="10" side_tool="false" content_ui="tabs" />
-      <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.23335168" sideWeight="0.5" order="0" side_tool="false" content_ui="combo" />
+      <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.26397344" sideWeight="0.5" order="0" side_tool="false" content_ui="combo" />
       <window_info id="Bean Validation" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="12" side_tool="false" content_ui="tabs" />
       <window_info id="Web" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="6" side_tool="true" content_ui="tabs" />
       <window_info id="Theme Preview" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="8" side_tool="false" content_ui="tabs" />
@@ -1276,6 +1344,7 @@
       <window_info id="Message" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="0" side_tool="false" content_ui="tabs" />
       <window_info id="Commander" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.4" sideWeight="0.5" order="0" side_tool="false" content_ui="tabs" />
       <window_info id="Hierarchy" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="2" side_tool="false" content_ui="combo" />
+      <window_info id="Messages" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.2682672" sideWeight="0.5" order="11" side_tool="false" content_ui="tabs" />
       <window_info id="Inspection" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.4" sideWeight="0.5" order="5" side_tool="false" content_ui="tabs" />
       <window_info id="Coverage" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="12" side_tool="true" content_ui="tabs" />
       <window_info id="Find" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.16179541" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
@@ -1343,28 +1412,6 @@
     <option name="FILTER_TARGETS" value="false" />
   </component>
   <component name="editorHistoryManager">
-    <entry file="file://$PROJECT_DIR$/src/main/webapp/loginPage.jsp">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="180">
-          <caret line="10" column="6" lean-forward="false" selection-start-line="10" selection-start-column="6" selection-end-line="10" selection-end-column="6" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/edu/matc/controller/AddLoginToSession.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="561">
-          <caret line="52" column="68" lean-forward="false" selection-start-line="52" selection-start-column="68" selection-end-line="52" selection-end-column="68" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/webapp/newUser.jsp">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="252">
-          <caret line="22" column="12" lean-forward="true" selection-start-line="22" selection-start-column="12" selection-end-line="22" selection-end-column="12" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/timeLog.md">
       <provider selected="true" editor-type-id="split-provider[text-editor;markdown-preview-editor]">
         <state split_layout="SPLIT">
@@ -1411,14 +1458,6 @@
         <state />
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/webapp/WEB-INF/web.xml">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="360">
-          <caret line="20" column="29" lean-forward="true" selection-start-line="20" selection-start-column="29" selection-end-line="20" selection-end-column="29" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/src/main/webapp/personalMenu.jsp">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="468">
@@ -1437,7 +1476,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="594">
           <caret line="64" column="9" lean-forward="true" selection-start-line="64" selection-start-column="9" selection-end-line="64" selection-end-column="9" />
-          <folding />
         </state>
       </provider>
     </entry>
@@ -1466,7 +1504,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="342">
           <caret line="78" column="0" lean-forward="false" selection-start-line="78" selection-start-column="0" selection-end-line="86" selection-end-column="9" />
-          <folding />
         </state>
       </provider>
     </entry>
@@ -1474,7 +1511,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="-442">
           <caret line="36" column="0" lean-forward="false" selection-start-line="36" selection-start-column="0" selection-end-line="37" selection-end-column="82" />
-          <folding />
         </state>
       </provider>
     </entry>
@@ -1482,7 +1518,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="504">
           <caret line="32" column="0" lean-forward="false" selection-start-line="32" selection-start-column="0" selection-end-line="35" selection-end-column="5" />
-          <folding />
         </state>
       </provider>
     </entry>
@@ -1490,7 +1525,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="162">
           <caret line="13" column="3" lean-forward="true" selection-start-line="13" selection-start-column="3" selection-end-line="13" selection-end-column="3" />
-          <folding />
         </state>
       </provider>
     </entry>
@@ -1500,9 +1534,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="374">
           <caret line="27" column="50" lean-forward="false" selection-start-line="27" selection-start-column="50" selection-end-line="27" selection-end-column="50" />
-          <folding>
-            <element signature="imports" expanded="false" />
-          </folding>
         </state>
       </provider>
     </entry>
@@ -1510,7 +1541,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="18">
           <caret line="50" column="9" lean-forward="false" selection-start-line="50" selection-start-column="9" selection-end-line="50" selection-end-column="9" />
-          <folding />
         </state>
       </provider>
     </entry>
@@ -1518,7 +1548,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="252">
           <caret line="18" column="13" lean-forward="false" selection-start-line="18" selection-start-column="13" selection-end-line="18" selection-end-column="13" />
-          <folding />
         </state>
       </provider>
     </entry>
@@ -1526,10 +1555,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="180">
           <caret line="34" column="8" lean-forward="false" selection-start-line="34" selection-start-column="8" selection-end-line="34" selection-end-column="37" />
-          <folding>
-            <element signature="e#1965#1973#0" expanded="false" />
-            <element signature="e#2353#2375#0" expanded="false" />
-          </folding>
         </state>
       </provider>
     </entry>
@@ -1544,7 +1569,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="300">
           <caret line="26" column="2" lean-forward="true" selection-start-line="26" selection-start-column="2" selection-end-line="26" selection-end-column="2" />
-          <folding />
         </state>
       </provider>
     </entry>
@@ -1580,7 +1604,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="162">
           <caret line="11" column="0" lean-forward="true" selection-start-line="11" selection-start-column="0" selection-end-line="11" selection-end-column="0" />
-          <folding />
         </state>
       </provider>
     </entry>
@@ -1610,7 +1633,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="432">
           <caret line="24" column="0" lean-forward="false" selection-start-line="24" selection-start-column="0" selection-end-line="24" selection-end-column="0" />
-          <folding />
         </state>
       </provider>
     </entry>
@@ -1618,7 +1640,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="18">
           <caret line="38" column="63" lean-forward="false" selection-start-line="38" selection-start-column="63" selection-end-line="38" selection-end-column="63" />
-          <folding />
         </state>
       </provider>
     </entry>
@@ -1626,29 +1647,36 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="648">
           <caret line="36" column="28" lean-forward="true" selection-start-line="36" selection-start-column="28" selection-end-line="36" selection-end-column="28" />
-          <folding />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/src/main/resources/ourMenu.properties">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="18">
-          <caret line="1" column="27" lean-forward="true" selection-start-line="1" selection-start-column="27" selection-end-line="1" selection-end-column="27" />
+          <caret line="1" column="27" lean-forward="false" selection-start-line="1" selection-start-column="27" selection-end-line="1" selection-end-column="27" />
           <folding />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/src/main/java/edu/matc/controller/RestaurantSelectorProcess.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="433">
-          <caret line="171" column="45" lean-forward="true" selection-start-line="171" selection-start-column="45" selection-end-line="171" selection-end-column="45" />
-          <folding />
+        <state relative-caret-position="2808">
+          <caret line="171" column="45" lean-forward="false" selection-start-line="171" selection-start-column="45" selection-end-line="171" selection-end-column="45" />
+          <folding>
+            <element signature="imports" expanded="false" />
+            <element signature="e#2704#2711#0" expanded="false" />
+            <element signature="e#3122#3130#0" expanded="false" />
+            <element signature="e#4044#4060#0" expanded="false" />
+            <element signature="e#5094#5102#0" expanded="false" />
+            <element signature="e#5164#5172#0" expanded="false" />
+            <element signature="e#5531#5547#0" expanded="false" />
+          </folding>
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/src/main/java/edu/matc/googleMaps/GetCoordinates.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="285">
+        <state relative-caret-position="237">
           <caret line="65" column="57" lean-forward="false" selection-start-line="65" selection-start-column="57" selection-end-line="65" selection-end-column="57" />
           <folding />
         </state>
@@ -1656,17 +1684,53 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/src/main/webapp/restaurantSelectorResult.jsp">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="325">
-          <caret line="26" column="18" lean-forward="true" selection-start-line="26" selection-start-column="18" selection-end-line="26" selection-end-column="18" />
+        <state relative-caret-position="468">
+          <caret line="26" column="18" lean-forward="false" selection-start-line="26" selection-start-column="18" selection-end-line="26" selection-end-column="18" />
           <folding />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/test/java/com/google/MapsAPITest.java">
+    <entry file="file://$PROJECT_DIR$/src/test/java/com/google/MapsAPITest.java" />
+    <entry file="file://$PROJECT_DIR$/src/test/java/edu/matc/persistence/UsersMenuItemDaoTest.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="144">
-          <caret line="8" column="13" lean-forward="false" selection-start-line="8" selection-start-column="13" selection-end-line="8" selection-end-column="13" />
+        <state relative-caret-position="306">
+          <caret line="126" column="33" lean-forward="false" selection-start-line="0" selection-start-column="2" selection-end-line="163" selection-end-column="3" />
           <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/test/java/edu/matc/persistence/UsersRestaurantsDaoTest.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="252">
+          <caret line="27" column="26" lean-forward="true" selection-start-line="27" selection-start-column="26" selection-end-line="27" selection-end-column="26" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/test/java/edu/matc/persistence/UserRolesDaoTest.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="288">
+          <caret line="27" column="7" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="82" selection-end-column="0" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/test/java/edu/matc/persistence/UserDaoTest.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="270">
+          <caret line="26" column="12" lean-forward="false" selection-start-line="0" selection-start-column="2" selection-end-line="95" selection-end-column="3" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/test/java/edu/matc/persistence/RestaurantDaoTest.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="270">
+          <caret line="26" column="29" lean-forward="false" selection-start-line="0" selection-start-column="2" selection-end-line="74" selection-end-column="3" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/test/java/edu/matc/persistence/MenuItemsDaoTest.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="198">
+          <caret line="19" column="0" lean-forward="false" selection-start-line="0" selection-start-column="2" selection-end-line="77" selection-end-column="3" />
         </state>
       </provider>
     </entry>
@@ -1678,50 +1742,34 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/test/java/edu/matc/persistence/MenuItemsDaoTest.java">
+    <entry file="file://$PROJECT_DIR$/.gitignore">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="-418">
-          <caret line="12" column="13" lean-forward="false" selection-start-line="12" selection-start-column="13" selection-end-line="12" selection-end-column="13" />
+        <state relative-caret-position="126">
+          <caret line="7" column="19" lean-forward="false" selection-start-line="7" selection-start-column="19" selection-end-line="7" selection-end-column="19" />
           <folding />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/test/java/edu/matc/persistence/RestaurantDaoTest.java">
+    <entry file="file://$PROJECT_DIR$/src/main/resources/hibernate.cfg.xml">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="-389">
-          <caret line="12" column="13" lean-forward="false" selection-start-line="12" selection-start-column="13" selection-end-line="12" selection-end-column="13" />
+        <state relative-caret-position="162">
+          <caret line="12" column="54" lean-forward="false" selection-start-line="12" selection-start-column="54" selection-end-line="12" selection-end-column="54" />
           <folding />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/test/java/edu/matc/persistence/UserDaoTest.java">
+    <entry file="file://$PROJECT_DIR$/src/main/webapp/WEB-INF/web.xml">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="-767">
-          <caret line="12" column="13" lean-forward="false" selection-start-line="12" selection-start-column="13" selection-end-line="12" selection-end-column="13" />
+        <state relative-caret-position="360">
+          <caret line="20" column="29" lean-forward="false" selection-start-line="20" selection-start-column="29" selection-end-line="20" selection-end-column="29" />
           <folding />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/test/java/edu/matc/persistence/UserRolesDaoTest.java">
+    <entry file="file://$PROJECT_DIR$/src/main/webapp/META_INF/context.xml">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="-533">
-          <caret line="12" column="13" lean-forward="false" selection-start-line="12" selection-start-column="13" selection-end-line="12" selection-end-column="13" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/test/java/edu/matc/persistence/UsersRestaurantsDaoTest.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="-1955">
-          <caret line="14" column="13" lean-forward="false" selection-start-line="14" selection-start-column="13" selection-end-line="14" selection-end-column="13" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/test/java/edu/matc/persistence/UsersMenuItemDaoTest.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="-1710">
-          <caret line="14" column="13" lean-forward="false" selection-start-line="14" selection-start-column="13" selection-end-line="14" selection-end-column="13" />
+        <state relative-caret-position="0">
+          <caret line="0" column="49" lean-forward="false" selection-start-line="0" selection-start-column="49" selection-end-line="0" selection-end-column="49" />
           <folding />
         </state>
       </provider>
