@@ -27,6 +27,8 @@ All of this is the core functionality. There are many other things that can be i
 * Bootstrap
 * Hibernate
 * Jackson
+* Google Geocoder API
+* Google Maps API
  
 ### Independent Research:
 * jQuery
@@ -34,11 +36,16 @@ All of this is the core functionality. There are many other things that can be i
 * Bootstrap
 
 ### FINAL NOTE:
-Things I didn't get done: Authentication still doesn't work on AWS. It works fine locally. Code comments are nowhere near done. Both of those things got left behind because of time constraints. Everything else is at least somewhere in the ballpark of where I wanted to be. Unfortunately, without authorization, the personal menu and update a restaurant pages are not visible.
+Things I didn't get done: 
+* Authentication still doesn't work on AWS. It works 100% fine locally. I looked at every suggestion in Slack and it's still not working. I'm just out of time. 
+* Code comments are nowhere near done. 
+* Finally, validation of fields is not done. This means that leaving some fields blank, or entering weird data causes problems - I know how to fix this, but ran out of time. If you want to see intended functionality, I reccomend selecting as many people as possible in each situation, as the live database doesn't have a ton of data in it.
+
+All of this got left behind because of time constraints. Everything else is at least somewhere in the ballpark of where I wanted to be. Unfortunately, without authorization, the personal menu and update a restaurant pages are not visible on the live site.
 
 ### MAJOR CHANGES SINCE PRESENTATION:
 * Added restaurant ratings for users (not visible without login - screenshot here: http://imgur.com/a/mB5Os )
-* Added styling to website (also not visible on AWS - see on above screenshot)
+* Added styling to website (also not visible on AWS for some reason, no time to fix - see on above screenshot)
 * Implemented google maps API and added function to Restaurant Selector. User now enters in city and state while searching for a restaurant, and the results page shows a location for the restaurant that the group prefers: http://imgur.com/pdbLMrB and http://imgur.com/8AnANDa
 * Edit Restaurant page has been added. This allows users to add or remove menu items for specific restaurants: http://imgur.com/UHw1Aom
 * Fixed MANY bugs
@@ -46,4 +53,3 @@ Things I didn't get done: Authentication still doesn't work on AWS. It works fin
 * Auploaded to AWS. Everything seems to work there except authentication. I've messed with it a bunch and read all the answers in the slack channel, but it's not working and it's almost 2am - I'm done :)
 
 Thanks for looking at all this!
-
