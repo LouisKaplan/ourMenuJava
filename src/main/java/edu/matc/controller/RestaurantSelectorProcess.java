@@ -1,6 +1,10 @@
 package edu.matc.controller;
 
+import com.fasterxml.jackson.core.JsonProcessingException;
 import edu.matc.entity.*;
+import edu.matc.googleMaps.GetCoordinates;
+import edu.matc.googleMaps.Results;
+import edu.matc.googleMaps.ResultsItem;
 import edu.matc.persistence.*;
 
 import javax.servlet.*;
@@ -17,6 +21,11 @@ import static java.lang.Double.NaN;
         urlPatterns={"/restaurantSelectorProcess"})
 public class RestaurantSelectorProcess extends HttpServlet{
     private final Logger log = Logger.getLogger(this.getClass());
+    String restaurant;
+    String city;
+    String state;
+    double lat;
+    double lon;
     /**
      *@param  request                   the HttpServletRequest object
      *@param  response                   the HttpServletResponse object
@@ -31,10 +40,21 @@ public class RestaurantSelectorProcess extends HttpServlet{
         HttpSession session = request.getSession(true);
 
         String[] userNamesFromForm = request.getParameterValues("selectDiners");
+        this.city = request.getParameter("selectCity");
+        this.city = city.replaceAll(" ", "_").toLowerCase();
+        this.state = request.getParameter("selectState");
+        this.state = state.replaceAll(" ", "_").toLowerCase();
         List<Users> usersList = convertDisplayNamesToUserObjects(userNamesFromForm);
         List<String> userNamesList = getUserNamesFromUserList(usersList);
         HashMap<String, Double> ratingMap = getRestaurantRatingMap(userNamesList);
         HashMap<String, Double> sortedMap = sortHashMap(ratingMap);
+        Results mapResults = getJSON(restaurant, city, state);
+        getMapCoordinates(mapResults);
+        session.setAttribute("mapLat", lat);
+        session.setAttribute("mapLon", lon);
+        log.info("$$$$$$$$$$$$LATITUDE: " + lat);
+        log.info("$$$$$$$$$$$$LONGITUDE:" + lon);
+
         session.setAttribute("sortedMap", sortedMap);
 
         String url = "restaurantSelectorResultDisplay";
@@ -86,7 +106,6 @@ public class RestaurantSelectorProcess extends HttpServlet{
         DecimalFormat df = new DecimalFormat("#.#");
         Double ratingCount = 0.00;
         int incrementCount = 0;
-        log.info(userNameList);
 
         for (Restaurants restaurant : restaurantList) {
             ratingCount = 0.00;
@@ -115,6 +134,12 @@ public class RestaurantSelectorProcess extends HttpServlet{
         Collections.sort(mapValues);
         Collections.sort(mapKeys);
 
+        int mapLength = mapKeys.size();
+        mapLength --;
+        this.restaurant = mapKeys.get(mapLength);
+        this.restaurant = restaurant.replaceAll(" ", "_").toLowerCase();
+
+
         LinkedHashMap<String, Double> sortedMap =
                 new LinkedHashMap<String, Double>();
 
@@ -136,6 +161,29 @@ public class RestaurantSelectorProcess extends HttpServlet{
             }
         }
         return sortedMap;
+
+    }
+
+    public Results getJSON(String restaurant, String city, String state){
+        GetCoordinates coordinatesCall = new GetCoordinates();
+        Results callResults = null;
+        try {
+            callResults = coordinatesCall.MakeCall(restaurant, city, state);
+        } catch (JsonProcessingException e) {
+            log.error("problem with JSON when making call to Maps service");
+        } catch (Exception e) {
+            // 502 Bad Gateway
+            log.error("problem making call to Maps service");
+        }
+        return callResults;
+
+    }
+
+    public void getMapCoordinates(Results callResults){
+        List<ResultsItem> resultsList = callResults.getResults();
+        ResultsItem resultsItem = resultsList.get(0);
+        this.lat = resultsItem.getGeometry().getLocation().getLat();
+        this.lon = resultsItem.getGeometry().getLocation().getLng();
 
     }
 }

@@ -13,6 +13,9 @@ public class ResultsItem{
 	@JsonProperty("types")
 	private List<String> types;
 
+	@JsonProperty("partial_match")
+	private boolean partialMatch;
+
 	@JsonProperty("geometry")
 	private Geometry geometry;
 
@@ -36,6 +39,14 @@ public class ResultsItem{
 
 	public List<String> getTypes(){
 		return types;
+	}
+
+	public void setPartialMatch(boolean partialMatch){
+		this.partialMatch = partialMatch;
+	}
+
+	public boolean isPartialMatch(){
+		return partialMatch;
 	}
 
 	public void setGeometry(Geometry geometry){
@@ -68,6 +79,7 @@ public class ResultsItem{
 			"ResultsItem{" + 
 			"formatted_address = '" + formattedAddress + '\'' + 
 			",types = '" + types + '\'' + 
+			",partial_match = '" + partialMatch + '\'' + 
 			",geometry = '" + geometry + '\'' + 
 			",address_components = '" + addressComponents + '\'' + 
 			",place_id = '" + placeId + '\'' + 

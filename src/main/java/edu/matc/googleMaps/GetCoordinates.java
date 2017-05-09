@@ -6,7 +6,9 @@ import edu.matc.googleMaps.Results;
 
 import javax.ws.rs.client.*;
 import javax.ws.rs.core.MediaType;
+import java.io.FileInputStream;
 import java.io.IOException;
+import java.io.InputStream;
 import java.util.Properties;
 
 /**
@@ -14,37 +16,39 @@ import java.util.Properties;
  */
 public class GetCoordinates {
 
+    private Properties ourMenuProperties = new Properties();
+
     private String apiURL; //The URL for all calls
     private String apiParameters; //The modifier to do a box search
     private String restaurantName; //This is the maximum functional zoom
-    private String city;
-    private String state;
+    private String cityName;
+    private String stateName;
     private String apiUserKey; //The query string that we'll modify with your API key
     private String apiKey; //This is the key from your properties file
 
     private final Logger log = Logger.getLogger(this.getClass());
 
-    public GetCoordinates(String apiKey, String apiURL, String apiParameters, String apiUserKey){
-        this.apiKey = apiKey;
-        this.apiURL = apiURL;
-        this.apiParameters = apiParameters;
-        this.apiUserKey = apiUserKey;
+    public GetCoordinates(){
+//        String apiKey, String apiURL, String apiParameters, String apiUserKey
+//        this.apiKey = apiKey;
+//        this.apiURL = apiURL;
+//        this.apiParameters = apiParameters;
+//        this.apiUserKey = apiUserKey;
     }
 
-    public Results MakeCall(String restaurantName, String city, String state) throws Exception{
-        //bbox bounding box [lon-left,lat-bottom,lon-right,lat-top,zoom]
+    public Results MakeCall(String restaurant, String city, String state) throws Exception{
 
-        //Load properties file and assign your key to the apiKey variable
+        loadAllProperties();
 
-        //Append the call string with our input data
-        apiUserKey += apiKey;
-        this.restaurantName = restaurantName;
-        this.city = city;
-        this.state = state;
+        this.restaurantName = restaurant;
+        this.cityName = city;
+        this.stateName = state;
 
         apiParameters += (restaurantName + "," +
-                city + "," +
-                state);
+                cityName + "," +
+                stateName);
+
+        apiUserKey += apiKey;
 
         log.info("Calling " + apiURL + apiParameters + apiUserKey);
 
@@ -59,9 +63,32 @@ public class GetCoordinates {
         String response = target.request(MediaType.APPLICATION_JSON).get(String.class);
         log.info("Response message is " + response);
         ObjectMapper mapper = new ObjectMapper();
-        Results list = mapper.readValue(response, Results.class);
+        Results results = mapper.readValue(response, Results.class);
 
         //Return all the JSON data
-        return list;
+        return results;
+    }
+
+    public void loadAllProperties(){
+        InputStream inputStream = null;
+
+        try{
+            ourMenuProperties.load(this.getClass().getResourceAsStream("/ourMenu.properties"));
+            this.apiURL = ourMenuProperties.getProperty("apiURL");
+            this.apiParameters = ourMenuProperties.getProperty("apiParameters");
+            this.apiUserKey = ourMenuProperties.getProperty("apiUserKey");
+            this.apiKey = ourMenuProperties.getProperty("GoogleMapsAPI");
+
+        } catch (IOException ex) {
+            log.error("$$$$$$$$$$$$$$$$$ERROR ONE " + ex);
+        } finally {
+            if (inputStream != null) {
+                try {
+                    inputStream.close();
+                } catch (IOException e) {
+                    log.error("$$$$$$$$$$$$$$$$$ERROR TWO " + e);
+                }
+            }
+        }
     }
 }

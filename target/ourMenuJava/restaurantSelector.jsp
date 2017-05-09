@@ -38,6 +38,7 @@
             </select>
         </div>
 
+    </br>
 
         <input type="text" id="selectCity" name="selectCity" placeholder="Enter City For Search">
         <input type="text" id="selectState" name="selectState" placeholder="Enter State For Search">
